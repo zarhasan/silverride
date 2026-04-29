@@ -18,95 +18,71 @@
 
   <a class="skip-to-main-content" href="#page"><?php esc_html_e('Skip to main content', 'silverride'); ?></a>
 
-  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-24 z-[9999] flex justify-center items-center bg-white top-0">
-    <div class="container mx-auto flex items-center justify-between relative z-10">
+  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-blue-900 top-0">
+    <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center">
-        <?php
-        $logo = get_field('field_header_logo', 'option');
-
-        if ($logo && isset($logo['url'])): ?>
-          <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt'] ?: ''); ?>" class="h-12 lg:h-16 w-auto">
-        <?php endif; ?>
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
+        <img class="h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="SilverRide Logo">
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:block desktop ml-auto mr-8" aria-label="Primary navigation">
-        <?php get_template_part('template-parts/menu', null, [
-          'theme_location' => 'primary',
-          'menu_class' => 'hidden lg:flex items-center gap-8 ml-auto mr-4 primary-menu',
-        ]); ?>
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary navigation">
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200 flex items-center gap-1">
+          Who We Serve
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
+        </a>
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Drivers</a>
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Riders</a>
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Cities</a>
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Company</a>
+        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">News</a>
+        <a href="#" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+          Request Demo
+        </a>
       </nav>
 
-      <!-- Right Section -->
-      <div class="hidden lg:flex items-center gap-6">
-        <a href="/contact-us" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white rounded-full transition-colors duration-200" style="background-color: var(--theme-primary);">
-          Contact Us
-        </a>
-
-        <?php if(class_exists('LearnPress')) : ?>
-          <?php if (is_user_logged_in()): ?>
-            <a href="/lp-profile" class="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors">
-              My Profile
-            </a>
-          <?php else: ?>
-            <a href="/login" class="text-base font-medium text-gray-700 hover:text-gray-900 transition-colors">
-              Login
-            </a>
-          <?php endif; ?>
-        <?php endif; ?>
-      </div>
-
-
       <!-- Mobile menu button -->
-      <button type="button" class="mobile-menu-toggle !lg:hidden inline-flex items-center justify-center p-2 !bg-primary !text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+      <button type="button" class="mobile-menu-toggle !lg:hidden inline-flex items-center justify-center p-2 text-white hover:text-blue-200 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
         <span class="hamburger-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
         </span>
         <span class="close-icon hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </span>
       </button>
     </div>
 
     <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu-overlay fixed inset-0 bg-black/50 z-40 hidden lg:hidden" id="mobile-menu-overlay"></div>
 
     <!-- Mobile Menu Panel -->
-    <nav id="mobile-menu" class="mobile-menu-panel !lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
-
-      <div class="mobile-menu-content">
-        <div class="mobile-menu-header">
-          <button type="button" class="mobile-menu-close" aria-label="Close menu">
+    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-blue-900 z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="mobile-menu-content p-6 flex flex-col h-full">
+        <div class="mobile-menu-header flex justify-end mb-8">
+          <button type="button" class="mobile-menu-close text-white hover:text-blue-200" aria-label="Close menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
           </button>
         </div>
 
-        <?php get_template_part('template-parts/menu', null, [
-          'theme_location' => 'primary',
-          'menu_class' => 'mobile-nav-list',
-        ]); ?>
-
-        <div class="mobile-menu-footer">
-          <a href="/contact-us" class="mobile-contact-btn">
-            Contact Us
+        <div class="flex flex-col gap-4">
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800 flex items-center justify-between">
+            Who We Serve
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800">Drivers</a>
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800">Riders</a>
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800">Cities</a>
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800">Company</a>
+          <a href="#" class="text-white text-lg font-medium py-2 border-b border-blue-800">News</a>
+        </div>
 
-          <?php if(class_exists('LearnPress')) : ?>
-            <?php if (is_user_logged_in()): ?>
-              <a href="/lp-profile" class="mobile-login-link">
-                My Profile
-              </a>
-            <?php else: ?>
-              <a href="/login" class="mobile-login-link">
-                Login
-              </a>
-            <?php endif; ?>
-          <?php endif; ?>
+        <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
+          <a href="#" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+            Request Demo
+          </a>
         </div>
       </div>
     </nav>
-
   </header>
 
-  <main id="page" class="site mt-24">
+  <main id="page" class="site mt-32">
