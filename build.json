@@ -1,14 +1,14 @@
 {
   "free": {
     "NAME": "SilverRide",
-    "SLUG": "accessibility-partners",
-    "PREFIX": "accessibility_partners",
-    "VERSION": "1.4.8"
+    "SLUG": "silverride",
+    "PREFIX": "silverride",
+    "VERSION": "0.0.1"
   },
   "pro": {
     "NAME": "SilverRide Stage",
-    "SLUG": "accessibility-partners-stage",
-    "PREFIX": "accessibility_partners_stage",
-    "VERSION": "1.4.8"
+    "SLUG": "silverride-stage",
+    "PREFIX": "silverride_stage",
+    "VERSION": "0.0.1"
   }
 }
