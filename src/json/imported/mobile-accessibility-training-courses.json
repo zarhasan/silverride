@@ -1,0 +1,196 @@
+{
+  "page_title": "Mobile Accessibility Training Courses",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Mobile Accessibility Training Courses",
+      "description": "<p>Our Mobile Accessibility Training Courses are designed to equip development teams, designers, and product leaders with the knowledge and practical skills to create mobile apps that are accessible to all users\u2014including those with disabilities. Whether you build for iOS or Android, this course will help you meet ADA mobile accessibility standards and align with WCAG 2.2 for mobile platforms.</p><p>The training covers accessibility fundamentals, native mobile accessibility, touch interaction design, testing tools, and responsive mobile design\u2014all tailored to real-world app development scenarios. Participants will learn how to integrate accessibility best practices into the entire development lifecycle.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/elementor/thumbs/Product-presentation-amico-r612bynb2n8z3prqynnfi0tnz1754t9pd9l1125njw.png",
+        "alt": "Mobile Accessibility Training Service"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Mobile Accessibility Training Course Overview",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>This course provides a comprehensive introduction to mobile accessibility, offering both theoretical and hands-on guidance. Participants will learn how to identify and remediate accessibility barriers in native and hybrid mobile applications using WCAG mobile guidelines, platform-specific APIs, and popular testing tools. By the end of the program, you\u2019ll be able to build and evaluate mobile experiences that are inclusive and legally compliant.</p><h3>Course Duration</h3><p><span style=\"font-weight: 400;\">4 weeks (with weekly live or self-paced sessions, assignments, and project work)</span></p><h3>Learning Outcomes</h3><ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Understand ADA and WCAG guidelines for mobile platforms</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Apply accessible design principles to native and hybrid apps</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Use screen readers and accessibility testing tools</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Remediate common mobile accessibility issues</span></li></ol>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Target Audience",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"font-weight: 400; color: #000000;\">This course is perfect for:</span></p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Mobile app developers (iOS and Android)",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "UI/UX designers working on mobile platforms",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "QA testers responsible for accessibility validation",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Product managers overseeing digital compliance",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Accessibility consultants looking to enhance mobile expertise",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Whether you\u2019re building public apps or internal tools, this course will help your team deliver ADA-compliant mobile solutions.</p>"
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help",
+      "description": "<p>Our mobile accessibility training is built around the standards defined in ADA, Section 508, and the Web Content Accessibility Guidelines (WCAG 2.1 &amp; 2.2). You\u2019ll learn how to meet compliance requirements in the mobile context by building inclusive, accessible apps from the ground up. This training is ideal for organizations aiming to reduce legal risk while improving overall usability and digital inclusion.</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Course Curriculum",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Our curriculum is broken into four structured weekly lessons, each building your skill set step-by-step:</p><h3>Week 1: Introduction to Mobile Accessibility</h3><ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">What is mobile accessibility?</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Understanding ADA &amp; WCAG for mobile</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Assistive technologies on mobile devices</span></li></ol><h3>Week 2: Responsive Design and Mobile Accessibility</h3><ol><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Responsive frameworks and flexible layouts</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Content reflow and zoom compatibility</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Cross-platform UX strategies</span></li></ol><h3>Week 3: Touch Interactions and Mobile-Specific Features</h3><ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Gestures and tap targets</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">VoiceOver and TalkBack integration</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Avoiding motion triggers and cognitive overload</span></li></ol><h3>Week 4: Testing and Evaluation</h3><ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Using screen readers and simulators</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Automated vs. manual testing</span></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Remediation plans and documentation best practices</span></li></ol>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "Who should take this course?",
+          "answer": "<p><span style=\"font-weight: 400;\">This course is ideal for developers, designers, QA testers, and product leads working on mobile apps who want to improve accessibility and meet ADA compliance.</span></p>"
+        },
+        {
+          "question": "What tools will I learn?",
+          "answer": "<p>Participants will gain hands-on experience with tools such as VoiceOver, TalkBack, Google Accessibility Scanner, and Xcode/Android Studio accessibility features.</p>"
+        },
+        {
+          "question": "Do I need coding experience?",
+          "answer": "<p><span style=\"font-weight: 400;\">While helpful, coding experience is not mandatory. The course accommodates both technical and non-technical participants.</span></p>"
+        },
+        {
+          "question": "Will I get a certificate?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes, participants who complete the course and final project will receive a Certificate of Completion in Mobile Accessibility.</span></p>"
+        },
+        {
+          "question": "Is this course platform-specific (iOS/Android)?",
+          "answer": "<p><span style=\"font-weight: 400;\">The course covers both iOS and Android development environments, including native and hybrid app frameworks.</span></p>"
+        },
+        {
+          "question": "Is the training live or self-paced?",
+          "answer": "<p>We offer both live cohort sessions and self-paced online modules, depending on your preference and schedule.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your <br>Compliance Consultation",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.</p>",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

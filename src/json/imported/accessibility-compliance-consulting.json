@@ -1,0 +1,161 @@
+{
+  "page_title": "Accessibility Compliance Consulting Services USA",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Compliance Consulting Services USA",
+      "description": "<p>Accessibility barriers can harm your business by deterring potential customers and damaging your reputation. That's where Accessibility Innovations comes in. Our Accessibility Compliance Consulting Services empower organizations to navigate and overcome accessibility challenges.</p><p>From identifying the best ways to make your products accessible to managing complex regulations, we provide end-to-end support. Inclusivity isn't just a legal requirement—it's a holistic growth strategy that fosters innovation, enhances user experiences, and drives success.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/02/compliance-score-meter.png",
+        "alt": "An animated 'Compliance Score' meter similar to a speedometer, with WCAG compliance result totals below it for 'Pass', 'Fail', and 'Total'. The meter needle moves from 0 percent to 100 percent, showing an increasing 'Pass' score and a decreasing 'Fail' score"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "video",
+      "video": "https://accessibilityinnovations.com/wp-content/uploads/2024/12/compliance-score-meter.mp4",
+      "transcript": "<p>The video shows an animated compliance score meter, resembling a speedometer. The needle moves from 0% to 100%, illustrating the following:</p><ul><li>As the needle moves towards 100%, the \"Pass\" score increases.</li><li>Simultaneously, the \"Fail\" score decreases.</li><li>The \"Total\" score remains constant throughout the animation.</li></ul><p>This visual representation demonstrates how improving WCAG compliance increases the \"Pass\" score while reducing the number of failures, ultimately aiming for 100% compliance.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Why Accessibility Compliance Matters?",
+      "description": "<p>Organizations invest heavily in creating impactful products, services, and facilities. However, overlooking the needs of individuals with disabilities creates barriers to access, limiting opportunities for your business and your audience. At Accessibility Innovations, we help you:</p><ul><li><a href=\"https://accessibilityinnovations.com/accessibility-gap-analysis/\">Address accessibility gaps</a> through tailored consulting.</li><li>Comply with ADA, WCAG, and other standards.</li><li>Build inclusivity into your brand's foundation, enhancing reputation and fostering long-term growth.</li></ul><p>Our approach is guided by both legal expertise and insights from the lived experiences of individuals with disabilities, ensuring practical and effective solutions for your unique needs.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Our Accessibility Compliance Consulting Services",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Collaborators.webp",
+            "alt": "A blue circular icon with two user silhouettes connected by a curved line, representing communication or networking."
+          },
+          "title": "Compliance Assessment",
+          "description": "<p>We evaluate your current accessibility level against standards like WCAG 2.2, Section 508, and ADA. This assessment identifies gaps, offering a detailed roadmap to address compliance challenges effectively.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Trusted.webp",
+            "alt": "A blue circular icon featuring a shield with a checkmark, representing security, trust, and compliance assurance."
+          },
+          "title": "Compliance Planning",
+          "description": "<p>Based on our findings, we develop a customized compliance plan that is specifically tailored to meet your organization's needs. This plan includes detailed timelines for implementing necessary changes, assigns clear responsibilities for specific tasks, and outlines resource allocation to streamline the entire process. Our approach is designed to ensure that your organization not only achieves compliance but is also able to sustain it in a practical and manageable way.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Collaborators.webp",
+            "alt": "A blue circular icon with two user silhouettes connected by a curved line."
+          },
+          "title": "Policy and Statement Development",
+          "description": "<p>Clear, actionable policies are crucial for ensuring accessibility. We collaborate with you to create Accessibility Policies that define your organization's commitment to inclusivity, Accessibility Statements to communicate your goals and progress to stakeholders, and Procedures to establish guidelines for maintaining accessibility across operations. These documents provide a solid foundation for consistent, legally compliant practices.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Trusted.webp",
+            "alt": "A blue circular icon featuring a shield with a checkmark."
+          },
+          "title": "Training and Education",
+          "description": "<p>Inclusivity begins with your team, which is why we offer interactive workshops and training programs to equip your workforce with the skills to implement accessibility best practices. The training covers legal standards, strategies for creating accessible environments, and the importance of fostering inclusivity in daily operations, ensuring your team is ready to support and sustain accessibility efforts.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Collaborators.webp",
+            "alt": "A blue circular icon with two user silhouettes."
+          },
+          "title": "Compliance Reporting",
+          "description": "<p>We provide professional compliance reports that document your organization's adherence to accessibility standards. These reports help demonstrate compliance to regulatory authorities, build trust with customers and stakeholders, and showcase your commitment to inclusivity and ethical practices.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Were-Trusted.webp",
+            "alt": "A blue circular icon featuring a shield with a checkmark."
+          },
+          "title": "Ongoing Support",
+          "description": "<p>Accessibility compliance is an ongoing process, not a one-time effort. As regulations and standards are constantly evolving, we help you stay ahead by conducting regular audits to monitor compliance and providing ongoing assistance to adapt to changes in accessibility laws.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>With <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a> as your partner, you demonstrate a lasting commitment to inclusivity while safeguarding your business against potential risks.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why Choose Accessibility Innovations For Accessibility Auditing?",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Expert Guidance",
+          "description": "<p>We navigate complex regulations like ADA, WCAG, and Section 508, providing actionable solutions tailored to your needs.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Sustainable Practices",
+          "description": "<p>Our services focus on long-term compliance, helping you adapt to evolving standards while maintaining an inclusive environment.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Custom Solutions",
+          "description": "<p>Our plans are designed to align with your organization's unique challenges and goals.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Trusted Partner",
+          "description": "<p>We've worked with organizations across industries, earning a reputation for reliability and results-driven consulting.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Proven Expertise",
+          "description": "<p>We combine legal knowledge with real-world insights, ensuring practical and effective accessibility strategies.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Contact <a href=\"https://accessibilityinnovations.com/contact-us/\">Accessibility Innovations</a> today to schedule a consultation. Let us help you achieve compliance, foster inclusivity, and position your organization as a leader in accessibility!</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    }
+  ]
+}

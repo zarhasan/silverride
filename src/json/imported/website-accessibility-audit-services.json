@@ -1,0 +1,211 @@
+{
+  "page_title": "Web Accessibility Auditing Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Web Accessibility Auditing Services",
+      "description": "<p><span style=\"font-weight: 400;\">At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in web accessibility audits to help businesses ensure their digital platforms comply with ADA, WCAG, and other accessibility standards. Our website accessibility audit services identify barriers that may prevent individuals with disabilities from accessing your site, ensuring an inclusive experience for all users.</span></p><p><span style=\"font-weight: 400;\">With a thorough approach, we evaluate your website using automated testing, manual assessments, and assistive technology tools to uncover compliance gaps. Our expert team provides actionable recommendations to improve accessibility, usability, and compliance, reducing legal risks and enhancing the user experience.</span></p><p><span style=\"font-weight: 400;\">Stay ahead of regulatory requirements and create an inclusive digital presence. Contact Us today to schedule your web accessibility audit!</span></p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/03/website-accessibility-audit-services.webp",
+        "alt": "A person using a laptop at a meeting table, displaying WCAG guidelines, with two colleagues engaged in discussion—representing website accessibility audit services."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "What is a Web Accessibility Audit?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>A web accessibility audit is a comprehensive evaluation of a website to assess its compliance with accessibility standards such as ADA (<a href=\"https://www.dol.gov/general/topic/disability/ada\" target=\"_blank\" rel=\"nofollow noopener\">Americans with Disabilities Act</a>) and WCAG (Web Content Accessibility Guidelines). The audit identifies barriers that may prevent individuals with disabilities from fully engaging with your website, including navigation issues, improper coding, and inaccessible multimedia content.</p><p>By conducting a website accessibility audit, businesses can ensure compliance, improve the user experience, and avoid potential legal risks associated with accessibility violations.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Key Features of Our Web Accessibility Audit?</b></h3><p style=\"text-align: center;\"><span style=\"font-weight: 400;\">Our web accessibility audits provide in-depth insights to improve accessibility compliance. Key features include:</span></p><h4 style=\"text-align: left;\"><b>1. Automated Testing</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">We use AI-driven tools to scan your website for common accessibility violations, providing a high-level overview of potential compliance issues.</span></p><h4 style=\"text-align: left;\"><b>2. Manual Accessibility Review</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">Our experts manually test your website, ensuring critical accessibility features such as keyboard navigation, screen reader compatibility, and interactive elements function correctly.</span></p><h4 style=\"text-align: left;\"><b>3. Functional Testing</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">We assess how real users with disabilities interact with your website to identify usability barriers and recommend improvements for an optimal user experience.</span></p><h4 style=\"text-align: left;\"><b>4. Assistive Technology Testing</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">We test your website with screen readers, voice navigation tools, and other assistive technologies to ensure accessibility for users with visual, auditory, or mobility impairments.</span></p><h4 style=\"text-align: left;\"><b>5. Compliance Reporting</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">Receive a detailed audit report outlining violations, severity levels, and step-by-step remediation guidance to align your website with </span><b>ADA</b><span style=\"font-weight: 400;\"> and </span><b>WCAG</b><span style=\"font-weight: 400;\"> standards.</span></p><h4 style=\"text-align: left;\"><b>6. Continuous Monitoring &amp; Support</b></h4><p style=\"text-align: left;\"><span style=\"font-weight: 400;\">We offer ongoing support to ensure your website maintains compliance over time, adapting to new regulations and technological advancements.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Web Accessibility Audit Process",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>At Accessibility Innovations, we follow a structured and proven approach to web accessibility audits, ensuring compliance with ADA, WCAG, and other accessibility standards.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Step 1: Automated Audit</b></h3><p>We use industry-leading accessibility scanning tools to identify common issues such as missing alt text, improper headings, non-descriptive links, and color contrast violations.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Step 2: Manual Audit</b></h3><p>Our accessibility experts conduct a detailed manual review of site elements, including forms, buttons, interactive content, and navigation, ensuring compliance beyond automated testing limitations.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Step 3: Functional Audit</b></h3><p>We perform real-world user testing with individuals using assistive technologies such as screen readers, voice navigation tools, and keyboard-only navigation. This helps identify interaction challenges and ensures a seamless user experience for all.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Step 4: Language Accessibility Audit</b></h3><p>For multilingual websites, we assess content accessibility across languages, ensuring compliance with international accessibility guidelines and best practices.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<h3><b>Step 5: Usability Testing (Available Upon Request)</b></h3><p>We offer usability testing with testers who have various disabilities, using assistive technology to navigate your website. This real-user feedback helps refine the accessibility and usability of your digital platform.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Following our audit, we provide a detailed accessibility report outlining issues, prioritized recommendations, and best practices to achieve full compliance, helping you enhance usability while mitigating legal risks.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Why Choose Accessibility Innovations for Web Accessibility Auditing Services?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>When it comes to web accessibility audits, Accessibility Innovations stands out for several reasons:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Expert-Led Assessments",
+          "description": "<p>Our team consists of CPWA-certified professionals with extensive experience in ADA, WCAG, and global accessibility compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Compliance Solutions",
+          "description": "<p>We don\u2019t just identify accessibility issues\u2014we provide detailed guidance and ongoing support to help you achieve and maintain compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Customized Reports &amp; Action Plans",
+          "description": "<p>Every audit includes a personalized report with actionable insights, prioritizing issues based on severity and user impact.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Real-User Testing",
+          "description": "<p>We conduct assistive technology testing with real users to ensure a seamless experience for individuals with disabilities.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Monitoring &amp; Support",
+          "description": "<p>Compliance is an evolving process, and we offer continuous auditing services to keep your website accessible as regulations change.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Ensure your website complies with ADA and WCAG accessibility standards, while improving usability for all users.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Ensure your website is ADA &amp; WCAG-compliant with our expert web accessibility audit services. Contact Us today to get started!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "How Do I Know if My Website Needs an Accessibility Audit?",
+          "answer": "<p>If your website has not been tested for accessibility compliance or you\u2019ve received complaints about usability issues, it\u2019s time for an audit. Regular audits help businesses maintain compliance and improve digital inclusivity.</p>"
+        },
+        {
+          "question": "How Long Does a Web Accessibility Audit Take?",
+          "answer": "<p>The timeline depends on your website\u2019s size and complexity. A standard audit typically takes one to four weeks, with a detailed report and recommendations provided upon completion.</p>"
+        },
+        {
+          "question": "Do You Provide a Detailed Report After the Audit?",
+          "answer": "<p>Yes, our audits include a comprehensive report outlining all identified issues, their severity levels, and clear remediation steps to achieve compliance.</p>"
+        },
+        {
+          "question": "How Much Does a Web Accessibility Audit Cost?",
+          "answer": "<p>The cost varies based on your website\u2019s size, complexity, and required testing scope. Contact us for a personalized quote.</p>"
+        },
+        {
+          "question": "What Are the Most Common Accessibility Issues Found on Websites?",
+          "answer": "<p>Common issues include missing alternative text for images, poor color contrast, inaccessible forms, improper heading structures, and non-compliant navigation elements.</p>"
+        }
+      ],
+      "cta": ""
+    }
+  ]
+}

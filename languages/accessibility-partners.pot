@@ -1,0 +1,50 @@
+# Copyright (C) 2026 RedOxbird
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: SilverRide __VERSION__\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/accessibility-partners\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-29T17:42:57+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: accessibility-partners\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "SilverRide"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A modern, accessible WordPress theme built with Tailwind CSS 3 and fast refresh development workflow."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "RedOxbird"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Case Studies"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Page (Flexible)"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Demo Sections"
+msgstr ""
+
+#: single.php:172
+msgid "Pages:"
+msgstr ""

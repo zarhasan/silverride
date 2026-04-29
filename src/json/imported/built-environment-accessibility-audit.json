@@ -1,0 +1,338 @@
+{
+  "page_title": "Built Environment Accessibility Audit",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Built Environment Accessibility Audit",
+      "description": "<p>Ensuring built environment accessibility is critical for creating safe, inclusive, and ADA-compliant spaces. At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in built environment accessibility audits that help businesses, government agencies, and public institutions eliminate access barriers and achieve compliance with the Americans with Disabilities Act (ADA).</p><p>Our team performs comprehensive accessibility evaluations that review entrances, signage, restrooms, emergency features, and more. With our proven process, we deliver clear, actionable insights to help you meet federal accessibility regulations, improve user experience, and create truly barrier-free environments.</p><p>Ensure your facility is ADA-compliant and accessible &#8211; Contact Us today for a professional built environment accessibility audit.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/03/Built-Environment-Accessibility-Audit.webp",
+        "alt": "A vibrant urban sidewalk scene with pedestrians, a person in a wheelchair, and a woman reading on a bench amidst trees and modern buildings, illustrating the Built Environment Accessibility Audit in action."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "What Are Built Environment Accessibility Audits?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>A built environment accessibility audit is a full inspection of your physical space to identify accessibility issues and align your facility with ADA standards and universal design principles. Our audits also factor in building code <a href=\"https://accessibilityinnovations.com/accessibility-audit-services/\">accessibility audit</a> needs to address federal and local compliance requirements.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Areas assessed include:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Entrances and Exits",
+          "description": "<p><span style=\"font-weight: 400;\">Doorways, ramps, stairs, and pathways for wheelchair access.</span></p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Restrooms and Changing Areas",
+          "description": "<p>Grab bars, stall clearances, sink heights, and accessible fixtures.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Signage and Wayfinding",
+          "description": "<p><b><span style=\"font-weight: 400;\">Braille, tactile text, high contrast, and directional accuracy (accessibility signage audit).</span></b></p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Parking and Pathways",
+          "description": "<p>ADA-compliant parking and barrier-free walkways.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Emergency Exits",
+          "description": "<p><span style=\"font-weight: 400;\">Accessible alarms, signage, and exit paths.</span></p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Through this process, you\u2019ll meet ADA mandates, minimize risk, and foster a safe and inclusive environment.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Accessibility Audits Process",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We make your environment accessibility assessment easy and straightforward. Here\u2019s how it works:</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><b>Step 1: Review</b><span style=\"font-weight: 400;\"> \u2013 We begin by reviewing architectural plans, existing compliance reports, and relevant building codes.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><b>Step 2: Test &amp; Inspect</b><span style=\"font-weight: 400;\"> \u2013 Our team visits the site to physically evaluate entries, routes, signage, amenities, and more.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><b>Step 3: Report</b><span style=\"font-weight: 400;\"> \u2013 We deliver a detailed, prioritized report outlining barriers, violations, and solutions for ADA compliance and inclusive access.</span></li></ul><p style=\"text-align: center;\"><span style=\"font-weight: 400;\">Our process helps simplify compliance and gives you a clear path to improving accessibility across all facilities.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Built Environment Accessibility Audits Include",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>At Accessibility Innovations, our built environment accessibility audits are designed to identify barriers and provide actionable recommendations to meet ADA, <a href=\"https://www.ansi.org/\" target=\"_blank\" rel=\"nofollow noopener\">ANSI</a>, and local building codes. Our audits include:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Physical Space Evaluations",
+          "description": "<p>We inspect your layout and structural features to ensure they meet ADA and ANSI guidelines.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Wheelchair and Mobility Access Assessment",
+          "description": "<p>We assess ramps, elevators, door thresholds, and floor clearances for mobility device users.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Signage and Wayfinding Compliance",
+          "description": "<p>We check all interior and exterior signage for size, contrast, mounting height, tactile elements, and Braille inclusion.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "Restroom and Facility Accessibility",
+          "description": "<p>We ensure your restrooms and changing areas meet all ADA specifications, including stalls, sinks, dispensers, and turning radii.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Ongoing-Accessibility-Maintenance.svg",
+            "alt": ""
+          },
+          "title": "Parking Lot & Pathway Compliance",
+          "description": "<p>We review accessible parking signage, striping, slope, curb cuts, and pathway surfaces.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Correcting-reading-order-2.svg",
+            "alt": ""
+          },
+          "title": "Emergency Preparedness & Safety Audits",
+          "description": "<p>We evaluate fire exits, visual/audible alarms, and signage for accessibility under emergency conditions.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Manual-Testing.svg",
+            "alt": ""
+          },
+          "title": "Compliance Reporting",
+          "description": "<p style=\"text-align: center;\">We deliver a concise report highlighting accessibility issues, recommended actions, and key priority areas.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Get a Built Environment Accessibility Audit Today!",
+      "subtitle": "",
+      "description": "<p>Ensure your facility is barrier-free, ADA-compliant, and accessible to everyone. Contact Accessibility Innovations to schedule a built environment accessibility audit and improve inclusivity and compliance!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Why Choose Accessibility Innovations for Built Environment Accessibility Audit?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>From barrier-free design audits to full building accessibility audits, our expert team brings ADA knowledge, technical skill, and real-world experience. We help organizations avoid costly penalties, reduce risk, and improve access for everyone.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Certified ADA Experts",
+          "description": "<p>Our team includes <a href=\"https://www.accessibilityassociation.org/certified-professional-web-accessibility\" target=\"_blank\" rel=\"nofollow noopener\">CPWA-certified professionals</a> specializing in ADA and universal design compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive Audits",
+          "description": "<p>We provide detailed assessments covering every aspect of built environment accessibility, from entry points to emergency preparedness.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Tailored Recommendations",
+          "description": "<p>We create customized compliance plans with cost-effective solutions tailored to your building type and industry.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Ongoing-Accessibility-Maintenance.svg",
+            "alt": ""
+          },
+          "title": "Legal Protection & Compliance",
+          "description": "<p>We help businesses and public facilities meet ADA compliance requirements, reducing the risk of lawsuits and ensuring accessibility for all.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Support & Training",
+          "description": "<p>We offer staff training on accessibility best practices and ongoing monitoring to maintain compliance as regulations evolve.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Ensure your facility is fully accessible and legally compliant\u2014Book an Audit today!</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "What is the purpose of a built environment accessibility audit?",
+          "answer": "<p>A built environment accessibility audit identifies and removes barriers that prevent individuals with disabilities from accessing physical spaces, ensuring compliance with ADA regulations and universal design principles.</p>"
+        },
+        {
+          "question": "Who conducts built environment accessibility audits?",
+          "answer": "<p>Certified ADA consultants, accessibility specialists, and universal design experts conduct these audits to assess compliance with accessibility laws and building codes.</p>"
+        },
+        {
+          "question": "Why is an accessibility audit important for my business?",
+          "answer": "<p>An accessibility audit ensures your facility is ADA-compliant, accessible to all users, and free from potential legal risks. It also improves safety, usability, and inclusivity.</p>"
+        },
+        {
+          "question": "Who needs a built environment accessibility audit?",
+          "answer": "<p>Businesses, government institutions, healthcare facilities, educational institutions, and public venues must comply with accessibility standards and benefit from these audits.</p>"
+        },
+        {
+          "question": "How do I prepare for a built environment accessibility audit?",
+          "answer": "<p>Gather floor plans, past accessibility reports, and building codes. Identify key areas of concern, such as entryways, restrooms, and pathways, to ensure a smooth audit process.</p>"
+        }
+      ],
+      "cta": ""
+    }
+  ]
+}

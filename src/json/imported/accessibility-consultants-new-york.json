@@ -1,0 +1,385 @@
+{
+  "page_title": "Accessibility Consultants New York",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Consultants New York",
+      "description": "<p>New York is one of the most active states for ADA digital accessibility enforcement, making proactive compliance essential for organizations serving the public. Businesses, government agencies, schools, and healthcare providers must meet ADA and WCAG requirements for websites, digital documents, and physical environments.</p><p>Accessibility Innovations provides expert accessibility consulting in New York, helping organizations identify barriers, reduce compliance risk, and create inclusive experiences. Our certified consultants deliver ADA compliance services, WCAG evaluations, audits, remediation guidance, and training to help you achieve and maintain compliance with confidence.</p><p>Ready to strengthen your accessibility compliance? Contact Accessibility Innovations today to schedule a consultation.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2026/01/freepik__35mm-film-photography-professional-ada-accessibili__26621.png",
+        "alt": "Accessibility consultants New York conducting a digital accessibility audit and compliance review"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Achieve ADA Compliance With Accessibility Innovations",
+      "description": "<p>Our accessibility consultants in New York help organizations meet ADA Title II and Title III obligations, along with federal and state accessibility requirements. ADA compliance is not optional businesses must ensure equal access, barrier removal, accessible communication, and digital accessibility. New York's public-facing organizations must also follow WCAG for websites, apps, and online services.</p><p><strong>Who We Serve:</strong></p><ul><li>Government entities &amp; city agencies</li><li>Schools, colleges, and universities</li><li>Nonprofits &amp; community organizations</li><li>Healthcare providers &amp; hospitals</li><li>Private-sector companies of all sizes</li></ul><p><strong>Our Services Include:</strong></p><ul><li>Accessibility audits (digital, documents, built-environment)</li><li>ADA &amp; WCAG remediation consulting</li><li>Staff training programs on accessibility standards</li><li>Accessibility statements, policies, &amp; compliance documentation</li></ul><p>Our goal is to help your organization meet ADA requirements smoothly and avoid legal and financial risks while promoting equitable access.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Accessibility Consulting Approach",
+      "description": "<p>Our approach is structured, collaborative, and transparent. We help organizations understand barriers, meet compliance goals, and integrate accessibility into long-term operations.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Discovery & Assessment",
+          "description": "<p>We begin by reviewing your digital platforms, physical spaces, workflows, and policies.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Providing-sufficient-color-contrast-2.svg",
+            "alt": ""
+          },
+          "title": "Manual & Automated Testing",
+          "description": "<p>Our consultants use WCAG-compliant automated tools combined with manual, assistive-technology user testing.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Automated-Testing.svg",
+            "alt": ""
+          },
+          "title": "Barrier Identification & Reporting",
+          "description": "<p>We identify issues affecting usability and compliance and provide clear, prioritized remediation guidance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Test-procedures-and-results.svg",
+            "alt": ""
+          },
+          "title": "Remediation Support & Consulting",
+          "description": "<p>We guide internal teams or external vendors on how to fix accessibility issues correctly.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Ongoing-Accessibility-Maintenance.svg",
+            "alt": ""
+          },
+          "title": "Validation & Compliance Assurance",
+          "description": "<p>We retest and validate updates to ensure WCAG and ADA compliance is fully achieved.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Plan & Policies",
+      "description": "<p>We help organizations create or refine accessibility strategies that align with legal standards and business goals.</p>",
+      "items": [
+        {
+          "title": "Develop Blueprint Accessibility Strategies",
+          "description": ""
+        },
+        {
+          "title": "Identify and address organizational barriers",
+          "description": ""
+        },
+        {
+          "title": "Align procurement practices with accessibility requirements",
+          "description": ""
+        },
+        {
+          "title": "Review compliance posture across ADA, WCAG, and other standards",
+          "description": ""
+        },
+        {
+          "title": "Enhance customer service and HR practices to support accessibility",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Audits and Certifications",
+      "description": "<p>Our web accessibility consultants conduct comprehensive WCAG audits, combining automated testing, manual reviews, and real assistive technology evaluations.</p>",
+      "items": [
+        {
+          "title": "Professional ADA & WCAG audits",
+          "description": ""
+        },
+        {
+          "title": "Compliance reporting for websites, apps, and digital content",
+          "description": ""
+        },
+        {
+          "title": "Actionable remediation plans",
+          "description": ""
+        },
+        {
+          "title": "Clear methodologies using automated tools + manual AT testing",
+          "description": ""
+        },
+        {
+          "title": "Assistive technology testing using screen readers, keyboard navigation, and real user workflows",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+        "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Training",
+      "description": "<p>We offer customized training programs for teams across New York.</p>",
+      "items": [
+        {
+          "title": "Tailored training for IT, HR, Facilities, and Customer Support",
+          "description": ""
+        },
+        {
+          "title": "Ongoing learning opportunities for evolving ADA/WCAG standards",
+          "description": ""
+        },
+        {
+          "title": "Feedback-driven training improvements",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+        "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "compliance-cards",
+      "grid_size": 3,
+      "title": "Why Choose Us as Your Accessibility Consultant in New York?",
+      "description": "<p>When it comes to web accessibility audits, Accessibility Innovations stands out for several reasons:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Certified Experts",
+          "description": "<p>Our CPWA-, IAAP-, and ADA-trained specialists deliver accurate, standards-based consulting.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "New York Regulation Knowledge",
+          "description": "<p>We understand local, state, and federal accessibility codes affecting businesses and public organizations.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Full-Scope Services",
+          "description": "<p>We offer digital audits, ADA remediation, built-environment reviews, training, and policy development.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Trusted Across U.S.",
+          "description": "<p>We serve municipalities, technology companies, higher-education institutions, nonprofits, and enterprise organizations.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Inclusive by Design",
+          "description": "<p>We test using assistive technologies and real users to validate WCAG and ADA compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Improve digital inclusivity, prevent lawsuits, and boost SEO with Accessibility Innovations. Book a Consultation and let our expert web accessibility consultants help you create an accessible, user-friendly website!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our ADA Accessibility Consulting Services in New York",
+      "description": "<p>Explore our full suite of consulting services tailored for New York organizations:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "ADA Physical Space Accessibility Audits",
+          "description": "<p>Assess entrances, restrooms, parking, signage, and interior routes for ADA compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Website and App Accessibility Testing (WCAG 2.2)",
+          "description": "<p>Manual + automated audits for websites, mobile apps, portals, and kiosks.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Document Accessibility Remediation (PDF, Word, PPT)",
+          "description": "<p>Ensure all digital documents meet ADA, WCAG, and PDF/UA standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Policy Writing & Risk Management",
+          "description": "<p>Create ADA policies, statements, and compliance frameworks to reduce legal risk.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "VPAT Reports (For Government Contracts)",
+          "description": "<p>We prepare accurate VPAT 2.4 and ACR reports to support federal procurement processes.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Staff Accessibility Training & Workshops",
+          "description": "<p>Role-based ADA/WCAG training for technical and non-technical teams.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Accessibility Monitoring & Consulting",
+          "description": "<p>Long-term consulting to help organizations maintain compliance as standards evolve.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>We support organizations across New York, including New York City, Albany, Buffalo, Rochester, Long Island, and surrounding regions.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What services do your accessibility consultants in New York provide?",
+          "answer": "<p>We offer ADA &amp; WCAG audits, remediation consulting, document accessibility, training, VPAT preparation, and physical accessibility assessments.</p>"
+        },
+        {
+          "question": "How can an accessibility consultant help my New York business meet ADA compliance?",
+          "answer": "<p>We identify barriers, provide remediation guidance, train staff, and help you meet Title II &amp; III requirements and WCAG standards.</p>"
+        },
+        {
+          "question": "What is included in an ADA accessibility audit for New York businesses?",
+          "answer": "<p>Audits include issue identification, WCAG scoring, ADA gap analysis, remediation recommendations, and validation testing.</p>"
+        },
+        {
+          "question": "Do you offer both digital and physical accessibility assessments in New York?",
+          "answer": "<p>Yes — we provide web/app audits, document remediation, and built-environment assessments based on ADA Standards for Accessible Design.</p>"
+        },
+        {
+          "question": "Do New York websites need to comply with WCAG for ADA compliance?",
+          "answer": "<p>Yes. WCAG is the widely recognized standard used to measure ADA digital accessibility compliance.</p>"
+        },
+        {
+          "question": "How can I tell if my website needs accessibility remediation?",
+          "answer": "<p>If screen reader users encounter barriers, WCAG tests fail, or customers report usability issues, remediation is needed.</p>"
+        },
+        {
+          "question": "How long does an accessibility audit take for New York organizations?",
+          "answer": "<p>Most audits take 2–4 weeks, depending on website size, number of templates, and complexity.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "locations",
+      "title": "Our Office",
+      "map_embed": "https://maps.google.com/maps?q=9245%20Laguna%20Springs%20Drive%2C%20Suite%20200%2C%20Elk%20Grove%2C%20California%2095758&t=m&z=20&output=embed",
+      "map_link": "https://maps.google.com/maps?q=9245%20Laguna%20Springs%20Drive%2C%20Suite%20200%2C%20Elk%20Grove%2C%20California%2095758",
+      "locations": [
+        {
+          "name": "Head Office (California)",
+          "address": "9245 Laguna Springs Dr. Suite 200, Elk Grove, CA 95758, United States",
+          "phone": "1-866-245-A11Y (Toll-Free) | (916) 509-7017 (California)",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday: 08:30 A.M. – 5:00 P.M. | Saturday – Closed | Sunday – Closed"
+        }
+      ]
+    }
+  ]
+}

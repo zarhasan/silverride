@@ -1,0 +1,231 @@
+{
+  "page_title": "Web Accessibility Training Courses",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Web Accessibility Training Courses",
+      "description": "<p>Welcome to Web Accessibility Training Courses by <a href=\"https://accessibilityinnovations.com\">Accessibility Innovations</a>, your pathway to mastering inclusive digital design. In these courses, you'll learn how to build accessible websites that comply with WCAG standards and meet ADA requirements, while creating experiences that work for everyone.</p><p>Whether you're a front-end developer, UX/UI designer, content strategist, product manager, or QA specialist, our training combines theory, real-world use cases, and hands-on labs so you can confidently implement accessibility best practices. Join us to elevate your accessibility skills, reduce compliance risk, and make your digital products truly inclusive.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/05/seminar-concept-illustration_114360-7480.avif",
+        "alt": "web accessibility training courses"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Web Accessibility Training Course Overview",
+      "description": "<p>Our course gives you a clear understanding of web accessibility, why it matters, and how to implement it. You'll learn the foundational concepts of inclusive digital design, discover key standards like WCAG 2.1/2.2, and gain hands-on experience with accessibility testing tools and remediation techniques.</p><p>This course is ideal for beginners and intermediate professionals and focuses on making digital content compliant with ADA, Section 508, and WCAG guidelines.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Course Duration",
+      "description": "<p>4 weeks (self-paced or instructor-led sessions available)</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Learning Outcomes",
+      "description": "<ol><li>Understand the importance of web accessibility</li><li>Interpret and apply WCAG success criteria</li><li>Use tools like WAVE and Lighthouse to test digital content</li><li>Fix common accessibility issues related to forms, navigation, and multimedia</li></ol>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 3,
+      "title": "Target Audience",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Web Developers",
+          "description": "<p>Learn how to build accessible websites and components that follow WCAG, Section 508, and ADA from the outset and avoid common pitfalls such as inaccessible forms, navigation, or multimedia.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "UX/UI Designers",
+          "description": "<p>Understand inclusive design principles to create digital experiences that support usability and accessibility across all user groups from layout, color and navigation to accessible interactive elements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Content Creators & Editors",
+          "description": "<p>Gain skills to produce accessible text, media, and documents, ensuring ongoing updates stay compliant with WCAG, ADA, and Section 508 standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "QA & Product Teams",
+          "description": "<p>Improve your ability to test, validate, and report accessibility issues to ensure digital products meet usability, WCAG, and ADA compliance standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Businesses & Organizations",
+          "description": "<p>Strengthen team-wide accessibility knowledge, reduce compliance risk, and build internal capacity to maintain accessible, inclusive digital products over time.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "description": "<p>Undergoing an audit or preparing a compliance report? Our experts are here to assist you every step of the way. Contact Accessibility Innovations today to achieve full accessibility compliance and improve the user experience for all!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Course Curriculum",
+      "description": "<p>Our curriculum is broken into four structured weekly lessons, each building your skill set step-by-step:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Introduction to Web Accessibility",
+          "description": "<p>Web accessibility ensures that digital content is usable by everyone including people with disabilities. In this course, you'll begin with the foundational principles of accessibility, learning how different impairments (visual, auditory, motor, cognitive) affect web experiences. We also introduce you to the WCAG 2.1 guidelines, the ADA, and why compliance is not just about the law but about inclusive design.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Understanding WCAG Guidelines",
+          "description": "<p>In this module, you'll explore the Web Content Accessibility Guidelines (WCAG) in detail, focusing on the Perceivable, Operable, Understandable, and Robust (POUR) principles. You'll learn how to apply WCAG 2.1 success criteria to real websites and how to evaluate content for AAA-level accessibility. This training goes beyond checklists, it helps you interpret WCAG practically and contextually.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Accessible Design and UX Best Practices",
+          "description": "<p>Design plays a critical role in accessibility. You'll learn how to design interfaces with color contrast, typography, and responsive layout that support users with visual, cognitive, and mobility disabilities. The course includes hands-on exercises in designing accessible navigation, forms, and interactive components, with special focus on usability testing and inclusive UX patterns.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Screen Readers and Assistive Technologies",
+          "description": "<p>Gain first-hand knowledge of how screen readers, screen magnifiers, and voice input tools interact with websites. You'll practice navigating pages using NVDA and VoiceOver, and learn how to test for screen reader compatibility. Understanding these tools will help you code and design with empathy, ensuring content is truly navigable by all.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Remediating Common Accessibility Issues",
+          "description": "<p>This module focuses on identifying and fixing common barriers to accessibility such as missing alt text, inaccessible forms, keyboard traps, improper heading structures, and dynamic content issues. You'll learn remediation strategies for both new and legacy websites, with real examples and recommended tools.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Testing and Evaluation",
+          "description": "<p>Learn how to evaluate web content using automated tools, manual testing, and user testing with people with disabilities. This section covers how to use tools like axe DevTools, WAVE, Lighthouse, and manual checklists for thorough assessments. You'll leave with a strong understanding of how to build accessible testing into your QA workflows.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Creating a Culture of Accessibility",
+          "description": "<p>Lasting accessibility requires more than technical fixes, it requires a shift in mindset. This module teaches you how to advocate for accessibility within your organization, write accessible content, and integrate inclusive thinking into every part of the product lifecycle. You'll also explore how accessibility supports diversity, equity, and inclusion (DEI) initiatives.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "Where can I learn web accessibility?",
+          "answer": "<p>Learn web accessibility through online platforms, workshops, and self-paced courses. Our training covers WCAG, accessible design, and inclusive development for all skill levels.</p>"
+        },
+        {
+          "question": "How to get web accessibility certification?",
+          "answer": "<p>The IAAP offers certifications like CPACC and WAS. Our courses prepare you for these exams with in-depth content and exercises aligned with industry standards.</p>"
+        },
+        {
+          "question": "What is a web accessibility specialist?",
+          "answer": "<p>A web accessibility specialist ensures digital content is accessible to people with disabilities. They conduct audits, advise on best practices, and guide remediation efforts.</p>"
+        },
+        {
+          "question": "How to get an ADA certification?",
+          "answer": "<p>There is no official \"ADA certification,\" but organizations can demonstrate compliance through audits, training, and third-party validation. Our courses help with this process.</p>"
+        },
+        {
+          "question": "Is WCAG legally required?",
+          "answer": "<p>WCAG guidelines are not laws, but they are used as the standard for legal compliance, especially under the ADA. Non-compliance can result in legal risk.</p>"
+        },
+        {
+          "question": "What is the difference between ADA and WCAG?",
+          "answer": "<p>The ADA is a law prohibiting discrimination based on disability. WCAG provides the technical standards for achieving ADA compliance online.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your Compliance Consultation",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.</p>",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "page_title": "Expert WCAG Compliance Consultants in US",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert WCAG Compliance Consultants in US",
+      "description": "<p>Looking to make your website fully accessible and ADA-compliant? Accessibility Innovations is your trusted partner for WCAG compliance consulting across the U.S. Our certified consultants specialize in auditing, identifying, and fixing digital accessibility barriers based on the Web Content Accessibility Guidelines (WCAG).</p><p>We help businesses, government agencies, nonprofits, and private organizations meet ADA, Section 508, and other U.S. accessibility requirements. Our goal is to make your website inclusive, user-friendly, and legally compliant—while enhancing user experience and expanding your reach.</p><p>Whether you need a basic audit or complete remediation, our WCAG compliance specialists are here to help.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/07/freepik__the-style-is-candid-image-photography-with-natural__14660.png",
+        "alt": "Business professional reviewing website accessibility reports on a computer screen, ensuring WCAG compliance for digital content."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Understanding Web Content Accessibility Guidelines",
+      "description": "<p>The Web Content Accessibility Guidelines (WCAG) are internationally recognized standards developed by the W3C (World Wide Web Consortium). Their goal is to ensure digital content—such as websites, mobile apps, and PDFs—is accessible to users with a wide range of disabilities, including visual, auditory, motor, and cognitive impairments.</p><p>WCAG is organized around four key principles: content must be Perceivable, Operable, Understandable, and Robust (POUR). The guidelines offer three levels of conformance:</p><ul><li><strong>Level A:</strong> Basic accessibility</li><li><strong>Level AA:</strong> The legal standard for most organizations</li><li><strong>Level AAA:</strong> The highest level, often optional</li></ul><p>In the United States, many ADA-related lawsuits and Department of Justice (DOJ) guidance refer to WCAG—especially WCAG 2.1 and 2.2—as the standard benchmark for digital accessibility.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Priority Key Areas Covered Under WCAG",
+      "description": "<p>We help organizations address the most critical accessibility elements required by WCAG. Our audits and services cover the following areas:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Accessible Navigation",
+          "description": "<p>Ensuring all users can move through your website using a keyboard, screen reader, or other assistive technology.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Readable & Understandable Content",
+          "description": "<p>Structuring content using clear headings, plain language, and predictable design for ease of comprehension.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Conformance-levels.svg",
+            "alt": ""
+          },
+          "title": "Interactive Component Compliance",
+          "description": "<p>Making forms, buttons, dropdowns, and sliders accessible to users with assistive tech and alternative input methods.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Contrast & Visual Accessibility",
+          "description": "<p>Ensuring sufficient color contrast and scalable text to accommodate users with visual impairments.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Test-procedures-and-results.svg",
+            "alt": ""
+          },
+          "title": "Assistive Tech Compatibility",
+          "description": "<p>Testing compatibility with screen readers (JAWS, NVDA), voice input tools, and browser-based accessibility settings.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our WCAG Compliance Services",
+      "description": "<p>Our comprehensive suite of WCAG compliance services is designed to meet the diverse needs of U.S.-based organizations, whether you're just beginning your accessibility journey or refining existing efforts.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Audits & Certifications",
+          "description": "<p>In-depth manual and automated testing aligned with WCAG 2.1 or 2.2. We provide audit reports, severity ratings, and recommended fixes.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-audit-services/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Remediation Roadmaps",
+          "description": "<p>Custom plans outlining actionable steps to resolve accessibility barriers in your digital content and codebase.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-remediation-services/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "Policy Development & Governance",
+          "description": "<p>Assistance with writing accessibility policies, setting internal standards, and embedding accessibility into your organizational culture.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Training & Coaching",
+          "description": "<p>Interactive training programs for developers, content creators, designers, and leadership—designed to build internal capacity and awareness.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-training/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Ongoing-Accessibility-Maintenance.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Accessibility Support",
+          "description": "<p>Quarterly audits, continuous monitoring, and updates to ensure your platforms remain compliant as technologies and guidelines evolve.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Whether you're undergoing an accessibility audit or need help with compliance reports, we're here to support you. Contact us today to ensure your product is inclusive, accessible, and compliant!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Why Choose Accessibility Innovations for WCAG Compliance Consulting",
+      "description": "<p>Accessibility Innovations stands out as a top WCAG audit consultant in the United States because of our:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Certified Accessibility Experts",
+          "description": "<p>Our team includes CPWA- and IAAP-certified professionals with years of hands-on experience.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Proven Success Across Industries",
+          "description": "<p>From e-commerce to government to healthcare, we've helped clients navigate complex accessibility challenges with confidence.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Tailored Solutions",
+          "description": "<p>We don't believe in one-size-fits-all. Every WCAG audit and remediation plan is customized for your business goals and platforms.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Real-User Testing",
+          "description": "<p>We validate our findings and fixes through usability testing with screen reader users and individuals with disabilities.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Global Standards Alignment",
+          "description": "<p>Our methods adhere to WCAG, ADA, Section 508, and EN 301 549—ensuring broad compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Continuous Support",
+          "description": "<p>We're not just a one-time vendor—we're your long-term accessibility partner, helping you grow with confidence.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "links",
+      "links": [
+        {
+          "link": {
+            "title": "Accessibility Audit Services",
+            "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Accessibility Evaluation Report",
+            "url": "https://accessibilityinnovations.com/accessibility-evaluation-report/",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What does WCAG compliant mean?",
+          "answer": "<p>It means your website or digital content meets the Web Content Accessibility Guidelines, ensuring accessibility for people with disabilities.</p>"
+        },
+        {
+          "question": "What is the WCAG compliance law?",
+          "answer": "<p>WCAG isn't a law but is the standard referenced by the ADA and Section 508 to measure digital accessibility compliance.</p>"
+        },
+        {
+          "question": "What happens if you are not WCAG compliant?",
+          "answer": "<p>You risk ADA lawsuits, penalties, reputational damage, and excluding users with disabilities.</p>"
+        },
+        {
+          "question": "What is the difference between WCAG and ADA compliant?",
+          "answer": "<p>The ADA is the law, while WCAG provides the technical guidelines to achieve compliance.</p>"
+        },
+        {
+          "question": "Is WCAG 2.0 a legal requirement in the USA?",
+          "answer": "<p>Not directly, but courts and the DOJ use WCAG 2.0 and 2.1 as benchmarks for ADA compliance.</p>"
+        },
+        {
+          "question": "What is the most common WCAG failure?",
+          "answer": "<p>Frequent failures include missing alt text, poor color contrast, and lack of keyboard accessibility.</p>"
+        },
+        {
+          "question": "How do I make my website WCAG compliant?",
+          "answer": "<p>Audit your site, fix barriers, test with assistive tech, and consider expert accessibility remediation services. Contact us today to get Started with WCAG compliance.</p>"
+        }
+      ],
+      "cta": {
+        "title": "Contact Us",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      }
+    }
+  ]
+}

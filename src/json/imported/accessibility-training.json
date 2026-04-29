@@ -1,0 +1,320 @@
+{
+  "page_title": "Accessibility Training Academy | Accessibility Innovations",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "<b>Accessibility Training Academy</b>",
+      "description": "<p>At Accessibility Innovations, we believe that accessibility training is essential for creating inclusive environments while meeting compliance needs. Our Accessibility Training Academy in United States equips organizations with the knowledge and skills necessary to implement accessibility at all levels.</p><p>Whether you&#8217;re a small business or a global enterprise, our tailored training programs empower your team to comply with legal requirements, champion inclusivity, and build sustainable accessibility practices. From foundational principles to advanced techniques, we&#8217;ve got your accessibility journey covered.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Accessibility-Training.webp",
+        "alt": "An illustration of a group brainstorming around a mobile device. A person is speaking and some participants have questions."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "<b>Accessibility Trainings for Every Organization</b>",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": "",
+          "title": "Web Accessibility Training Courses",
+          "description": "<p>We offer web accessibility courses for all levels, from beginners to advanced professionals. Beginner courses cover the basics of accessibility and its application to websites. Intermediate courses focus on implementing WCAG guidelines, conducting audits, and integrating accessibility into UX design. Advanced courses address complex challenges, advanced techniques, and comprehensive compliance tests. Each course equips you with skills to create inclusive digital experiences.</p>",
+          "link": {
+            "title": "Read More About Web Accessibility",
+            "url": "/web-accessibility-training-courses/",
+            "target": ""
+          }
+        },
+        {
+          "image": "",
+          "title": "Document Accessibility Training Courses",
+          "description": "<p>Our document accessibility training program offers courses for all skill levels. Beginners learn to create accessible documents in Word, PDF, and HTML. Intermediate courses cover Microsoft Office apps, templates, and checkers. Advanced courses focus on accessible forms, PDF/UA compliance, and applying WCAG. Specialized courses include multimedia, testing, fixing issues, and Universal Design. Each course features hands-on learning through online tutorials, workshops, and comprehensive resources.</p>",
+          "link": {
+            "title": "Read More About Document Accessibility",
+            "url": "/document-accessibility-training-courses/",
+            "target": ""
+          }
+        },
+        {
+          "image": "",
+          "title": "Adobe InDesign Accessibility Training",
+          "description": "<p>Learn techniques to make content accessible in Adobe InDesign, covering text formatting, graphics, reading order, and accessible tags. Key topics include tagging for PDF export, alternative text, table headers, and ensuring proper flow for assistive technology. Advanced training covers complex table formatting, cross-references, layers, and form fields. Both courses offer certificates of completion and enhance skills in creating accessible digital documents.</p>",
+          "link": {
+            "title": "Read More About Adobe InDesign",
+            "url": "/adobe-indesign-accessibility-training/",
+            "target": ""
+          }
+        },
+        {
+          "image": "",
+          "title": "Mobile Accessibility Training Courses",
+          "description": "<p>Gain a comprehensive understanding of native mobile accessibility, covering principles and best practices for iOS and Android applications. This intermediate to advanced course focuses on user needs, mobile design, and development techniques. Topics include content structure, custom actions, editable text fields, and testing strategies. Over two days, participants explore platform-specific accessibility features, UI components, color contrast, form interactions, and testing methodologies. The training ensures you can create inclusive, user-friendly apps for all users.</p>",
+          "link": {
+            "title": "Read More About Mobile Accessibility",
+            "url": "/mobile-accessibility-training-courses/",
+            "target": ""
+          }
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "<b>Why Your Organization Needs  Accessibility Training? </b>",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "",
+      "description": "",
+      "items": [
+        {"item": "<b>Ensure Legal Compliance:</b> Stay ahead of regulations like ADA, WCAG, and other accessibility laws, avoiding costly penalties."},
+        {"item": "<b>Reach a Broader Audience:</b> Accessibility training helps you connect with a diverse audience, including individuals with disabilities."},
+        {"item": "<b>Build Sustainable Practices:</b> Incorporate accessibility into your workflows, reducing the need for expensive retroactive fixes."},
+        {"item": "<b>Enhance Workplace Productivity:</b> Empower your team with tools and environments designed for inclusivity, boosting morale and efficiency."},
+        {"item": "<b>Boost Brand Reputation:</b> Position your organization as an innovator in accessibility and a leader in social responsibility."}
+      ],
+      "link": "",
+      "image": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "<b>Achieving Accessibility with Flexible & Tailored Trainings Paths</b>",
+      "description": "<p>At Accessibility Innovations, we recognize that every organization has unique needs and goals when it comes to accessibility. To address this, we offer flexible and tailored training delivery methods designed to fit your schedule, preferences, and learning objectives. Our training paths empower your team to build expertise in accessibility and confidently apply best practices.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "In-Person Training at Your Location",
+          "description": "<p>Our hands-on, customized accessibility training sessions are delivered by best accessibility experts directly at your workplace. These interactive workshops are ideal for engaging teams in collaborative learning environments and provide opportunities to address specific organizational challenges.</p><h4>Key Features:</h4><ul><li>Fully customizable training agendas to align with your industry and goals.</li><li>Real-time Q&A sessions for immediate clarification of complex topics.</li><li>Group activities and role-playing exercises to reinforce learning outcomes.</li><li>Ideal for fostering team collaboration and hands-on problem-solving.</li></ul>",
+          "link": {
+            "title": "Learn More About In-Person Training at Your Location",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Online Instructor-Led Training",
+          "description": "<p>Join real-time virtual classes led by our expert instructors, offering the convenience of online learning without compromising on interactivity. These sessions are designed for both teams and individuals, with structured schedules and comprehensive guidance.</p><h4>Key Features:</h4><ul><li>Scheduled sessions with live instructors to maintain engagement and structure.</li><li>Interactive discussions, breakout rooms, and assignments to enhance learning.</li><li>Opportunities to address specific questions and apply concepts to real-world scenarios.</li><li>Perfect for remote teams or individuals looking for guided learning experiences.</li></ul>",
+          "link": {
+            "title": "Learn More About Online Instructor-Led Training",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Adding-alternative-text-3.svg",
+            "alt": ""
+          },
+          "title": "Online Self-Paced Learning",
+          "description": "<p>Access a comprehensive library of training materials, including video tutorials, case studies, and exercises, to learn at your own pace. This flexible option is designed for busy professionals who prefer a more independent approach.</p><h4>Key Features:</h4><ul><li>24/7 access to an extensive range of training modules covering all aspects of accessibility.</li><li>Interactive quizzes, downloadable resources, and practical exercises to reinforce understanding.</li><li>Allows learners to revisit materials and progress at their own speed.</li><li>Suitable for individuals or organizations seeking a cost-effective training option.</li></ul>",
+          "link": {
+            "title": "Learn More About Online Self-Paced Learning",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Blended Learning",
+          "description": "<p>Combine the benefits of in-person and online training for a hybrid approach that maximizes flexibility and effectiveness. Blended learning is ideal for teams that require both the personal touch of live sessions and the convenience of self-paced resources.</p><h4>Key Features:</h4><ul><li>A mix of in-person workshops and online resources for a tailored experience.</li><li>Flexibility to schedule sessions that meet your team&#8217;s availability and learning preferences.</li><li>Deep-dive sessions into complex topics, complemented by real-time support from instructors.</li><li>Includes post-training support and follow-up materials to ensure ongoing success.</li></ul>",
+          "link": {
+            "title": "Learn More About Blended Learning",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a> is your trusted partner in offering best in class accessibility trainings. Whether you&#8217;re looking to meet legal requirements, foster inclusivity, or enhance user experience, our tailored accessibility training programs provide the tools you need to succeed. Contact us today or fill in the form below to take the next step in building a more accessible and inclusive organization!</p>"
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Your Path to Accessibility Expertise Begins Here!",
+      "subtitle": "",
+      "description": "<p>Empower your organization with the skills to create inclusive environments for everyone. Our accessibility academy offers comprehensive training on the latest standards and best practices, ensuring equal access and opportunities for all. Enroll today and lead the way in making a meaningful impact!</p>",
+      "link": {
+        "title": "Contact us now",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "<b>Why get an Accessibility Training From Accessibility Innovations</b>",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Solutions",
+          "description": "<p>Beyond training, we provide accessibility consulting and ongoing support to guide you through every step of your accessibility journey.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Tailored Programs",
+          "description": "<p>Our accessibility trainings are customized to meet your organization&#8217;s specific challenges and goals, ensuring maximum impact.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Proven Expertise",
+          "description": "<p>Our trainers are recognized industry leaders with hands-on experience in accessibility standards, tools, and implementation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive Options",
+          "description": "<p>From beginner courses to advanced workshops, we offer training that spans all aspects of accessibility.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Manual-Testing.svg",
+            "alt": ""
+          },
+          "title": "Sustainable Results",
+          "description": "<p>We focus on driving measurable outcomes, ensuring your investment delivers long-term accessibility benefits.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations.svg",
+            "alt": ""
+          },
+          "title": "Track Record of Success",
+          "description": "<p>We&#8217;ve helped organizations across industries achieve compliance, foster inclusivity, and enhance brand reputation.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>By offering a variety of training methods, we ensure that organizations of all sizes and structures can enhance their accessibility knowledge and skills effectively. Whether you prefer immersive, real-time sessions or the flexibility of self-paced learning, we have a training path that meets your needs.</p>"
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "<b>Frequently Asked Questions (FAQ's)</b>",
+      "description": "",
+      "items": [
+        {
+          "question": "Why is Accessibility Training important for businesses?",
+          "answer": "<p>It helps organizations meet legal standards, broaden their audience, and foster inclusivity while enhancing brand reputation and mitigating risks.</p>"
+        },
+        {
+          "question": "What topics are covered in Accessibility Training?",
+          "answer": "<p>Our courses include topics such as ADA compliance, WCAG guidelines, accessible design, document accessibility, mobile accessibility, and more.</p>"
+        },
+        {
+          "question": "How long does the training take?",
+          "answer": "<p>The duration varies depending on the scope of the training, ranging from a few hours to multi-day workshops.</p>"
+        },
+        {
+          "question": "Can training be conducted online?",
+          "answer": "<p>Yes, we offer instructor-led virtual training and self-paced online learning options to suit your needs.</p>"
+        },
+        {
+          "question": "How does Accessibility Training help with legal compliance?",
+          "answer": "<p>Our training equips your team with the expertise needed to comply with ADA, WCAG, and other standards, reducing the risk of legal issues.</p>"
+        },
+        {
+          "question": "Is Accessibility Training suitable for small businesses?",
+          "answer": "<p>Absolutely! Our flexible training programs cater to businesses of all sizes, ensuring accessibility solutions for everyone.</p>"
+        },
+        {
+          "question": "How do I schedule training for my team?",
+          "answer": "<p>Contact us today to discuss your needs and arrange a training session customized to your goals.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

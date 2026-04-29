@@ -1,0 +1,251 @@
+{
+  "page_title": "Website Accessibility Consultant",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Website Accessibility Consultant",
+      "description": "<p>Looking for a trusted website accessibility consultant to help your organization meet ADA and WCAG compliance standards? Accessibility Innovations provides expert guidance and testing solutions to ensure your website is accessible to people of all abilities. We work with businesses, government agencies, and nonprofits across the U.S. to evaluate, remediate, and future-proof their digital properties.</p><p>From comprehensive audits and conformance reports to live testing with assistive technology, our consultants deliver tailored strategies that align with ADA, Section 508, and WCAG 2.2 guidelines. Whether you're launching a new digital product or remediating an existing platform, we'll help you eliminate barriers and build with inclusion in mind.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/03/Website-Accessibility-Consultant.webp",
+        "alt": "Expert Website Accessibility Consultant leading a business meeting in a modern office, presenting information on a computer screen while the other participant listens attentively."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is Web Accessibility?",
+      "description": "<p>Web accessibility refers to the inclusive design and development of websites, tools, and technologies so that people with disabilities can perceive, navigate, interact with, and contribute to the web. At its core, accessibility is about removing barriers—whether visual, auditory, motor, or cognitive—that may prevent users from fully engaging with digital content.</p><p>Our consultants focus on compliance with standards such as:</p><ul><li><strong>ADA Title III</strong> – ensuring public-facing digital platforms are accessible</li><li><strong>Section 508</strong> – required for U.S. federal agencies and contractors</li><li><strong>WCAG 2.2</strong> – the international standard for web content accessibility</li></ul><p>With Accessibility Innovations, you'll gain clarity on your legal obligations and practical solutions that support all users.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Our Website Accessibility Consultation Involves",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Understanding Client's Concern",
+          "description": "<p>We begin with an intake session to understand your digital environment, timelines, user base, platform goals, and any previous accessibility efforts.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Evaluation",
+          "description": "<p>Our team conducts automated and manual audits of your website or app to assess compliance with WCAG success criteria. This includes screen reader testing, keyboard navigation, color contrast, and more.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-evaluation-report/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Conformance Levels",
+          "description": "<p>We help you understand WCAG conformance levels (A, AA, AAA) and determine the right target for your project or industry.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "Product Details",
+          "description": "<p>If your organization offers a digital product or SaaS platform, we also provide guidance on integrating accessibility into your design system and product roadmap.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why Partner with Our Website Accessibility Consultants",
+      "description": "<p>When it comes to web accessibility audits, Accessibility Innovations stands out for several reasons:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Detailed Reports",
+          "description": "<p>Receive structured, easy-to-read reports with severity rankings, code-level details, and remediation guidance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Customized Solutions",
+          "description": "<p>Every business is different. We tailor our testing, reporting, and consulting services to your content, platform, and user journey.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Industry-Recognized Tools",
+          "description": "<p>We use industry-leading tools (e.g., Axe, WAVE, Lighthouse) alongside manual review and assistive tech testing with native users.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Expert Guidance",
+          "description": "<p>Our consultants are certified in CPWA, IAAP, and Section 508 standards with experience across sectors—education, retail, government, and healthcare.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Proven Track Record",
+          "description": "<p>From national nonprofits to enterprise-level SaaS providers, we've helped clients achieve full accessibility compliance—and maintain it.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Improve digital inclusivity, prevent lawsuits, and boost SEO with Accessibility Innovations. Book a Consultation and let our expert web accessibility consultants help you create an accessible, user-friendly website!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why Choose Accessibility Innovations",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "Certified Professionals",
+          "description": "<p>Our team includes WCAG experts and ADA compliance consultants.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Services",
+          "description": "<p>From audits to remediation, we support your full accessibility lifecycle.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Trusted Nationwide",
+          "description": "<p>We work with small businesses, municipalities, universities, and Fortune 500 companies.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Live User Testing",
+          "description": "<p>We include feedback from testers with lived experience using assistive technology.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Automated-Testing.svg",
+            "alt": ""
+          },
+          "title": "Affordable Compliance Packages",
+          "description": "<p>We make accessibility attainable—no matter your team size or budget.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What does a website accessibility consultant do?",
+          "answer": "<p>A website accessibility consultant helps businesses identify and fix digital accessibility issues to ensure compliance with ADA, WCAG, and Section 508 regulations.</p>"
+        },
+        {
+          "question": "What are the risks of not having an accessible website?",
+          "answer": "<p>Non-compliance with ADA website requirements can lead to:</p><ul><li>Legal lawsuits and fines</li><li>Loss of customers due to inaccessibility</li><li>Lower SEO rankings and poor user experience</li></ul>"
+        },
+        {
+          "question": "How long does the website accessibility consulting process take?",
+          "answer": "<p>The timeline varies based on the complexity of your website. Basic audits take 1-2 weeks, while full remediation may require several months.</p>"
+        },
+        {
+          "question": "What services are included in accessibility consulting?",
+          "answer": "<ul><li>ADA & WCAG Compliance Audits</li><li>Website Accessibility Remediation</li><li>Digital Accessibility Training</li><li>Assistive Technology Testing</li><li>Ongoing Compliance Monitoring</li></ul>"
+        },
+        {
+          "question": "Who can benefit from accessibility consulting?",
+          "answer": "<p>All businesses and organizations, including:</p><ul><li>E-commerce stores</li><li>Corporate websites</li><li>Educational institutions</li><li>Healthcare providers</li><li>Government agencies</li></ul>"
+        },
+        {
+          "question": "How can I get started with accessibility consulting?",
+          "answer": "<p>Contact Accessibility Innovations to schedule a free consultation and start your journey toward full website accessibility compliance!</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

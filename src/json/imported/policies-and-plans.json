@@ -1,0 +1,298 @@
+{
+  "page_title": "Accessibility Policies and Plans Development",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "<b>Accessibility Policies and Plans</b>",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in developing custom accessibility policies and plans that ensure your organization remains compliant with key regulations like the ADA and WCAG. Our experts help you create a framework that supports both legal compliance and meaningful inclusivity.<br />Strong accessibility policies and planning aren\u2019t just checkboxes, they\u2019re essential for creating equitable digital and physical spaces. Our services are tailored to your organizational structure, risk profile, and goals, helping you build a culture of access from the ground up.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/10/Accessibility-Policies-and-Plans-Development.png",
+        "alt": ""
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Approach to Accessibility Planning",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>At Accessibility Innovations, we guide organizations through a structured, strategic process to build effective accessibility policies and plans. Our process is collaborative, scalable, and built for real-world implementation.</p><p>Step-by-step approach:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive Assessments",
+          "description": "<p>We begin by evaluating your current policies, programs, and accessibility readiness through audits and stakeholder interviews.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "Strategic Planning",
+          "description": "<p>Based on the assessment, we co-develop a roadmap aligned with your goals, resources, and compliance requirements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Inclusive Design",
+          "description": "<p>Our strategies incorporate inclusive design principles that go beyond compliance to ensure a positive experience for all users.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Implementation Support",
+          "description": "<p>We support rollout across departments with clear timelines, responsibility matrices, and guidance materials.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Training and Education",
+          "description": "<p>Customized training empowers your team to understand, adopt, and champion your accessibility initiatives.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Monitoring and Compliance",
+          "description": "<p>We build in mechanisms to measure progress, stay aligned with evolving standards, and support continuous improvement.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Areas We Cover",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Our accessibility policy and planning services address all major areas covered under international accessibility standards and regional regulations:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Information & Communications",
+          "description": "<p>Accessible websites, intranet content, documents, and digital tools.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Employment Practices",
+          "description": "<p>Inclusive hiring, accommodations, and employee onboarding processes.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "Built Environment & Facilities",
+          "description": "<p>Physical accessibility audits and planning for new or existing structures.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Transportation Accessibility",
+          "description": "<p>Accessibility in public and private transportation services.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "Customer Service Standards",
+          "description": "<p>Policies that ensure respectful, informed, and inclusive customer interactions.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p style=\"text-align: center;\"><span style=\"color: #000000;\">We tailor our services to your organization\u2019s sector, size, and regional compliance requirements.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Benefits of Partnering With Accessibility Innovations",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>When you choose Accessibility Innovations, you\u2019re choosing experience, strategy, and commitment. Here\u2019s what sets us apart:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Tailored solutions",
+          "description": "<p>Tailored solutions that match your goals and capacity, no generic templates.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Deep expertise",
+          "description": "<p>Deep expertise in American accessibility legislation including ADA, and WCAG standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Practical roadmaps",
+          "description": "<p>Practical roadmaps designed for implementation, not just shelfware.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Support for inclusivity culture",
+          "description": "<p>Support for inclusivity culture, not just compliance checklists.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Proven success",
+          "description": "<p>Proven success in helping organizations roll out policies that work \u2014 and last.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p style=\"text-align: center;\"><span style=\"color: #000000;\">Whether you\u2019re starting from scratch or improving existing policies, we help you move forward with confidence.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "What laws and standards do you help with?",
+          "answer": "<p>We support compliance with ADA, Section 508, WCAG 2.2, and local state requirements.</p>"
+        },
+        {
+          "question": "How long does it take to create an accessibility plan?",
+          "answer": "<p>Depending on scope, our plans typically take 4\u20138 weeks from assessment to final delivery. Larger organizations may require more time for stakeholder engagement and reviews.</p>"
+        },
+        {
+          "question": "Can policies be customized for small businesses?",
+          "answer": "<p><span style=\"font-weight: 400;\">Absolutely. We provide scalable plans for startups, nonprofits, and small businesses that need to meet accessibility obligations without overwhelming resources.</span></p>"
+        },
+        {
+          "question": "Do you offer ongoing support after implementation?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes\u2014we provide quarterly review meetings, policy updates, team training, and audit follow-up to ensure your accessibility strategy stays current and effective.</span></p>"
+        },
+        {
+          "question": "Do accessibility policies apply to digital content?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes. Accessibility planning includes digital platforms like websites, apps, PDFs, social media, and more. WCAG conformance is a major part of every policy we develop.</span></p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your <span class=\"text-color-change\"><br>Compliance Consultation</span>",
+      "description": "At Accessibility Innovations, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

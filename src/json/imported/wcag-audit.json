@@ -1,0 +1,272 @@
+{
+  "page_title": "WCAG Audit Services in US",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "WCAG Audit Services in US",
+      "description": "<p>At Accessibility Innovations, our WCAG audit services are designed to ensure your digital platforms meet the latest accessibility standards, including WCAG 2.2. Whether you're a business, educational institution, or public organization, we help you identify and eliminate accessibility barriers that affect users with disabilities.</p><p>Our expert auditors use a combination of manual testing and automated tools to perform thorough evaluations of websites, web apps, documents, and mobile platforms. The result? A detailed compliance roadmap to help you stay ahead of legal obligations and build trust with every user.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/09/freepik__the-style-is-candid-image-photography-with-natural__65993.png",
+        "alt": "Team collaborating in an office with charts and graphs on a large screen, representing a WCAG Audit for website accessibility compliance."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is a WCAG Audit and Why Do You Need One?",
+      "description": "<p>A WCAG audit is a systematic review of your digital content against the Web Content Accessibility Guidelines (WCAG)—international standards developed by the W3C to ensure online content is accessible to everyone, including people with visual, auditory, motor, or cognitive impairments.</p><p><strong>WCAG audits are essential for:</strong></p><ul><li>Identifying barriers that prevent users with disabilities from navigating or interacting with your content.</li><li>Meeting legal obligations under the ADA, Section 508, and other federal and state laws.</li><li>Reducing the risk of accessibility-related lawsuits.</li><li>Improving usability for all users—including those using screen readers, keyboard navigation, or assistive tech.</li></ul><p>Whether you're preparing for litigation, a procurement bid, or simply want to do the right thing, a WCAG audit helps you align your website or app with accessibility best practices.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Our WCAG Audit Process",
+      "description": "<p>We follow a 6-step WCAG audit process to ensure accuracy, compliance, and actionability:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+            "alt": "Get Free Initial Compliance Consultation"
+          },
+          "title": "Accessibility Plan & Policies",
+          "description": "<p>We begin by understanding your accessibility goals, content types, platforms, and user base. This helps us define scope, set priorities, and tailor the audit to your unique needs.</p><p><strong>Key Activities:</strong></p><ul><li>Draft or revise accessibility statements and internal protocols</li><li>Align policies with ADA, Section 504, and Section 508 requirements</li><li>Establish accountability through staff responsibilities and escalation processes</li><li>Incorporate accessibility into HR, customer service, and procurement workflows</li><li>Provide policy implementation roadmaps and templates</li></ul><p>Well-crafted accessibility policies support long-term compliance and foster an organizational culture of equity, safety, and accountability</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+            "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+          },
+          "title": "Digital Audits and Certifications",
+          "description": "<p>Our ADA digital accessibility audits ensure your websites, mobile apps, and digital documents meet compliance standards. Each audit includes:</p><ul><li>WCAG 2.2 Level AA testing (manual + automated)</li><li>Screen reader and keyboard testing</li><li>Remediation guidance and prioritized issue lists</li><li>Optional VPAT documentation and accessibility statement</li><li>Ongoing testing to support development teams</li></ul><p>Whether you're launching a new site or need to remediate an existing one, we'll help you validate accessibility and document conformance with confidence.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/gap-analysis-1.jpg",
+            "alt": "our employee taking measurements on client site conducting built environment accessibility assessment"
+          },
+          "title": "Built Environment Assessments",
+          "description": "<p>ADA compliance isn't just digital—it's physical too. Our built environment assessments help you uncover and fix barriers in your space. We assess:</p><ul><li>Entryways, ramps, and thresholds</li><li>Restroom accessibility (clearance, grab bars, signage)</li><li>Service counters and accessible seating</li><li>Pathways, elevators, signage, and lighting</li><li>Egress and emergency routes</li></ul><p>You'll receive a compliance report with annotated photos, prioritized fixes, and guidance to ensure safe, inclusive physical environments.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+            "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+          },
+          "title": "Training",
+          "description": "<p>Empower your team with ADA training designed for real-world application. We offer:</p><ul><li>Awareness training for leadership and frontline staff</li><li>Technical workshops for developers and designers</li><li>Facility training for maintenance and operations teams</li><li>Policy training for HR and legal departments</li><li>Custom sessions tailored to your industry or risk profile</li></ul><p>Our training helps your team understand what accessibility means, how to meet legal expectations, and how to embed inclusion into daily practices.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why Choose Us For WCAG Compliance Consultants",
+      "description": "<p>Here's why clients across the U.S. trust Accessibility Innovations for ADA consulting:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Certified Consultants",
+          "description": "<p>Our team includes IAAP CPWA and ADA-focused professionals with deep legal and technical knowledge.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Tailored Support",
+          "description": "<p>We design our services to meet your organization's size, industry, and compliance risks.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Cross-Disciplinary Expertise",
+          "description": "<p>We cover built environment, digital access, policy development, and communications.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Service",
+          "description": "<p>From assessment to remediation, we provide support at every stage of your compliance journey.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Lived Experience",
+          "description": "<p>Our audits involve testers and advisors with disabilities to ensure practical accessibility—not just technical conformance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 4,
+      "title": "More Accessibility Services",
+      "description": "<p>We offer more than just WCAG consulting. Our full suite of accessibility services includes:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "WCAG website and app audits",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Digital remediation (HTML, PDFs, forms, media)",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "VPAT/ACR creation for software and vendors",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Accessible procurement and vendor review",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Accessibility policy drafting and alignment",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Built environment code reviews and site inspections",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "User testing with assistive tech and real users",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Ongoing monitoring and support subscriptions",
+          "description": "",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Our services help you not only meet compliance—but become a leader in inclusive design.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "How does the ADA define a disability?",
+          "answer": "<p>The ADA defines a disability as a physical or mental impairment that substantially limits one or more major life activities.</p>"
+        },
+        {
+          "question": "What are reasonable accommodations under the ADA?",
+          "answer": "<p>These are modifications that allow individuals with disabilities to access employment or services—such as accessible entryways, assistive tech, or adjusted work schedules.</p>"
+        },
+        {
+          "question": "Is my building 'grandfathered in' under older ADA standards?",
+          "answer": "<p>No. The ADA requires facilities to make 'readily achievable' changes even in older buildings, especially during renovations or ownership transfers.</p>"
+        },
+        {
+          "question": "What is the difference between a service animal and an emotional support animal under the ADA?",
+          "answer": "<p>Only trained service animals that perform specific tasks are protected under ADA Title III. Emotional support animals are not guaranteed access in public accommodations.</p>"
+        },
+        {
+          "question": "How can I file an ADA complaint?",
+          "answer": "<p>You can file a complaint through the U.S. Department of Justice Civil Rights Division or your local civil rights office.</p>"
+        },
+        {
+          "question": "What are the requirements for digital accessibility under the ADA?",
+          "answer": "<p>Although the ADA doesn't specifically cite WCAG, courts consistently recognize WCAG 2.1/2.2 Level AA as the digital accessibility benchmark.</p>"
+        },
+        {
+          "question": "Are there penalties for non-compliance with the ADA?",
+          "answer": "<p>Yes. Non-compliance can result in lawsuits, settlements, reputational harm, or requirements to retroactively remediate inaccessible content.</p>"
+        },
+        {
+          "question": "Want to make ADA compliance clear and achievable?",
+          "answer": "<p>Contact us today to book your consultation and start your journey toward full accessibility.</p>"
+        }
+      ],
+      "cta": {
+        "title": "Contact Us",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "page_title": "Accessibility Resources!",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Resources!",
+      "description": "<p>Stay updated with the latest accessibility news, tips and resources! Check out our blogs, articles, guides and much more to keep yourself accessible and inclusive. Let's shape the future of accessibility together.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2024/03/Resources.webp",
+        "alt": "Illustration of a person in a wheelchair using a laptop to participate in a meeting. Various books are beside the laptop and on a nearby shelf for accessibility resources."
+      },
+      "links": [],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "grid_videos",
+      "title": "YouTube Videos",
+      "description": "",
+      "columns": 3,
+      "videos": [
+        {
+          "video_type": "url",
+          "video_url": "",
+          "thumbnail": {
+            "url": "/wp-content/uploads/2024/10/Group-78.webp",
+            "alt": ""
+          },
+          "title": "Keyboard | WCAG Success Criterion 2.1.1"
+        },
+        {
+          "video_type": "url",
+          "video_url": "",
+          "thumbnail": {
+            "url": "/wp-content/uploads/2024/10/Group-79.webp",
+            "alt": ""
+          },
+          "title": "Exploring WCAG Success Criterion 1.1.1 Non-text Content"
+        },
+        {
+          "video_type": "url",
+          "video_url": "",
+          "thumbnail": {
+            "url": "/wp-content/uploads/2024/10/Group-80.webp",
+            "alt": ""
+          },
+          "title": "Success Criterion 1.4.1 - Don't Rely on Color Alone"
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Discover Accessibility Solutions — Tips and Insights for Your Organization",
+      "subtitle": "",
+      "description": "",
+      "link": {
+        "title": "Explore More About Our Services",
+        "url": "/our-services/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "about",
+      "type": "default",
+      "title": "Case Study",
+      "description": "<h3>L V Prasad Eye Institute</h3><p>The beginning, before the brick and mortar of the Institute, the renowned Indian film-maker Sri Akkineni Lakshmi Vara Prasad Rao, popularly known as <a href=\"https://www.lvpei.org/about-us/\" target=\"_blank\" rel=\"noopener\">L V Prasad</a>, decided to invest a part of the profits of his blockbuster film \"Ek Duje Ke Liye\" for a worthy cause. He donated rupees one crore and five acres of land for establishing the state-of-the-art Eye Institute. In recognition of this gesture, the Board of the Institute decided to name the Institute after him.</p><p>Over the years, his family has continued to support the Institute's work. His son, Mr Ramesh Prasad, Managing Director of Prasad Film Laboratories, is a founder trustee of LVPEI and is the longest serving member of the Hyderabad Eye Institute's governing board, along with Dr Rao.</p>",
+      "items": [],
+      "footnotes": "",
+      "links": [
+        {
+          "link": {
+            "title": "Read More About Our Work With LVPEI",
+            "url": "/lv-prasad-eye-institute/",
+            "target": ""
+          }
+        }
+      ],
+      "image": {
+        "url": "/wp-content/uploads/2024/03/resources-1.webp",
+        "alt": "LV Prasad Eye Institute (LVPEI) logo with tagline 'So that all may see'"
+      }
+    },
+    {
+      "acf_fc_layout": "blog",
+      "title": "Our Latest Blogs",
+      "description": "",
+      "post_count": 6,
+      "category": "blog",
+      "link": {
+        "title": "View More Blogs",
+        "url": "/blogs/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your Compliance Consultation",
+      "description": "At Accessibility Innovations, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

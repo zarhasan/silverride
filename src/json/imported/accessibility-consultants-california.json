@@ -1,0 +1,390 @@
+{
+  "page_title": "Expert Accessibility Consultants California",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Accessibility Consultants California",
+      "description": "<p>Looking for reliable and certified accessibility consultants in California? At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we provide comprehensive ADA compliance consulting, web accessibility audits, and remediation services to help businesses, municipalities, and organizations throughout the state achieve WCAG and California Building Code (CBC) compliance.</p><p>Whether you're seeking ADA consultants in Los Angeles, web accessibility services in San Francisco, or built environment audits in Sacramento, our team ensures your services, spaces, and digital platforms are inclusive, legally compliant, and user-friendly for people of all abilities.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/Accessibility-Consultants-california.png",
+        "alt": "Accessibility consultants in California conducting a business meeting in a modern office, with a diverse team including a professional using a wheelchair, analyzing charts and data on a screen."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Achieve ADA Compliance With Accessibility Innovations",
+      "description": "<p>In California, organizations are subject to federal accessibility laws like the <a href=\"https://www.ada.gov/law-and-regs/ada/\">Americans with Disabilities Act</a> (ADA) and Section 508, as well as state-specific requirements under CBC Chapter 11B and Title 24. Our consultants work with commercial landlords, school districts, tech companies, and local governments to:</p><ul><li>Identify accessibility barriers</li><li>Meet ADA Title II and III requirements</li><li>Develop remediation strategies</li><li>Improve accessibility across digital and physical spaces</li></ul><p>With expertise in both WCAG 2.2 and California code, we help you mitigate legal risk while building inclusive environments. Whether you're looking for ADA website remediation consultants or compliance design consultants, our team delivers results.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Accessibility Consulting Approach",
+      "description": "<p>Our consulting model is built on a clear, step-by-step process that includes:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Discovery & Scope",
+          "description": "<p>We assess your needs, risks, and content footprint.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-alternative-text-3.svg",
+            "alt": ""
+          },
+          "title": "Manual Testing",
+          "description": "<p>Our audits use real human testers to identify usability barriers.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Automated WCAG Testing",
+          "description": "<p>We apply industry-standard tools for broad issue detection.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Assistive Technology Testing",
+          "description": "<p>We test with screen readers (JAWS, NVDA, VoiceOver) and keyboard-only navigation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Real-User Feedback",
+          "description": "<p>When appropriate, we include testers with lived experience.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Remediation Support",
+          "description": "<p>We guide your teams with prioritized fixes and coaching.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Plan & Policies",
+      "description": "<p>We create compliance frameworks tailored to California businesses and agencies:</p>",
+      "items": [
+        {
+          "title": "Accessibility roadmaps",
+          "description": ""
+        },
+        {
+          "title": "Procurement policies",
+          "description": ""
+        },
+        {
+          "title": "Customer service & HR evaluations",
+          "description": ""
+        },
+        {
+          "title": "Risk mitigation strategies",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Audits and Certifications",
+      "description": "<p>Our experts conduct in-depth accessibility audits for websites, web apps, mobile apps, and intranets. Services include:</p>",
+      "items": [
+        {
+          "title": "WCAG 2.2 audits",
+          "description": ""
+        },
+        {
+          "title": "Conformance reporting",
+          "description": ""
+        },
+        {
+          "title": "VPATs for federal sales",
+          "description": ""
+        },
+        {
+          "title": "Usability assessments for screen reader compatibility",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+        "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Training",
+      "description": "<p>Customized workshops for California organizations:</p>",
+      "items": [
+        {
+          "title": "ADA & WCAG 2.2 overview",
+          "description": ""
+        },
+        {
+          "title": "Accessible design for developers and content creators",
+          "description": ""
+        },
+        {
+          "title": "Awareness training for executives and frontline staff",
+          "description": ""
+        },
+        {
+          "title": "Post-audit training based on real findings",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+        "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "compliance-cards",
+      "grid_size": 3,
+      "title": "Why Choose Us as Your Accessibility Consultant in California?",
+      "description": "<p>When it comes to web <a href=\"https://accessibilityinnovations.com/accessibility-audit-services/\">accessibility audits</a>, Accessibility Innovations stands out for several reasons:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Certified Accessibility Experts",
+          "description": "<p>Our team includes CPWA-certified consultants and ADA specialists with deep experience in remediation and conformance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Trusted Across Industries",
+          "description": "<p>We support schools, healthcare, housing authorities, cities, law firms, and tech startups across California.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "California Code Knowledge",
+          "description": "<p>We're fluent in ADA, Section 508, and CBC Chapter 11B requirements specific to the state.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Digital + Physical Expertise",
+          "description": "<p>We're one of few accessibility services companies that audit both your digital presence and your built environment.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Flexible & Scalable Engagements",
+          "description": "<p>We support small business websites, multi-site government agencies, and enterprise-level accessibility programs.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Boost accessibility, stay compliant, and improve SEO with Accessibility Innovations. Book a consultation with our experts today.</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our ADA Accessibility Consulting Services in California",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "ADA Physical Space Accessibility Audits",
+          "description": "<p>We conduct site assessments based on ADA Standards and CBC 11B. Our reports include barrier lists, priority fixes, and photos.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Website and App Accessibility Testing",
+          "description": "<p>We test all major platforms and CMSs using manual methods and automated tools. Great for organizations needing ADA website remediation consultants.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Document Accessibility Remediation",
+          "description": "<p>Ensure documents meet accessibility standards (PDF/UA, WCAG) for public websites, intranets, and service forms.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Policy Writing and Risk Management",
+          "description": "<p>We develop internal accessibility governance documents for compliance, procurement, and long-term planning.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "VPAT Reports for Government Sales",
+          "description": "<p>Support your vendor proposals by producing detailed, customized VPATs aligned with Section 508 and WCAG.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Staff Accessibility Training and Workshops",
+          "description": "<p>Hands-on training for web teams, HR, marketing, leadership, and customer service.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Accessibility Monitoring and Consulting",
+          "description": "<p>We offer monthly/quarterly check-ins, dashboard reporting, and spot testing to help you maintain compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Ready to partner with certified ADA consultants in California? Contact <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a> today to schedule a discovery call or accessibility audit.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What services do your accessibility consultants in California provide?",
+          "answer": "<p>We offer accessibility audits, remediation guidance, staff training, policy writing, VPATs, and built environment assessments across California.</p>"
+        },
+        {
+          "question": "How can an accessibility consultant help my California business meet ADA compliance?",
+          "answer": "<p>We identify where your organization is non-compliant and create a step-by-step plan to align with ADA and CBC standards.</p>"
+        },
+        {
+          "question": "What is included in an ADA accessibility audit for California businesses?",
+          "answer": "<p>Our audits include digital or physical evaluations, risk levels, issue listings, recommendations, and technical validation.</p>"
+        },
+        {
+          "question": "Do you offer both digital and physical accessibility assessments in California?",
+          "answer": "<p>Yes. We offer WCAG audits and on-site evaluations for buildings, signage, parking, restrooms, and more.</p>"
+        },
+        {
+          "question": "Do California websites need to comply with WCAG for ADA compliance?",
+          "answer": "<p>Yes. We assess compliance using WCAG 2.1 or WCAG 2.2, depending on regulatory and project requirements.</p>"
+        },
+        {
+          "question": "How can I tell if my website needs accessibility remediation?",
+          "answer": "<p>If your site lacks alt text, keyboard navigation, color contrast, or semantic structure, it likely needs remediation.</p>"
+        },
+        {
+          "question": "How long does an accessibility audit take for California businesses or organizations?",
+          "answer": "<p>Depending on complexity, audits take 1 to 4 weeks. Rush options are available for time-sensitive needs.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "locations",
+      "title": "Our Office",
+      "map_embed": "https://maps.google.com/maps?q=9245%20Laguna%20Springs%20Drive%2C%20Suite%20200%2C%20Elk%20Grove%2C%20California%2095758&t=m&z=20&output=embed",
+      "map_link": "https://maps.google.com/maps?q=9245%20Laguna%20Springs%20Drive%2C%20Suite%20200%2C%20Elk%20Grove%2C%20California%2095758",
+      "locations": [
+        {
+          "name": "California",
+          "address": "9245 Laguna Springs Dr. Suite 200 Elk Grove, CA 95758, United States",
+          "phone": "916-509-7017",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday: 08:30 A.M. – 5:00 P.M. | Saturday – Closed | Sunday – Closed"
+        }
+      ]
+    }
+  ]
+}

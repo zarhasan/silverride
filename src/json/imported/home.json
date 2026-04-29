@@ -1,0 +1,246 @@
+{
+  "page_title": "Accessibility Consultants USA",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "home",
+      "subtitle": "",
+      "title": "Accessibility Consultants USA",
+      "description": "<p>Your organization needs a comprehensive and coordinated accessibility effort! We are the expert accessibility consultant in the USA who provides a fully centralized accessibility management approach to power your operations. No matter what your organizational accessibility needs are, we can help!</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/03/Hero-Section-Illustration-AI-Mar-2.svg",
+        "alt": "An illustration of the Accessibility Innovations INC office as an Accessibility Center of Excellence. Surrounding the office are people of various disabilities in activities representing the services offered by the office."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Explore Our Services",
+            "url": "https://accessibilityinnovations.com/our-services/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Book Free Consultation",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": "",
+      "service_links": [
+        {
+          "link": {
+            "title": "VPAT Reports",
+            "url": "https://accessibilityinnovations.com/vpat-report-service/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Accessibility Compliance Consulting",
+            "url": "https://accessibilityinnovations.com/accessibility-compliance-consulting/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Accessibility Audit Services",
+            "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Document Accessibility Remediation",
+            "url": "https://accessibilityinnovations.com/document-accessibility-remediation/",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "compliance",
+      "title": "Accessibility Compliance Management",
+      "description": "<p>Your organization must meet the legal requirements and associated accessibility standards. This is why one of our major accessibility services is comprehensive compliance management. This process involves thorough accessibility audits, gap assessments, and policies to help your organization address accessibility needs effectively!</p>",
+      "items": [
+        {"title": "Multi-year Accessibility Plans and Policies", "description": ""},
+        {"title": "Employment Standards and Practices", "description": ""},
+        {"title": "Built-Environment", "description": ""},
+        {"title": "Transportation", "description": ""},
+        {"title": "Education Systems", "description": ""},
+        {"title": "Web Accessibility Compliance Management", "description": ""}
+      ],
+      "score": "",
+      "link": {
+        "title": "Learn More About Compliance Management",
+        "url": "https://accessibilityinnovations.com/accessibility-compliance-consulting/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "video",
+      "video": "",
+      "transcript": "An animated \"Compliance Score\" meter similar to a speedometer, with WCAG compliance result totals below it for \"Pass\", \"Fail\", and \"Total\". The meter needle moves from 0 percent to 100 percent, showing an increasing \"Pass\" score and a decreasing \"Fail\" score"
+    },
+    {
+      "acf_fc_layout": "process",
+      "title": "Accessibility Consulting and Planning",
+      "subtitle": "OUR PROCESS",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/05/our-process-chart.webp",
+        "alt": "A flowchart showing the process of improving accessibility compliance. The steps are: (1) REVIEW - Current Compliance Posture (2) ANALYZE - Findings from Gap Analysis (3) IDENTIFY - Barriers in Accessibility (4) PLAN - Develop an Accessibility Plan (5) IMPLEMENT - Execute Plan and Manage Change (6) EVALUATE - Improved Compliance (7) REPORT - Government, Customers and Employees"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "alt",
+      "title": "Elevate Accessibility Standards Across Your Organization - Trusted Accessibility Consultants",
+      "description": "<p>Accessibility Innovations is among the trusted accessibility consulting services known for its expertise and high compliance standards. We can help your organization to become accessibility-compliant in five major areas, including Employment, Information, Customer Service, Built Environment, and Transportation! With us, your organization can now have a streamlined management approach for inclusivity!</p>",
+      "items": [
+        {"item": "Employment"},
+        {"item": "Information and Communication"},
+        {"item": "Accessibility Training"},
+        {"item": "Built Environment"},
+        {"item": "Transportation"},
+        {"item": "Policies and Planning"}
+      ],
+      "link": {
+        "title": "Discover More Services",
+        "url": "https://accessibilityinnovations.com/our-services/",
+        "target": ""
+      },
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Gap-Analysis.webp",
+        "alt": "Illustration of a person in a wheelchair by an elevated door, showing before and after accessibility improvements. In this case, a ramp is added in addition to the existing stairs."
+      }
+    },
+    {
+      "acf_fc_layout": "our_mission",
+      "title": "OUR MISSION",
+      "quote": "Help enhance your organizations overall Accessibility.",
+      "description": "Accessibility consulting is the best way to make your business compliant with accessibility standards. Our approach helps organizations to align with current or pending accessibility legislation. This eliminates the barriers to a diverse client base, thus also promoting the organization's long-term sustainability.",
+      "services": [
+        {
+          "icon": "",
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Accessibility-and-Remediation.png",
+            "alt": "accessibility and remediation icon"
+          },
+          "title": "Accessibility and Remediation",
+          "description": "We make use of Artificial Intelligence to help make your PDF Documents more accessible. We also offer manual and assistive testing as our core remediation services.",
+          "link": {
+            "title": "",
+            "url": "https://accessibilityinnovations.com/document-accessibility-remediation/",
+            "target": ""
+          }
+        },
+        {
+          "icon": "",
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Compliance-Management.png",
+            "alt": "compliance management icon"
+          },
+          "title": "Compliance Management",
+          "description": "To ensure everything is compliant with the set standards, we conduct thorough compliance audits and gap assessments. We can also help you with establishing plans, policies, and statements.",
+          "link": {
+            "title": "",
+            "url": "https://accessibilityinnovations.com/accessibility-compliance-consulting/",
+            "target": ""
+          }
+        },
+        {
+          "icon": "",
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Audits-and-Certification.png",
+            "alt": "audits and certification icon"
+          },
+          "title": "Audits and Certification",
+          "description": "Beyond improving your organization's current accessibility standards, we also help prepare it for future audits and stringent certification processes.",
+          "link": {
+            "title": "",
+            "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "icon": "",
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "Accessibility Training",
+          "description": "Empower your team with expert-led accessibility training to create inclusive experiences for all. We comprehensively equip them with the skills required by an accessible organization.",
+          "link": {
+            "title": "",
+            "url": "https://accessibilityinnovations.com/accessibility-training/",
+            "target": ""
+          }
+        }
+      ],
+      "link": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Need ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Is your organization undergoing an audit? Need expert help with your Compliance Report?</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "blog",
+      "title": "OUR LATEST NEWS & BLOGS",
+      "description": "",
+      "post_count": 6,
+      "category": "",
+      "link": {
+        "title": "View More News & Blogs",
+        "url": "https://accessibilityinnovations.com/blogs/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "locations",
+      "title": "Our Office",
+      "map_embed": "",
+      "map_link": "",
+      "locations": [
+        {
+          "name": "California",
+          "address": "9245 Laguna Springs Drive, Suite 200, Elk Grove, California 95758",
+          "phone": "(916) 509-7017",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday : 08:30 A.M. – 5:00 P.M., Saturday – Closed, Sunday – Closed"
+        },
+        {
+          "name": "New York",
+          "address": "26 Broadway, Suite 934-H16, New York, NY 10004",
+          "phone": "(332) 529-1228",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday : 08:30 A.M. – 5:00 P.M., Saturday – Closed, Sunday – Closed"
+        },
+        {
+          "name": "Florida",
+          "address": "1661 Central Ave. St. Petersburg, FL 33713",
+          "phone": "1-866-245-A11Y",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday : 08:30 A.M. – 5:00 P.M., Saturday – Closed, Sunday – Closed"
+        }
+      ]
+    }
+  ]
+}

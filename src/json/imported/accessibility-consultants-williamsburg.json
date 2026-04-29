@@ -1,0 +1,411 @@
+{
+  "page_title": "Expert Accessibility Consultants Williamsburg",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Accessibility Consultants Williamsburg",
+      "description": "<p>Searching for reliable accessibility consultants in Williamsburg who can help your organization meet ADA requirements, address accessibility barriers, and deliver inclusive experiences? Accessibility Innovations provides full-service accessibility consulting, including ADA compliance services, WCAG audits, remediation guidance, and physical accessibility assessments. Our certified accessibility experts work with Williamsburg businesses, community spaces, digital agencies, educational institutions, and government bodies to improve accessibility across digital and built environments. Whether you manage a storefront, community center, or online service, our tailored consulting helps you achieve compliance, usability, and long-term accessibility success.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/06/Accessibility-Consultants-Williamsburg.png",
+        "alt": "Accessibility consultants Williamsburg meeting around table with laptops and data charts in bright, wheelchair-accessible workspace."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Get Your ADA Goals Achieved with Accessibility Innovations",
+      "description": "<p>Accessibility Innovations helps Williamsburg-based organizations meet their obligations under ADA Title II and Title III, along with federal accessibility standards and local building requirements. Our consulting ensures your customer-facing spaces, digital assets, and operations meet legal, ethical, and usability expectations.</p><p><strong>We Support:</strong></p><ul><li>Small and large businesses</li><li>Schools &amp; universities</li><li>Government agencies</li><li>Nonprofits</li><li>Healthcare providers</li></ul><p><strong>Our ADA Compliance Services Include:</strong></p><ul><li>Accessibility audits (web, documents, built environment)</li><li>WCAG compliance reviews for websites and apps</li><li>ADA remediation consulting &amp; technical support</li><li>Staff accessibility training</li><li>Accessibility statements &amp; policy development</li></ul>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Accessibility Consulting Approach",
+      "description": "<p>We don't believe in \"audit and leave.\" Our approach is collaborative, thorough, and designed to build long-term accessibility maturity.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Discovery & Needs Assessment",
+          "description": "<p>We begin by analyzing your digital, physical, and operational accessibility needs. This includes evaluating websites, apps, documents, policies, procurement practices, and customer-facing experiences.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Standards-Based Evaluation",
+          "description": "<p>Using ADA, WCAG 2.2, Section 508, and local NYC codes, our team identifies accessibility gaps using manual testing, automated tools, and real assistive-technology reviews.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Clear Remediation Roadmaps",
+          "description": "<p>You'll receive prioritized, easy-to-follow recommendations crafted to support your internal teams and vendors in implementing fixes efficiently. We go beyond audits helping with implementation, training, and long-term compliance planning.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Implementation Support",
+          "description": "<p>Our accessibility consultants provide ongoing guidance, code reviews, technical support, and policy updates to help you resolve compliance issues.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Long-Term Partnership",
+          "description": "<p>We offer monitoring, retesting, training, and continuous consulting to keep your organization compliant as regulations and technologies evolve.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Plan Policies",
+      "description": "<p>We help organizations create accessible policies that align with the ADA and NYC's accessibility regulations.</p>",
+      "items": [
+        {
+          "title": "Develop Blueprint Accessibility Strategies",
+          "description": ""
+        },
+        {
+          "title": "Identify and address digital & physical barriers",
+          "description": ""
+        },
+        {
+          "title": "Improve procurement processes using accessibility requirements",
+          "description": ""
+        },
+        {
+          "title": "Assess current ADA and WCAG compliance status",
+          "description": ""
+        },
+        {
+          "title": "Refine customer service & HR practices for accessibility",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Audits and Certifications",
+      "description": "<p>As your web accessibility consultant, we ensure your online content aligns with recognized accessibility standards.</p>",
+      "items": [
+        {
+          "title": "Full WCAG 2.2 audits for websites, apps, and digital content",
+          "description": ""
+        },
+        {
+          "title": "ADA website compliance evaluations",
+          "description": ""
+        },
+        {
+          "title": "Section 508 & WCAG conformance testing",
+          "description": ""
+        },
+        {
+          "title": "Remediation roadmaps for implementation",
+          "description": ""
+        },
+        {
+          "title": "VPAT & ACR reports for government/federal procurement",
+          "description": ""
+        },
+        {
+          "title": "Testing with real assistive technology users",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+        "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Built Environment Assessment",
+      "description": "<p>Our physical accessibility assessments examine your space for ADA 2010 Standards and NYC building accessibility codes.</p>",
+      "items": [
+        {
+          "title": "Entrances, washrooms, parking, paths of travel",
+          "description": ""
+        },
+        {
+          "title": "Doorways, counter heights, signage, lighting",
+          "description": ""
+        },
+        {
+          "title": "Barrier identification and corrective action plans",
+          "description": ""
+        },
+        {
+          "title": "Guidance for renovations, upgrades, and inspections",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/gap-analysis-1.jpg",
+        "alt": "our employee taking measurements on client site conducting built environment accessibility assessment"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Training",
+      "description": "<p>We offer hands-on accessibility training for teams across Williamsburg and beyond. Each session includes real-world examples, Q&amp;A, and actionable steps your team can use immediately.</p>",
+      "items": [
+        {
+          "title": "Digital accessibility fundamentals (WCAG, ADA, usability)",
+          "description": ""
+        },
+        {
+          "title": "Accessible customer service & communication requirements",
+          "description": ""
+        },
+        {
+          "title": "PDF, document, and multimedia accessibility",
+          "description": ""
+        },
+        {
+          "title": "UX/UI inclusive design best practices",
+          "description": ""
+        },
+        {
+          "title": "ADA Title II and Title III obligations",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+        "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "compliance-cards",
+      "grid_size": 3,
+      "title": "Why Choose Us as Your Accessibility Consultant in Williamsburg?",
+      "description": "<p>Choosing Accessibility Innovations means working with specialists who understand both national ADA standards and the local context of Williamsburg and NYC.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Certified Expertise",
+          "description": "<p>CPWA, IAAP, ADA Coordinator, and seasoned accessibility professionals.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Williamsburg & NYC Local Knowledge",
+          "description": "<p>Experience with city-specific accessibility laws, building codes, and compliance requirements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Full-Scope Accessibility Services",
+          "description": "<p>Digital audits, policy development, ADA remediation consulting, accessibility training, and ongoing compliance support.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Proven Results",
+          "description": "<p>Trusted by businesses, educational institutions, tech companies, nonprofits, and government agencies across the U.S.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Inclusive & Tested Design",
+          "description": "<p>We conduct manual testing with assistive technology users to validate usability, not just compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Improve digital inclusivity, prevent lawsuits, and boost SEO with Accessibility Innovations. Book a Consultation and let our expert web accessibility consultants help you create an accessible, user-friendly website!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Accessibility Services in Williamsburg",
+      "description": "<p>Below is a complete list of our offerings tailored for Williamsburg organizations:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "ADA Physical Audits",
+          "description": "<p>Our ADA compliance services help evaluate entrances, pathways, restrooms, and signage for compliance with ADA Standards for Accessible Design and NYC codes.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Website/App Testing",
+          "description": "<p>We conduct automated + manual accessibility audits for websites, mobile apps, and digital platforms to ensure WCAG compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Document Remediation",
+          "description": "<p>We remediate documents to meet WCAG, PDF/UA, and ADA accessibility guidelines.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Policy Writing",
+          "description": "<p>We help organizations create accessibility statements, policies, and long-term compliance strategies to reduce legal risk.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "VPAT Reports",
+          "description": "<p>Our consultants prepare VPAT 2.4 and Accessibility Conformance Reports for organizations selling digital products to government agencies.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": ""
+          },
+          "title": "Staff Training",
+          "description": "<p>Training includes ADA requirements, WCAG testing, inclusive UX, and accessible content creation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Monitoring",
+          "description": "<p>Continuous consulting helps maintain compliance, monitor updates, and integrate accessibility into business operations.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What accessibility consulting services do you offer in Williamsburg?",
+          "answer": "<p>We provide ADA &amp; WCAG audits, remediation consulting, accessibility training, document remediation, VPAT services, and physical accessibility assessments.</p>"
+        },
+        {
+          "question": "Why should I hire an accessibility consultant in Williamsburg?",
+          "answer": "<p>Consultants help you understand ADA obligations, identify compliance issues, reduce legal risk, and improve inclusive design.</p>"
+        },
+        {
+          "question": "What is included in an accessibility audit?",
+          "answer": "<p>Audits include WCAG testing, ADA gap analysis, assistive technology testing, remediation recommendations, and compliance reporting.</p>"
+        },
+        {
+          "question": "What is the difference between an ADA audit and a WCAG audit?",
+          "answer": "<p>ADA audits evaluate compliance with federal accessibility law; WCAG audits evaluate technical conformance for websites and digital products.</p>"
+        },
+        {
+          "question": "How do accessibility consultants help reduce legal risk?",
+          "answer": "<p>We identify barriers before complaints arise, provide documentation for compliance efforts, and ensure alignment with ADA and WCAG standards.</p>"
+        },
+        {
+          "question": "Do you provide ADA compliance audits for physical spaces?",
+          "answer": "<p>Yes. We evaluate buildings according to ADA 2010 Standards and NYC accessibility codes.</p>"
+        },
+        {
+          "question": "How can I prepare my business for an ADA accessibility audit?",
+          "answer": "<p>Gather your policies, digital assets, facility plans, and previous audit reports. We'll guide you through next steps.</p>"
+        }
+      ],
+      "cta": ""
+    }
+  ]
+}

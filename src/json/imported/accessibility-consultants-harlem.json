@@ -1,0 +1,337 @@
+{
+  "page_title": "Expert Accessibility Consultants Harlem",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Accessibility Consultants Harlem",
+      "description": "<p>Looking for reliable accessibility consultants in Harlem? At Accessibility Innovations, we provide expert ADA compliance audits, digital accessibility testing, inclusive design reviews, and tailored training for organizations across Harlem and surrounding NYC neighborhoods. Whether you're a small business, educational institution, healthcare provider, or government agency, our certified consultants ensure your space—digital or physical—is accessible, compliant, and welcoming to all.</p><p>We don't just check the boxes. We offer end-to-end accessibility consulting to help you build inclusive environments that reflect your values and meet legal standards.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/06/Accessibility-Consultants-Harlem.png",
+        "alt": "Accessibility Consultants Harlem conducting a professional meeting in a modern office with city skyline views, including a consultant in a wheelchair, discussing data charts on a screen."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Get Your ADA Goals Achieved with Accessibility Innovations",
+      "description": "<p>At Accessibility Innovations, we help Harlem-based organizations align with the federal ADA standards. We go beyond compliance, supporting businesses and institutions with long-term accessibility strategies, policy development, and practical implementation. Whether your goal is digital accessibility, barrier-free design, or inclusive staff training, we offer the tools, insights, and hands-on support to make it happen.</p><p>Our collaborative, step-by-step process ensures your organization meets—and exceeds—its accessibility goals while building a culture of inclusivity.</p>"
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Plan & Policies",
+      "description": "<p>Our experts align policies with the AMA, ADA, and Section 508 requirements, helping ensure compliance and operational inclusiveness. We partner with Harlem-based organizations to develop and update formal accessibility plans that comply with U.S. disability laws—including the ADA, Section 508, and relevant state/local requirements.</p><p><strong>Our services include:</strong></p>",
+      "items": [
+        {
+          "title": "Drafting or refining accessible-policy documents and assigning internal roles (e.g., ADA coordinator).",
+          "description": ""
+        },
+        {
+          "title": "Establishing timelines for improvements across physical and digital environments.",
+          "description": ""
+        },
+        {
+          "title": "Ensuring multimedia (e.g., video) meets requirements like captioning and audio descriptions per Section 508 and WCAG 2.0/2.1 AA",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Audits and Certifications",
+      "description": "<p>We conduct digital accessibility audits for Harlem-based organizations—covering websites, mobile apps, PDFs, and other digital assets. Using a hybrid method (automated tools, expert manual review, assistive technology testing), we identify and fix barriers.</p><p><strong>Our offerings include:</strong></p>",
+      "items": [
+        {
+          "title": "WCAG 2.2, ADA, and Section 508 compliance assessments",
+          "description": ""
+        },
+        {
+          "title": "PDF audits and VPAT (Accessibility Conformance Report) preparation",
+          "description": ""
+        },
+        {
+          "title": "Custom remediation plans and Accessibility Certification Letters for procurement or public launch",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+        "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Built Environment Assessment",
+      "description": "<p>We help Harlem-based organizations ensure their physical spaces comply with ADA and NYC Building Code standards. Our on-site inspections cover:</p>",
+      "items": [
+        {
+          "title": "Exterior access: parking, paths, ramps",
+          "description": ""
+        },
+        {
+          "title": "Interior access: entrances, signage, navigation, restrooms, service counters, elevators, and emergency egress",
+          "description": ""
+        },
+        {
+          "title": "Real-world usability: evaluation of interactions for individuals using mobility aids or with vision impairments",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/gap-analysis-1.jpg",
+        "alt": "our employee taking measurements on client site conducting built environment accessibility assessment"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Training",
+      "description": "<p>We deliver customized virtual and in-person training in Harlem for businesses, schools, nonprofits, and government agencies—aligned with ADA, Section 508, and WCAG standards. Our practical, scenario-based sessions cover:</p>",
+      "items": [
+        {
+          "title": "Accessible document creation (Word, PDF, PowerPoint)",
+          "description": ""
+        },
+        {
+          "title": "Inclusive customer service and communications",
+          "description": ""
+        },
+        {
+          "title": "Digital content and web developer/designer best practices",
+          "description": ""
+        },
+        {
+          "title": "Specialized modules for HR and policy implementation",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+        "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "compliance-cards",
+      "grid_size": 3,
+      "title": "Why Choose Us as Your Accessibility Consultant in Harlem?",
+      "description": "<p>Here's why Accessibility Innovations is a trusted accessibility partner in Harlem:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "New York–Based Experts",
+          "description": "<p>We understand the nuances of Harlem's diverse community and built environment.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Certified Consultants",
+          "description": "<p>Our team includes IAAP and CPWA-certified professionals with decades of combined experience.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Local & Federal Compliance",
+          "description": "<p>We help you meet NYC building codes, ADA requirements, and Section 508 standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Solutions",
+          "description": "<p>From gap analysis to training, we provide ongoing guidance and remediation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Lived Expertise",
+          "description": "<p>We collaborate with people with disabilities in our audits and training to ensure practical, user-centered results.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Improve digital inclusivity, prevent lawsuits, and boost SEO with Accessibility Innovations. Book a Consultation and let our expert web accessibility consultants help you create an accessible, user-friendly website!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Accessibility Services in Harlem Include",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "ADA Physical Accessibility Audits",
+          "description": "",
+          "link": "https://accessibilityinnovations.com/accessibility-audit-services/"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "WCAG/Section 508 Digital Accessibility Audits",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Plan Development",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "VPAT Documentation & Testing",
+          "description": "",
+          "link": "https://accessibilityinnovations.com/vpat-report-service/"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Website & Document Remediation",
+          "description": "",
+          "link": "https://accessibilityinnovations.com/document-accessibility-remediation/"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "Accessible Design Consulting",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Staff Accessibility Training & Workshops",
+          "description": "",
+          "link": "https://accessibilityinnovations.com/accessibility-training/"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "Ongoing Compliance Monitoring",
+          "description": "",
+          "link": "https://accessibilityinnovations.com/ada-compliance-consultants/"
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What accessibility consulting services do you offer in Harlem?",
+          "answer": "<p>We provide accessibility audits, policy development, digital remediation, training, and certification for buildings, websites, and documents.</p>"
+        },
+        {
+          "question": "Can you help with digital accessibility for websites and documents?",
+          "answer": "<p>Yes. We perform comprehensive WCAG audits and offer remediation and training for web content, PDFs, and other digital materials.</p>"
+        },
+        {
+          "question": "Do you provide accessibility audits for buildings in Harlem?",
+          "answer": "<p>Absolutely. We evaluate buildings for ADA compliance, local building codes, and usability based on real-world needs.</p>"
+        },
+        {
+          "question": "Do I need accessibility consulting for a small business?",
+          "answer": "<p>Yes. Small businesses must comply with ADA regulations, and our tailored packages ensure you meet your obligations affordably.</p>"
+        },
+        {
+          "question": "What are some common accessibility issues that businesses face?",
+          "answer": "<p>Common issues include narrow entrances, missing signage, non-compliant restrooms, and websites that don't support screen readers or keyboard navigation.</p>"
+        },
+        {
+          "question": "How do I get started with your accessibility consulting services in Harlem?",
+          "answer": "<p>Just contact us to book a free consultation. We'll assess your needs and propose the best plan for compliance and inclusion.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your Compliance Consultation",
+      "description": "At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

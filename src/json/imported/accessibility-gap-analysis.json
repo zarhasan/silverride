@@ -1,0 +1,260 @@
+{
+  "page_title": "Accessibility Gap Analysis",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Gap Analysis",
+      "description": "<p>Conducting an Accessibility Gap Analysis is a crucial first step toward creating an inclusive and compliant organization. This evaluation identifies areas where your products, services, or spaces fall short of meeting accessibility standards, providing a clear roadmap for improvement.</p><p>At Accessibility Innovations, we go beyond checkbox compliance. Our in-depth reviews integrate established accessibility standards to assess your current infrastructure, highlight gaps, and deliver actionable recommendations. The result? A tailored action plan that helps your organization evolve from simply meeting legal obligations to fostering a truly inclusive environment.</p><p>By addressing these gaps proactively, you'll not only comply with accessibility laws but also set a benchmark for inclusivity, ensuring every visitor, client, and employee feels valued and supported.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/02/compliance-score-meter.png",
+        "alt": "An animated 'Compliance Score' meter similar to a speedometer, with WCAG compliance result totals below it for 'Pass', 'Fail', and 'Total'. The meter needle moves from 0 percent to 100 percent, showing an increasing 'Pass' score and a decreasing 'Fail' score"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "video",
+      "video": "https://accessibilityinnovations.com/wp-content/uploads/2024/12/compliance-score-meter.mp4",
+      "transcript": "<p>The video shows an animated compliance score meter, resembling a speedometer. The needle moves from 0% to 100%, illustrating the following:</p><ul><li>As the needle moves towards 100%, the 'Pass' score increases.</li><li>Simultaneously, the 'Fail' score decreases.</li><li>The 'Total' score remains constant throughout the animation.</li></ul><p>This visual representation demonstrates how improving WCAG compliance increases the 'Pass' score while reducing the number of failures, ultimately aiming for 100% compliance.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What Is Accessibility Gap Analysis?",
+      "description": "<p>An Accessibility Gap Analysis evaluates the accessibility of your physical and digital environments. This service identifies barriers preventing full inclusivity and ensures compliance with accessibility laws and standards like WCAG and ADA.</p><p>At Accessibility Innovations, we take a collaborative approach. Our experts work closely with your team to develop practical strategies that address compliance needs while fostering environments where everyone can thrive. By combining functionality with inclusivity, we help transform your spaces into accessible environments that reflect equity and respect for all.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Accessibility Gap Analysis - Our Core Services",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Audits",
+          "description": "<p>We assess physical environments to identify hidden challenges, referencing key standards like the ADA and Architectural Barriers Act (ABA). Our reports provide clear insights and actionable recommendations for compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Compliance Consultation & Solutions",
+          "description": "<p>Our team reviews your designs and plans to uncover barriers before they impact users. Recommendations are categorized as short-, medium-, and long-term priorities, ensuring meaningful changes over time. Recognizing that no two spaces are the same, we develop personalized solutions that address the unique needs of your environment.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Office Ergonomics Assessment",
+          "description": "<p>Optimize workplace productivity and well-being by evaluating workstation setups. Our ergonomic assessments provide recommendations for improving comfort and efficiency for all employees.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Management and Training",
+          "description": "<p>We equip your team with the knowledge and skills to maintain accessibility standards. Our accessibility training programs focus on best practices for building inclusive environments and adapting to evolving requirements.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-training/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Accessible Home Interventions",
+          "description": "<p>For homeowners, we offer guidance on modifying living spaces to meet accessibility needs. Using Universal Design Principles, we help enhance home functionality and comfort for all.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Partnership with Disability Organizations",
+          "description": "<p>We collaborate with leading disability organizations to gain firsthand insights, allowing us to design user-centered solutions that reflect real-world challenges and needs.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 4,
+      "title": "Our Accessibility Gap Analysis Process",
+      "description": "<p>Our Accessibility Gap Analysis process provides a comprehensive evaluation of your spaces, services, or digital platforms:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Initial Assessment",
+          "description": "<p>We begin with a detailed review of your environment, identifying non-compliance areas with standards like WCAG and ADA.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Customized Recommendations",
+          "description": "<p>Following the assessment, we provide a detailed report highlighting: Key accessibility barriers. Prioritized recommendations for immediate and long-term fixes. Actionable strategies to address gaps effectively.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Tailored Solutions",
+          "description": "<p>Our recommendations focus on creating sustainable, inclusive environments tailored to your specific needs.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Implementation Support",
+          "description": "<p>We guide your team through the remediation process, ensuring compliance and fostering a culture of accessibility.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why get an Accessibility Gap Analysis From Accessibility Innovations?",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Expertise in Compliance and Accessibility",
+          "description": "<p>With a deep understanding of the ADA and other U.S. accessibility standards, our team helps you navigate complex regulations. We ensure your spaces are not only compliant but also inclusive and welcoming.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Security and Confidentiality",
+          "description": "<p>We respect your organization's privacy while conducting comprehensive evaluations. Our tailored reports deliver actionable insights, ensuring you can address issues effectively without compromising confidentiality.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Tailored Solutions",
+          "description": "<p>Every organization is unique. That's why we create customized action plans to address your specific challenges, providing both immediate fixes and strategic long-term solutions.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Professional Team",
+          "description": "<p>Our experienced consultants specialize in accessibility audits, training, and compliance. Dedicated to creating lasting change, they provide expert guidance to help your organization thrive.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Proven Track Record",
+          "description": "<p>With a history of helping organizations across industries achieve accessibility goals, we are a trusted partner in fostering inclusivity and compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Undergoing an audit or preparing a compliance report? Our experts are here to assist you every step of the way. Contact Accessibility Innovations today to achieve full accessibility compliance and improve the user experience for all!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "Why is Accessibility Gap Analysis important for my business?",
+          "answer": "<p>Accessibility Gap Analysis helps identify areas where your business may not meet accessibility standards or best practices. It ensures compliance with regulations like the Americans with Disabilities Act (ADA) or regional standards, reduces legal risks, enhances customer and employee experiences, and demonstrates your commitment to inclusivity. By addressing these gaps, your business becomes more accessible to everyone, including individuals with disabilities, broadening your reach and improving your reputation.</p>"
+        },
+        {
+          "question": "How does an Accessibility Gap Analysis work?",
+          "answer": "<p>An Accessibility Gap Analysis involves a thorough review of your business's facilities, digital assets, or services against established accessibility standards, such as the Web Content Accessibility Guidelines (WCAG) or the ADA. The process typically includes:</p><ul><li>Assessment: Analyzing current policies, practices, or digital platforms for accessibility compliance.</li><li>Identification: Highlighting barriers or areas that need improvement.</li><li>Recommendations: Providing actionable steps to address identified gaps and improve overall accessibility.</li></ul><p>The analysis can involve on-site inspections, interviews, user testing with assistive technologies, or automated and manual testing of digital platforms.</p>"
+        },
+        {
+          "question": "What are the benefits of Accessibility Gap Analysis?",
+          "answer": "<ul><li>Legal Compliance: Ensures your business adheres to accessibility regulations, reducing legal risks.</li><li>Enhanced Customer Experience: Improves usability for everyone, including people with disabilities.</li><li>Broader Market Reach: Makes your products and services accessible to a larger audience.</li><li>Corporate Responsibility: Demonstrates your commitment to diversity, equity, and inclusion.</li><li>Competitive Advantage: Positions your business as a leader in accessibility, attracting customers and partners who value inclusivity.</li></ul>"
+        },
+        {
+          "question": "How long does an Accessibility Gap Analysis take?",
+          "answer": "<p>The duration depends on the scope of the analysis. For small websites or individual facilities, it may take 1-2 weeks. For larger organizations or multi-site assessments, it could take several weeks to months. Factors influencing the timeline include the complexity of your digital assets, the size of your organization, and the level of detail required.</p>"
+        },
+        {
+          "question": "Is Accessibility Gap Analysis a one-time process?",
+          "answer": "<p>No, accessibility is an ongoing commitment. While a Gap Analysis provides a snapshot of your current state and a roadmap for improvements, regular reviews are essential to maintain compliance and adapt to evolving standards, technologies, and customer needs. Implementing an accessibility strategy that includes periodic audits ensures your business remains inclusive and compliant over time.</p>"
+        },
+        {
+          "question": "How can I get started with an Accessibility Gap Analysis?",
+          "answer": "<p>Getting started is simple:</p><ol><li>Contact Us: Reach out to our team to discuss your needs and goals.</li><li>Initial Consultation: We'll provide a free consultation to understand your current accessibility challenges and objectives.</li><li>Custom Proposal: Receive a tailored plan detailing the scope, timeline, and cost of the analysis.</li><li>Engage Our Experts: Work with our accessibility specialists to perform the analysis and get actionable recommendations.</li><li>Implement and Improve: Use our findings to enhance accessibility and compliance.</li></ol><p>Ready to take the first step? Contact us today to schedule your initial consultation!</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "page_title": "Expert Accessibility Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Central Hub for Accessibility Services and Compliance in the USA!",
+      "description": "<p>As a trusted partner in accessibility compliance, we provide end-to-end solutions to help you establish and maintain barrier-free and inclusive environments. From initial assessments to ongoing monitoring, our services ensure your organization meets accessibility standards with ease.</p><p>Whether you're a large public-facing company or an organization committed to creating inclusive experiences, we specialize in making your information and communication spaces accessible.</p><p>Our expertise spans accessibility audits, consulting, training, remediation, and implementing sustainable practices. We also guide you in adopting the right procurement policies, tools, and processes to ensure long-term compliance and inclusivity.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Our-Services-1.svg",
+        "alt": "Illustration of a compliance help desk representative wearing a headset and helping a caller inquiring about our services."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Compliance Management",
+      "description": "<p>Our Accessibility Compliance Consulting services help organizations achieve and maintain accessibility through audits, policy development, training, and monitoring, ensuring compliance with WCAG, ADA, and Section 508 standards. With over 15 years of expertise in ICT and accessibility, a certified team with lived experience, and strategic partnerships with disability organizations, we deliver inclusive, practical solutions tailored to diverse sectors. Guided by the principle of 'Nothing about us, without us,' we focus on real-world insights and global best practices to create barrier-free experiences. Our proven track record includes making over a million pages accessible, demonstrating our ability to manage large-scale projects effectively.</p>",
+      "items": [],
+      "link": {
+        "title": "Accessibility Compliance Consulting",
+        "url": "https://accessibilityinnovations.com/accessibility-compliance-consulting/",
+        "target": ""
+      },
+      "image": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Accessibility Audits and Certifications",
+      "description": "<p>Your digital presence must comply with the set accessibility standards, and our comprehensive manual audits and certifications make sure you do. We help you identify barriers, to meet standards like WCAG or EN 301 549 and achieve compliance with regulations like ADA, and create inclusive experiences for everyone. Our expert team provides detailed reports, actionable solutions, and certifications that demonstrate your commitment to accessibility and inclusion.</p>",
+      "items": [
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Rely on strategic actions to enhance accessibility based on initial gap analysis.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Continued monitoring of measures' effectiveness.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Updating plans as per ongoing feedback and results.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": {
+        "title": "Learn More About Accessibility Audits and Certifications",
+        "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+        "target": ""
+      },
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Accessibility Plans and Policies",
+      "description": "<p>We help organizations create tailored strategies aligned with WCAG, and other standards to ensure compliance and promote accessibility. From policy drafting to implementation guidance, our solutions empower you to build an inclusive culture that supports equal access for everyone.</p>",
+      "items": [
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Execute a Blueprint Accessibility plan to address identified barriers and act on consultation feedback.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Improve compliance scores significantly by covering priority area action items.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": {
+        "title": "Learn More About Accessibility Policies and Plans",
+        "url": "https://accessibilityinnovations.com/policies-and-plans/",
+        "target": ""
+      },
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Accessibility Training",
+      "description": "<p>Our expert-led accessibility training programs are designed to foster inclusivity and compliance. With WCAG, ADA, and Section 508 as guidelines on board, we equip your staff with the right skills needed to create accessible environments. Our training program ensures that your organization is ready to meet accessibility challenges, delivering inclusive experiences for everyone.</p>",
+      "items": [
+        {
+          "image": "",
+          "title": "Customized Training Programs",
+          "description": "<p>Offering training sessions that are tailor-made to the specific needs of your staff.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Ongoing Education",
+          "description": "<p>We continue providing updates and learning opportunities to keep your staff up-to-date with the best practices.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Feedback and Adjustments",
+          "description": "<p>Feedback from training participants helps refine future sessions for high effectiveness and engagement.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": {
+        "title": "Learn More About Accessibility Training",
+        "url": "https://accessibilityinnovations.com/accessibility-training/",
+        "target": ""
+      },
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Accessibility Gap Analysis",
+      "description": "<p>What are the actual accessibility lapses your organization is dealing with? What does your target audience need? We help conduct a thorough evaluation of your organization's current accessibility status and identify actionable compliance gaps.</p>",
+      "items": [
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Identify existing accessibility measures and concerns by interviewing staff.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Review the efficacy of current accessibility policies, practices, and procedures.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Assess training needs and effectiveness of existing accessibility-focused training.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Gather valuable feedback, focusing on individuals with disabilities based on lived experiences.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "",
+          "description": "<p>Evaluate recent and upcoming procurements for compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": {
+        "title": "Learn More About Accessibility Gap Analysis",
+        "url": "https://accessibilityinnovations.com/accessibility-gap-analysis/",
+        "target": ""
+      },
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why Choose Us?",
+      "description": "<p>We are committed to excelling in what we do. This means providing highly personalized service with a focus on long-term trust. You can find our successful track record backed by transparent communication and highly effective work.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": "A blue circular icon with two user silhouettes connected by a curved line, representing communication or networking."
+          },
+          "title": "Extensive Expertise",
+          "description": "<p>With over 15 years of experience in Information and Communications Technology (ICT) and digital accessibility, we possess a deep understanding of various disabilities, including visual, auditory, physical, cognitive, and neurological challenges. This enables us to create truly inclusive experiences for all users.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Conformance-levels.svg",
+            "alt": "A blue circular icon featuring a shield with a checkmark, representing security, trust, and compliance assurance."
+          },
+          "title": "Certified and Experienced Team",
+          "description": "<p>Our team holds certifications from the International Association of Accessibility Professionals (IAAP), with several members certified as CPWA professionals. Team members with lived experiences of disabilities provide valuable insights from an assistive technology user's perspective, enriching the quality of our solutions.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations.svg",
+            "alt": "A blue circular icon with a white question mark, symbolizing help, FAQs, or customer support."
+          },
+          "title": "Strategic Partnerships",
+          "description": "<p>Guided by the principle of \"Nothing about us, without us,\" we collaborate with disability organizations to ensure our solutions are not only compliant but also inclusive. Real-world insights from these partnerships allow us to tailor effective strategies that align with our clients' operational needs and compliance goals.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": "A blue circular icon with two user silhouettes connected by a curved line."
+          },
+          "title": "Proven Track Record",
+          "description": "<p>We've made over a million pages of public information accessible through comprehensive testing, remediation, and training. Our ability to manage large-scale projects across sectors like finance, healthcare, education, transportation, social services, justice, and government demonstrates our capability to meet diverse organizational needs.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": "A blue circular icon featuring a shield with a checkmark."
+          },
+          "title": "Commitment to Standards and Best Practices",
+          "description": "<p>As active contributors to the development of global accessibility standards, we ensure your organization not only meets regulatory requirements but also aligns with international best practices.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": "A blue circular icon with a white question mark."
+          },
+          "title": "Customer-Focused Solutions",
+          "description": "<p>Our creative problem-solving approach is tailored to each client, addressing complex challenges effectively. By focusing on corporate success and community impact, we deliver solutions that foster inclusivity and compliance.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Whether you aim to make your digital content barrier-free, develop sustainable accessibility policies, or ensure organization-wide compliance, we bring the expertise, partnerships, and commitment to support your journey toward a more inclusive future.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "More Services",
+      "description": "<p>Each organization has unique accessibility needs. Accessibility Innovations' tailored solutions can help your organization become compliant as well as foster long-term inclusivity and sustainability! Here are some of the niche yet essential services we offer...</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": "A blue circular icon featuring an open book, symbolizing knowledge, learning, or documentation."
+          },
+          "title": "VPAT Reports",
+          "description": "<p>Voluntary Product Accessibility Template (VPAT) reports are documents that detail how well a digital product complies with established accessibility standards.</p>",
+          "link": "https://accessibilityinnovations.com/vpat-report-service/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": "A blue circular icon depicting three people standing together, representing teamwork and collaboration."
+          },
+          "title": "Compliance Consulting and Risk Mitigation",
+          "description": "<p>Help organizations navigate the complexities of ever-changing and ever-evolving accessibility laws and regulations.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-compliance-consulting/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations.svg",
+            "alt": "A blue circular icon with a DNA helix, representing genetics, innovation, or research."
+          },
+          "title": "ADA & WCAG Web Accessibility",
+          "description": "<p>ADA (Americans with Disabilities Act) and WCAG (Web Content Accessibility Guidelines) are critical frameworks for ensuring digital accessibility.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": "A blue circular icon with crossed pencil and pen, representing design, creativity, or planning."
+          },
+          "title": "Accessibility Gap Analysis",
+          "description": "<p>An Accessibility Gap Analysis evaluates the accessibility of your physical and digital environments.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-gap-analysis/"
+        },
+        {
+          "image": "",
+          "title": "Document Remediation Services",
+          "description": "<p>Document remediation is the process of transforming digital content to make it inclusive and accessible for all users, including individuals with disabilities.</p>",
+          "link": "https://accessibilityinnovations.com/document-accessibility-remediation/"
+        },
+        {
+          "image": "",
+          "title": "Accessibility Training",
+          "description": "<p>At Accessibility Innovations, we believe that accessibility training is essential for creating inclusive environments while meeting compliance needs.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-training/"
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": "A blue circular icon with two user silhouettes connected by a curved line."
+          },
+          "title": "Accessibility Audit",
+          "description": "<p>Achieving digital and physical accessibility begins with a comprehensive audit. At Accessibility Innovations, we specialize in detailed assessments to evaluate your organization's current accessibility status.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-audit-services/"
+        },
+        {
+          "image": "",
+          "title": "Accessibility Evaluation Report",
+          "description": "<p>At Accessibility Innovations, we specialize in delivering comprehensive accessibility audit services designed to empower your organization.</p>",
+          "link": "https://accessibilityinnovations.com/accessibility-evaluation-report/"
+        },
+        {
+          "image": "",
+          "title": "Policies and Plans",
+          "description": "<p>At Accessibility Innovations, we understand that adapting to accessibility policies and plans can be challenging.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    }
+  ]
+}

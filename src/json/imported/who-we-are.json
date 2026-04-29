@@ -1,0 +1,245 @@
+{
+  "page_title": "Who We Are - Accessibility Innovations!",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Who We Are - Accessibility Innovations!",
+      "description": "<p>Accessibility Innovations has helped many organizations to become more accessible and inclusive! We deliver seamless, inclusive experiences for all users. This is why so many businesses have put their trust in our services. We are committed to delivering exceptional service, always.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/download.png",
+        "alt": "Two people on Accessibility Innovations platform, gesturing at Plan-Do-Check-Act cycle icons. Illustrates collaborative approach to accessibility projects"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Minds At Work",
+      "description": "<p>Our commitment to excellence, personalized service, and proven reliability build lasting trust. With transparent communication and a track record of success, we're the trusted choice for our clients.</p>"
+    },
+    {
+      "acf_fc_layout": "team",
+      "title": "Our Team",
+      "description": "",
+      "members": [
+        {
+          "photo": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/07/amit-1.jpg",
+            "alt": "Illustration of Amit Aggarwal"
+          },
+          "name": "Amit Aggarwal",
+          "title": "Founder and Consultant",
+          "bio": "",
+          "linkedin": ""
+        },
+        {
+          "photo": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/07/david.jpg",
+            "alt": "Illustration of David Fourney"
+          },
+          "name": "David Fourney",
+          "title": "Advisor – Sr. Consultant",
+          "bio": "",
+          "linkedin": ""
+        },
+        {
+          "photo": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/07/tarun-tony-1.jpg",
+            "alt": "Illustration of Tarun Tony Abraham"
+          },
+          "name": "Tarun Tony Abraham",
+          "title": "Trained Accessibility Consultant",
+          "bio": "",
+          "linkedin": ""
+        },
+        {
+          "photo": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/07/sambhavi-1.jpg",
+            "alt": "Illustration of Sambhavi Chandrashekar"
+          },
+          "name": "Sambhavi Chandrashekar",
+          "title": "PhD, CPACC – Advisor",
+          "bio": "",
+          "linkedin": ""
+        },
+        {
+          "photo": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/07/jaclyn.jpg",
+            "alt": "Illustration of Jaclyn Pope"
+          },
+          "name": "Jaclyn Pope",
+          "title": "Digital Accessibility Consultant",
+          "bio": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Extended Team",
+      "description": "<p>Our commitment to excellence, personalized service, and proven reliability build lasting trust. With transparent communication and a track record of success, we're the trusted choice for our clients.</p>"
+    },
+    {
+      "acf_fc_layout": "logos",
+      "title": "Our Partners",
+      "subtitle": "",
+      "description": "",
+      "columns": 3,
+      "logos": [
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/image-30.webp",
+          "alt": "CNIB Foundation"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Rectangle-1684.webp",
+          "alt": "LV Prasad Eye Institute (LVPEI) logo with tagline 'So that all may see'"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/image-36.webp",
+          "alt": "Canadian Hearing Services"
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "about",
+      "type": "default",
+      "title": "Our Diversity, Accessibility, Inclusion And Respect (DAIR) Policy And Statement",
+      "description": "<p>At Accessibility Innovations, we are committed to the idea that everyone has the right to full participation in our society. This includes access to employment standards, customer-service standards, and barrier-free public spaces! Our DAIR policy reflects our commitment to creating an environment where everyone feels valued. With our equitable practices and proactive initiatives, we ensure to create a culture that embraces individuality, is inclusive, and empowers everyone to thrive.</p><p>Our leadership is committed and accountable to our Diversity, Accessibility, Inclusion and Respect (DAIR) policy and statement, which are established to ensure a fully inclusive and respectful workplace environment. In DAIR, we stand for the following:</p>",
+      "items": [
+        {
+          "title": "Diversity",
+          "description": "Our diverse identities, experiences, and qualities shape our perspectives and interactions with the world. These encompass factors like race, ethnicity, gender, age, abilities, beliefs, and personal attributes, influencing how we engage and are perceived by others."
+        },
+        {
+          "title": "Accessibility",
+          "description": "Ensuring that people of all abilities have equitable and barrier-free access to physical spaces, products, programs, and services, as well as employment opportunities."
+        },
+        {
+          "title": "Inclusion",
+          "description": "Recognizing, welcoming, and making positive space for diversity. An inclusive workplace environment capitalizes on the diversity of thoughts, experiences, skills, and talents of all of our colleagues."
+        },
+        {
+          "title": "Respect",
+          "description": "A respectful environment values diversity, inclusion, dignity, fairness, positive communication, and professionalism. It is inclusive, equitable, accessible, and free from harassment and discrimination."
+        }
+      ],
+      "footnotes": "",
+      "links": [
+        {
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        }
+      ],
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/04/DAIR-1-_1_.webp",
+        "alt": "An illustration showing people of various abilities standing beside a large staircase with a label on each step. Going up the staircase, the labels are Diversity, Accessibility, Inclusion, Respect, and D A I R."
+      }
+    },
+    {
+      "acf_fc_layout": "logos",
+      "title": "Our Clients",
+      "subtitle": "We take care of your compliance needs",
+      "description": "",
+      "columns": 4,
+      "logos": [
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/UHN.webp",
+          "alt": "University Health Network"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Aurora.webp",
+          "alt": "Town of Aurora"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Canada-Post.webp",
+          "alt": "Canada Post"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/TPL.webp",
+          "alt": "Toronto Public Library"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/The-Weather-Network.webp",
+          "alt": "The Weather Network"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Region-of-Waterloo.webp",
+          "alt": "Region of Waterloo"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/DDSB.webp",
+          "alt": "Durham District School Board"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Precott-Russell.webp",
+          "alt": "United Counties of Prescott and Russell"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/FSRA.webp",
+          "alt": "Financial Services Regulatory Authority of Ontario"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Cabinet-Office.webp",
+          "alt": "Ontario Cabinet Office"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/ieso.webp",
+          "alt": "Independent Electricity System Operator"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/EQAO.webp",
+          "alt": "Education Quality and Accountability Office"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/Metro-Toronto.webp",
+          "alt": "Metro Toronto Convention Centre"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/PORTS-Toronto.webp",
+          "alt": "PORTS Toronto"
+        },
+        {
+          "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/03/York.webp",
+          "alt": "York University"
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "testimonials",
+      "title": "what our clients have to say",
+      "description": "Client Success Stories",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/04/fsra-financial-services-regulatory-authority-of-ontario.webp",
+        "alt": "FSRA Financial Services Regulatory Authority of Ontario"
+      },
+      "quote": "SilverRide allowed us to maintain a leadership position in providing our valued clients with fully transparent and consistent communications, within the proper regulatory Accessibility frameworks and conformance standards. They have been responsible for making all public communications fully accessible since 2016.",
+      "company": "Financial Services Regulatory Authority of Ontario",
+      "position": "Senior Manager, Strategic Communications Branch"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "We Care",
+      "description": "<p>The World Health Organization estimates that nineteen million children below the age of fifteen are visually impaired. Twelve million of these children are visually impaired due to refractive errors. This condition is easily diagnosed and corrected with eye surgery performed before age 12 to prevent permanent blindness.</p><p>SilverRide Canada is proud to collaborate with L V Prasad Eye Institute, India, to fund programs aimed at making high-quality, appropriate eye care accessible to all. Watch this section of our website for further developments on this exciting initiative.</p>"
+    }
+  ]
+}

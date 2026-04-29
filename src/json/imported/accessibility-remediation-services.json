@@ -1,0 +1,233 @@
+{
+  "page_title": "Accessibility Remediation Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Remediation Services",
+      "description": "<p>At Accessibility Innovations, we specialize in full-scope accessibility remediation services that make your digital content compliant with WCAG, ADA, and Section 508. Whether you're dealing with inaccessible websites, documents, or software platforms, our team provides precise, efficient solutions to identify, correct, and verify all accessibility barriers.</p><p>We don't just flag problems - we fix them. Our remediation process combines automated scanning tools, expert manual testing, and assistive technology user feedback to ensure your digital assets work for everyone. From websites to PDFs to enterprise-level applications, our remediation experts are here to ensure you don't just meet legal standards - you exceed user expectations.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/elementor/thumbs/Accessibility-Remediation-Services-e1746686773402-r5huumlvkxq2sk3yn9svwl1iwcbhxt3f8w6idc3jcs.webp",
+        "alt": "Accessibility Remediation Services: A group of four individuals engaging with a computer screen displaying accessibility features and options for users."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is Accessibility Remediation?",
+      "description": "<p>Accessibility remediation is the process of identifying, fixing, and eliminating digital accessibility barriers to ensure websites, applications, and digital documents are fully inclusive for individuals with disabilities.</p><p><strong>Compliance Standards:</strong></p><ul><li><strong>WCAG (Web Content Accessibility Guidelines):</strong> International digital accessibility standards.</li><li><strong>ADA (Americans with Disabilities Act):</strong> U.S. accessibility regulations for businesses and public entities.</li><li><strong>Section 508:</strong> Federal compliance standards for digital accessibility.</li></ul><p>Website accessibility remediation ensures that all users, including those using screen readers, keyboard navigation, and assistive technologies, can fully engage with digital content.</p>"
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Accessibility Remediation Services That Go Beyond the Checklist",
+      "description": "<p>If you're searching for digital accessibility remediation or WCAG website remediation providers, you've come to the right place. Accessibility Innovations offers:</p>",
+      "items": [
+        {"title": "Website Remediation", "description": "We bring your website into compliance by remediating HTML, CSS, JavaScript, forms, ARIA attributes, and multimedia elements based on WCAG 2.2 AA."},
+        {"title": "Document Remediation", "description": "Our specialists remediate PDFs, Word, Excel, and PowerPoint files to meet PDF/UA, WCAG, and Section 508 standards."},
+        {"title": "Software Accessibility Fixes", "description": "For SaaS platforms and proprietary software, we offer accessibility overlays, interface updates, and back-end code modifications."},
+        {"title": "Accessibility Monitoring Solutions", "description": "We offer ongoing support to ensure your content stays accessible long after initial fixes."}
+      ],
+      "link": "",
+      "image": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What Does Accessibility Remediation Include",
+      "description": "<p>Our accessibility remediation services cover a wide range of digital assets and platforms to ensure compliance and usability.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": "",
+          "title": "Website Accessibility Remediation",
+          "description": "<ul><li>Fixing keyboard navigation issues.</li><li>Ensuring proper contrast ratios for readability.</li><li>Adding descriptive alt text to images.</li><li>Improving semantic HTML structure for screen readers.</li><li>Ensuring interactive elements are fully operable and labeled.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Document Accessibility Remediation",
+          "description": "<ul><li>Converting inaccessible PDFs, Word documents, and PowerPoints into accessible formats.</li><li>Adding structured headings, proper tags, and alternative text.</li><li>Ensuring screen reader compatibility and logical reading order.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Mobile App Accessibility Remediation",
+          "description": "<ul><li>Ensuring LMS (Learning Management Systems) and e-learning content comply with WCAG & Section 508.</li><li>Modifying interactive quizzes, simulations, and assessments for accessibility.</li><li>Making SaaS applications fully accessible.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Video & Multimedia Remediation",
+          "description": "<ul><li>Adding captions and transcripts for videos.</li><li>Ensuring audio descriptions for visually impaired users.</li><li>Optimizing interactive elements for accessibility.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Software & E-Learning Accessibility",
+          "description": "<ul><li>Ensuring iOS and Android applications meet WCAG and ADA mobile standards.</li><li>Improving touch target sizes and gestures for usability.</li><li>Implementing voice navigation and screen reader compatibility.</li></ul>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>With our comprehensive digital accessibility remediation services, we ensure your content meets legal requirements and provides an inclusive experience for all users.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "process",
+      "title": "Our Accessibility Remediation Process",
+      "subtitle": "At Accessibility Innovations, we follow a proven step-by-step process to identify, fix, and validate digital accessibility compliance.",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Why Choose Accessibility Innovations for Accessibility Remediation Services?",
+      "description": "<p>At Accessibility Innovations, we take a holistic approach to digital accessibility by combining technical expertise, legal compliance, and user experience enhancements.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Certified Accessibility Experts",
+          "description": "<p>Our team includes CPWA-certified professionals and WCAG specialists.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive Accessibility Solutions",
+          "description": "<p>From websites and mobile apps to PDFs and e-learning platforms, we handle it all.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Compliance with Global Standards",
+          "description": "<p>We ensure full compliance with WCAG, ADA, and Section 508.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Real-User Testing",
+          "description": "<p>Our accessibility testing includes individuals with disabilities to ensure real-world usability.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Customized Remediation Plans",
+          "description": "<p>Tailored solutions based on your organization's needs and content complexity.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Support & Training",
+          "description": "<p>We provide long-term monitoring, maintenance, and accessibility consulting.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Our goal is to go beyond compliance by making your digital assets truly accessible and user-friendly.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Get Started with Accessibility Remediation Today!",
+      "subtitle": "",
+      "description": "<p>Ensure your websites, documents, and digital content are fully accessible and compliant. Contact Accessibility Innovations today for expert accessibility remediation services and make your digital presence inclusive for all!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What is accessibility remediation?",
+          "answer": "<p>Accessibility remediation is the process of identifying and correcting digital content that is not accessible to people with disabilities. It ensures that websites, documents, and applications comply with standards like WCAG and ADA.</p>"
+        },
+        {
+          "question": "Why is accessibility remediation important?",
+          "answer": "<p>Without remediation, digital assets may exclude people with disabilities, leading to legal risk, poor user experience, and reputational damage. Remediation ensures inclusivity and compliance.</p>"
+        },
+        {
+          "question": "What types of digital content require remediation?",
+          "answer": "<p>Any public-facing or internal digital content - websites, PDFs, Word documents, mobile apps, and enterprise platforms - may need remediation if it doesn't meet accessibility standards.</p>"
+        },
+        {
+          "question": "What standards guide accessibility remediation?",
+          "answer": "<p>WCAG 2.2, Section 508 (USA), AODA (Ontario), EN 301 549 (EU), and ADA are the primary standards governing digital accessibility remediation.</p>"
+        },
+        {
+          "question": "How is the remediation process carried out?",
+          "answer": "<p>It involves scanning the content, manually reviewing it, prioritizing issues, implementing code or design fixes, retesting with assistive technologies, and verifying results with real users when needed.</p>"
+        },
+        {
+          "question": "How long does remediation take?",
+          "answer": "<p>Depending on the complexity and volume of content, remediation can take from a few days (for a set of documents) to several weeks (for large websites or platforms).</p>"
+        },
+        {
+          "question": "What is the cost of accessibility remediation?",
+          "answer": "<p>Costs vary depending on the type, complexity, and amount of content being remediated. Contact us for a tailored estimate based on your needs.</p>"
+        },
+        {
+          "question": "Can small businesses benefit from accessibility remediation?",
+          "answer": "<p>Yes! Accessibility isn't just for large enterprises. Small businesses can improve customer engagement, reduce legal risk, and show their commitment to inclusion through affordable, scalable remediation services.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

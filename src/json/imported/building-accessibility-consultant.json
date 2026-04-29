@@ -1,0 +1,235 @@
+{
+  "page_title": "Expert Building Accessibility Consultant US",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Building Accessibility Consultant US",
+      "description": "<p>Looking for a trusted building accessibility consultant in the United States? At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we help businesses, public institutions, architects, and developers across the U.S. meet accessibility standards set by the Americans with Disabilities Act (ADA), IBC, and local building codes.</p><p>Our consulting services are grounded in real-world expertise and a deep understanding of federal and state-level compliance requirements. Whether you're constructing a new facility or improving an existing one, we offer reliable guidance to ensure your buildings are usable, inclusive, and barrier-free.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/09/freepik__the-style-is-candid-image-photography-with-natural__33912.png",
+        "alt": "Building Accessibility Consultant guiding accessibility improvements, showing a person in a wheelchair using a ramp at an accessible building entrance."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Universal Design Consulting Services",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We specialize in <a href=\"https://accessibilityinnovations.com/accessibility-compliance-consulting/\">accessibility consulting </a>services for American organizations in both the private and public sectors. From government buildings and corporate campuses to schools and healthcare facilities, we offer tailored guidance for accessibility construction at every stage.</p><p>Whether your goal is to achieve <a href=\"https://accessibilityinnovations.com/ada-compliance-consultants/\">ADA compliance</a>, reduce legal risk, or improve visitor experience, we're here to support you with industry best practices and code-compliant solutions.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Ensure Accessibility for Both Existing and New Constructions",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Accessibility compliance isn't one-size-fits-all. That's why we provide flexible solutions for both new and existing structures:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Consulting for New Construction",
+          "description": "<ul><li>Collaborate with your architects and engineers during the planning and design stages.</li><li>Integrate ADA, IBC, and state-specific accessibility codes into blueprints.</li><li>Prevent compliance issues before they arise.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Consulting for Existing Sites & Facilities",
+          "description": "<ul><li>Conduct thorough building accessibility audits to identify non-compliance and usability issues.</li><li>Develop remediation strategies that align with your timeline and budget.</li><li>Ensure ongoing compliance with evolving ADA requirements.</li></ul>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Additional Consulting Services",
+          "description": "<ul><li>Plan reviews and code assessments.</li><li>Accessibility training for design and construction teams.</li><li>Expert witness services for ADA litigation or settlements.</li></ul>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Get a Certified Accessibility Audit for Your Building",
+      "description": "<p>A professional <a href=\"https://accessibilityinnovations.com/accessibility-audit-services/\">accessibility audit</a> is a critical tool for maintaining ADA compliance and ensuring your facility is welcoming to everyone. Our certified consultants inspect your building's entrances, pathways, signage, restrooms, elevators, and more\u2014identifying barriers and recommending improvements.</p><p>Benefits include:</p><ul><li>Lowering the risk of ADA lawsuits or Department of Justice (DOJ) investigations.</li><li>Enhancing access for employees, clients, and visitors with disabilities.</li><li>Supporting your DEI and ESG commitments.</li></ul>"
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Whether you're undergoing an accessibility audit or need help with compliance reports, we're here to support you. Contact us today to ensure your product is inclusive, accessible, and compliant!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Why Choose Us as Your Building Accessibility Consultant",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Certified Accessibility Experts",
+          "description": "<p>Our consultants are certified in ADA, IBC, and ANSI standards, with backgrounds in architecture, code enforcement, and disability advocacy.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Holistic Approach",
+          "description": "<p>We go beyond checklists to design environments that are truly inclusive\u2014not just technically compliant.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Industry Experience",
+          "description": "<p>We've worked on U.S. federal facilities, commercial office spaces, schools, and transit hubs\u2014giving us insight across sectors.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Customized Solutions",
+          "description": "<p>Every site is different. We tailor our audits and recommendations to your building type, occupancy, and location.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Future-Proofing",
+          "description": "<p>We consider upcoming code changes and evolving best practices to ensure your projects are built to last.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "links",
+      "links": [
+        {
+          "link": {
+            "title": "Accessibility Audit Services",
+            "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Accessibility Evaluation Report",
+            "url": "https://accessibilityinnovations.com/accessibility-evaluation-report/",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What is the role of an accessibility consultant?",
+          "answer": "<p>An accessibility consultant helps ensure that built environments comply with legal standards like the ADA and are usable by people with a wide range of physical, sensory, and cognitive abilities.</p>"
+        },
+        {
+          "question": "What is accessibility consulting?",
+          "answer": "<p>It's a service that includes site assessments, plan reviews, training, and strategic guidance to support compliance with building accessibility codes and create more inclusive spaces.</p>"
+        },
+        {
+          "question": "How do you become an accessibility consultant?",
+          "answer": "<p>Most professionals have experience in architecture, construction, or code enforcement, and acquire ADA-specific training or certifications such as CASp, ICC A117.1, or similar.</p>"
+        },
+        {
+          "question": "What is an ADA consultant?",
+          "answer": "<p>An ADA consultant provides expertise in interpreting and applying the Americans with Disabilities Act to buildings, facilities, and services, helping organizations reduce risk and improve access.</p>"
+        },
+        {
+          "question": "What are the four types of accessibility?",
+          "answer": "<p>Physical, informational, communicational, and programmatic\u2014each plays a role in inclusive design.</p>"
+        },
+        {
+          "question": "Are accessibility services the same as ADA?",
+          "answer": "<p>ADA compliance is a key part of accessibility services, but full consulting also includes universal design, usability improvements, and strategic planning.</p>"
+        },
+        {
+          "question": "What are three types of ADA?",
+          "answer": "<p>Title I (employment), Title II (state and local governments), and Title III (public accommodations and commercial facilities).</p>"
+        },
+        {
+          "question": "What are the 5 barriers to accessibility?",
+          "answer": "<p>Physical, architectural, informational, attitudinal, and technological barriers can all limit access.</p>"
+        }
+      ],
+      "cta": ""
+    }
+  ]
+}

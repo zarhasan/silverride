@@ -1,0 +1,261 @@
+{
+  "page_title": "VPAT Report Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "VPAT Report Services",
+      "description": "<p>A Voluntary Product Accessibility Template (VPAT) is a key tool for showcasing your commitment to accessibility compliance. At Accessibility Innovations, we craft detailed VPAT reports tailored to your product, covering areas like software, hardware, telecommunications, and office equipment.</p><p>We help align your products with standards like WCAG, Section 508, and EN 301 549, simplifying regulatory compliance and enabling you to meet procurement requirements effortlessly.</p><p>Don't wait for audit season—get started with our VPAT report services now!</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/04/VPAT-Reports-And-Audit-Assessment-Reports-_1_.webp",
+        "alt": "VPAT report section showing applicable accessibility standards, terms definitions, and WCAG 2.1 report guidelines for conformance evaluation."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is a VPAT Report?",
+      "description": "<p>A VPAT is a structured document that evaluates how well a product meets accessibility standards, such as WCAG, Section 508, and EN 301 549. It serves as a transparency tool for buyers focused on accessibility, helping organizations establish trust and gain a competitive edge in procurement.</p><p>At Accessibility Innovations, we specialize in creating comprehensive Voluntary Product Accessibility Templates (VPATs) to help organizations achieve accessibility excellence. Our VPATs are designed to identify accessibility strengths and pinpoint areas for improvement, providing actionable insights that ensure both legal compliance and inclusivity.</p><p>By leveraging these templates, you not only meet regulatory requirements but also boost user trust and satisfaction, showcasing your organization's unwavering commitment to accessibility and a barrier-free experience for all.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "What Does Our VPAT Report Include?",
+      "description": "<p>Our VPAT reports are thoughtfully designed to prioritize clarity and usability, ensuring they meet the highest standards for accessibility reporting. Here's what they include:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Structure-1.svg",
+            "alt": ""
+          },
+          "title": "Executive Summary",
+          "description": "<p>The executive summary provides a concise overview of the findings, highlighting key accessibility strengths and areas for improvement. It offers stakeholders a quick yet comprehensive understanding of the product's accessibility status and compliance levels.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Evaluation",
+          "description": "<p>The accessibility evaluation assesses the product's compatibility with assistive technologies and its usability. Key aspects reviewed include keyboard navigation, color contrast, alternative text for images, and other critical elements essential for inclusive user experiences.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Conformance-levels.svg",
+            "alt": ""
+          },
+          "title": "Conformance Levels",
+          "description": "<p>Our reports use clear and standardized terms like 'Supports,' 'Partially Supports,' and 'Does Not Support' to indicate the product's level of compliance with accessibility standards. This ensures that the results are easy to understand and actionable.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Product Information",
+          "description": "<p>The report provides detailed information about the product or service being evaluated. Includes product name, version, and it also describes the testing environment, such as the operating systems, browsers, and assistive technologies used during the evaluation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Test-procedures-and-results.svg",
+            "alt": ""
+          },
+          "title": "Test Procedures and Results",
+          "description": "<p>This section provides a detailed account of the methods, tools, and results from the evaluation. It ensures transparency by outlining the process used to assess the product's accessibility and the evidence supporting the findings.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations.svg",
+            "alt": ""
+          },
+          "title": "Actionable Recommendations",
+          "description": "<p>We include clear, practical steps for addressing any identified accessibility gaps. These recommendations help organizations prioritize improvements and achieve compliance more effectively, enhancing accessibility for all users.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>By following a standardized format, our VPAT reports deliver consistency, transparency, and ease of use, empowering organizations to take informed steps toward greater accessibility and inclusivity.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Our VPAT Reporting Process",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive WCAG Audit",
+          "description": "<p>Our team conducts both manual and automated assessments of your product against WCAG success criteria to identify compliance levels and improvement areas.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "VPAT Preparation",
+          "description": "<p>We compile findings into a detailed VPAT report, highlighting compliance levels and offering tailored recommendations for improvement.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Guidelines-Evaluation.svg",
+            "alt": ""
+          },
+          "title": "VPAT Delivery",
+          "description": "<p>Your finalized VPAT document is delivered along with updates to your accessibility policy, ensuring your organization demonstrates a clear commitment to inclusivity.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Whether you're undergoing an accessibility audit or need help with compliance reports, we're here to support you. Contact us today to ensure your product is inclusive, accessible, and compliant!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Why get VPAT Reporting Services from Accessibility Innovations?",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Expertise and Proven Results",
+          "description": "<p>We combine technical know-how with real-world accessibility insights, ensuring practical and effective solutions. Trusted by businesses and government agencies across the U.S., we deliver results that help organizations thrive in an accessibility-focused marketplace.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Tailored Solutions",
+          "description": "<p>Every product is unique, and our recommendations reflect your specific needs, offering sustainable fixes that align with your business goals.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Industry-Leading Tools and Techniques",
+          "description": "<p>We use tools like <strong>aXe, WAVE, JAWS, NVDA,</strong> and <strong>Compliance Deputy</strong> for accurate and thorough evaluations.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Actionable Guidance",
+          "description": "<p>We don't just identify issues—we work with you to resolve them, ensuring compliance with legal standards and user expectations.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "links",
+      "links": [
+        {
+          "link": {
+            "title": "Accessibility Audit Services",
+            "url": "https://accessibilityinnovations.com/accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "link": {
+            "title": "Accessibility Evaluation Report",
+            "url": "https://accessibilityinnovations.com/accessibility-evaluation-report/",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What is a VPAT?",
+          "answer": "<p>A VPAT outlines a product's compliance with accessibility standards like WCAG, Section 508, and EN 301 549.</p>"
+        },
+        {
+          "question": "Is a VPAT mandatory?",
+          "answer": "<p>While not universally required, VPATs are often necessary for working with government agencies or demonstrating accessibility compliance.</p>"
+        },
+        {
+          "question": "How long does it take?",
+          "answer": "<p>Typically, 2–4 weeks, depending on the product's complexity and remediation needs.</p>"
+        },
+        {
+          "question": "What are the benefits?",
+          "answer": "<p>A VPAT helps organizations identify accessibility gaps, enhance usability, and build trust with customers and stakeholders.</p>"
+        },
+        {
+          "question": "How much does it cost?",
+          "answer": "<p>Costs vary based on the product's complexity. Contact us for a customized quote!</p>"
+        },
+        {
+          "question": "Who completes a VPAT?",
+          "answer": "<p>Accessibility specialists with expertise in standards like WCAG and Section 508 conduct the assessments and prepare the report.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "page_title": "Website Accessibility Testing Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Website Accessibility Testing Services",
+      "description": "<p>At Accessibility Innovations, we provide website accessibility testing services to ensure that your digital platforms comply with ADA (Americans with Disabilities Act), Section 508, and WCAG (Web Content Accessibility Guidelines). Our expert testing helps businesses and organizations create inclusive websites, improve user experience, enhance SEO, and mitigate legal risks associated with non-compliance.</p><p>Through automated scans, manual audits, assistive technology testing, and usability assessments, we identify and fix accessibility barriers, ensuring a seamless experience for all users.</p><p>Ensure your website meets ADA compliance standards—Contact Us today for professional website accessibility testing services!</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/03/website-accessibility-testing-services.jpg",
+        "alt": "Illustration of a woman in a wheelchair using a tablet, symbolizing website accessibility testing services, inclusive web design, and search optimization."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is Website Accessibility?",
+      "description": "<p>Website accessibility ensures that digital content is usable by individuals with disabilities, including those with visual, auditory, motor, and cognitive impairments. An accessible website allows users to navigate, interact with, and understand content using assistive technologies such as screen readers, voice navigation, and keyboard-only navigation.</p><p>Website accessibility is governed by WCAG (Web Content Accessibility Guidelines), which provide the framework for ensuring that websites are:</p><ul><li><strong>Perceivable:</strong> Content is available in multiple formats, such as text, audio, and Braille.</li><li><strong>Operable:</strong> Users can navigate using assistive devices and alternative input methods.</li><li><strong>Understandable:</strong> Information is structured and clear for all users.</li><li><strong>Robust:</strong> Websites work seamlessly across devices and assistive technologies.</li></ul><p>By making your website accessible, you enhance usability for all visitors, reduce legal risks, and improve your website's SEO rankings.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Why Website Accessibility Testing is Important?",
+      "description": "<p>Ensuring website accessibility is essential for businesses, organizations, and government entities.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": "",
+          "title": "Legal Compliance with ADA & Section 508",
+          "description": "<p>In the United States, the ADA (Americans with Disabilities Act) and Section 508 require websites to be accessible to individuals with disabilities. Non-compliance can lead to lawsuits, fines, and reputational damage.</p><p>Major legal requirements include:</p><ul><li><strong>ADA Title III</strong> – Private businesses must provide equal access to online content.</li><li><strong>Section 508</strong> – Federal agencies and contractors must meet accessibility standards.</li></ul><p>By conducting website accessibility testing, you ensure compliance with ADA and Section 508 regulations, protecting your business from litigation.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "Better User Experience for All",
+          "description": "<p>Accessibility improvements benefit all users, including seniors, mobile users, and individuals with temporary impairments. Websites with clear navigation, high contrast text, and assistive technology compatibility offer a better user experience for everyone.</p>",
+          "link": ""
+        },
+        {
+          "image": "",
+          "title": "SEO Benefits",
+          "description": "<p>Web accessibility aligns with SEO best practices, including:</p><ul><li>Optimized alt-text for images</li><li>Proper HTML structure with headings</li><li>Mobile responsiveness and faster page load times</li></ul><p>These improvements boost search engine rankings and drive more traffic to your website.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 3,
+      "title": "Our Website Accessibility Testing Process",
+      "description": "<p>At Accessibility Innovations, we use a multi-layered approach to ensure full compliance with ADA, Section 508, and WCAG.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Automated Testing",
+          "description": "<p>We use AI-driven accessibility scanning tools to detect common violations, such as missing alt text, poor contrast, and non-compliant code.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "Manual Testing",
+          "description": "<p>Our accessibility specialists conduct in-depth manual reviews, ensuring that forms, buttons, dropdowns, and interactive elements meet accessibility standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Functional Testing",
+          "description": "<p>We test real-world use cases, ensuring that menus, pop-ups, and dynamic content are fully accessible.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Assistive Technology Testing",
+          "description": "<p>We test your website using screen readers (JAWS, NVDA), voice navigation tools, and keyboard-only navigation to assess compatibility with assistive devices.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Test-procedures-and-results.svg",
+            "alt": ""
+          },
+          "title": "Usability Testing (Available Upon Request)",
+          "description": "<p>Real users with various disabilities navigate your website using assistive technologies, providing first-hand feedback on accessibility and usability.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Compliance Reporting & Recommendations",
+          "description": "<p>We provide a detailed accessibility report, including:</p><ul><li>Identified violations and severity levels</li><li>Step-by-step remediation guidance for developers</li><li>Code fixes and accessibility best practices</li></ul>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Why Choose Accessibility Innovations for Website Accessibility Testing",
+      "description": "<p>At Accessibility Innovations, we are trusted accessibility testing service providers specializing in ADA and WCAG compliance.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Certified Experts",
+          "description": "<p>Our team includes CPWA-certified professionals with expertise in ADA, Section 508, and WCAG compliance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Comprehensive Testing",
+          "description": "<p>We combine automated, manual, and assistive technology testing for a complete evaluation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Real-User Testing",
+          "description": "<p>Usability testing with people with disabilities ensures practical improvements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Customized Solutions",
+          "description": "<p>We provide tailored accessibility audits and remediation plans based on your industry and digital platform.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Legal Protection & Compliance",
+          "description": "<p>Our reports help businesses meet ADA compliance standards, reducing legal risks.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Full digital accessibility and compliance",
+      "subtitle": "",
+      "description": "<p>Make your website accessible, compliant, and user-friendly with Accessibility Innovations!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "Do you provide ongoing accessibility maintenance and support for websites?",
+          "answer": "<p>Yes, we offer continuous monitoring and accessibility maintenance services to keep your website compliant as ADA and WCAG standards evolve.</p>"
+        },
+        {
+          "question": "How does Accessibility Innovations conduct website accessibility testing?",
+          "answer": "<p>We use a mix of automated tools, manual testing, functional testing, and real-user testing with assistive technologies to ensure full compliance.</p>"
+        },
+        {
+          "question": "How long does it take to complete a website accessibility test?",
+          "answer": "<p>The timeline depends on your website's size and complexity. A standard audit takes 1 to 4 weeks, with a detailed compliance report and remediation recommendations.</p>"
+        },
+        {
+          "question": "Can accessibility testing improve my website's SEO?",
+          "answer": "<p>Yes! Many accessibility improvements align with SEO best practices, such as:</p><ul><li>Alt text for images</li><li>Structured content and semantic HTML</li><li>Mobile responsiveness and faster page load times</li></ul><p>These factors enhance search engine rankings and user engagement.</p>"
+        },
+        {
+          "question": "What are WCAG and ADA compliance standards?",
+          "answer": "<ul><li><strong>WCAG (Web Content Accessibility Guidelines)</strong> sets the global standard for digital accessibility.</li><li><strong>ADA (Americans with Disabilities Act)</strong> mandates equal digital access for people with disabilities in the U.S.</li><li><strong>Section 508</strong> requires federal agencies and contractors to meet digital accessibility standards.</li></ul>"
+        },
+        {
+          "question": "Why is website accessibility important for my business?",
+          "answer": "<p>An accessible website ensures legal compliance, better user experience, broader audience reach, and improved brand reputation.</p>"
+        },
+        {
+          "question": "Can you help fix accessibility issues on my existing website?",
+          "answer": "<p>Absolutely! We provide accessibility remediation services, including code fixes, design improvements, and developer training.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

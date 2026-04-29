@@ -1,0 +1,220 @@
+{
+  "page_title": "Adobe InDesign Accessibility Training",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Adobe InDesign Accessibility Training",
+      "description": "<p>Our Adobe InDesign accessibility training helps designers, communications teams, and content creators learn how to produce accessible documents and WCAG compliant PDFs directly from Adobe InDesign. This hands-on InDesign accessibility course teaches accessibility best practices at the design stage before documents are exported so accessibility is built in, not added later.</p><p>Whether you create reports, brochures, forms, or templates, this accessible documents training shows you how to structure content, manage reading order, apply alt text, and export PDFs that meet accessibility and compliance requirements. The course supports professionals responsible for InDesign PDF accessibility, accessibility compliance, and inclusive content delivery.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/elementor/thumbs/freepik__the-style-is-candid-image-photography-with-natural__71138-r5ufe6z6tq3w4p02x56ndd1fkp4cz5srlfpnmb50ek.png",
+        "alt": "Adobe InDesign Accessibility Training"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Adobe InDesign Accessibility Training Course Overview",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>This Adobe InDesign accessibility training course teaches how to design and format documents in InDesign so they can be converted into fully accessible PDFs. Participants learn how accessibility works within InDesign, why it matters, and how accessible design choices directly impact screen reader users and other assistive technology users.</p><p>The course focuses on practical skills, not theory. You\u2019ll learn how to:</p><ul><li style=\"text-align: left;\">Use headings, styles, and structure correctly.</li><li style=\"text-align: left;\">Prepare images, graphics, and tables for accessibility.</li><li style=\"text-align: left;\">Control reading order and tab order.</li><li style=\"text-align: left;\">Export PDFs that align with WCAG accessibility standards.</li></ul><p>Accessibility is increasingly required for public-facing documents, government communication, education, and regulated industries. This training ensures your documents are usable, inclusive, and compliant from the start.</p>"
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "description": "<p>This Adobe InDesign accessibility training aligns with ADA, Section 508, and WCAG 2.2 requirements to help ensure your documents are accessible to individuals with disabilities. Build accessibility into your workflow, reduce compliance risk, and demonstrate your organization\u2019s commitment to digital inclusion.</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Target Audience",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>This InDesign accessibility training is designed for both beginners and experienced professionals who create or manage documents.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Who Should Take This Course",
+      "description": "<ul><li>Graphic designers using Adobe InDesign</li><li>Marketing and communications teams</li><li>Accessibility and compliance professionals</li><li>Government and public-sector staff</li><li>Educational institutions and publishers</li><li>Corporate teams responsible for accessible documents</li></ul>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Why This Training Matters",
+      "description": "<ul><li style=\"text-align: left;\">Meet accessibility compliance requirements</li><li style=\"text-align: left;\">Reach a broader audience, including people with disabilities</li><li style=\"text-align: left;\">Reduce remediation time and costs</li><li style=\"text-align: left;\">Improve document usability and quality</li><li style=\"text-align: left;\">Build internal accessibility skills across teams</li></ul>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>No matter your role, this training helps you produce documents that are accessible, readable, and compliant.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Course Curriculum",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Our Adobe InDesign accessibility training course is structured over four weeks and includes live instruction (or self-paced modules), hands-on assignments, and real-world use cases.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Week 1: Introduction to Accessible InDesign",
+          "description": "<ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Accessibility basics and compliance frameworks</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">WCAG requirements for documents</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Understanding InDesign\u2019s role in accessible document workflows</li></ol>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Recommendations-1.svg",
+            "alt": ""
+          },
+          "title": "Week 2: Text Formatting for Accessibility",
+          "description": "<ol><li style=\"text-align: left;\">Structuring content with headings and paragraph styles</li><li style=\"text-align: left;\">Fonts, spacing, alignment, and layout considerations</li><li style=\"text-align: left;\">Avoiding common accessibility mistakes in design</li></ol>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Week 3: Working with Images, Graphics, and Tables",
+          "description": "<ol><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Writing and managing alt text for images</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Making tables readable by screen readers</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Handling grouped objects and complex layouts</li></ol>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Week 4: Organizing Reading Order and Exporting Accessible PDFs",
+          "description": "<ol><li style=\"text-align: left;\">Using the Reading Order and Articles panels</li><li style=\"text-align: left;\">Managing tab order</li><li style=\"text-align: left;\">Exporting PDFs that pass accessibility checkers</li><li style=\"text-align: left;\">Final accessibility review using Adobe Acrobat Pro and PAC</li></ol>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ready to Make Your InDesign Documents Accessible?",
+      "description": "<p>Accessibility starts with design. Our Adobe InDesign accessibility training gives you the skills to create WCAG 2.2\u2013compliant documents that support ADA and Section 508 requirements, without relying on costly remediation after export. Whether you\u2019re producing public-facing content or internal documentation, this course helps you build accessibility into everyday workflows so your team can confidently create accessible PDFs directly from InDesign while improving compliance and inclusion.</p>",
+      "link": {
+        "title": "Contact Us",
+        "url": "/contact-us/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "Will I learn how to export fully accessible PDFs from InDesign?",
+          "answer": "<p>Yes. The course covers preparing documents in InDesign and exporting PDFs that meet accessibility requirements.</p>"
+        },
+        {
+          "question": "Do you provide practice files or templates?",
+          "answer": "<p>Yes. Participants receive sample files and templates to practice accessible document creation.</p>"
+        },
+        {
+          "question": "Can teams or organizations enroll together?",
+          "answer": "<p>Absolutely. We offer group training options for teams and organizations.</p>"
+        },
+        {
+          "question": "Do you offer customized or on-site training?",
+          "answer": "<p>Yes. Training can be customized and delivered virtually or on-site based on your needs.</p>"
+        },
+        {
+          "question": "What accessibility standards does the training cover?",
+          "answer": "<p>The course aligns with WCAG and best practices for accessible PDF creation.</p>"
+        },
+        {
+          "question": "Will this help me make my existing documents accessible?",
+          "answer": "<p>Yes. You\u2019ll learn how to improve both new and existing InDesign files.</p>"
+        },
+        {
+          "question": "Who is this Adobe InDesign Accessibility Training for?",
+          "answer": "<p>Designers, content creators, communications teams, and accessibility professionals.</p>"
+        },
+        {
+          "question": "Do I need prior experience with Adobe InDesign?",
+          "answer": "<p><span style=\"font-weight: 400;\">Basic familiarity is helpful, but the course is suitable for beginners and advanced users.</span></p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your Compliance Consultation",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.</p>",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "page_title": "Document Accessibility Remediation Services",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Document Accessibility Remediation Services",
+      "description": "<p>Word and PDF documents are essential for sharing important information, but they must comply with Web Content Accessibility Guidelines (WCAG) and PDF/Universal Accessibility (PDF/UA) standards. Meeting these requirements requires a meticulous, expert approach—something Accessibility Innovations excels at.</p><p>Our remediation process ensures that every detail is addressed, from adding clear labeling and optimizing document properties to maintaining structure and readability. Enhancements like logical bookmarks and seamless reading order create an effortless experience for all users, including those using assistive technologies.</p><p>We don't just work with Word documents. Our expertise spans various formats, including PDFs, PowerPoint presentations, Excel spreadsheets, and interactive forms. We even handle multimedia accessibility in tools like Adobe InDesign and CorelDRAW. Backed by rigorous quality assurance, we deliver scalable, reliable solutions that ensure your organization meets the highest standards of accessibility and inclusivity.</p><p>Contact Accessibility Innovations today to make your documents accessible and take a significant step toward creating an inclusive organization.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Group-78.svg",
+        "alt": "An illustration of a person holding a lens against a document showing PDF Remediation Services"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What is Document Remediation",
+      "description": "<p>Document remediation is the process of transforming digital content to make it inclusive and accessible for all users, including individuals with disabilities. This involves ensuring that documents are navigable, readable, and interactive. Navigable documents are intuitive and easy to explore, even when using assistive technologies like screen readers. Readable documents are optimized for clarity, with proper formatting and structure to enhance comprehension. Additionally, interactive documents are fully functional, allowing users relying on assistive tools to engage seamlessly with elements such as forms, tables, and hyperlinks. Document remediation ensures that digital content is not only compliant with accessibility standards but also provides an inclusive and user-friendly experience for everyone.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Why Document Remediation is Important?",
+      "description": "<p>Document remediation is essential not only for meeting compliance standards such as WCAG and PDF/UA but also for fostering universal access to information. By breaking down barriers, document remediation ensures inclusivity for individuals of all abilities. Accessible documents expand your audience by accommodating diverse needs, enabling everyone to access and engage with your content. They also enhance user experiences by prioritizing clarity, readability, and usability, making it easier for all users to interact with your materials.</p><p>Moreover, accessible documents demonstrate your organization's commitment to inclusivity and compliance, reflecting a forward-thinking and socially responsible approach. At Accessibility Innovations, we ensure that your documents meet the highest standards without compromising quality or integrity. Accessible content is more than compliance—it positions your organization as a leader in inclusivity and innovation.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "service-cards",
+      "grid_size": 2,
+      "title": "Our Document Accessibility Remediation Process",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Adding-alternative-text-3.svg",
+            "alt": ""
+          },
+          "title": "Adding alternative text",
+          "description": "<p>We provide concise, descriptive alternative text for all images, charts, and graphics. This allows screen readers to convey the meaning of visual elements to users with visual impairments.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Correcting-reading-order-2.svg",
+            "alt": ""
+          },
+          "title": "Correcting reading order",
+          "description": "<p>A logical reading order ensures users of assistive technologies can follow your content seamlessly. We optimize sequencing to make navigation intuitive and user-friendly.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Structuring headings",
+          "description": "<p>Well-structured, hierarchical headings improve navigation for users with cognitive or visual impairments, enhancing readability and comprehension.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Adding accessible hyperlinks",
+          "description": "<p>We ensure hyperlinks are descriptive and properly tagged, making navigation clear and easy for users of assistive technologies.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Enhancing Interactive Elements",
+          "description": "<p>Forms, buttons, and checkboxes are tested and labeled to ensure compatibility with assistive technologies, allowing users to interact without barriers.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Providing-sufficient-color-contrast-2.svg",
+            "alt": ""
+          },
+          "title": "Ensuring color contrast",
+          "description": "<p>We evaluate and adjust color contrast to meet accessibility standards, ensuring content is readable for users with low vision or color blindness.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Optimizing-text-content-2.svg",
+            "alt": ""
+          },
+          "title": "Optimizing text content",
+          "description": "<p>Font sizes, styles, and spacing are optimized for legibility and ease of reading, accommodating diverse user needs.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Why get a Document Accessibility Remediation Service From Accessibility Innovations",
+      "description": "<p>At Accessibility Innovations, we provide top-tier document accessibility remediation services, ensuring your documents are fully accessible and compliant with all legal standards. Here's why choosing us is the best decision for your document remediation needs:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Trusted Partners Across Industries",
+          "description": "<p>We are a recognized and trusted vendor for government agencies and private organizations. Our inclusion in the Vendor of Record (VOR) affirms our ability to deliver high-quality, secure, and reliable solutions.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Commitment to Security and Confidentiality",
+          "description": "<p>Handling sensitive materials is a priority. Our experts have the necessary security clearances and follow strict protocols to protect your data throughout the remediation process.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Compliance with Retention Regulations",
+          "description": "<p>We adhere to document retention policies, securely storing files for up to seven years. This ensures compliance with legal requirements and provides peace of mind for audits or future references.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Skilled and Experienced Team",
+          "description": "<p>Our professionals bring years of experience in document remediation, specializing in ensuring compliance with WCAG, PDF/UA, and other accessibility standards. From simple forms to complex corporate reports, we deliver excellence.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Standards-Driven and Exclusive",
+          "description": "<p>We go beyond compliance to create fully inclusive content. By adhering to WCAG and PDF/UA, we ensure all users can interact with your documents effortlessly.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Tailored Solutions",
+          "description": "<p>Every client's needs are unique. We offer customized remediation solutions for internal documents, public forms, and specialized corporate files. Your content retains its integrity while becoming accessible to all.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>By choosing Accessibility Innovations, you'll benefit from our extensive experience, secure processes, and trusted reputation across multiple sectors, ensuring your documents are both accessible and professionally managed.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQs)",
+      "description": "",
+      "items": [
+        {
+          "question": "Why is document accessibility important?",
+          "answer": "<p>Document accessibility ensures that all individuals, including those with disabilities, can access and interact with the content. It helps organizations comply with legal standards, promote inclusivity, and reach a wider audience.</p>"
+        },
+        {
+          "question": "What are the common issues in inaccessible documents?",
+          "answer": "<p>Common issues include missing or incorrect headings, lack of alternative text for images, improper table structure, untagged PDFs, poor color contrast, and an illogical reading order.</p>"
+        },
+        {
+          "question": "How long does document accessibility remediation take?",
+          "answer": "<p>The time required depends on the document's length, complexity, and formatting. Simple documents may take a few hours, while complex files may require days or weeks.</p>"
+        },
+        {
+          "question": "How do I know if my documents are accessible?",
+          "answer": "<p>Accessible documents meet standards like WCAG or PDF/UA. Testing with automated tools and manual checks, including reviews with assistive technologies, can confirm accessibility.</p>"
+        },
+        {
+          "question": "What is the cost of document accessibility remediation?",
+          "answer": "<p>Costs vary based on the volume and complexity of the documents. Contact us for a tailored quote based on your specific needs.</p>"
+        },
+        {
+          "question": "Are your services compliant with legal accessibility requirements?",
+          "answer": "<p>Yes, our services comply with regulations such as the ADA, Section 508, AODA, and WCAG standards, ensuring legal and practical accessibility.</p>"
+        },
+        {
+          "question": "Is document accessibility remediation a one-time process?",
+          "answer": "<p>No, accessibility is an ongoing process. As new content is created or existing documents are updated, regular checks and remediation are necessary to maintain compliance.</p>"
+        },
+        {
+          "question": "Who benefits from document accessibility?",
+          "answer": "<p>Document accessibility benefits everyone, including individuals with disabilities, senior citizens, and those using assistive technologies. It also improves usability for all users.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

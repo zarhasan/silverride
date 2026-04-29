@@ -1,0 +1,289 @@
+{
+  "page_title": "Document Accessibility Training Courses",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Document Accessibility Training Courses",
+      "description": "<p>Our Document Accessibility Training Courses are designed to teach professionals how to create inclusive, compliant digital documents across popular formats like Microsoft Word, PowerPoint, and PDF. This hands-on program is perfect for anyone responsible for document creation and distribution—from government staff and educators to designers and communications teams.</p><p>Learn how to meet accessibility standards such as the ADA, Section 508, and WCAG 2.2. Gain confidence in formatting and converting files to ensure all users, including those with disabilities, can access your content with ease. Whether you're new to document accessibility or looking to enhance your skills, this course offers the tools and techniques you need.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/05/Document-Accessibility-Training-Courses-2.png",
+        "alt": "Document Accessibility Training Courses"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Document Accessibility Training Course Overview",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p style=\"text-align: center;\">This course delivers a structured, interactive learning experience focused on creating accessible digital documents. You'll gain real-world knowledge of compliance standards and learn how to remediate existing documents while preventing accessibility barriers in new content.</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Course Duration",
+      "description": "<p>Master the essentials of document accessibility with this training course, equipping you with the skills to create inclusive, user-friendly documents for everyone.</p><p><strong>Level: </strong>Beginner <strong><br />Duration: </strong>6 Weeks, 3-4 hours per week<br /><strong>Mode: </strong>Online, Interactive</p>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Learning Outcomes",
+      "description": "<ul><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Create accessible documents in Word, PowerPoint, and PDF formats</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Understand WCAG and Section 508 requirements</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Use accessibility checkers, screen readers, and tagging tools</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Export and validate documents for assistive technology compatibility</li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\">Avoid common mistakes that prevent accessibility</li></ul>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Empower your team with essential document accessibility skills through our expert training. Ensure your documents are inclusive and accessible to all users.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Target Audience",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Our Document Accessibility Training Courses are ideal for:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "Content creators",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Government employees",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Graphic designers",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Educators and academic professionals",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Accessibility consultants",
+          "description": "",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "description": "<p>The techniques covered in this course directly support ADA, Section 508, and WCAG 2.1/2.2 compliance by ensuring that your documents can be navigated and interpreted by screen readers and other assistive technologies.<br />By learning to implement document accessibility best practices, your team can:</p><ul><li style=\"font-weight: 400;\" aria-level=\"1\">Minimize legal risk</li><li style=\"font-weight: 400;\" aria-level=\"1\">Expand access for diverse audiences</li><li style=\"font-weight: 400;\" aria-level=\"1\">Improve usability for all users</li><li style=\"font-weight: 400;\" aria-level=\"1\">Demonstrate a commitment to digital inclusion</li></ul>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      }
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Course Curriculum",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Introduction to Document Accessibility",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">What is document accessibility?</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Overview of standards and tools</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Creating Accessible Documents in Microsoft Word",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Styles, headings, lists, and structure</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Using the Accessibility Checker</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Converting Word Documents to Accessible PDFs",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Best practices for conversion</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Maintaining tagging and reading order</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Creating Accessible PDFs from Scratch",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Manual tagging and structure setup</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Tools like Acrobat Pro and PAC 2024</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Accessible PowerPoint Presentations",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Slide layout strategies</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Alt text for visuals and accessible templates</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Introduction to HTML Document Accessibility",
+          "description": "<ul><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Semantics, headings, ARIA roles</span><span style=\"font-weight: 400;\"><br /></span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><span style=\"font-weight: 400;\">Basic accessibility testing for web-based content</span></li></ul>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        }
+      ]
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "Who should take this course?",
+          "answer": "<p><span style=\"font-weight: 400;\">This course is for anyone who creates, edits, or publishes digital documents—including designers, administrators, and communications professionals.</span></p>"
+        },
+        {
+          "question": "Do I need prior experience?",
+          "answer": "<p><span style=\"font-weight: 400;\">No prior experience is required. Beginners are welcome, and advanced users will still benefit from best-practice workflows.</span></p>"
+        },
+        {
+          "question": "Is the training updated with current WCAG guidelines?",
+          "answer": "<p>Yes! The training is built around compliance with WCAG, PDF/UA, AODA, ACA, and Section 508 standards.</p>"
+        },
+        {
+          "question": "What types of documents will I learn to make accessible?",
+          "answer": "<p>You'll learn how to prepare accessible reports, brochures, templates, manuals, and other types of digital publications.</p>"
+        },
+        {
+          "question": "Will I receive a certificate after completing the course?",
+          "answer": "<p>Yes. Upon completion, participants receive a Certificate of Completion indicating their training in accessible document creation.</p>"
+        },
+        {
+          "question": "Is this course self-paced or instructor-led?",
+          "answer": "<p>We offer both self-paced modules and live instructor-led sessions depending on your preference and team requirements.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your <br>Compliance Consultation",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.</p>",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

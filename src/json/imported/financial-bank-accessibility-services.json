@@ -1,0 +1,315 @@
+{
+  "page_title": "Financial Bank Accessibility Services in US",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Accessibility Services for Financial Banks  in the US",
+      "description": "<p><a href=\"https://accessibilityinnovations.com\">Accessibility Innovations</a> helps banks and financial institutions across the United States create inclusive, compliant, and user-friendly banking experiences across digital platforms and physical environments. We focus on removing accessibility barriers so customers of all abilities can access financial services independently and with confidence.</p><p>Our expertise covers both regulatory compliance and real-world usability. From WCAG accessibility audits and ADA risk assessments to ATM accessibility evaluations and assistive technology testing, we help financial institutions identify gaps, reduce legal risk, and improve accessibility across online banking, mobile applications, and branch locations.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/10/Financial-Bank-Accessibility-Services-in-US.png",
+        "alt": "A woman in a wheelchair talking with a receptionist at a modern office front desk, representing financial accessibility and inclusive customer service."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Trusted by Financial Institutions",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We\u2019ve partnered with national and regional banks, credit unions, and financial service providers across the U.S., helping them achieve compliance, enhance user experience, and build stronger customer trust. Accessibility Innovations is a trusted ally in creating inclusive and accessible financial ecosystems.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Accelerating Accessibility Compliance Service for Banks",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"color: #000000;\">We help financial institutions quickly identify and resolve compliance issues through expert-led assessments and fast remediation support. Our approach is structured, practical, and effective.</span></p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Fast WCAG 2.1 and ADA compliance audits",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Manual-Testing.svg",
+            "alt": ""
+          },
+          "title": "Clear, audit-ready documentation",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Remediation support for banking platforms, apps, and content",
+          "description": "",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-alternative-text-3.svg",
+            "alt": ""
+          },
+          "title": "Team of financial accessibility specialists with sector experience",
+          "description": "",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"color: #000000;\">We prioritize accessibility without slowing down operations \u2013 helping you stay on track with timelines and regulations.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Services for Making Banking Accessible in the US\u200b",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "Website Accessibility Audits",
+          "description": "<p><span style=\"color: #000000;\">Manual and automated testing for public-facing and secure digital environments</span></p>",
+          "link": {
+            "title": "",
+            "url": "/website-accessibility-audit-services/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Correcting-reading-order-2.svg",
+            "alt": ""
+          },
+          "title": "PDF &amp; Document Remediation",
+          "description": "<p><span style=\"color: #000000;\">Make statements, disclosures, and forms compliant and usable</span></p>",
+          "link": {
+            "title": "",
+            "url": "/document-accessibility-remediation/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Mobile App Accessibility",
+          "description": "<p><span style=\"color: #000000;\">WCAG-aligned testing and fixes for iOS and Android banking apps</span></p>",
+          "link": {
+            "title": "",
+            "url": "/mobile-accessibility-training-courses/",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Testing",
+          "description": "<p><span style=\"color: #000000;\">Real user testing with screen readers and assistive tech</span></p>",
+          "link": {
+            "title": "",
+            "url": "",
+            "target": ""
+          }
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Accessibility Training",
+          "description": "<p><span style=\"color: #000000;\">Equip development, compliance, and customer support teams with actionable skills</span></p>",
+          "link": {
+            "title": "",
+            "url": "/accessibility-training/",
+            "target": ""
+          }
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Why Choose  Accessibility Innovations  for Finacial Bank Service",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We\u2019re not just another vendor, we\u2019re Finacial Bank experts who understand the full scope of digital accessibility and compliance regulations across North America and beyond. Here\u2019s what sets us apart:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "information-cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Financial Industry Insight",
+          "description": "<p><span style=\"font-weight: 400;\">We understand accessibility and banking</span></p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Full Lifecycle Support",
+          "description": "<p><span style=\"font-weight: 400;\">From audit to post-launch updates, we\u2019ve got you covered</span></p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Simple, Guided Process",
+          "description": "<p><span style=\"font-weight: 400;\">We make accessibility achievable for all teams</span></p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Inclusive Expertise",
+          "description": "<p><span style=\"font-weight: 400;\">Our team includes accessibility professionals and users with disabilities</span></p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"font-weight: 400;\">Our clients trust us for reliable, accurate, and high-impact </span>accessibility\u00a0 services<span style=\"font-weight: 400;\"> that make a real difference.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Our Process for Creating Bank Services Accessible in the US \u200b",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<ul><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><p><strong>Audit &amp; Assessment: </strong>We evaluate your current digital and physical systems</p></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><p><strong>Fix &amp; Remediate:</strong>\u00a0We correct barriers in websites, apps, documents, and more</p></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><p><strong>Verify &amp; Test:</strong>\u00a0We retest and confirm compliance with real users and tools</p></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><p><strong>Educate &amp; Train:</strong>\u00a0We equip your team with knowledge to stay accessible</p></li><li style=\"font-weight: 400; text-align: left;\" aria-level=\"1\"><p><strong>Support &amp; Sustain:</strong> We monitor changes and provide long-term partnership</p></li></ul>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQs)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "What is an ADA consultant?",
+          "answer": "<p>An ADA consultant helps financial institutions interpret and apply ADA regulations to ensure accessibility compliance across digital and physical banking services.</p>"
+        },
+        {
+          "question": "What accessibility services do you provide for banks?",
+          "answer": "<p>We offer digital audits, PDF remediation, mobile testing, training, ATM evaluations, and long-term support for ongoing compliance.</p>"
+        },
+        {
+          "question": "Are your services compliant with accessibility regulations?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes, all services follow WCAG 2.1, ADA, Section 508, and state-level guidelines as applicable.</span></p>"
+        },
+        {
+          "question": "Can you help make ATMs accessible?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes. We assess ATMs for reachability, tactile feedback, speech output, and screen readability \u2014 and provide recommendations for remediation.</span></p>"
+        },
+        {
+          "question": "What are accessibility skills?",
+          "answer": "<p><span style=\"font-weight: 400;\">Accessibility skills include knowledge of WCAG, testing with assistive technologies, accessible content creation, and inclusive design principles.</span></p>"
+        },
+        {
+          "question": "Do you provide ongoing support after the initial remediation?",
+          "answer": "<p><span style=\"font-weight: 400;\">Absolutely. We provide long-term monitoring, policy updates, and annual or on-demand audits to maintain compliance as technology evolves.</span></p>"
+        },
+        {
+          "question": "How can accessibility improve customer satisfaction?",
+          "answer": "<p><span style=\"font-weight: 400;\">Accessible banking enables equal access to services, reducing frustration and improving loyalty among customers with disabilities and aging populations.</span></p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your <br>Compliance Consultation",
+      "description": "At Accessibility Innovations, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

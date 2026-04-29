@@ -1,0 +1,85 @@
+{
+  "page_title": "Personalized PDF Accessibility Training Plan",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Personalized PDF Accessibility Training Plan",
+      "description": "<p>Learn how to create, evaluate, and remediate accessible PDF documents with our Personalized PDF Accessibility Training Plan. This training is tailored for professionals responsible for preparing digital content, helping you meet compliance requirements under ADA, Section 508, and WCAG.</p><p>Designed for individuals and teams alike, this course equips you with practical tools and techniques to ensure that your PDFs are readable and navigable by users with disabilities—including screen reader users and those relying on assistive technology.</p><p>Whether you’re in education, healthcare, government, or business, this training gives you a strong foundation in PDF accessibility, along with personalized support to help you apply what you learn in real-world documents.</p>",
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image"
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Learning Outcomes",
+      "description": "<p>Upon completion of this training, participants will be able to:</p>",
+      "items": [
+        {
+          "item": "Understand the core principles of PDF accessibility and why it matters"
+        },
+        {
+          "item": "Identify and remediate common accessibility issues in PDF documents"
+        },
+        {
+          "item": "Use Adobe Acrobat and other tools to tag and structure content"
+        },
+        {
+          "item": "Apply WCAG and PDF/UA standards in real-world scenarios"
+        },
+        {
+          "item": "Use reading order, headings, bookmarks, and alt text effectively"
+        },
+        {
+          "item": "Validate PDF accessibility using built-in and third-party testing tools"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Audience",
+      "description": "<p>This training is ideal for:</p><p>No prior accessibility experience is required—just a working knowledge of document editing software.</p>",
+      "items": [
+        {
+          "item": "Government staff and content creators working with public-facing PDFs"
+        },
+        {
+          "item": "Document specialists and desktop publishers in private or nonprofit sectors"
+        },
+        {
+          "item": "Web content teams that publish downloadable documents online"
+        },
+        {
+          "item": "Accessibility consultants seeking to expand their remediation skill set"
+        }
+      ],
+      "link": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "What You Get by Achieving the PDF Accessibility Training Plan",
+      "description": "<p>Participants will receive:</p><ul><li>A Certificate of Completion (note: not a formal credential or license)</li><li>Downloadable training guides and PDF accessibility checklists</li><li>Access to post-training reference materials</li><li>Support resources for document remediation</li></ul><p>Looking for advanced recognition? This training also serves as an excellent preparation course for IAAP’s Accessible Document Specialist (ADS) certification for those looking to pursue formal accreditation.</p>"
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your Compliance Consultation",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.</p>",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}

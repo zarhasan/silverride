@@ -1,0 +1,202 @@
+{
+  "page_title": "Compliance Consulting and Risk Mitigation",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Compliance Consulting and Risk Mitigation",
+      "description": "<p>At Accessibility Innovations, we provide expert compliance consulting and risk mitigation services that help organizations of all sizes meet accessibility requirements and avoid legal pitfalls. Our mission is to reduce risk while building long-term, sustainable accessibility practices into your operations.</p><p>Whether you need help understanding ADA obligations, applying WCAG standards, or navigating regulatory frameworks like Section 508, our consultants provide tailored solutions based on your digital assets, industry, and risk profile.</p>",
+      "image": {
+        "url": "https://accessibilityinnovations.com/wp-content/uploads/2025/02/compliance-score-meter.png",
+        "alt": "An animated 'Compliance Score' meter similar to a speedometer, with WCAG compliance result totals below it for 'Pass', 'Fail', and 'Total'. The meter needle moves from 0 percent to 100 percent, showing an increasing 'Pass' score and a decreasing 'Fail' score"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "https://accessibilityinnovations.com/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "video",
+      "video": "https://accessibilityinnovations.com/wp-content/uploads/2024/12/compliance-score-meter.mp4",
+      "transcript": "<p>The video shows an animated compliance score meter, resembling a speedometer. The needle moves from 0% to 100%, illustrating the following:</p><ul><li>As the needle moves towards 100%, the 'Pass' score increases.</li><li>Simultaneously, the 'Fail' score decreases.</li><li>The 'Total' score remains constant throughout the animation.</li></ul><p>This visual representation demonstrates how improving WCAG compliance increases the 'Pass' score while reducing the number of failures, ultimately aiming for 100% compliance.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "Compliance Consulting Service",
+      "description": "<p>Compliance consulting is about more than checking boxes. It's a strategic process that helps organizations ensure their digital properties—websites, apps, documents, and systems—align with legal standards and best practices.</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-Audits.svg",
+            "alt": ""
+          },
+          "title": "ADA Compliance",
+          "description": "<p>Ensuring public-facing services are inclusive and meet accessibility laws.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "WCAG Standards",
+          "description": "<p>Helping you conform to WCAG 2.2 AA, the gold standard for web accessibility.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Section 508 Guidance",
+          "description": "<p>For federally funded organizations and vendors.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/acc-management.-training-edu.svg",
+            "alt": ""
+          },
+          "title": "Documentation & Policy Development",
+          "description": "<p>We help build accessibility policies, procurement checklists, and remediation workflows.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "<p>Our consultants evaluate your current state, identify compliance gaps, and work with your teams to mitigate risk and elevate accessibility across digital and operational channels.</p>",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Risk Mitigation",
+      "description": "<p>Failing to meet accessibility requirements can expose your organization to significant legal, financial, and reputational risk. Our risk mitigation services are designed to prevent that by:</p><ul><li>Identifying high-risk areas (e.g., inaccessible navigation, missing alt text, or unreadable documents)</li><li>Prioritizing fixes based on legal exposure and user impact</li><li>Creating a phased remediation plan with realistic milestones</li><li>Supporting documentation, including accessibility statements and VPATs</li><li>Training internal teams to embed accessibility into daily workflows</li></ul><p>We help you shift from reactive compliance to proactive risk management—minimizing lawsuits, complaints, and user frustration.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Why Choose Accessibility Innovations",
+      "description": "<p>Choosing Accessibility Innovations means partnering with trusted accessibility professionals who understand compliance, risk, and user experience. Here's what sets us apart:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "Certified Accessibility Experts",
+          "description": "<p>Our consultants hold CPWA, IAAP, and Section 508 credentials.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Customized Risk Management Plans",
+          "description": "<p>We tailor every strategy to your organization's size, scope, and sector.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Product-details.svg",
+            "alt": ""
+          },
+          "title": "Full-Spectrum Support",
+          "description": "<p>From audits and testing to policy development and remediation assistance.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Customized-Accessibility-Solutions.svg",
+            "alt": ""
+          },
+          "title": "Real-User Testing",
+          "description": "<p>We validate accessibility through assistive technologies and usability feedback.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/partnership-with.svg",
+            "alt": ""
+          },
+          "title": "Clear Documentation",
+          "description": "<p>Including executive summaries, audit reports, certification letters, and ACRs.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "https://accessibilityinnovations.com/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Ongoing Support",
+          "description": "<p>We help maintain compliance, train your teams, and monitor risk over time.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "ADA/WCAG Compliance Help?",
+      "subtitle": "",
+      "description": "<p>Undergoing an audit or preparing a compliance report? Our experts are here to assist you every step of the way. Contact Accessibility Innovations today to achieve full accessibility compliance and improve the user experience for all!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "https://accessibilityinnovations.com/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "What does a compliance consultant do?",
+          "answer": "<p>A compliance consultant helps your organization understand and meet accessibility requirements through audits, strategy, documentation, and ongoing guidance.</p>"
+        },
+        {
+          "question": "What are the 4 risk mitigation strategies?",
+          "answer": "<p>The main strategies are: Avoidance, Reduction, Transfer, Acceptance. We help determine the right mix based on your accessibility risks.</p>"
+        },
+        {
+          "question": "What are examples of risk mitigation?",
+          "answer": "<p>Examples include regular accessibility audits, staff training, adding alt text, correcting color contrast, and publishing an accessibility statement.</p>"
+        },
+        {
+          "question": "What are the three main mitigation strategies?",
+          "answer": "<p>Avoiding the risk, minimizing the impact, and transferring the risk through contracts or insurance.</p>"
+        },
+        {
+          "question": "What does risk mitigation mean?",
+          "answer": "<p>Risk mitigation means taking action to reduce the likelihood or impact of potential compliance failures—such as lawsuits or user exclusion due to inaccessibility.</p>"
+        },
+        {
+          "question": "Which mitigation strategy is the most effective?",
+          "answer": "<p>Prevention is often the most cost-effective strategy—such as early audits, accessible design, and employee training to avoid accessibility errors from the start.</p>"
+        }
+      ],
+      "cta": {
+        "title": "",
+        "url": "",
+        "target": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "page_title": "Expert Accessibility Consultants Florida",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Expert Accessibility Consultants Florida",
+      "description": "<p>Searching for trusted accessibility consultants in Florida? At Accessibility Innovations, we specialize in delivering ADA-compliant accessibility audits, remediation strategies, and staff training across Florida. Our accessibility consulting services help businesses, property managers, educational institutions, and government agencies create inclusive environments and digital platforms that are usable by everyone—regardless of ability.</p><p>Whether you operate in Miami, Tampa, Orlando, or Jacksonville, we'll help you identify accessibility barriers, understand your legal obligations under the Americans with Disabilities Act (ADA), and implement sustainable solutions to improve access and equity.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/Accessibility-Consultants-Florida.png",
+        "alt": "Accessibility Consultants Florida team in a modern office meeting, including a wheelchair user, discussing data on a screen."
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Book A Consultation",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Get Your ADA Compliance Goals Achieved with Accessibility Innovations",
+      "description": "<p>At Accessibility Innovations, we provide end-to-end accessibility consulting to organizations across Florida. Our consultants work closely with you to ensure full alignment with ADA Title III, Section 508, and other regulatory frameworks.</p><p><strong>We help you:</strong></p><ul><li>Identify physical or digital barriers that limit access</li><li>Achieve compliance with state and federal accessibility laws</li><li>Improve usability and inclusivity for all users</li><li>Educate staff with customized ADA training programs</li></ul><p>Our consultative process includes accessibility planning, assessments, remediation guidance, and post-audit support to ensure you're always one step ahead of legal and ethical obligations.</p>"
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Accessibility Plan & Policies",
+      "description": "<p>Develop a comprehensive accessibility services plan that aligns with legal standards and organizational goals.</p>",
+      "items": [
+        {
+          "title": "Develop Blueprint Accessibility Strategy to address identified barriers, incorporating insights from stakeholder consultations.",
+          "description": ""
+        },
+        {
+          "title": "Address all key actions across priority areas to enhance compliance performance.",
+          "description": ""
+        },
+        {
+          "title": "Evaluate and update procurement practices to align with accessibility standards.",
+          "description": ""
+        },
+        {
+          "title": "Assess current compliance status in relation to applicable guidelines, standards, and regulations.",
+          "description": ""
+        },
+        {
+          "title": "Review and refine Customer Service and Human Resources practices to support accessibility goals.",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Get-Free-Initial-Compliance-Consultation-700x600.webp",
+        "alt": "Get Free Initial Compliance Consultation"
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Digital Audits and Certifications",
+      "description": "<p>Understand the gaps in your web assets through a comprehensive audit and recommendations via accessibility services.</p>",
+      "items": [
+        {
+          "title": "Professional Accessibility Audits to verify that your digital assets align with recognized accessibility standards.",
+          "description": ""
+        },
+        {
+          "title": "Practical Recommendations designed to improve the accessibility of your website or digital content, promoting an inclusive experience for every user.",
+          "description": ""
+        },
+        {
+          "title": "Clear and Consistent Audit Methods that combine automated tools, manual testing, and real-user feedback with assistive technologies.",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/04/Audits-and-Certifications-1-scaled.jpg",
+        "alt": "AI WCAG 2.2 Level A+AA Conformance Test Report. Left: Client info, test scope, content items breakdown, and major accessibility issues. Right: Side Drawer Inc., pie chart of test results (Pass/Fail/N/A), and detailed results table."
+      }
+    },
+    {
+      "acf_fc_layout": "information",
+      "type": "default",
+      "title": "Training",
+      "description": "<p>Develop and deliver customized training programs based on identified needs.</p>",
+      "items": [
+        {
+          "title": "Tailored Training Solutions: Develop and deliver sessions customized to your team's specific needs, informed by gap analysis results.",
+          "description": ""
+        },
+        {
+          "title": "Continuous Learning: Offer regular updates and educational opportunities to keep staff current on evolving standards and best practices.",
+          "description": ""
+        },
+        {
+          "title": "Participant Feedback & Improvement: Collect input from attendees to enhance future sessions and ensure they remain impactful and engaging.",
+          "description": ""
+        }
+      ],
+      "link": "",
+      "image": {
+        "url": "/wp-content/uploads/2025/05/freepik__the-style-is-candid-image-photography-with-natural__57834.png",
+        "alt": "A woman conducting an accessibility training session in a modern conference room, presenting disability inclusion charts on a projector screen to a diverse group using laptops and tablets."
+      }
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "compliance-cards",
+      "grid_size": 3,
+      "title": "Why Choose Us as Your Accessibility Consultant in Florida?",
+      "description": "<p>When it comes to web accessibility audits, Accessibility Innovations stands out for several reasons:</p>",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology.svg",
+            "alt": ""
+          },
+          "title": "Florida Code Knowledge",
+          "description": "<p>We specialize in both national and state-specific accessibility laws and building codes.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Certified Consultants",
+          "description": "<p>Our team includes CPWA-certified consultants, document remediation experts, and ADA specialists.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Full-Scope Services",
+          "description": "<p>From on-site audits to digital WCAG evaluations and policy documentation—we do it all.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Scalable Solutions",
+          "description": "<p>We provide scalable solutions based on your organization's size, sector, and goals.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Compliance-Scores.svg",
+            "alt": ""
+          },
+          "title": "Trusted Across Sectors",
+          "description": "<p>We serve schools, municipalities, healthcare providers, and Fortune 500 companies.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "default",
+      "title": "Ensure Website Accessibility & ADA Compliance Today!",
+      "subtitle": "",
+      "description": "<p>Improve digital inclusivity, prevent lawsuits, and boost SEO with Accessibility Innovations. Book a Consultation and let our expert web accessibility consultants help you create an accessible, user-friendly website!</p>",
+      "link": {
+        "title": "Get Assistance Now!",
+        "url": "/contact-us/",
+        "target": ""
+      },
+      "image": "",
+      "media_type": "image",
+      "video": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "Frequently Asked Questions (FAQ's)",
+      "description": "",
+      "items": [
+        {
+          "question": "How do I know if my building is accessible?",
+          "answer": "<p>The best way is to schedule an ADA facility audit. We'll assess entrances, signage, restrooms, and more to determine whether your site meets compliance standards.</p>"
+        },
+        {
+          "question": "What does an accessibility consultant do?",
+          "answer": "<p>We assess your property or digital content for barriers to access and guide you through remediation to meet ADA and WCAG standards.</p>"
+        },
+        {
+          "question": "Is ADA compliance mandatory for my business in Florida?",
+          "answer": "<p>Yes. Any business that serves the public must provide accessible facilities and services under ADA Title III.</p>"
+        },
+        {
+          "question": "How do I know if my property is ADA compliant?",
+          "answer": "<p>An audit by a qualified consultant will reveal whether your property meets the 2010 ADA Standards and Florida Building Code requirements.</p>"
+        },
+        {
+          "question": "What is included in an accessibility audit?",
+          "answer": "<p>We evaluate physical structures, digital platforms, policies, and content. The audit results in a report detailing violations, legal references, and recommended actions.</p>"
+        },
+        {
+          "question": "How often should I review my property for accessibility compliance?",
+          "answer": "<p>Every 3 to 5 years or whenever you make significant renovations, update your website, or receive accessibility-related feedback or complaints.</p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "locations",
+      "title": "Our Office",
+      "map_embed": "https://maps.google.com/maps?q=1661+Central+Ave.+St.+Petersburg,+FL+33713+Florida,+United+States&t=m&z=20&output=embed",
+      "map_link": "https://maps.google.com/maps?q=1661+Central+Ave.+St.+Petersburg,+FL+33713+Florida,+United+States",
+      "locations": [
+        {
+          "name": "Florida",
+          "address": "1661 Central Ave. St. Petersburg, FL 33713",
+          "phone": "1-866-245-A11Y (Toll-Free) | (916) 509-7017 (California)",
+          "email": "info@accessibilityinnovations.com",
+          "hours": "Monday-Friday: 08:30 A.M. – 5:00 P.M. | Saturday – Closed | Sunday – Closed"
+        }
+      ]
+    }
+  ]
+}

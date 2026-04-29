@@ -1,0 +1,358 @@
+{
+  "page_title": "PDF Remediation Services | ADA & Section 508 Compliance",
+  "page_template": "page-templates/flexible.php",
+  "source_url": "https://accessibilityinnovations.com",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "<b>Expert PDF Remediation Services for Accessibility Compliance</b>",
+      "description": "<p>At <a href=\"https://accessibilityinnovations.com/\">Accessibility Innovations</a>, we provide expert PDF remediation services to make your digital documents fully accessible and compliant with ADA, WCAG, and Section 508 standards. Our team specializes in transforming inaccessible PDFs into remediated PDF files that meet legal and usability requirements, reducing your risk of non-compliance and ensuring equal access for all users.<br />We work with organizations across industries to deliver accessible digital documents through meticulous tagging, structure correction, and PDF accessibility testing. Whether you\u2019re dealing with a single report or thousands of documents, our scalable solutions help you meet compliance regulations and improve user experience for individuals using assistive technology.</p>",
+      "image": {
+        "url": "/wp-content/uploads/2024/11/Group-78.svg",
+        "alt": "An illustration of a person holding a lens against a document showing PDF Remediation Services"
+      },
+      "links": [
+        {
+          "link": {
+            "title": "Contact Us",
+            "url": "/contact-us/",
+            "target": ""
+          }
+        }
+      ],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "What is PDF Remediation?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>PDF remediation is the process of converting standard PDF files into accessible formats that can be read and navigated by people with disabilities, especially those using screen readers, keyboard navigation, or other assistive devices.<br />Remediating a PDF includes applying semantic tags, proper reading order, alt text for images, and language declarations. The goal is to produce a remediated PDF that meets international standards like WCAG 2.1, ADA, and Section 508.<br />As one of the leading PDF accessibility companies, we also offer document remediation services for forms, scanned documents, reports, and e-books, helping organizations meet the rising demand for digital inclusion.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Importance of PDF Remediation Service",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Inaccessible PDFs can create legal, reputational, and usability challenges. If your PDFs don\u2019t meet accessibility requirements, your organization could be exposed to lawsuits under the Americans with Disabilities Act (ADA). Moreover, inaccessible content alienates users who rely on screen readers or cannot use a mouse.</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Report-Generation.svg",
+            "alt": ""
+          },
+          "title": "Legal Risk",
+          "description": "<p>Inaccessible PDFs can lead to lawsuits under laws like the ADA (Americans with Disabilities Act).</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Manual-Testing.svg",
+            "alt": ""
+          },
+          "title": "Reputation & Usability",
+          "description": "<p>Poor accessibility can damage your brand\u2019s reputation and exclude users who rely on screen readers or keyboard navigation.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/complianace-consultation.svg",
+            "alt": ""
+          },
+          "title": "Inclusive Communication",
+          "description": "<p>Making PDFs accessible ensures content is available to all users, regardless of their abilities.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Compliance Benefits",
+          "description": "<p>PDF remediation supports regulatory compliance, reduces legal exposure, and reflects ethical communication standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-alternative-text-3.svg",
+            "alt": ""
+          },
+          "title": "Broad Applicability",
+          "description": "<p>Essential for government agencies, educational institutions, and private businesses.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/For-Large-Government-Organizations-50-Employees-1.svg",
+            "alt": ""
+          },
+          "title": "Business Value",
+          "description": "<p>Accessibility helps you reach wider audiences, enhance user experience, and build trust.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>Investing in PDF accessibility remediation ensures that everyone regardless of ability can access and understand your content. Our PDF compliance services help you avoid legal risks, reach broader audiences, and build trust through inclusive communication.<br />Whether you\u2019re a government agency, university, or private business, ensuring PDF document accessibility is critical to meeting both regulatory and ethical standards.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "What Does PDF Remediation Services Include?\u200b",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>PDF remediation services ensure your PDF documents are accessible to all users, including those who rely on assistive technologies. The process involves multiple steps to ensure compliance with standards such as WCAG, ADA, and Section 508. <br />Our professional PDF remediation services cover all elements necessary for full accessibility compliance:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 2,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-Training.svg",
+            "alt": "accessibility training icon"
+          },
+          "title": "Document Analysis",
+          "description": "<p>Assessing the PDF for accessibility issues, such as missing tags, improperly structured content, and inaccessible elements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Correcting-reading-order-2.svg",
+            "alt": ""
+          },
+          "title": "Tagging and Structuring",
+          "description": "<p>Adding proper tags, headings, and logical structures to make the content readable for screen readers.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Using-properly-structured-and-formatted-headings-2.svg",
+            "alt": ""
+          },
+          "title": "Alt Text for Images",
+          "description": "<p>Providing meaningful alternative text for images and visual elements to convey their purpose.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Adding-accessible-hyperlinks-2.svg",
+            "alt": ""
+          },
+          "title": "Table and Form Remediation",
+          "description": "<p>Ensuring tables and forms are correctly labeled and navigable for assistive technologies.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Testing and Validation",
+          "description": "<p>Using tools and manual checks to verify the document meets accessibility standards.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We use a combination of human expertise and advanced tools to ensure every document is compliant, usable, and accessible.</p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Why Choose Accessibility Innovations for PDF Remediation Services?",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p>We\u2019re not just another vendor, we\u2019re PDF remediation experts who understand the full scope of digital accessibility and compliance regulations across North America and beyond. Here\u2019s what sets us apart:</p>"
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Remediation-Guidance.svg",
+            "alt": ""
+          },
+          "title": "Proven Experience",
+          "description": "<p>With over 10 years of experience, we have successfully remediated countless documents, ensuring accessibility for diverse audiences across industries and languages.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Making-forms-and-interactive-elements-work-with-assistive-technology-2.svg",
+            "alt": ""
+          },
+          "title": "Specialized Expertise",
+          "description": "<p>Our deep understanding of WCAG, ADA, and Section 508 compliance allows us to deliver results that meet the highest accessibility standards.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-evaluation-1.svg",
+            "alt": ""
+          },
+          "title": "Trusted by Government Agencies",
+          "description": "<p>We are a reliable PDF document remediation service provider for North American government agencies, demonstrating our ability to meet complex and rigorous requirements.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/User-Journey-Analysis.svg",
+            "alt": ""
+          },
+          "title": "Multilingual Accessibility",
+          "description": "<p>We specialize in making documents accessible in multiple languages, ensuring inclusivity for a global audience.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Testing-Methodology-1.svg",
+            "alt": ""
+          },
+          "title": "Affordable and Efficient",
+          "description": "<p>Our affordable PDF remediation services are designed to deliver exceptional quality while respecting your budget and timelines.</p>",
+          "link": ""
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2024/11/Accessibility-and-Remediation-3.svg",
+            "alt": ""
+          },
+          "title": "End-to-End Solutions",
+          "description": "<p>From initial analysis to final validation, we provide comprehensive support, ensuring a smooth and hassle-free process.</p>",
+          "link": ""
+        }
+      ],
+      "footer_description": "",
+      "cta": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"font-weight: 400;\">Our clients trust us for reliable, accurate, and high-impact </span><a href=\"https://accessibilityinnovations.com/accessibility-remediation-services/\"><b>accessibility remediation services</b></a><span style=\"font-weight: 400;\"> that make a real difference.</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Industries We Help\u200b",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"font-weight: 400;\">Our </span><b>PDF remediation services</b><span style=\"font-weight: 400;\"> are trusted by organizations across sectors, including:</span></p><ul><li style=\"text-align: left;\"><b>Government and Public Sector</b><span style=\"font-weight: 400;\">: Meet ACA, AODA, and Section 508 compliance with fully accessible digital reports and communications.</span></li><li style=\"text-align: left;\"><b>Education</b><span style=\"font-weight: 400;\">: Ensure students and faculty have equal access to course materials, syllabi, and e-books through </span><b>PDF accessibility remediation</b><span style=\"font-weight: 400;\">.</span></li><li style=\"text-align: left;\"><b>Healthcare</b><span style=\"font-weight: 400;\">: Deliver inclusive patient-facing content, forms, and brochures.</span></li><li style=\"text-align: left;\"><b>Finance and Insurance</b><span style=\"font-weight: 400;\">: Provide accessible contracts, policies, and customer communications.</span></li><li style=\"text-align: left;\"><b>Legal and Professional Services</b><span style=\"font-weight: 400;\">: Ensure all filings, case studies, and disclosures meet compliance and usability standards.</span></li><li style=\"text-align: left;\"><b>Enterprise and Tech</b><span style=\"font-weight: 400;\">: Make product documentation, internal manuals, and training materials fully accessible.</span></li></ul>"
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "",
+      "description": "<p><span style=\"font-weight: 400;\">No matter your industry, we are committed to helping you achieve accessibility excellence and compliance, creating environments that are welcoming to all individuals. </span><a href=\"https://accessibilityinnovations.com/contact-us/\"><b>Contact Us</b></a><span style=\"font-weight: 400;\"> today to learn more about how we can help your organization meet its accessibility goals!</span></p>"
+    },
+    {
+      "acf_fc_layout": "section_title",
+      "title": "Frequently Asked Questions (FAQs)",
+      "description": ""
+    },
+    {
+      "acf_fc_layout": "faqs",
+      "title": "",
+      "description": "",
+      "items": [
+        {
+          "question": "What is a remediated PDF?",
+          "answer": "<p><span style=\"font-weight: 400;\">A remediated PDF is a file that has been modified to meet accessibility standards so it can be read and navigated by screen readers and other assistive technologies.</span></p>"
+        },
+        {
+          "question": "Is PDF remediation required by law?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes, in many jurisdictions like Canada, the U.S., and the EU, organizations are required to ensure digital content is accessible, including PDFs, under laws such as the ACA, ADA, AODA, and Section 508.</span></p>"
+        },
+        {
+          "question": "How long does PDF remediation take?",
+          "answer": "<p><span style=\"font-weight: 400;\">Turnaround depends on document length and complexity. We provide fast, scalable options for small and large remediation projects.</span></p>"
+        },
+        {
+          "question": "Can scanned PDFs be made accessible?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes, scanned PDFs can be remediated, though it typically involves OCR processing before accessibility work can begin.</span></p>"
+        },
+        {
+          "question": "Do you offer a PDF remediation platform or manual services?",
+          "answer": "<p><span style=\"font-weight: 400;\">We offer both platform-based solutions and expert-led remediation services depending on your needs.</span></p>"
+        },
+        {
+          "question": "Do you test with screen readers?",
+          "answer": "<p><span style=\"font-weight: 400;\">Yes, every remediated PDF is tested using real screen readers and accessibility tools to ensure full compliance.</span></p>"
+        }
+      ],
+      "cta": ""
+    },
+    {
+      "acf_fc_layout": "contact",
+      "subtitle": "CONTACT US",
+      "title": "Get started with your <br>Compliance Consultation",
+      "description": "At Accessibility Innovations, we specialize in ensuring compliance with accessibility standards. Let us handle all your accessibility needs efficiently, so you can focus on your core business. Trust our expertise to keep your organization accessible to all.",
+      "contact_form": "[wpforms id=\"3007\" title=\"false\"]"
+    }
+  ]
+}
