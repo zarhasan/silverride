@@ -54,18 +54,6 @@ $show_view_more = $total_posts > $post_count;
                     $post_index++;
                 ?>
                     <?php get_template_part('template-parts/post-card'); ?>
-
-                    <?php 
-                    // Insert logo promo block after 4th post to match screenshot layout
-                    if ($post_index === 4) : 
-                    ?>
-                        <div class="hidden lg:flex flex-col items-center justify-center aspect-[4/3]">
-                            <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col items-center text-blue-900 no-underline">
-                                <span class="text-3xl font-bold tracking-tight leading-none">SilverRide</span>
-                                <span class="text-[0.65rem] font-semibold tracking-[0.25em] mt-1 uppercase">There With Care</span>
-                            </a>
-                        </div>
-                    <?php endif; ?>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
             <?php else : ?>

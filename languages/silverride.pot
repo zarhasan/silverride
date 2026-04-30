@@ -1,0 +1,249 @@
+# Copyright (C) 2026 RedOxbird
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: SilverRide __VERSION__\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/silverride\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-04-30T17:28:16+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: silverride\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "SilverRide"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "A modern, accessible WordPress theme built with Tailwind CSS 3 and fast refresh development workflow."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "RedOxbird"
+msgstr ""
+
+#: 404.php:11
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:23
+msgid "Page Not Found"
+msgstr ""
+
+#: 404.php:29
+msgid "Sorry, we couldn't find the page you were looking for: %s"
+msgstr ""
+
+#: 404.php:40
+msgid "Return to homepage"
+msgstr ""
+
+#: 404.php:44
+msgid "Return to Home"
+msgstr ""
+
+#: 404.php:50
+msgid "Contact us for help"
+msgstr ""
+
+#: 404.php:54
+msgid "Contact Us"
+msgstr ""
+
+#: 404.php:60
+msgid "Search this website"
+msgstr ""
+
+#: 404.php:64
+msgid "Search for pages or content"
+msgstr ""
+
+#: 404.php:69
+msgid "Search the site..."
+msgstr ""
+
+#: 404.php:76
+msgid "Submit search"
+msgstr ""
+
+#: 404.php:82
+msgid "Enter keywords to search for related pages or content on this website."
+msgstr ""
+
+#: 404.php:94
+msgid "Explore Our Services"
+msgstr ""
+
+#: 404.php:97
+msgid "Main website sections"
+msgstr ""
+
+#: 404.php:103
+msgid "Home"
+msgstr ""
+
+#: 404.php:104
+msgid "Return to our homepage"
+msgstr ""
+
+#: 404.php:109
+msgid "About Us"
+msgstr ""
+
+#: 404.php:110
+msgid "Learn more about our mission"
+msgstr ""
+
+#: 404.php:115
+msgid "Services"
+msgstr ""
+
+#: 404.php:116
+msgid "View our accessibility services"
+msgstr ""
+
+#: 404.php:121
+msgid "Contact"
+msgstr ""
+
+#: 404.php:122
+msgid "Get in touch with us"
+msgstr ""
+
+#: 404.php:155
+msgid "Looking for our latest news and articles?"
+msgstr ""
+
+#: 404.php:161
+msgid "Visit Our Blog"
+msgstr ""
+
+#: functions.php:120
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:121
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:122
+msgid "Company Locations"
+msgstr ""
+
+#: functions.php:147
+#: functions.php:162
+msgid "Team Members"
+msgstr ""
+
+#: functions.php:148
+#: functions.php:150
+msgid "Team Member"
+msgstr ""
+
+#: functions.php:149
+msgid "Team"
+msgstr ""
+
+#: functions.php:151
+msgid "Add New"
+msgstr ""
+
+#: functions.php:152
+msgid "Add New Team Member"
+msgstr ""
+
+#: functions.php:153
+msgid "Edit Team Member"
+msgstr ""
+
+#: functions.php:154
+msgid "New Team Member"
+msgstr ""
+
+#: functions.php:155
+msgid "View Team Member"
+msgstr ""
+
+#: functions.php:156
+msgid "Search Team Members"
+msgstr ""
+
+#: functions.php:157
+msgid "No team members found"
+msgstr ""
+
+#: functions.php:158
+msgid "No team members found in trash"
+msgstr ""
+
+#: functions.php:163
+msgid "Team member profiles"
+msgstr ""
+
+#: header.php:19
+msgid "Skip to main content"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Blog"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Case Studies"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Content"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Page (Flexible)"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Demo Sections"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Nothing here"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\" class=\"text-primary-600 hover:text-primary-700 underline\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "It seems we can't find what you're looking for."
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:69
+msgid "%1$d of %2$d"
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:114
+msgid "Previous slide"
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:123
+msgid "Slide pages"
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:128
+msgid "Go to slide %d"
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:141
+msgid "Next slide"
+msgstr ""
+
+#: template-parts/sections/slider-basic.php:154
+msgid "Pause carousel"
+msgstr ""
