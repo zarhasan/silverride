@@ -6,7 +6,7 @@ if (!defined('ABSPATH')) {
 $template_part_name = explode('.', basename(__FILE__))[0];
 ?>
 
-<section class="relative bg-blue-900 py-20 lg:py-28 overflow-hidden" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="relative bg-primary py-20 lg:py-28 overflow-hidden" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Background cityscape decoration -->
     <div class="absolute bottom-0 left-0 right-0 opacity-10 pointer-events-none" aria-hidden="true">
         <svg class="w-full h-auto text-blue-400" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
@@ -32,7 +32,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <!-- Riders -->
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Riders">
-                <svg class="w-16 h-16 text-blue-900 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="w-16 h-16 text-primary mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M10 40V28a4 4 0 014-4h4l5-10h18l5 10h4a4 4 0 014 4v12" />
                     <circle cx="20" cy="44" r="5" />
                     <circle cx="44" cy="44" r="5" />
@@ -41,12 +41,12 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                     <path d="M14 32h4" />
                     <path d="M46 32h4" />
                 </svg>
-                <span class="text-lg font-semibold text-blue-900">Riders</span>
+                <span class="text-lg font-semibold text-primary">Riders</span>
             </a>
 
             <!-- Drivers -->
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Drivers">
-                <svg class="w-16 h-16 text-blue-900 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="w-16 h-16 text-primary mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="32" cy="32" r="22" />
                     <circle cx="32" cy="32" r="7" />
                     <path d="M32 10v12" />
@@ -58,23 +58,23 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                     <path d="M16.5 47.5l8.5-8.5" />
                     <path d="M39 25l8.5-8.5" />
                 </svg>
-                <span class="text-lg font-semibold text-blue-900">Drivers</span>
+                <span class="text-lg font-semibold text-primary">Drivers</span>
             </a>
 
             <!-- Partners -->
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Partners">
-                <svg class="w-16 h-16 text-blue-900 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="w-16 h-16 text-primary mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M12 38l8-8 6 6-8 8z" />
                     <path d="M52 38l-8-8-6 6 8 8z" />
                     <path d="M20 30l8 8 8-8" />
                     <path d="M32 12l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" />
                 </svg>
-                <span class="text-lg font-semibold text-blue-900">Partners</span>
+                <span class="text-lg font-semibold text-primary">Partners</span>
             </a>
 
             <!-- Report an Incident -->
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Report an Incident">
-                <svg class="w-16 h-16 text-blue-900 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="w-16 h-16 text-primary mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <rect x="18" y="8" width="28" height="44" rx="3" />
                     <path d="M26 8V4a2 2 0 012-2h8a2 2 0 012 2v4" />
                     <path d="M24 20h16" />
@@ -83,12 +83,12 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                     <path d="M42 40l-6 12h12l-6-12z" />
                     <circle cx="42" cy="53" r="1.5" fill="currentColor" stroke="none" />
                 </svg>
-                <span class="text-lg font-semibold text-blue-900 leading-tight">Report an<br>Incident</span>
+                <span class="text-lg font-semibold text-primary leading-tight">Report an<br>Incident</span>
             </a>
 
             <!-- Schedule a Ride -->
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Schedule a Ride">
-                <svg class="w-16 h-16 text-blue-900 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="w-16 h-16 text-primary mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <circle cx="20" cy="14" r="5" />
                     <path d="M20 20v12" />
                     <path d="M14 40h12" />
@@ -98,7 +98,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                     <circle cx="50" cy="44" r="3" />
                     <path d="M34 38h20" />
                 </svg>
-                <span class="text-lg font-semibold text-blue-900 leading-tight">Schedule a<br>Ride</span>
+                <span class="text-lg font-semibold text-primary leading-tight">Schedule a<br>Ride</span>
             </a>
         </div>
     </div>

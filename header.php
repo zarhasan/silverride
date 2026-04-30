@@ -18,7 +18,7 @@
 
   <a class="skip-to-main-content" href="#page"><?php esc_html_e('Skip to main content', 'silverride'); ?></a>
 
-  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-blue-900 top-0">
+  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-primary top-0">
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
@@ -36,7 +36,7 @@
         <a href="/cities" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Cities</a>
         <a href="/company" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Company</a>
         <a href="/news" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">News</a>
-        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
           Request Demo
         </a>
       </nav>
@@ -56,7 +56,7 @@
     <div class="mobile-menu-overlay fixed inset-0 bg-black/50 z-40 hidden lg:hidden" id="mobile-menu-overlay"></div>
 
     <!-- Mobile Menu Panel -->
-    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-blue-900 z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
+    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-primary z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="mobile-menu-content p-6 flex flex-col h-full">
         <div class="mobile-menu-header flex justify-end mb-8">
           <button type="button" class="mobile-menu-close text-white hover:text-blue-200" aria-label="Close menu">
@@ -77,7 +77,7 @@
         </div>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
-          <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+          <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
             Request Demo
           </a>
         </div>
