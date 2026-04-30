@@ -10,6 +10,10 @@ $categories = get_categories(array(
     'order'   => 'ASC',
     'hide_empty' => true,
 ));
+
+$current_search = isset($_GET['query']) ? esc_attr(wp_unslash($_GET['query'])) : '';
+$current_category = isset($_GET['category']) ? sanitize_text_field(wp_unslash($_GET['category'])) : '';
+$current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sort'])) : 'newest';
 ?>
 
 <section class="bg-white my-8 lg:my-12" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -19,7 +23,7 @@ $categories = get_categories(array(
             <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Newsroom</h1>
 
             <!-- Filters -->
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 lg:gap-6 w-full lg:w-auto">
+            <form id="blog-filters" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 lg:gap-6 w-full lg:w-auto">
                 <!-- Search -->
                 <div class="relative flex-1 sm:flex-none sm:w-80 lg:w-96">
                     <div class="absolute inset-y-0 left-0 flex items-center pl-5 pointer-events-none">
@@ -29,7 +33,8 @@ $categories = get_categories(array(
                     </div>
                     <input
                         type="search"
-                        name="s"
+                        name="query"
+                        value="<?php echo esc_attr($current_search); ?>"
                         placeholder="Search Newsroom..."
                         class="w-full pl-14 pr-6 py-4 text-lg text-gray-900 bg-white border border-gray-300 rounded-full placeholder-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200"
                         aria-label="Search Newsroom"
@@ -43,9 +48,9 @@ $categories = get_categories(array(
                         class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Filter by category"
                     >
-                        <option value="">All News</option>
+                        <option value="" <?php selected($current_category, ''); ?>>All News</option>
                         <?php foreach ($categories as $cat) : ?>
-                            <option value="<?php echo esc_attr($cat->slug); ?>"><?php echo esc_html($cat->name); ?></option>
+                            <option value="<?php echo esc_attr($cat->slug); ?>" <?php selected($current_category, $cat->slug); ?>><?php echo esc_html($cat->name); ?></option>
                         <?php endforeach; ?>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center pr-5 pointer-events-none">
@@ -62,8 +67,8 @@ $categories = get_categories(array(
                         class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Sort posts"
                     >
-                        <option value="newest">Newest First</option>
-                        <option value="oldest">Oldest First</option>
+                        <option value="newest" <?php selected($current_sort, 'newest'); ?>>Newest First</option>
+                        <option value="oldest" <?php selected($current_sort, 'oldest'); ?>>Oldest First</option>
                     </select>
                     <div class="absolute inset-y-0 right-0 flex items-center pr-5 pointer-events-none">
                         <svg class="w-5 h-5 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -71,7 +76,7 @@ $categories = get_categories(array(
                         </svg>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </section>

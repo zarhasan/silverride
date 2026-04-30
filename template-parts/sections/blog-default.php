@@ -9,21 +9,35 @@ $post_count = $args['post_count'] ?? 12;
 $category = $args['category'] ?? 0;
 $custom_query = $args['query'] ?? null;
 
+$search = $args['blog_search'] ?? '';
+$category_slug = $args['blog_category_slug'] ?? '';
+$sort_order = $args['blog_sort_order'] ?? 'DESC';
+
 if ($custom_query) {
     $query = $custom_query;
 } else {
-    $args = array(
+    $query_args = array(
         'post_type' => 'post',
         'posts_per_page' => $post_count,
         'post_status' => 'publish',
+        'order' => $sort_order,
+        'orderby' => 'date',
         'offset' => 1,
     );
 
     if (!empty($category)) {
-        $args['cat'] = $category;
+        $query_args['cat'] = $category;
     }
 
-    $query = new WP_Query($args);
+    if (!empty($search)) {
+        $query_args['s'] = $search;
+    }
+
+    if (!empty($category_slug)) {
+        $query_args['category_name'] = $category_slug;
+    }
+
+    $query = new WP_Query($query_args);
 }
 
 $total_posts = $query->found_posts;

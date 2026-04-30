@@ -169,6 +169,41 @@
                 });
             };
         })();
+
+        (() => {
+            const form = document.getElementById('blog-filters');
+            if (!form) return;
+
+            const search = form.querySelector('input[name="query"]');
+            const category = form.querySelector('select[name="category"]');
+            const sort = form.querySelector('select[name="sort"]');
+
+            let debounce;
+
+            function submitForm() {
+                const params = new URLSearchParams();
+                if (search && search.value.trim()) params.set('query', search.value.trim());
+                if (category && category.value) params.set('category', category.value);
+                if (sort && sort.value && sort.value !== 'newest') params.set('sort', sort.value);
+                const qs = params.toString();
+                window.location.href = window.location.pathname + (qs ? '?' + qs : '');
+            }
+
+            if (search) {
+                search.addEventListener('input', function () {
+                    clearTimeout(debounce);
+                    debounce = setTimeout(submitForm, 400);
+                });
+            }
+
+            if (category) category.addEventListener('change', submitForm);
+            if (sort) sort.addEventListener('change', submitForm);
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                submitForm();
+            });
+        })();
     });
 
     function initVideoPlayback() {

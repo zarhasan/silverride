@@ -9,7 +9,17 @@ $featured_args = array(
     'post_type' => 'post',
     'posts_per_page' => 1,
     'post_status' => 'publish',
+    'order' => $blog_sort_order ?? 'DESC',
+    'orderby' => 'date',
 );
+
+if (!empty($blog_search)) {
+    $featured_args['s'] = $blog_search;
+}
+
+if (!empty($blog_category_slug)) {
+    $featured_args['category_name'] = $blog_category_slug;
+}
 
 $featured_query = new WP_Query($featured_args);
 ?>
