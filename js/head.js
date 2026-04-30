@@ -38,6 +38,7 @@
             extend: {
               colors: {
                   primary: primaryColor,
+                  secondary: secondaryColor,
                   "primary-hover": primaryColor,
                   "primary-gradient-start": primaryColor,
                   "primary-gradient-end": secondaryColor,
