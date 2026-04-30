@@ -84,6 +84,82 @@ get_header();
     ]);
     ?>
 
+    <?php get_template_part('template-parts/sections/hero-cities', null, []) ?>
+
+    <?php get_template_part('template-parts/section-label', null, [
+        'number' => '4',
+        'section' => 'Grid Cities',
+        'layout' => 'grid-cities.php',
+        'fields' => 'title, cities (repeater: city_name, city_image, explore_link, apply_link, extra_links), other_title, other_cities'
+    ]); ?>
+    <?php
+    get_template_part('template-parts/sections/grid-cities', null, [
+        'title' => 'Featured cities',
+        'cities' => [
+            [
+                'city_name' => 'Los Angeles',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=600&q=80', 'alt' => 'Los Angeles skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Atlanta',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?w=600&q=80', 'alt' => 'Atlanta skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Las Vegas',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=600&q=80', 'alt' => 'Las Vegas skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+                'extra_links' => [
+                    ['url' => '#', 'title' => 'Pricing'],
+                    ['url' => '#', 'title' => 'WAV Rides'],
+                ],
+            ],
+            [
+                'city_name' => 'Louisville',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1549464190-f752384166f0?w=600&q=80', 'alt' => 'Louisville skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Phoenix',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80', 'alt' => 'Phoenix skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'San Francisco',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=600&q=80', 'alt' => 'San Francisco Golden Gate Bridge'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Central Florida',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=600&q=80', 'alt' => 'Central Florida aerial view'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Orange County',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1534237710431-e2fc698436d0?w=600&q=80', 'alt' => 'Orange County coastline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+            [
+                'city_name' => 'Seattle',
+                'city_image' => ['url' => 'https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=600&q=80', 'alt' => 'Seattle skyline'],
+                'explore_link' => ['url' => '#', 'title' => 'Explore'],
+                'apply_link' => ['url' => '#', 'title' => 'Apply to Drive'],
+            ],
+        ],
+        'other_title' => 'Other cities we serve',
+        'other_cities' => '<p>Bakersfield, CA  ·  Covina, CA · East Boston · Fort Myers, FL · Fresno, CA · Jacksonville, FL · Lexington, KY</p><p>East Los Angeles, Huntington Park, CA · Sacramento · Greater San Jose Area · Santa Clarita</p>',
+    ]);
+    ?>
+
 </main>
 
 <?php
