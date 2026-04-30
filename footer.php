@@ -21,12 +21,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <!-- Left Column: Logo, Description, Partner Logos -->
             <div class="lg:col-span-5 space-y-8">
-                <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col text-blue-900 no-underline">
-                    <span class="text-5xl font-bold tracking-tight leading-none">SilverRide</span>
-                    <span class="text-sm font-semibold tracking-[0.25em] mt-2 uppercase text-blue-900">There With Care</span>
+                <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col no-underline">
+                    <img class="h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide Logo">
                 </a>
                 
-                <p class="text-base text-gray-700 leading-relaxed max-w-lg">
+                <p class="text-lg leading-relaxed max-w-lg">
                     SilverRide is America's leading assisted transportation platform for older adults and people with disabilities. A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
                 </p>
 
@@ -87,7 +86,7 @@
     <!-- Bottom Bar -->
     <div class="border-t border-gray-200 py-6">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-sm text-gray-600">
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-base">
                 <span>&copy; 2026 SilverRide Inc.</span>
                 <div class="flex items-center gap-4">
                     <a href="#" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>

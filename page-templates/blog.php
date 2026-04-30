@@ -11,7 +11,12 @@ $blog_sort_order = (isset($_GET['sort']) && $_GET['sort'] === 'oldest') ? 'ASC' 
 get_header();
 
 get_template_part('template-parts/sections/filters-blog');
-get_template_part('template-parts/sections/hero-blog');
+
+if(empty($blog_search) && empty($blog_category_slug)) {
+    // Only show hero section when no filters are applied
+    get_template_part('template-parts/sections/hero-blog');
+};
+
 get_template_part('template-parts/sections/blog-default', null, array(
     'blog_search' => $blog_search,
     'blog_category_slug' => $blog_category_slug,
