@@ -4,10 +4,6 @@
 
 
 <?php
-    if (!is_page('contact-us')) {
-        get_template_part('template-parts/sections/contact', null, ['context' => 'footer']);
-    }
-
     $template_part_name = explode('.', basename(__FILE__))[0];
 ?>
 
@@ -35,9 +31,7 @@
                 </p>
 
                 <div class="flex items-center gap-4">
-                    <img src="yelp-logo.png" alt="Yelp logo" class="h-10 w-auto">
-                    <img src="american-society-on-aging-logo.png" alt="American Society on Aging logo" class="h-10 w-auto">
-                    <img src="transportation-alliance-logo.png" alt="The Transportation Alliance logo" class="h-10 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/footer-logos.png" alt="" class="h-20 w-auto">
                 </div>
             </div>
 

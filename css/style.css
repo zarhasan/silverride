@@ -781,6 +781,76 @@ body .wpforms-form .wpforms-field-label {
     margin-top: 0.25rem;
 }
 
+/* Global Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    border-radius: 9999px;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:focus {
+    outline: 2px dotted var(--theme-primary);
+    outline-offset: 2px;
+}
+
+.btn-primary {
+    background-color: var(--theme-primary);
+    border-color: var(--theme-primary);
+    color: #FFFFFF;
+}
+
+.btn-primary:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: var(--theme-primary);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--theme-primary);
+    color: var(--theme-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--theme-primary);
+    color: #FFFFFF;
+    border-color: var(--theme-primary);
+}
+
+.btn-white-outline {
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.btn-white-outline:hover {
+    background-color: #FFFFFF;
+    color: var(--theme-primary);
+    border-color: #FFFFFF;
+}
+
+.btn-sm {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+}
+
+.btn-lg {
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+}
+
 /* Footer Menu Styles */
 .footer-menu {
     list-style: none;

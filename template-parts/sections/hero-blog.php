@@ -45,7 +45,7 @@ $featured_query = new WP_Query($featured_args);
                         <?php echo esc_html(get_the_excerpt()); ?>
                     </p>
 
-                    <a href="<?php echo esc_url(get_permalink()); ?>" class="inline-flex items-center justify-center self-start px-8 py-3 border-2 border-primary text-lg font-semibold text-white bg-primary rounded-full hover:bg-white hover:text-black hover:border-primary transition-colors duration-200">
+                    <a href="<?php echo esc_url(get_permalink()); ?>" class="btn btn-primary self-start">
                         Read More
                     </a>
                 </div>

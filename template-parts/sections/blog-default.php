@@ -61,8 +61,8 @@ $show_view_more = $total_posts > $post_count;
 
         <?php if ($show_view_more || $query->have_posts()) : ?>
         <div class="text-center mt-12">
-            <button type="button" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200">
-                Read Less
+            <button type="button" class="btn btn-primary">
+                Load More
             </button>
         </div>
         <?php endif; ?>

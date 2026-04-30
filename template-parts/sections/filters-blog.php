@@ -31,7 +31,7 @@ $categories = get_categories(array(
                         type="search"
                         name="s"
                         placeholder="Search Newsroom..."
-                        class="w-full pl-14 pr-6 py-4 text-base text-gray-900 bg-white border border-gray-300 rounded-full placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200"
+                        class="w-full pl-14 pr-6 py-4 text-lg text-gray-900 bg-white border border-gray-300 rounded-full placeholder-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200"
                         aria-label="Search Newsroom"
                     >
                 </div>
@@ -40,7 +40,7 @@ $categories = get_categories(array(
                 <div class="relative sm:w-48 lg:w-56">
                     <select
                         name="category"
-                        class="w-full appearance-none pl-6 pr-12 py-4 text-base font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
+                        class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Filter by category"
                     >
                         <option value="">All News</option>
@@ -59,7 +59,7 @@ $categories = get_categories(array(
                 <div class="relative sm:w-48 lg:w-56">
                     <select
                         name="sort"
-                        class="w-full appearance-none pl-6 pr-12 py-4 text-base font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
+                        class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Sort posts"
                     >
                         <option value="newest">Newest First</option>

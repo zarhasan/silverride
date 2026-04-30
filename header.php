@@ -27,16 +27,16 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-8" aria-label="Primary navigation">
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200 flex items-center gap-1">
+        <a href="/who-we-serve" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200 flex items-center gap-1">
           Who We Serve
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
         </a>
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Drivers</a>
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Riders</a>
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Cities</a>
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Company</a>
-        <a href="#" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">News</a>
-        <a href="#" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+        <a href="/drivers" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Drivers</a>
+        <a href="/riders" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Riders</a>
+        <a href="/cities" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Cities</a>
+        <a href="/company" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Company</a>
+        <a href="/news" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">News</a>
+        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
           Request Demo
         </a>
       </nav>
@@ -65,19 +65,19 @@
         </div>
 
         <div class="flex flex-col gap-4">
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary flex items-center justify-between">
+          <a href="/who-we-serve" class="text-white text-lg font-medium py-2 border-b border-primary flex items-center justify-between">
             Who We Serve
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary">Drivers</a>
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary">Riders</a>
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary">Cities</a>
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary">Company</a>
-          <a href="#" class="text-white text-lg font-medium py-2 border-b border-primary">News</a>
+          <a href="/drivers" class="text-white text-lg font-medium py-2 border-b border-primary">Drivers</a>
+          <a href="/riders" class="text-white text-lg font-medium py-2 border-b border-primary">Riders</a>
+          <a href="/cities" class="text-white text-lg font-medium py-2 border-b border-primary">Cities</a>
+          <a href="/company" class="text-white text-lg font-medium py-2 border-b border-primary">Company</a>
+          <a href="/news" class="text-white text-lg font-medium py-2 border-b border-primary">News</a>
         </div>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
-          <a href="#" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+          <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
             Request Demo
           </a>
         </div>
