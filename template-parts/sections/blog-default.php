@@ -30,7 +30,7 @@ $total_posts = $query->found_posts;
 $show_view_more = $total_posts > $post_count;
 ?>
 
-<section class="bg-white py-12 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-12 lg:my-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             <?php if ($query->have_posts()) : ?>
@@ -61,7 +61,7 @@ $show_view_more = $total_posts > $post_count;
 
         <?php if ($show_view_more || $query->have_posts()) : ?>
         <div class="text-center mt-12">
-            <button type="button" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-blue-800 border-2 border-blue-800 rounded-full hover:bg-blue-800 hover:text-white transition-colors duration-200">
+            <button type="button" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200">
                 Read Less
             </button>
         </div>
