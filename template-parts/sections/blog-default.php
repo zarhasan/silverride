@@ -5,11 +5,8 @@ if (!defined('ABSPATH')) {
 
 $template_part_name = explode('.', basename(__FILE__))[0];
 
-$title = $args['title'] ?? '';
-$description = $args['description'] ?? '';
 $post_count = $args['post_count'] ?? 12;
 $category = $args['category'] ?? 0;
-$link = $args['link'] ?? [];
 $custom_query = $args['query'] ?? null;
 
 if ($custom_query) {
@@ -19,6 +16,7 @@ if ($custom_query) {
         'post_type' => 'post',
         'posts_per_page' => $post_count,
         'post_status' => 'publish',
+        'offset' => 1,
     );
 
     if (!empty($category)) {
@@ -32,34 +30,40 @@ $total_posts = $query->found_posts;
 $show_view_more = $total_posts > $post_count;
 ?>
 
-<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container">
-        <h2 class="text-3xl md:text-4xl lg:text-[2.5rem] font-semibold text-center text-[#1B1B1B] mb-12">
-            <?php echo esc_html($title); ?>
-        </h2>
-
-        <?php if ($description) : ?>
-            <p class="text-center text-lg text-[#1B1B1B] mb-8 max-w-3xl mx-auto">
-                <?php echo wp_kses_post($description); ?>
-            </p>
-        <?php endif; ?>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<section class="bg-white py-12 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             <?php if ($query->have_posts()) : ?>
-                <?php while ($query->have_posts()) : $query->the_post(); ?>
+                <?php 
+                $post_index = 0;
+                while ($query->have_posts()) : $query->the_post(); 
+                    $post_index++;
+                ?>
                     <?php get_template_part('template-parts/post-card'); ?>
+
+                    <?php 
+                    // Insert logo promo block after 4th post to match screenshot layout
+                    if ($post_index === 4) : 
+                    ?>
+                        <div class="hidden lg:flex flex-col items-center justify-center aspect-[4/3]">
+                            <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col items-center text-blue-900 no-underline">
+                                <span class="text-3xl font-bold tracking-tight leading-none">SilverRide</span>
+                                <span class="text-[0.65rem] font-semibold tracking-[0.25em] mt-1 uppercase">There With Care</span>
+                            </a>
+                        </div>
+                    <?php endif; ?>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
             <?php else : ?>
-                <p class="text-center col-span-3 text-[#1B1B1B]">No posts found.</p>
+                <p class="text-center col-span-full text-gray-600">No posts found.</p>
             <?php endif; ?>
         </div>
 
-        <?php if ($show_view_more) : ?>
-        <div class="text-center mt-10">
-            <a href="/blogs" class="text-lg inline-flex items-center justify-center px-8 py-3 text-white rounded-full transition-colors duration-200" style="background-color: var(--theme-primary);">
-                View More News & Blogs
-            </a>
+        <?php if ($show_view_more || $query->have_posts()) : ?>
+        <div class="text-center mt-12">
+            <button type="button" class="inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-blue-800 border-2 border-blue-800 rounded-full hover:bg-blue-800 hover:text-white transition-colors duration-200">
+                Read Less
+            </button>
         </div>
         <?php endif; ?>
     </div>
