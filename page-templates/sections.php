@@ -160,6 +160,14 @@ get_header();
     ]);
     ?>
 
+    <?php get_template_part('template-parts/section-label', null, [
+        'number' => '5',
+        'section' => 'Policy',
+        'layout' => 'policy.php',
+        'fields' => 'title, image, effective_date, toc_title, sections (repeater: heading, id, content), other_title, other_cities'
+    ]); ?>
+    <?php get_template_part('template-parts/sections/policy', null, []); ?>
+
 </main>
 
 <?php
