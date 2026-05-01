@@ -54,7 +54,7 @@ if (empty($features)) {
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-16 lg:mb-20">
             <?php foreach ($columns as $column) : ?>
                 <div>
-                    <h3 class="text-xl md:text-[1.625rem] font-bold text-gray-900 mb-4">
+                    <h3 class="text-xl lg:text-[1.625rem] font-bold text-gray-900 mb-4">
                         <?php echo esc_html($column['heading'] ?? ''); ?>
                     </h3>
                     <p class="text-lg text-gray-700 leading-relaxed">
@@ -72,13 +72,13 @@ if (empty($features)) {
                 <div class="flex flex-col items-center text-center">
                     <div class="w-[11.25rem] h-auto flex items-center justify-center mb-4">
                         <?php if ($icon_type === 'wheelchair') : ?>
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-chair.png'); ?>" alt="Wheelchair icon">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-wheelchair.png'); ?>" alt="Wheelchair icon">
                         <?php elseif ($icon_type === 'guide-dog') : ?>
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-chair.png'); ?>" alt="Wheelchair icon">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-guide-dog.png'); ?>" alt="Guide dog icon">
                         <?php elseif ($icon_type === 'compassion') : ?>
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-chair.png'); ?>" alt="Wheelchair icon">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-compassion.png'); ?>" alt="Compassion icon">
                         <?php elseif ($icon_type === 'multilingual') : ?>
-                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-chair.png'); ?>" alt="Wheelchair icon">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-multilingual.png'); ?>" alt="Multilingual icon">
                         <?php else : ?>
                             <img src="<?php echo esc_url(get_template_directory_uri() . '/media/icon-chair.png'); ?>" alt="Wheelchair icon">
                         <?php endif; ?>

@@ -63,7 +63,7 @@
                         <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Leadership</a></li>
                         <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Careers</a></li>
                         <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">News</a></li>
+                        <li><a href="/newsroom" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">News</a></li>
                     </ul>
                 </div>
 
@@ -71,12 +71,12 @@
                 <div class="space-y-4">
                     <h3 class="text-base font-bold text-gray-900">Help and Compliance</h3>
                     <ul class="space-y-3">
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Help</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Safety</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Report an Incident</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Accessibility</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Privacy</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Terms</a></li>
+                        <li><a href="/help" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Help</a></li>
+                        <li><a href="/safety" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Safety</a></li>
+                        <li><a href="/report-an-incident" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Report an Incident</a></li>
+                        <li><a href="/accessibility" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Accessibility</a></li>
+                        <li><a href="/privacy" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Privacy</a></li>
+                        <li><a href="/terms" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Terms</a></li>
                     </ul>
                 </div>
             </div>
@@ -89,16 +89,16 @@
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-base">
                 <span>&copy; 2026 SilverRide Inc.</span>
                 <div class="flex items-center gap-4">
-                    <a href="#" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>
+                    <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>
                     <span class="text-gray-400">|</span>
-                    <a href="#" class="hover:text-gray-900 transition-colors duration-200">Terms</a>
+                    <a href="/terms" class="hover:text-gray-900 transition-colors duration-200">Terms</a>
                     <span class="text-gray-400">|</span>
-                    <a href="#" class="hover:text-gray-900 transition-colors duration-200">Accessibility</a>
+                    <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200">Accessibility</a>
                 </div>
             </div>
 
             <div class="flex items-center gap-6">
-                <a href="#" class="inline-flex items-center justify-center px-6 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
+                <a href="/partner-login" class="inline-flex items-center justify-center px-6 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
                     Partner Login
                 </a>
                 

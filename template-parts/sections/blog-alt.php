@@ -29,7 +29,7 @@ if ($custom_query) {
 
 <section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 text-center mb-12 lg:mb-16">
             <?php echo esc_html($title); ?>
         </h2>
 
@@ -43,8 +43,8 @@ if ($custom_query) {
                         </div>
                         <?php endif; ?>
 
-                        <h3 class="text-xl font-bold text-gray-900 mb-4 leading-snug">
-                            <a href="<?php echo esc_url(get_permalink()); ?>" class="hover:text-blue-800 transition-colors duration-200">
+                        <h3 class="text-[1.625rem] font-bold text-gray-900 mb-4 leading-snug">
+                            <a href="<?php echo esc_url(get_permalink()); ?>" class="hover:text-primary transition-colors duration-200">
                                 <?php echo esc_html(get_the_title()); ?>
                             </a>
                         </h3>
@@ -53,7 +53,7 @@ if ($custom_query) {
                             <?php echo esc_html(get_the_excerpt()); ?>
                         </p>
 
-                        <a href="<?php echo esc_url(get_permalink()); ?>" class="inline-flex items-center justify-center self-start px-6 py-2 text-base font-semibold text-white bg-blue-800 rounded-full hover:bg-blue-900 transition-colors duration-200">
+                        <a href="<?php echo esc_url(get_permalink()); ?>" class="inline-flex items-center justify-center self-start px-6 py-2 text-base font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
                             Read More
                         </a>
                     </article>

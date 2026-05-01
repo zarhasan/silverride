@@ -5,7 +5,7 @@
 get_header();
 ?>
 
-<main id="main-content" class="bg-primary min-h-screen flex flex-col items-center justify-center relative overflow-hidden" role="main" aria-label="<?php esc_attr_e('Page not found', 'silverride'); ?>">
+<main id="main-content" class="bg-primary h-[30rem] flex flex-col items-center justify-center relative overflow-hidden" role="main" aria-label="<?php esc_attr_e('Page not found', 'silverride'); ?>">
 
     <!-- Content -->
     <div class="relative z-10 text-center px-4 sm:px-6 pt-20 pb-48 md:pb-56 lg:pb-64">
@@ -24,7 +24,7 @@ get_header();
 
     <!-- Illustration -->
     <div class="absolute bottom-0 left-0 right-0 pointer-events-none" aria-hidden="true">
-        <img src="404-illustration.svg" alt="Illustration of accessible transportation vehicles, a person in a wheelchair, and a person with a guide dog" class="w-full max-w-6xl mx-auto h-auto">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/media/404-illustration.png'); ?>" alt="Illustration of accessible transportation vehicles, a person in a wheelchair, and a person with a guide dog" class="w-full max-w-6xl mx-auto h-auto">
     </div>
 
 </main>

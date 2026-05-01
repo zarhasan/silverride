@@ -18,11 +18,11 @@
 
   <a class="skip-to-main-content" href="#page"><?php esc_html_e('Skip to main content', 'silverride'); ?></a>
 
-  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-primary">
+  <header tabindex="-1" id="masthead" class="site-header w-full fixed top-0 h-20 lg:h-28 py-2 lg:py-4 z-[9999] flex justify-center items-center bg-primary">
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
-        <img class="h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="">
+        <img class="h-12 lg:h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="">
       </a>
 
       <!-- Desktop Navigation -->
@@ -63,15 +63,15 @@
         </div>
 
         <div class="flex flex-col gap-4">
-          <a href="/who-we-serve" class="text-white text-lg font-medium py-2 border-b border-primary flex items-center justify-between">
+          <a href="/who-we-serve" class="text-lg font-medium py-2 border-b border-primary flex items-center justify-between">
             Who We Serve
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
           </a>
-          <a href="/drivers" class="text-white text-lg font-medium py-2 border-b border-primary">Drivers</a>
-          <a href="/riders" class="text-white text-lg font-medium py-2 border-b border-primary">Riders</a>
-          <a href="/cities" class="text-white text-lg font-medium py-2 border-b border-primary">Cities</a>
-          <a href="/company" class="text-white text-lg font-medium py-2 border-b border-primary">Company</a>
-          <a href="/news" class="text-white text-lg font-medium py-2 border-b border-primary">News</a>
+          <a href="/drivers" class="text-lg font-medium py-2 border-b border-primary">Drivers</a>
+          <a href="/riders" class="text-lg font-medium py-2 border-b border-primary">Riders</a>
+          <a href="/cities" class="text-lg font-medium py-2 border-b border-primary">Cities</a>
+          <a href="/company" class="text-lg font-medium py-2 border-b border-primary">Company</a>
+          <a href="/news" class="text-lg font-medium py-2 border-b border-primary">News</a>
         </div>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
@@ -83,4 +83,4 @@
     </nav>
   </header>
 
-  <main id="page" class="site pt-32">
+  <main id="page" class="site h-20 lg:pt-28">

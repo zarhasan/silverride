@@ -25,11 +25,11 @@ $image = $args['image'] ?? [];
 
             <!-- Right Content -->
             <div>
-                <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3 block">
+                <span class="text-[1.375rem] font-bold text-gray-900 uppercase tracking-wide mb-3 block">
                     <?php echo esc_html($label); ?>
                 </span>
 
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                <h2 class="text-3xl lg:text-[1.625rem] font-bold text-gray-900 leading-tight mb-6">
                     <?php echo esc_html($title); ?>
                 </h2>
 

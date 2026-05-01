@@ -26,11 +26,11 @@ $total_slides = count($slides);
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <!-- Header -->
         <div class="text-center mb-12 lg:mb-16">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+            <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-4">
                 <?php echo esc_html($title); ?>
             </h2>
             <?php if ($subtitle) : ?>
-                <p class="text-lg md:text-xl text-gray-700">
+                <p class="text-lg md:text-[1.5rem] text-gray-700">
                     <?php echo esc_html($subtitle); ?>
                 </p>
             <?php endif; ?>
@@ -40,7 +40,7 @@ $total_slides = count($slides);
         <div class="relative max-w-4xl mx-auto" role="region" aria-roledescription="carousel" aria-label="Testimonials">
             <div class="flex items-center justify-between gap-6 md:gap-10">
                 <!-- Prev Button -->
-                <button type="button" class="flex-shrink-0 w-12 h-12 flex items-center justify-center text-gray-900 hover:text-blue-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2 rounded-full" aria-label="Previous testimonial">
+                <button type="button" class="flex-shrink-0 w-12 h-12 flex items-center justify-center text-gray-900 hover:text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full" aria-label="Previous testimonial">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <polyline points="15 18 9 12 15 6"></polyline>
                     </svg>
@@ -52,13 +52,13 @@ $total_slides = count($slides);
                         $is_active = $index === 0;
                     ?>
                         <div class="<?php echo $is_active ? 'block' : 'hidden'; ?>" role="group" aria-roledescription="slide" aria-label="<?php echo sprintf(esc_attr__('%1$d of %2$d', 'silverride'), $index + 1, $total_slides); ?>">
-                            <blockquote class="text-lg md:text-xl lg:text-2xl text-gray-800 leading-relaxed mb-8">
+                            <blockquote class="text-lg md:text-xl text-gray-800 leading-relaxed mb-8">
                                 &ldquo;<?php echo esc_html($slide['quote'] ?? ''); ?>&rdquo;
                             </blockquote>
 
                             <footer>
                                 <cite class="not-italic">
-                                    <span class="block text-base font-bold text-gray-900 mb-1"><?php echo esc_html($slide['author'] ?? ''); ?></span>
+                                    <span class="block text-base font-semibold text-gray-900 mb-1"><?php echo esc_html($slide['author'] ?? ''); ?></span>
                                     <span class="block text-sm text-gray-600"><?php echo esc_html($slide['role'] ?? ''); ?></span>
                                 </cite>
                             </footer>
@@ -67,7 +67,7 @@ $total_slides = count($slides);
                 </div>
 
                 <!-- Next Button -->
-                <button type="button" class="flex-shrink-0 w-12 h-12 flex items-center justify-center text-gray-900 hover:text-blue-800 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2 rounded-full" aria-label="Next testimonial">
+                <button type="button" class="flex-shrink-0 w-12 h-12 flex items-center justify-center text-gray-900 hover:text-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full" aria-label="Next testimonial">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <polyline points="9 18 15 12 9 6"></polyline>
                     </svg>

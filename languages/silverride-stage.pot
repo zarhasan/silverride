@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-04-30T19:19:22+05:30\n"
+"POT-Creation-Date: 2026-05-01T18:35:59+05:30\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: silverride-stage\n"
@@ -47,6 +47,14 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Help"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Home"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Policy"
 msgstr ""
 
 #. Template Name of the theme
