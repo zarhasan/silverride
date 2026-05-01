@@ -11,7 +11,7 @@ $link = $args['link'] ?? [];
 $image = $args['image'] ?? [];
 ?>
 
-<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <!-- Left Content -->
@@ -54,7 +54,7 @@ $image = $args['image'] ?? [];
             </div>
 
             <!-- Right Illustration -->
-            <div class="flex justify-center lg:justify-end">
+            <div class="flex justify-center">
                 <?php if (!empty($image) && !empty($image['url'])) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? 'Illustration of people walking together'); ?>" class="w-full max-w-md h-auto object-contain">
                 <?php else : ?>

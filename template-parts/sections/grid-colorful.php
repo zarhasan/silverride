@@ -8,7 +8,7 @@ $title = $args['title'] ?? 'Who We Serve';
 $cards = $args['cards'] ?? [];
 ?>
 
-<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
             <?php echo esc_html($title); ?>
@@ -33,7 +33,7 @@ $cards = $args['cards'] ?? [];
                     </h3>
 
                     <?php if ($card_description) : ?>
-                        <p class="text-base text-gray-800 leading-relaxed mb-8">
+                        <p class="text-lg text-gray-800 leading-relaxed mb-8">
                             <?php echo wp_kses_post($card_description); ?>
                         </p>
                     <?php endif; ?>
@@ -42,7 +42,7 @@ $cards = $args['cards'] ?? [];
                         <ul class="space-y-3">
                             <?php foreach ($card_items as $item) : ?>
                                 <li class="flex items-start gap-3 text-base text-gray-800">
-                                    <span class="text-gray-900 mt-1.5">&bull;</span>
+                                    <span class="text-gray-900">&bull;</span>
                                     <span><?php echo wp_kses_post($item['item'] ?? $item); ?></span>
                                 </li>
                             <?php endforeach; ?>
@@ -65,19 +65,19 @@ $cards = $args['cards'] ?? [];
 
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>ADA-compliant service across 35+ major metros in 15 states</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>95% on-time performance backed by agency-grade reporting</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>Sedan, SUV, and wheelchair-accessible vehicles on demand</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>Door-to-door and door-through-door service, standard</span>
                         </li>
                     </ul>
@@ -97,19 +97,19 @@ $cards = $args['cards'] ?? [];
 
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>Credentialed drivers experienced with medically complex riders</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>Integrated booking, live tracking, and compliance-ready reporting</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>Door-through-door service as the baseline, not an upgrade</span>
                         </li>
                         <li class="flex items-start gap-3 text-base text-gray-800">
-                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span class="text-gray-900">&bull;</span>
                             <span>ADA-compliant service across 35+ major metros in 15 states</span>
                         </li>
                     </ul>

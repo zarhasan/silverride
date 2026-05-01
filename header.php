@@ -22,7 +22,7 @@
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
-        <img class="h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="SilverRide Logo">
+        <img class="h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="">
       </a>
 
       <!-- Desktop Navigation -->
@@ -36,9 +36,7 @@
         <a href="/cities" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Cities</a>
         <a href="/company" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">Company</a>
         <a href="/news" class="text-white text-base font-medium hover:text-blue-200 transition-colors duration-200">News</a>
-        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
-          Request Demo
-        </a>
+        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">Request Demo</a>
       </nav>
 
       <!-- Mobile menu button -->

@@ -10,6 +10,7 @@ get_template_part('template-parts/sections/hero-home');
 get_template_part('template-parts/sections/information');
 get_template_part('template-parts/sections/stats');
 get_template_part('template-parts/sections/grid-colorful');
+get_template_part('template-parts/sections/nested-grid');
 get_template_part('template-parts/sections/grid-highlight');
 get_template_part('template-parts/sections/information-alt');
 get_template_part('template-parts/sections/slider-basic');

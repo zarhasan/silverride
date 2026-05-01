@@ -8,7 +8,7 @@ $title = $args['title'] ?? 'Why SilverRide';
 $cards = $args['cards'] ?? [];
 ?>
 
-<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
             <?php echo esc_html($title); ?>
@@ -20,7 +20,7 @@ $cards = $args['cards'] ?? [];
                     $card_title = $card['title'] ?? '';
                     $card_description = $card['description'] ?? '';
                 ?>
-                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
                         <?php echo esc_html($card_title); ?>
                     </h3>
@@ -33,7 +33,7 @@ $cards = $args['cards'] ?? [];
                 </div>
                 <?php endforeach; ?>
             <?php else : ?>
-                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
                         Built For Scale. Focused On The Individual Ride.
                     </h3>
@@ -42,7 +42,7 @@ $cards = $args['cards'] ?? [];
                     </p>
                 </div>
 
-                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
                         A Driver Network That Actually Cares.
                     </h3>
@@ -51,7 +51,7 @@ $cards = $args['cards'] ?? [];
                     </p>
                 </div>
 
-                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
                     <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
                         Compliance Is The Floor, Not The Ceiling.
                     </h3>
