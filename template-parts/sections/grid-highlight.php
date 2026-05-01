@@ -1,133 +1,65 @@
 <?php
-/**
- * Template part for displaying the Grid Basic section
- *
- * @package Accessibility_Partners
- */
-
 if (!defined('ABSPATH')) {
     exit;
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$title = $args['title'] ?? 'More Accessibility Services';
-$description = $args['description'] ?? '';
-$grid_size = intval($args['grid_size'] ?? 3);
-$items = $args['items'] ?? [];
-$background_color = $args['background_color'] ?? '';
-$footer_description = $args['footer_description'] ?? '';
-$cta = $args['cta'] ?? [];
-$alternate_bg = silverride_alternate_bg_color();
-
-$item_count = count($items);
-
-// Calculate LCM-based grid for dynamic layouts
-$rows = ceil($item_count / $grid_size);
-$last_row_items = $item_count % $grid_size ?: $grid_size;
-$has_partial_last_row = ($item_count % $grid_size !== 0);
-
-// Use grid_size * last_row_items as total columns for flexible distribution
-$total_cols = $has_partial_last_row ? ($grid_size * $last_row_items) : $grid_size;
-
-$bg_style = $background_color ? 'background-color: ' . esc_attr($background_color) . ';' : '';
-$bg_class = $background_color ? 'py-8 sm:py-16' : 'bg-white';
+$title = $args['title'] ?? 'Why SilverRide';
+$cards = $args['cards'] ?? [];
 ?>
 
-<section class="my-16 md:my-24 <?php echo $bg_class; ?>" <?php echo $background_color ? 'style="' . $bg_style . '"' : ''; ?> data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container">
-        <?php if ($title || $description) : ?>
-        <div class="w-full text-center mb-8 md:mb-12">
-            <?php if ($title) : ?>
-                <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4"><?php echo wp_kses_post($title); ?></h2>
-            <?php endif; ?>
+<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+            <?php echo esc_html($title); ?>
+        </h2>
 
-            <?php if ($description) : ?>
-                <div class="prose text-lg text-[#1B1B1B] mx-auto leading-relaxed mt-8">
-                    <?php echo wp_kses_post($description); ?>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <?php if (!empty($cards)) : ?>
+                <?php foreach ($cards as $card) :
+                    $card_title = $card['title'] ?? '';
+                    $card_description = $card['description'] ?? '';
+                ?>
+                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        <?php echo esc_html($card_title); ?>
+                    </h3>
+
+                    <?php if ($card_description) : ?>
+                        <p class="text-base text-gray-800 leading-relaxed">
+                            <?php echo wp_kses_post($card_description); ?>
+                        </p>
+                    <?php endif; ?>
+                </div>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        Built For Scale. Focused On The Individual Ride.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        SilverRide operates at a scale other assisted transportation providers cannot match, and still treats every ride like it is the only one. That is the promise riders remember, and the one agencies and health plans rely on.
+                    </p>
+                </div>
+
+                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        A Driver Network That Actually Cares.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        Our drivers choose this work because it matters. They are experienced professionals who bring the skills and qualifications expected in assisted transportation. They don't treat riders as fares, they treat them as family – and often build meaningful connections along the way.
+                    </p>
+                </div>
+
+                <div class="bg-orange-200 rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        Compliance Is The Floor, Not The Ceiling.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        ADA-compliant service, vehicle and insurance standards, and agency-grade reporting are built into every contract. We exceed the requirements, document the work, and give partners the confidence to grow with us.
+                    </p>
                 </div>
             <?php endif; ?>
         </div>
-        <?php endif; ?>
-
-        <?php if (!empty($items)) : ?>
-        <div class="flex flex-col lg:grid gap-6 md:gap-8" style="grid-template-columns: repeat(<?php echo $total_cols; ?>, minmax(0, 1fr));">
-            <?php foreach ($items as $index => $item) : 
-                $item_image = $item['image'] ?? [];
-                $item_title = $item['title'] ?? '';
-                $item_description = $item['description'] ?? '';
-                $item_link = $item['link'] ?? [];
-                $has_link = !empty($item_link) && !empty($item_link['url']);
-                
-                $current_row = floor($index / $grid_size) + 1;
-                $is_last_row = ($current_row == $rows);
-                
-                if ($is_last_row && $has_partial_last_row) {
-                    $span = $total_cols / $last_row_items;
-                } else {
-                    $span = $total_cols / $grid_size;
-                }
-            ?>
-            <div class="rounded-lg p-6 text-center" style="grid-column: span <?php echo $span; ?>; background-color: <?php echo esc_attr($alternate_bg); ?>;">
-                <?php if (!empty($item_image) && !empty($item_image['url'])) : ?>
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--theme-primary);">
-                        <img src="<?php echo esc_url($item_image['url']); ?>" alt="" class="w-full h-auto">
-                    </div>
-                <?php endif; ?>
-                
-                <?php if ($item_title) : ?>
-                    <?php if ($has_link) : ?>
-                        <?php if(empty($item_description)) : ?>
-                            <p class="text-2xl font-semibold text-[#1B1B1B] pt-2 mb-2">
-                                <a href="<?php echo esc_url($item_link['url']); ?>" class="hover:underline">
-                                    <?php echo esc_html($item_title); ?>
-                                </a>
-                            </p>
-                        <?php else : ?>
-                            <h3 class="text-2xl font-semibold text-[#1B1B1B] pt-2">
-                                <a href="<?php echo esc_url($item_link['url']); ?>" class="hover:underline">
-                                    <?php echo esc_html($item_title); ?>
-                                </a>
-                            </h3>
-                        <?php endif; ?>
-                    <?php else : ?>
-                        <?php if(empty($item_description)) : ?>
-                            <p class="text-2xl font-semibold text-[#1B1B1B] pt-2 mb-2"><?php echo esc_html($item_title); ?></p>
-                        <?php else : ?>
-                            <h3 class="text-2xl font-semibold text-[#1B1B1B] pt-2"><?php echo esc_html($item_title); ?></h3>
-                        <?php endif; ?>
-                    <?php endif; ?>
-                <?php endif; ?>
-                
-                <?php if ($item_description) : ?>
-                    <div class="prose text-lg leading-relaxed mt-4">
-                        <?php echo wp_kses_post($item_description); ?>
-                    </div>
-                <?php endif; ?>
-                
-                <?php if (!empty($item_link['title'])) : ?>
-                    <a href="<?php echo esc_url($item_link['url']); ?>" class="text-lg inline-flex items-center justify-center px-6 py-2 mt-6 text-white rounded-full transition-colors duration-200 border-2 border-primary bg-primary hover:bg-transparent hover:text-primary">
-                        <?php echo esc_html($item_link['title'] ?? 'Learn More'); ?>
-                    </a>
-                <?php endif; ?>
-            </div>
-            <?php endforeach; ?>
-        </div>
-        <?php endif; ?>
-
-        <?php if (!empty($footer_description)) : ?>
-        <div class="w-full text-center mx-auto mt-12">
-            <div class="prose text-lg text-[#1B1B1B] leading-relaxed">
-                <?php echo wp_kses_post($footer_description); ?>
-            </div>
-        </div>
-        <?php endif; ?>
-        
-        <?php if (!empty($cta) && !empty($cta['url'])) : ?>
-        <div class="text-center mt-8">
-            <a href="<?php echo esc_url($cta['url']); ?>" class="inline-flex items-center justify-center px-8 py-3 text-lg text-white rounded-full transition-colors duration-200" style="background-color: var(--theme-primary);">
-                <?php echo esc_html($cta['title'] ?? 'Learn More'); ?>
-            </a>
-        </div>
-        <?php endif; ?>
     </div>
 </section>

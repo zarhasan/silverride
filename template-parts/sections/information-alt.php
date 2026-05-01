@@ -4,57 +4,72 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$title = $args['title'] ?? 'Accessibility Plans & Policies';
+$label = $args['label'] ?? 'FOR DRIVERS';
+$title = $args['title'] ?? 'Transportation Your Members Can Count On.';
 $description = $args['description'] ?? '';
 $items = $args['items'] ?? [];
-$link = $args['link'] ?? [];
 $image = $args['image'] ?? [];
-$background_color = $args['background_color'] ?? '';
-
-$display_items = !empty($items) ? array_column($items, 'item') : [];
-
-$content_bg_style = $background_color ? 'background-color: ' . esc_attr($background_color) . '; border-radius: 1rem;' : '';
-$content_class = $background_color ? 'p-8' : '';
 ?>
 
-<section class="my-16 md:my-24 bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div class="order-2 !md:order-2">
+<section class="bg-sky-200 py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <!-- Left Illustration -->
+            <div class="flex justify-center lg:justify-start">
                 <?php if (!empty($image) && !empty($image['url'])) : ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full h-auto rounded-lg">
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? 'Illustration of people walking with assistance'); ?>" class="w-full max-w-md h-auto object-contain">
+                <?php else : ?>
+                    <img src="information-alt-illustration.svg" alt="Illustration of two people walking together, one with a cane" class="w-full max-w-md h-auto object-contain">
                 <?php endif; ?>
             </div>
 
-            <div class="order-1 !md:order-1">
-                <div <?php echo $content_class ? 'class="' . esc_attr($content_class) . '"' : ''; ?> <?php echo $content_bg_style ? 'style="' . $content_bg_style . '"' : ''; ?>>
-                    <h2 class="text-3xl md:text-[2.5rem] !leading-tight font-semibold text-[#1B1B1B] mb-6"><?php echo esc_html($title); ?></h2>
-                    
-                    <?php if ($description) : ?>
-                        <div class="prose text-lg mb-8 leading-relaxed">
-                            <?php echo wp_kses_post($description); ?>
-                        </div>
-                    <?php endif; ?>
+            <!-- Right Content -->
+            <div>
+                <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-3 block">
+                    <?php echo esc_html($label); ?>
+                </span>
 
-                    <ul class="space-y-4 mb-8">
-                        <?php foreach ($display_items as $item) : ?>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center mt-0.5 mr-3" style="border-color: var(--theme-primary);">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="color: var(--theme-primary);">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <span class="text-lg"><?php echo wp_kses_post($item); ?></span>
-                        </li>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <?php echo esc_html($title); ?>
+                </h2>
+
+                <?php if ($description) : ?>
+                    <p class="text-base text-gray-800 leading-relaxed mb-8">
+                        <?php echo wp_kses_post($description); ?>
+                    </p>
+                <?php else : ?>
+                    <p class="text-base text-gray-800 leading-relaxed mb-8">
+                        SilverRide supports PACE programs and a growing roster of health plans and healthcare systems. We deliver door-through-door assisted transportation built for clinical complexity: escorts from the living room to the waiting room, scheduling coordinated around appointments, and the compassion your members expect from their care team. One partner for the full trip, from pickup to discharge and home again.
+                    </p>
+                <?php endif; ?>
+
+                <ul class="space-y-3">
+                    <?php if (!empty($items)) : ?>
+                        <?php foreach ($items as $item) : ?>
+                            <li class="flex items-start gap-3 text-base text-gray-800">
+                                <span class="text-gray-900 mt-1.5">&bull;</span>
+                                <span><?php echo wp_kses_post($item['item'] ?? $item); ?></span>
+                            </li>
                         <?php endforeach; ?>
-                    </ul>
-
-                    <?php if (!empty($link) && !empty($link['url'])) : ?>
-                    <a href="<?php echo esc_url($link['url']); ?>" class="inline-block text-white px-8 py-3 rounded-full font-normal transition-colors text-lg" style="background-color: var(--theme-primary);">
-                        <?php echo esc_html($link['title'] ?? 'Learn More About Accessibility Plans & Policies'); ?>
-                    </a>
+                    <?php else : ?>
+                        <li class="flex items-start gap-3 text-base text-gray-800">
+                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span>Credentialed drivers experienced with medically complex riders</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-base text-gray-800">
+                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span>Integrated booking, live tracking, and compliance-ready reporting</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-base text-gray-800">
+                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span>Door-through-door service as the baseline, not an upgrade</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-base text-gray-800">
+                            <span class="text-gray-900 mt-1.5">&bull;</span>
+                            <span>ADA-compliant service across 35+ major metros in 15 states</span>
+                        </li>
                     <?php endif; ?>
-                </div>
+                </ul>
             </div>
         </div>
     </div>

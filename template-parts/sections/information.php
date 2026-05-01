@@ -4,71 +4,62 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$type = $args['type'] ?? 'default';
-$title = $args['title'] ?? 'Accessibility Plans & Policies';
+$title = $args['title'] ?? 'Who We Are';
+$subtitle = $args['subtitle'] ?? 'More Than A Ride. A Lifeline.';
 $description = $args['description'] ?? '';
-$items = $args['items'] ?? [];
 $link = $args['link'] ?? [];
 $image = $args['image'] ?? [];
-$background_color = $args['background_color'] ?? '';
-
-$display_items = !empty($items) ? array_column($items, 'item') : [];
-
-$content_bg_style = $background_color ? 'background-color: ' . esc_attr($background_color) . '; border-radius: 1rem;' : '';
-$content_class = $background_color ? 'p-8' : '';
 ?>
 
-<section class="my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <?php if ($type === 'alt') : ?>
-            <div class="order-1">
-                <?php if (!empty($image) && !empty($image['url'])) : ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full h-auto rounded-lg">
+<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <!-- Left Content -->
+            <div>
+                <h2 class="text-3xl lg:text-[2.875rem] font-bold text-gray-900 mb-4">
+                    <?php echo esc_html($title); ?>
+                </h2>
+
+                <h3 class="text-[1.625rem] md:text-2xl font-bold text-gray-900 mb-6">
+                    <?php echo esc_html($subtitle); ?>
+                </h3>
+
+                <?php if ($description) : ?>
+                    <div class="text-[1.25rem] text-gray-700 leading-relaxed space-y-6 mb-10">
+                        <?php echo wp_kses_post($description); ?>
+                    </div>
                 <?php else : ?>
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/media/Policies-and-Plans-1.png'); ?>" alt="Accessibility Plans & Policies" class="w-full h-auto rounded-lg">
+                    <div class="text-[1.25rem] text-gray-700 leading-relaxed space-y-6 mb-10">
+                        <p>
+                            For millions of older adults and people with disabilities, a reliable ride is the difference between staying connected and being left behind. Rideshare apps often cannot accommodate a wheelchair. Traditional non-emergency medical services only cover medical trips. Public transit can be out of reach. SilverRide was built to close that gap, every day, at scale.
+                        </p>
+                        <p>
+                            We are a licensed Transportation Network Company delivering ADA-compliant assisted transportation, powered by a purpose-built technology platform and an experienced, credentialed driver network. We work three ways: paratransit partnerships with transit agencies, contract services for PACE and healthcare organizations, and direct booking for riders and their families. One platform. Three audiences. The same standard of care on every ride.
+                        </p>
+                        <p>
+                            The result: greater independence, greater dignity, more joy. For the people who need it most.
+                        </p>
+                    </div>
                 <?php endif; ?>
-            </div>
-            <div class="order-2">
-            <?php else : ?>
-            <div class="order-2 md:order-1">
-                <?php if (!empty($image) && !empty($image['url'])) : ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full h-auto rounded-lg">
-                <?php endif; ?>
-            </div>
-            <div class="order-1 md:order-2">
-            <?php endif; ?>
-                
-                <div <?php echo $content_class ? 'class="' . esc_attr($content_class) . '"' : ''; ?> <?php echo $content_bg_style ? 'style="' . $content_bg_style . '"' : ''; ?>>
-                    <h2 class="text-3xl md:text-[2.5rem] !leading-tight font-semibold text-[#1B1B1B] mb-6"><?php echo esc_html($title); ?></h2>
-                    
-                    <?php if ($description) : ?>
-                        <div class="prose text-lg mb-8 leading-relaxed">
-                            <?php echo wp_kses_post($description); ?>
-                        </div>
-                    <?php endif; ?>
 
-                    <?php if (!empty($display_items)) : ?>
-                    <ul class="space-y-4 mb-8">
-                        <?php foreach ($display_items as $item) : ?>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center mt-0.5 mr-3" style="border-color: var(--theme-primary);">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="color: var(--theme-primary);">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                                </svg>
-                            </div>
-                            <span class="text-lg"><?php echo wp_kses_post($item); ?></span>
-                        </li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <?php endif; ?>
-
-                    <?php if (!empty($link) && !empty($link['url'])) : ?>
-                    <a href="<?php echo esc_url($link['url']); ?>" class="inline-block text-white px-8 py-3 rounded-full font-normal transition-colors text-lg" style="background-color: var(--theme-primary);">
-                        <?php echo esc_html($link['title'] ?? 'Learn More About Accessibility Plans & Policies'); ?>
+                <?php if (!empty($link) && !empty($link['url'])) : ?>
+                    <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
+                        <?php echo esc_html($link['title'] ?? 'Learn More About SilverRide'); ?>
                     </a>
-                    <?php endif; ?>
-                </div>
+                <?php else : ?>
+                    <a href="#" class="btn btn-primary">
+                        Learn More About SilverRide
+                    </a>
+                <?php endif; ?>
+            </div>
+
+            <!-- Right Illustration -->
+            <div class="flex justify-center lg:justify-end">
+                <?php if (!empty($image) && !empty($image['url'])) : ?>
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? 'Illustration of people walking together'); ?>" class="w-full max-w-md h-auto object-contain">
+                <?php else : ?>
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/media/information.png'); ?>" alt="Illustration of two people walking together, one with a cane" class="w-full max-w-md h-auto object-contain">
+                <?php endif; ?>
             </div>
         </div>
     </div>
