@@ -18,7 +18,7 @@
 
   <a class="skip-to-main-content" href="#page"><?php esc_html_e('Skip to main content', 'silverride'); ?></a>
 
-  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-primary top-0">
+  <header tabindex="-1" id="masthead" class="site-header w-full fixed h-32 z-[9999] flex justify-center items-center bg-primary">
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
