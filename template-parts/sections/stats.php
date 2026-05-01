@@ -7,7 +7,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 $stats = $args['stats'] ?? [];
 ?>
 
-<section class="bg-sky-200 py-16 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-[#98D1E6] py-16 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
             <?php if (!empty($stats)) : ?>

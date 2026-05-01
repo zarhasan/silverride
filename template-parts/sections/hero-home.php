@@ -11,10 +11,10 @@ $image = $args['image'] ?? [];
 ?>
 
 <section class="relative bg-blue-900 overflow-hidden" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-20 lg:py-28">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <div class="container py-20 lg:py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <!-- Left Content -->
-            <div class="max-w-xl">
+            <div>
                 <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8">
                     <?php echo wp_kses_post($title); ?>
                 </h1>

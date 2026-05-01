@@ -14,14 +14,14 @@ $cards = $args['cards'] ?? [];
             <?php echo esc_html($title); ?>
         </h2>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <?php if (!empty($cards)) : ?>
                 <?php foreach ($cards as $card) :
                     $card_label = $card['label'] ?? '';
                     $card_title = $card['title'] ?? '';
                     $card_description = $card['description'] ?? '';
                     $card_items = $card['items'] ?? [];
-                    $card_bg = $card['background_color'] ?? 'bg-sky-200';
+                    $card_bg = $card['background_color'] ?? 'bg-[#98D1E6]';
                 ?>
                 <div class="<?php echo esc_attr($card_bg); ?> rounded-2xl p-8 lg:p-12">
                     <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4 block">
@@ -52,7 +52,7 @@ $cards = $args['cards'] ?? [];
                 <?php endforeach; ?>
             <?php else : ?>
                 <!-- For Transit Agencies -->
-                <div class="bg-sky-200 rounded-2xl p-8 lg:p-12">
+                <div class="bg-[#98D1E6] rounded-2xl p-8 lg:p-12">
                     <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4 block">FOR TRANSIT AGENCIES</span>
 
                     <h3 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">
@@ -84,7 +84,7 @@ $cards = $args['cards'] ?? [];
                 </div>
 
                 <!-- For PACE and Healthcare -->
-                <div class="bg-yellow-100 rounded-2xl p-8 lg:p-12">
+                <div class="bg-[#FFF1A5] rounded-2xl p-8 lg:p-12">
                     <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4 block">FOR PACE AND HEALTHCARE</span>
 
                     <h3 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">
