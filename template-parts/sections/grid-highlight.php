@@ -10,7 +10,7 @@ $cards = $args['cards'] ?? [];
 
 <section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-8 lg:mb-12">
             <?php echo esc_html($title); ?>
         </h2>
 
