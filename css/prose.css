@@ -1601,7 +1601,7 @@ pre::-webkit-scrollbar-thumb:hover {
 
 /* Headings - black to match screenshot design */
 .prose h2 {
-    font-size: 1.5rem;
+    font-size: 1.625rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
