@@ -10,7 +10,7 @@ $other_cities = $args['other_cities'] ?? [];
 ?>
 
 <section class="bg-white py-16 md:py-24">
-  <div class="mx-auto max-w-7xl px-6">
+  <div class="container">
     <h2 class="text-4xl font-bold text-black md:text-5xl"><?php echo esc_html( $title ); ?></h2>
 
     <?php if ( ! empty( $cities ) ) : ?>
@@ -42,7 +42,6 @@ $other_cities = $args['other_cities'] ?? [];
         <?php endif; ?>
         <div class="mt-5 flex gap-4">
           <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>>Explore</a>
-          
           <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $app_target; ?>>Apply to Drive</a>
         </div>
       </article>
