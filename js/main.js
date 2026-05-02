@@ -17,6 +17,7 @@
         addProseToElementor();
         initAlternateBgHover();
         initAccessibleCarousels();
+        initToCHighlighter();
 
         (() => {
             const $grid = $('[data-section-id="section_title-default"][data-heading-level="h3"] + [data-section-id^="grid-"] h3');
@@ -849,5 +850,87 @@
             // Initial UI
             updateUI();
         });
+    }
+
+    function initToCHighlighter() {
+        const section = document.querySelector('[data-section-id="text-with_toc"]');
+        if (!section) return;
+
+        const tocNav = section.querySelector('aside nav');
+        if (!tocNav) return;
+
+        const tocBox = tocNav.parentElement;
+        if (!tocBox) return;
+        tocBox.style.position = 'relative';
+
+        // Create highlighter element
+        const highlighter = document.createElement('div');
+        highlighter.setAttribute('aria-hidden', 'true');
+        highlighter.style.cssText = 'position:absolute;left:0;top:0;width:3px;height:24px;background-color:#2563eb;border-radius:9999px;transform:translateY(0);transition:transform 0.3s ease-out,opacity 0.3s ease-out;opacity:0;pointer-events:none;';
+        tocBox.appendChild(highlighter);
+
+        const headings = Array.from(section.querySelectorAll('h2[id]'));
+        const links = Array.from(tocNav.querySelectorAll('a[href^="#"]'));
+        if (!headings.length || !links.length) return;
+
+        const header = document.querySelector('header');
+        function getScrollOffset() {
+            return (header ? header.offsetHeight : 0) + 24;
+        }
+
+        function updateActive() {
+            const scrollPos = window.scrollY || window.pageYOffset;
+            const offset = getScrollOffset();
+
+            let activeHeading = null;
+            for (let i = headings.length - 1; i >= 0; i--) {
+                const headingTop = headings[i].getBoundingClientRect().top + scrollPos;
+                if (scrollPos + offset >= headingTop) {
+                    activeHeading = headings[i];
+                    break;
+                }
+            }
+
+            if (!activeHeading) {
+                activeHeading = headings[0];
+            }
+
+            if (activeHeading) {
+                const id = activeHeading.getAttribute('id');
+                const activeLink = tocNav.querySelector('a[href="#' + id + '"]');
+                if (activeLink) {
+                    const boxRect = tocBox.getBoundingClientRect();
+                    const linkRect = activeLink.getBoundingClientRect();
+                    const top = linkRect.top - boxRect.top + (linkRect.height / 2) - 12;
+
+                    highlighter.style.transform = 'translateY(' + top + 'px)';
+                    highlighter.style.opacity = '1';
+
+                    links.forEach(function (link) {
+                        link.classList.remove('font-semibold', 'text-blue-700');
+                    });
+                    activeLink.classList.add('font-semibold', 'text-blue-700');
+                }
+            }
+        }
+
+        // Smooth scroll on TOC click
+        links.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    const offset = getScrollOffset();
+                    const top = target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - offset;
+                    window.scrollTo({ top: top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', updateActive, { passive: true });
+        window.addEventListener('resize', updateActive);
+
+        updateActive();
     }
 })();

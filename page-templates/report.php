@@ -6,7 +6,7 @@
 
 get_header();
 
-get_template_part('template-parts/sections/report');
+get_template_part('template-parts/sections/report-an-incident');
 get_template_part('template-parts/sections/call_to_action-default', null, [
     'title' => 'Still have questions?',
     'description' => 'Get in touch with us',
