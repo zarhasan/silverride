@@ -151,6 +151,7 @@ add_action( 'acf/include_fields', function() {
 								'default' => 'Default',
 								'alt' => 'Alt',
 								'heavy' => 'Heavy',
+								'with_toc' => 'With Table of Contents',
 							),
 							'default_value' => 'default',
 						),
@@ -326,6 +327,7 @@ add_action( 'acf/include_fields', function() {
 							'choices' => array(
 								'home' => 'Home',
 								'page' => 'Page',
+								'image-below' => 'Image Below',
 							),
 							'default_value' => '',
 							'return_format' => 'value',

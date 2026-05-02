@@ -13,208 +13,125 @@ get_header(); ?>
 <div id="content">
     <div id="primary">
         <?php while (have_posts()): the_post(); ?>
-            <!-- Post Hero Section -->
-            <section class="mb-8 md:mb-16 py-8 md:py-16 bg-[#f9f6fe]">
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="container">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-                        <!-- Content Column -->
-                        <div class="order-2 md:order-1">
-                            <!-- Date -->
-                            <div class="mb-4">
-                                <span class="inline-flex items-center text-sm text-[#1B1B1B]">
-                                    <svg class="w-4 h-4 mr-2" style="color: var(--theme-primary);" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <?php echo get_the_date('F j, Y'); ?>
-                                </span>
+                    <!-- Post Header -->
+                    <header class="pt-8 md:pt-12 pb-6 md:pb-8">
+                        <div class="">
+                            <!-- Social Share -->
+                            <div class="flex items-center gap-3 mb-6">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on Facebook">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                                </a>
+                                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on X">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on LinkedIn">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                </a>
                             </div>
 
+                            <!-- Featured Image -->
+                            <?php if (has_post_thumbnail()): ?>
+                                <div class="mb-6 md:mb-8">
+                                    <?php the_post_thumbnail('large', array('class' => 'w-full max-w-md h-auto')); ?>
+                                </div>
+                            <?php endif; ?>
+
                             <!-- Title -->
-                            <h1 class="text-3xl sm:text-4xl lg:text-[2.5rem] font-semibold mb-4 leading-tight" style="color: var(--theme-primary);">
+                            <h1 class="text-[2rem] sm:text-[2.5rem] lg:text-[2.875rem] font-bold mb-4 leading-[1.15] text-[#1B1B1B]">
                                 <?php the_title(); ?>
                             </h1>
 
+                            <!-- Date -->
+                            <div class="flex items-center gap-2 text-sm text-[#1B1B1B] mb-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <?php echo get_the_date('F j, Y'); ?>
+                            </div>
+
                             <!-- Author -->
-                            <div class="text-[#1B1B1B] italic">
+                            <div class="text-[#1B1B1B] text-sm">
                                 By <?php the_author(); ?>
                             </div>
                         </div>
+                    </header>
 
-                        <!-- Featured Image Column -->
-                        <div class="order-1 md:order-2">
-                            <?php if (has_post_thumbnail()): ?>
-                                <div class="rounded-2xl overflow-hidden shadow-lg">
-                                    <?php the_post_thumbnail('large', array('class' => 'w-full h-auto')); ?>
-                                </div>
-                            <?php else: ?>
-                                <div class="rounded-2xl overflow-hidden shadow-lg">
-                                    <img src="<?php echo esc_url( get_template_directory_uri() . '/src/images/blog-hero-accessible-forms.png' ); ?>" alt="<?php the_title_attribute(); ?>" class="w-full h-auto">
-                                </div>
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                <div class="container">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-                        <!-- Main Content Column -->
-                        <div class="lg:col-span-2">
-                            <!-- Table of Contents (On this page) -->
-                            <div class="border border-gray-900 mb-8">
-                                <button type="button" class="toc-toggle w-full border-b border-gray-900 p-4 flex items-center justify-between text-left" aria-expanded="true">
-                                    <h2 class="text-3xl font-semibold text-[#1B1B1B]">On this page</h2>
-                                    <svg class="toc-icon w-5 h-5 text-[#1B1B1B] transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                    </svg>
-                                </button>
-                                <nav class="toc-content transition-all p-4" aria-label="Table of contents">
-                                    <?php
-                                    $content = get_the_content();
-                                    $content = apply_filters('the_content', $content);
-                                    $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
-
-                                    $dom = new DOMDocument();
-                                    $dom->encoding = 'UTF-8';
-                                    libxml_use_internal_errors(true);
-                                    @$dom->loadHTML('<?xml encoding="UTF-8">' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-                                    libxml_clear_errors();
-
-                                    $xpath = new DOMXPath($dom);
-                                    $headings = $xpath->query('//h2');
-
-                                    $toc_items = array();
-                                    $index = 1;
-
-                                    foreach ($headings as $heading) {
-                                        $text = $heading->textContent;
-                                        $text = trim($text);
-
-                                        if (!empty($text)) {
-                                            $id = $heading->getAttribute('id');
-
-                                            if (empty($id)) {
-                                                $id = 'section-' . $index;
-                                                $heading->setAttribute('id', $id);
-                                            }
-
-                                            $toc_items[] = array(
-                                                'id' => $id,
-                                                'text' => $text
-                                            );
-                                            $index++;
-                                        }
-                                    }
-
-                                    if (!empty($toc_items)) {
-                                        echo '<ul class="space-y-2 list-disc ml-4" role="list">';
-                                        foreach ($toc_items as $item) {
-                                            echo '<li role="listitem">';
-                                            echo '<a href="#' . esc_attr($item['id']) . '" class="block text-lg underline" style="color: var(--theme-primary);">';
-                                            echo esc_html($item['text']);
-                                            echo '</a>';
-                                            echo '</li>';
-                                        }
-                                        echo '</ul>';
-                                    } else {
-                                        echo '<p class="text-sm text-gray-500" role="status">No section headings found.</p>';
-                                    }
-                                    ?>
-                                </nav>
-                            </div>
-
-                            <!-- Entry Content -->
-                            <div class="entry-content prose prose-lg max-w-none">
-                                <?php
-                                    $content = get_the_content();
-                                    $content = apply_filters('the_content', $content);
-                                    $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
-
-                                    $dom = new DOMDocument();
-                                    $dom->encoding = 'UTF-8';
-                                    libxml_use_internal_errors(true);
-                                    @$dom->loadHTML('<?xml encoding="UTF-8">' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-                                    libxml_clear_errors();
-
-                                    $xpath = new DOMXPath($dom);
-                                    $headings = $xpath->query('//h2');
-
-                                    $toc_items = array();
-                                    $index = 1;
-
-                                    foreach ($headings as $heading) {
-                                        $text = $heading->textContent;
-                                        $text = trim($text);
-
-                                        if (!empty($text)) {
-                                            $id = $heading->getAttribute('id');
-
-                                            if (empty($id)) {
-                                                $id = 'section-' . $index;
-                                                $heading->setAttribute('id', $id);
-                                            }
-
-                                            $toc_items[] = array(
-                                                'id' => $id,
-                                                'text' => $text
-                                            );
-                                            $index++;
-                                        }
-                                    }
-
-                                    $modified_content = $dom->saveHTML();
-
-                                    echo $modified_content;
-
-                                    wp_link_pages(
-                                        array(
-                                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'accessibility-partners'),
-                                            'after'  => '</div>',
-                                        )
-                                    );
-                                ?>
-                            </div><!-- .entry-content -->
-
-                            <!-- FAQ Section -->
+                    <!-- Main Content -->
+                    <div class="pb-12 md:pb-20">
+                        <div class="entry-content prose text-lg max-w-none">
                             <?php
-								$faq_items = get_field('faq_items');
-								if (!empty($faq_items)) :
-                            ?>
-                            <div class="mt-12 my-8">
-                                <h2 class="text-3xl font-semibold mb-6" style="color: var(--theme-primary);">Frequently Asked Questions</h2>
-                                <div class="space-y-4">
-                                    <?php foreach ($faq_items as $faq) : ?>
-                                    <div class="border border-gray-200 overflow-hidden">
-                                        <button type="button" class="faq-toggle text-lg text-primary w-full text-left p-4 flex items-center justify-between bg-white" aria-expanded="false">
-                                            <span class="font-semibold"><?php echo esc_html($faq['question']); ?></span>
-                                            <svg class="faq-icon w-5 h-5 transform rotate-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                                            </svg>
-                                        </button>
-                                        <div class="faq-content hidden p-4 bg-[#F9F9F9]">
-                                            <p class="text-[#1B1B1B]"><?php echo wp_kses_post($faq['answer']); ?></p>
-                                        </div>
-                                    </div>
-                                    <?php endforeach; ?>
-                                </div>
-                            </div>
-                            <?php endif; ?>
-                        </div>
+                                $content = get_the_content();
+                                $content = apply_filters('the_content', $content);
+                                $content = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
 
-                        <!-- Sidebar Column -->
-                        <div class="lg:col-span-1 bg-alternate-bg rounded-lg p-6">
-                            
+                                $dom = new DOMDocument();
+                                $dom->encoding = 'UTF-8';
+                                libxml_use_internal_errors(true);
+                                @$dom->loadHTML('<?xml encoding="UTF-8">' . $content, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+                                libxml_clear_errors();
+
+                                $xpath = new DOMXPath($dom);
+                                $headings = $xpath->query('//h2');
+
+                                foreach ($headings as $index => $heading) {
+                                    $text = $heading->textContent;
+                                    $text = trim($text);
+
+                                    if (!empty($text)) {
+                                        $id = $heading->getAttribute('id');
+
+                                        if (empty($id)) {
+                                            $id = 'section-' . ($index + 1);
+                                            $heading->setAttribute('id', $id);
+                                        }
+                                    }
+                                }
+
+                                $modified_content = $dom->saveHTML();
+
+                                echo $modified_content;
+
+                                wp_link_pages(
+                                    array(
+                                        'before' => '<div class="page-links">' . esc_html__('Pages:', 'accessibility-partners'),
+                                        'after'  => '</div>',
+                                    )
+                                );
+                            ?>
+                        </div><!-- .entry-content -->
+
+                        <!-- FAQ Section -->
+                        <?php
+                            $faq_items = get_field('faq_items');
+                            if (!empty($faq_items)) :
+                        ?>
+                        <div class="mt-12 md:mt-16">
+                            <h2 class="text-2xl md:text-[1.75rem] font-bold mb-6 text-[#1B1B1B]">Frequently Asked Questions</h2>
+                            <div class="space-y-4">
+                                <?php foreach ($faq_items as $faq) : ?>
+                                <div class="border border-gray-200 overflow-hidden">
+                                    <button type="button" class="faq-toggle text-lg w-full text-left p-4 flex items-center justify-between bg-white" aria-expanded="false">
+                                        <span class="font-semibold text-[#1B1B1B]"><?php echo esc_html($faq['question']); ?></span>
+                                        <svg class="faq-icon w-5 h-5 transform rotate-0 transition-transform text-[#1B1B1B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="faq-content hidden p-4 bg-[#F9F9F9]">
+                                        <div class="text-[#1B1B1B] prose prose-sm"><?php echo wp_kses_post($faq['answer']); ?></div>
+                                    </div>
+                                </div>
+                                <?php endforeach; ?>
+                            </div>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
-
             </article><!-- #post-## -->
         <?php endwhile; ?>
     </div>
 </div><!-- #primary -->
 
-
 <?php
-
 get_footer();
