@@ -2,16 +2,6 @@
 /**
  * Grid Cities Section
  *
- * Expected $args:
- * - title: string
- * - cities: array of city arrays
- *   - city_name: string
- *   - city_image: array (url, alt)
- *   - explore_link: array (url, title, target)
- *   - apply_link: array (url, title, target)
- *   - extra_links: array of link arrays
- * - other_title: string
- * - other_cities: string (HTML/text)
  */
 $title       = $args['title'] ?? 'Featured cities';
 $cities      = $args['cities'] ?? [];
@@ -51,20 +41,9 @@ $other_cities = $args['other_cities'] ?? '';
         <img src="<?php echo esc_url( $city_image['url'] ); ?>" alt="<?php echo esc_attr( $city_image['alt'] ?? $city_name ); ?>" class="mt-5 h-72 aspect-video w-full rounded-lg object-cover">
         <?php endif; ?>
         <div class="mt-5 flex gap-4">
-          <?php if ( ! empty( $explore_link ) ) :
-            $exp_url    = $explore_link['url'] ?? '#';
-            $exp_title  = $explore_link['title'] ?? 'Explore';
-            $exp_target = ! empty( $explore_link['target'] ) ? ' target="' . esc_attr( $explore_link['target'] ) . '"' : '';
-          ?>
-          <a href="<?php echo esc_url( $exp_url ); ?>" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>><?php echo esc_html( $exp_title ); ?></a>
-          <?php endif; ?>
-          <?php if ( ! empty( $apply_link ) ) :
-            $app_url    = $apply_link['url'] ?? '#';
-            $app_title  = $apply_link['title'] ?? 'Apply to Drive';
-            $app_target = ! empty( $apply_link['target'] ) ? ' target="' . esc_attr( $apply_link['target'] ) . '"' : '';
-          ?>
-          <a href="<?php echo esc_url( $app_url ); ?>" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $app_target; ?>><?php echo esc_html( $app_title ); ?></a>
-          <?php endif; ?>
+          <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>>Explore</a>
+          
+          <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $app_target; ?>>Apply to Drive</a>
         </div>
       </article>
       <?php endforeach; ?>

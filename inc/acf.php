@@ -3310,38 +3310,6 @@ add_action( 'acf/include_fields', function() {
 								'return_format' => 'array',
 								'preview_size' => 'medium',
 							),
-							array(
-								'key' => 'field_grid_cities_explore_link',
-								'label' => 'Explore Link',
-								'name' => 'explore_link',
-								'type' => 'link',
-								'return_format' => 'array',
-							),
-							array(
-								'key' => 'field_grid_cities_apply_link',
-								'label' => 'Apply to Drive Link',
-								'name' => 'apply_link',
-								'type' => 'link',
-								'return_format' => 'array',
-							),
-							array(
-								'key' => 'field_grid_cities_extra_links',
-								'label' => 'Extra Links',
-								'name' => 'extra_links',
-								'type' => 'repeater',
-								'layout' => 'table',
-								'button_label' => 'Add Link',
-								'sub_fields' => array(
-									array(
-										'key' => 'field_grid_cities_extra_link',
-										'label' => 'Link',
-										'name' => 'link',
-										'type' => 'link',
-										'return_format' => 'array',
-										'parent_repeater' => 'field_grid_cities_extra_links',
-									),
-								),
-							),
 						),
 					),
 					array(

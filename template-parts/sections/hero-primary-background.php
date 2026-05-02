@@ -12,7 +12,7 @@ $links = $args['links'] ?? [];
 ?>
 
 <section class="bg-primary py-20 md:py-28" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container mx-auto max-w-4xl text-center px-4">
+    <div class="container !max-w-5xl text-center">
         <?php if (!empty($subtitle)) : ?>
             <span class="block text-sm font-bold text-white uppercase tracking-wide mb-4">
                 <?php echo wp_kses_post($subtitle); ?>
