@@ -51,10 +51,10 @@ $other_cities = $args['other_cities'] ?? [];
     <?php endif; ?>
 
     <?php if ( ! empty( $other_cities ) ) : ?>
-    <div class="mt-12">
+    <div class="mt-16">
       <h3 class="text-2xl font-bold text-black"><?php echo esc_html( $other_title ); ?></h3>
       <div class="mt-8 text-lg leading-relaxed font-normal">
-        <?php echo esc_html( implode( ', ', array_column( $other_cities, 'city_name' ) ) ); ?>
+        <?php echo esc_html( implode( ' • ', array_column( $other_cities, 'city_name' )) ); ?>
       </div>
     </div>
     <?php endif; ?>

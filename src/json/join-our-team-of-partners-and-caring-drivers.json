@@ -1,0 +1,116 @@
+{
+  "page_title": "Join our team of partners and caring drivers",
+  "page_template": "page-templates/flexible.php",
+  "sections": [
+    {
+      "acf_fc_layout": "hero",
+      "type": "page",
+      "subtitle": "",
+      "title": "Join our team of partners and caring drivers",
+      "description": "<p>If you live in the Atlanta, Central Florida, Covina CA, Dallas, East Boston, Fort Myers FL, Jacksonville, Las Vegas, Lexington, Los Angeles (including East Los Angeles, Huntington Park, and Van Nuys), Louisville, Orange County, Phoenix, Sacramento, San Francisco Bay, San Jose, Santa Clarita, or Seattle areas, we'd love to partner with you or invite you to join our network of SilverRide drivers.</p>",
+      "links": [],
+      "media_type": "image",
+      "video": "",
+      "transcript": ""
+    },
+    {
+      "acf_fc_layout": "grid",
+      "type": "cards",
+      "grid_size": 3,
+      "title": "Featured cities",
+      "description": "",
+      "items": [
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/los-angeles-skyline-palm-trees.jpg",
+            "alt": "Downtown Los Angeles skyline with palm trees in the foreground"
+          },
+          "title": "Los Angeles",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/atlanta-skyline-skyscrapers.jpg",
+            "alt": "Atlanta skyline with skyscrapers and green trees"
+          },
+          "title": "Atlanta",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/las-vegas-skyline-casinos-dusk.jpg",
+            "alt": "Las Vegas skyline with casinos and palm trees at dusk"
+          },
+          "title": "Las Vegas",
+          "description": "<p><a href=\"#\">Pricing</a> <a href=\"#\">WAV Rides</a></p><p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/louisville-bridge-ohio-river-sunset.jpg",
+            "alt": "Louisville skyline with a bridge over the Ohio River at sunset"
+          },
+          "title": "Louisville",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/phoenix-skyline-mountains.jpg",
+            "alt": "Phoenix skyline with mountains in the background"
+          },
+          "title": "Phoenix",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/san-francisco-golden-gate-bridge.jpg",
+            "alt": "Golden Gate Bridge with the San Francisco city in the background"
+          },
+          "title": "San Francisco",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/central-florida-coastal-aerial.jpg",
+            "alt": "Aerial view of a coastal Central Florida city with waterways"
+          },
+          "title": "Central Florida",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/orange-county-coastline-beach.jpg",
+            "alt": "Aerial view of Orange County coastline and beaches"
+          },
+          "title": "Orange County",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        },
+        {
+          "image": {
+            "url": "/wp-content/uploads/2025/01/seattle-skyline-space-needle.jpg",
+            "alt": "Seattle skyline with the Space Needle and mountains"
+          },
+          "title": "Seattle",
+          "description": "<p><a href=\"#\">Explore</a> <a href=\"#\">Apply to Drive</a></p>"
+        }
+      ],
+      "footer_description": "",
+      "background_color": "",
+      "disable_margins": false
+    },
+    {
+      "acf_fc_layout": "text",
+      "type": "default",
+      "title": "Other cities we serve",
+      "description": "<p>Bakersfield, CA • Covina, CA • East Boston • Fort Myers, FL • Fresno, CA • Jacksonville, FL • Lexington, KY</p><p>East Los Angeles, Huntington Park, CA • Sacramento • Greater San Jose Area • Santa Clarita</p>"
+    },
+    {
+      "acf_fc_layout": "call_to_action",
+      "type": "simple",
+      "title": "Bringing joy, dignity, and community to the people who need it most.",
+      "subtitle": "",
+      "description": "",
+      "media_type": "image",
+      "video": ""
+    }
+  ]
+}
