@@ -89,7 +89,7 @@ if (!empty($description)) {
 
         <!-- Table of Contents -->
         <?php if (!empty($toc_items)) : ?>
-            <aside class="lg:col-span-4">
+            <aside class="lg:col-span-4 self-start">
                 <div class="lg:sticky lg:top-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Table of Contents</h3>
                     <nav aria-label="Table of contents">
