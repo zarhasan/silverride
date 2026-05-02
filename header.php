@@ -83,4 +83,4 @@
     </nav>
   </header>
 
-  <main id="page" class="site h-20 lg:pt-28">
+  <main id="page" class="site pt-20 lg:pt-28">

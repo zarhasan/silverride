@@ -22,7 +22,7 @@
             <!-- Left Column: Logo, Description, Partner Logos -->
             <div class="lg:col-span-5 space-y-8">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col no-underline">
-                    <img class="h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide Logo">
+                    <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide Logo">
                 </a>
                 
                 <p class="text-lg leading-relaxed max-w-lg">

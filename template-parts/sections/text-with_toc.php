@@ -78,19 +78,10 @@ if (!empty($description)) {
     <?php endif; ?>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-        <!-- Main Content -->
-        <div class="lg:col-span-8">
-            <?php if (!empty($modified_description)) : ?>
-                <div class="prose text-lg leading-relaxed">
-                    <?php echo wp_kses_post($modified_description); ?>
-                </div>
-            <?php endif; ?>
-        </div>
-
         <!-- Table of Contents -->
         <?php if (!empty($toc_items)) : ?>
-            <aside class="lg:col-span-4">
-                <div class="!lg:sticky top-32">
+            <aside class="lg:col-span-4 lg:order-last">
+                <div class="!lg:sticky lg:top-36">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Table of Contents</h3>
                     <nav class="pl-4 border-l-4 border-gray-100" aria-label="Table of contents">
                         <ul class="space-y-3">
@@ -106,5 +97,16 @@ if (!empty($description)) {
                 </div>
             </aside>
         <?php endif; ?>
+
+        <!-- Main Content -->
+        <div class="lg:col-span-8">
+            <?php if (!empty($modified_description)) : ?>
+                <div class="prose text-lg leading-relaxed">
+                    <?php echo wp_kses_post($modified_description); ?>
+                </div>
+            <?php endif; ?>
+        </div>
+
+       
     </div>
 </div>
