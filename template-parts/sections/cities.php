@@ -53,9 +53,21 @@ $other_cities = $args['other_cities'] ?? [];
     <?php if ( ! empty( $other_cities ) ) : ?>
     <div class="mt-16">
       <h3 class="text-2xl font-bold text-black"><?php echo esc_html( $other_title ); ?></h3>
-      <div class="mt-8 text-lg leading-relaxed font-normal">
-        <?php echo esc_html( implode( ' • ', array_column( $other_cities, 'city_name' )) ); ?>
-      </div>
+      <ul class="mt-8 flex flex-wrap items-center gap-2 text-lg leading-relaxed font-normal list-none p-0" role="list">
+        <?php $total = count( $other_cities ); ?>
+        <?php foreach ( $other_cities as $i => $city ) : ?>
+        <li class="flex items-center gap-2">
+          <span><?php echo esc_html( $city['city_name'] ); ?></span>
+          <?php if ( $i < $total - 1 ) : ?>
+          <span aria-hidden="true" class="inline-flex items-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M8 9.5C8.39782 9.5 8.77936 9.34196 9.06066 9.06066C9.34196 8.77936 9.5 8.39782 9.5 8C9.5 7.60218 9.34196 7.22064 9.06066 6.93934C8.77936 6.65804 8.39782 6.5 8 6.5C7.60218 6.5 7.22064 6.65804 6.93934 6.93934C6.65804 7.22064 6.5 7.60218 6.5 8C6.5 8.39782 6.65804 8.77936 6.93934 9.06066C7.22064 9.34196 7.60218 9.5 8 9.5Z" fill="black"/>
+            </svg>
+          </span>
+          <?php endif; ?>
+        </li>
+        <?php endforeach; ?>
+      </ul>
     </div>
     <?php endif; ?>
   </div>
