@@ -866,7 +866,7 @@
         // Create highlighter element
         const highlighter = document.createElement('div');
         highlighter.setAttribute('aria-hidden', 'true');
-        highlighter.style.cssText = 'position:absolute;left:0;top:0;width:3px;height:24px;background-color:#2563eb;border-radius:9999px;transform:translateY(0);transition:transform 0.3s ease-out,opacity 0.3s ease-out;opacity:0;pointer-events:none;';
+        highlighter.style.cssText = 'position:absolute;left:0;top:0;width:4px;height:24px;background-color:var(--theme-primary);border-radius:9999px;transform:translateY(0);transition:transform 0.3s ease-out,opacity 0.3s ease-out;opacity:0;pointer-events:none;';
         tocBox.appendChild(highlighter);
 
         const headings = Array.from(section.querySelectorAll('h2[id]'));

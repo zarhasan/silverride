@@ -89,10 +89,10 @@ if (!empty($description)) {
 
         <!-- Table of Contents -->
         <?php if (!empty($toc_items)) : ?>
-            <aside class="lg:col-span-4 self-start">
-                <div class="lg:sticky lg:top-8 bg-gray-50 border border-gray-200 rounded-lg p-6">
+            <aside class="lg:col-span-4">
+                <div class="!lg:sticky top-32">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Table of Contents</h3>
-                    <nav aria-label="Table of contents">
+                    <nav class="pl-4 border-l-4 border-gray-100" aria-label="Table of contents">
                         <ul class="space-y-3">
                             <?php foreach ($toc_items as $item) : ?>
                                 <li>
