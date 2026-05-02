@@ -19,9 +19,9 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
             <?php echo esc_html($title); ?>
         </h2>
 
-        <p class="text-lg md:text-xl text-white/90 mt-8">
+        <div class="text-lg md:text-xl text-white/90 mt-8">
             <?php echo wp_kses_post($description); ?>
-        </p>
+        </div>
 
         <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>" class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors mt-8 duration-200">
             <?php echo esc_html($link_title); ?>

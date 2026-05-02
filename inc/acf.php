@@ -328,6 +328,7 @@ add_action( 'acf/include_fields', function() {
 								'home' => 'Home',
 								'page' => 'Page',
 								'image-below' => 'Image Below',
+								'primary-background' => 'Primary Background',
 							),
 							'default_value' => '',
 							'return_format' => 'value',
