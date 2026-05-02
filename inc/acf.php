@@ -1377,6 +1377,7 @@ add_action( 'acf/include_fields', function() {
 							),
 							'choices' => array(
 								'basic' => 'Basic',
+								'colorful' => 'Colorful',
 								'alt' => 'Alt',
 								'highlight' => 'Highlight',
 								'textual' => 'Textual',
@@ -1670,6 +1671,7 @@ add_action( 'acf/include_fields', function() {
 							'choices' => array(
 								'default' => 'Default',
 								'alt' => 'Alt',
+								'simple' => 'Simple',
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
@@ -1686,6 +1688,12 @@ add_action( 'acf/include_fields', function() {
 							'key' => 'field_information_title',
 							'label' => 'Title',
 							'name' => 'title',
+							'type' => 'text',
+						),
+						array(
+							'key' => 'field_information_subtitle',
+							'label' => 'Subtitle',
+							'name' => 'subtitle',
 							'type' => 'text',
 						),
 						array(

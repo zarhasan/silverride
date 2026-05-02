@@ -24,13 +24,13 @@ $image = $args['image'] ?? [];
                 </h2>
 
                 <?php if ($description) : ?>
-                    <p class="text-lg text-blue-100 leading-relaxed">
+                    <div class="prose text-lg text-blue-100 leading-relaxed">
                         <?php echo wp_kses_post($description); ?>
-                    </p>
+                    </div>
                 <?php else : ?>
-                    <p class="text-lg text-blue-100 leading-relaxed">
+                    <div class="text-lg text-blue-100 leading-relaxed">
                         Rides with SilverRide can be scheduled online, by phone, or through your local transit agency or PACE care team. Every ride comes with door-to-door (for paratransit riders) or door-through-door assistance (for PACE participants), an experienced and credentialed driver, and a pace that respects each rider's needs and comfort. Help, safety information, and incident reporting all live one click away, anytime you need them.
-                    </p>
+                    </div>
                 <?php endif; ?>
             </div>
 

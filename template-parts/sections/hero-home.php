@@ -20,13 +20,13 @@ $image = $args['image'] ?? [];
                 </h1>
 
                 <?php if ($description) : ?>
-                    <p class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
+                    <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
                         <?php echo wp_kses_post($description); ?>
-                    </p>
+                    </div>
                 <?php else : ?>
-                    <p class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
+                    <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
                         SilverRide moves older adults and people with disabilities to the places that matter. Dialysis and the nail salon. The grocery store and grandchildren's birthdays. More than one million rides a year, across 35+ major metro areas in 15 states. Because independence is not a luxury. It is a right.
-                    </p>
+                    </div>
                 <?php endif; ?>
 
                 <div class="flex flex-wrap gap-4">
