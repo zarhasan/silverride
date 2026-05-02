@@ -95,21 +95,43 @@
 
 ## Grid Sections
 
-### Grid (`grid`)
-**File:** `grid-basic.php` (basic), `grid-colorful.php` (colorful), `grid-alt.php` (alt), `grid-highlight.php` (highlight), `grid-textual.php` (textual), `grid-cards.php` (cards), `grid-floating-cards.php` (floating-cards), `grid-clickable-cards.php` (clickable-cards), `grid-compliance-cards.php` (compliance-cards), `grid-information-cards.php` (information-cards), `grid-incentives.php` (incentives), `grid-service-cards.php` (service-cards)
-**Visual:** Flexible card grid. Section title + description + grid of items (image + title + description + link each). Configurable grid size (2/3/4/5 columns), container width, background color, margin toggle. Footer description + CTA button available. 12 visual styles:
-- **Basic:** Simple grid cards
-- **Colorful:** Vibrant colored cards
-- **Alt:** Alternate card design
-- **Highlight:** Emphasized/accent cards
-- **Textual:** Text-focused minimal cards
-- **Cards:** Standard card layout
-- **Floating Cards:** Elevated/shadow cards
-- **Service Cards:** Service-specific card style (with limit field)
-- **Clickable Cards:** Full-card clickable targets
-- **Compliance Cards:** Compliance-themed card design
-- **Information Cards:** Info-display card style
-- **Incentives:** Incentive/promotional cards
+All grid variants share: section title + description header, configurable columns (2/3/4/5), optional footer description + CTA button below grid, optional background color, margin toggles, and container width (full/small). Unique aspects per variant are detailed below.
+
+### Grid — Basic (`grid-basic.php`)
+**Visual:** White cards on white background. Each card has a **round icon circle** (primary-color filled circle, 64px, containing an `<img>` icon) → title (optional link) → description → **pill-shaped CTA button** (white text on primary bg, `rounded-full`, with hover inversion). Cards use `border-2` (primary color), `rounded-lg`, and `p-6`. Last row items evenly distribute with `grid-column: span` LCM logic to avoid orphans. Link on title is inline `<a>` inside `<h3>`; separate pill `<a>` at bottom.
+
+### Grid — Colorful (`grid-colorful.php`)
+**Visual:** Large colored blocks in a **2-column max** grid (`gap-16`). Each card is `rounded-2xl p-8 lg:p-12` with a distinct background color (`bg-[#98D1E6]` teal, `bg-[#FFF1A5]` yellow), cycling through a palette. Cards contain an **uppercase label `<span>`** and a `<ul>` bullet list using `&bull;` separators. **No images, no links, no borders** — pure informational text blocks.
+
+### Grid — Alt (`grid-alt.php`)
+**Visual:** Same grid structure as Basic but cards use `flex items-start` **horizontal layout**: icon circle on left (`flex-shrink-0 mr-4`), title beside it. No separate CTA button per card — only an inline title link with `hover:underline`. Section-level CTA link below the grid. Cards use `border-2 border-primary rounded-lg p-6`.
+
+### Grid — Highlight (`grid-highlight.php`)
+**Visual:** Fixed **3-column grid** of solid yellow-orange blocks (`bg-[#FDCC82]`). Cards are `rounded-2xl p-8 lg:p-10`. Contains only `<h3>` title and `<p>` description — **no images, no icons, no links, no borders**. Pure informational highlight cards with warm background.
+
+### Grid — Textual (`grid-textual.php`)
+**Visual:** Blog-style cards with **full-width image** (`w-full h-48 object-cover rounded-xl mb-6`) at top, then content below. Cards have `border-2 border-primary rounded-2xl p-8` with `hover:border-rose-700 transition-colors`. Features optional **uppercase subtitle** above title (primary color). Title (optional link) → description (uses `flex-grow` to push link down for equal-height cards) → **text link with arrow SVG icon** at bottom (`inline-flex items-center font-semibold`). Focus ring classes for accessibility.
+
+### Grid — Cards (`grid-cards.php`)
+**Visual:** White cards on a **full-width primary-color backplate** (the inner container has `bg-primary text-white p-8 lg:p-16`). Cards are `bg-white text-[#1B1B1B] rounded p-8 text-center`. Each card has a **small centered image** (`w-20 h-auto`), title, and description. **No per-card links** — only a single section-level pill button below the grid. Features duplicate `<h2>` for screen-reader (`sr-only`) and visual (`aria-hidden="true"`).
+
+### Grid — Floating Cards (`grid-floating-cards.php`)
+**Visual:** Cards float over a **full-bleed background image** (`absolute inset-0 object-cover`) with a primary-color overlay (`bg-primary relative z-10`). Cards are `bg-white p-6 rounded-lg` white blocks. Each card has a **small icon image** (`w-12 h-auto mb-4`), title (`<div>` if no desc, `<h3>` if has desc), and description. Uses `<ul>/<li>` semantic markup. **No links**. Features uppercase subtitle above the header.
+
+### Grid — Service Cards (`grid-service-cards.php`)
+**Visual:** Completely **transparent/borderless cards** (`bg-transparent text-left`). Each card uses `flex gap-6` with an icon circle on left and title beside it, then description below, then the same pill CTA button as Basic. Two container modes: `full` uses `.container`, `small` uses `max-w-5xl`. Supports `limit` field to cap number of items shown.
+
+### Grid — Clickable Cards (`grid-clickable-cards.php`)
+**Visual:** Entire card is a **single `<a>` tag** (block link). Cards have `py-12 px-8 border border-primary rounded-lg bg-white` with `hover:border-red-800` and custom `--hover-bg` CSS variable for background hover effect. Uses `<span>` for title (not heading tag), small icon image (`w-12 h-auto`). Cards are `flex flex-col justify-center items-center text-center`. **One clickable surface per card**, no separate buttons. Uses `<ul>/<li>` + `group` hover pattern.
+
+### Grid — Compliance Cards (`grid-compliance-cards.php`)
+**Visual:** Dynamically **pulls compliance-related WordPress pages** via `WP_Query` filtered by "compliance" taxonomy term. Renders each page using `template-parts/service-card.php` include. Header has uppercase subtitle + title + description in a `max-w-2xl` flex container. Fixed 3-column grid. Includes structure for category filter tabs.
+
+### Grid — Information Cards (`grid-information-cards.php`)
+**Visual:** Cards with **soft tinted background** (no border) using `silverride_alternate_bg_color()` (default `#FCF3F5` pink-tinted). Same structure as Basic: icon circle on left + title side-by-side in `flex gap-6`, description, pill CTA button. Cards use `rounded-lg p-6 text-left`. Has `disable_margins` toggle option. Background color set as inline `style` per card.
+
+### Grid — Incentives (`grid-incentives.php`)
+**Visual:** Completely **bare, borderless, backgroundless cards** (`text-center flex flex-col justify-start items-center`). Each card has a **small icon image** (`w-10 h-auto`), title (`<div>` or `<h3>` based on whether description exists), and description text (with `strip_tags()` applied). Uses `<ul>/<li>`. **No links, no borders, no backgrounds** — minimal layout. Custom section class `grid-incentives`.
 
 ### Grid Videos (`grid_videos`)
 **File:** `grid_videos.php`
