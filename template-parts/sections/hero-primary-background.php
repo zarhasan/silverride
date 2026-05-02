@@ -1,10 +1,44 @@
-<section class="bg-primary py-20 md:py-28">
-  <div class="mx-auto max-w-4xl text-center">
-    <h2 class="text-3xl font-bold !leading-tight text-white md:text-4xl lg:text-5xl">
-      Join our team of partners and caring drivers
-    </h2>
-    <p class="mt-12 text-base font-normal text-center leading-relaxed text-blue-100 md:text-lg">
-      If you live in the Atlanta, Central Florida, Covina CA, Dallas, East Boston, Fort Myers FL, Jacksonville, Las Vegas, Lexington, Los Angeles (including East Los Angeles, Huntington Park, and Van Nuys), Louisville, Orange County, Phoenix, Sacramento, San Francisco Bay, San Jose, Santa Clarita, or Seattle areas, we'd love to partner with you or invite you to join our network of SilverRide drivers.
-    </p>
-  </div>
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+$template_part_name = explode('.', basename(__FILE__))[0];
+
+$title = $args['title'] ?? '';
+$subtitle = $args['subtitle'] ?? '';
+$description = $args['description'] ?? '';
+$links = $args['links'] ?? [];
+?>
+
+<section class="bg-primary py-20 md:py-28" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="container mx-auto max-w-4xl text-center px-4">
+        <?php if (!empty($subtitle)) : ?>
+            <span class="block text-sm font-bold text-white uppercase tracking-wide mb-4">
+                <?php echo wp_kses_post($subtitle); ?>
+            </span>
+        <?php endif; ?>
+
+        <?php if (!empty($title)) : ?>
+            <h1 class="text-3xl font-bold leading-tight text-white lg:text-[2.875rem]">
+                <?php echo wp_kses_post($title); ?>
+            </h1>
+        <?php endif; ?>
+
+        <?php if (!empty($description)) : ?>
+            <div class="mt-8 md:mt-10 text-base font-normal leading-relaxed text-blue-100 md:text-lg">
+                <?php echo wp_kses_post($description); ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($links) && isset($links[0]['link'])) :
+            $link = $links[0]['link'];
+        ?>
+            <div class="mt-10">
+                <a href="<?php echo esc_url($link['url'] ?? '#'); ?>" class="inline-block text-white px-8 py-3 rounded-full transition-colors text-lg border-2 border-white hover:bg-white hover:text-primary font-semibold">
+                    <?php echo esc_html($link['title'] ?? 'Contact Us'); ?>
+                </a>
+            </div>
+        <?php endif; ?>
+    </div>
 </section>
