@@ -6,7 +6,7 @@
 $title       = $args['title'] ?? 'Featured cities';
 $cities      = $args['cities'] ?? [];
 $other_title = $args['other_title'] ?? 'Other cities we serve';
-$other_cities = $args['other_cities'] ?? '';
+$other_cities = $args['other_cities'] ?? [];
 ?>
 
 <section class="bg-white py-16 md:py-24">
@@ -38,7 +38,7 @@ $other_cities = $args['other_cities'] ?? '';
           <?php endif; ?>
         </div>
         <?php if ( ! empty( $city_image ) ) : ?>
-        <img src="<?php echo esc_url( $city_image['url'] ); ?>" alt="<?php echo esc_attr( $city_image['alt'] ?? $city_name ); ?>" class="mt-5 h-72 aspect-video w-full rounded-lg object-cover">
+        <img src="<?php echo esc_url( $city_image['url'] ); ?>" alt="<?php echo esc_attr( $city_image['alt'] ?? $city_name ); ?>" class="mt-5 h-72 aspect-video w-full object-cover">
         <?php endif; ?>
         <div class="mt-5 flex gap-4">
           <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>>Explore</a>
@@ -54,7 +54,7 @@ $other_cities = $args['other_cities'] ?? '';
     <div class="mt-12">
       <h3 class="text-2xl font-bold text-black"><?php echo esc_html( $other_title ); ?></h3>
       <div class="mt-8 text-lg leading-relaxed font-normal">
-        <?php echo wp_kses_post( $other_cities ); ?>
+        <?php echo esc_html( implode( ', ', array_column( $other_cities, 'city_name' ) ) ); ?>
       </div>
     </div>
     <?php endif; ?>

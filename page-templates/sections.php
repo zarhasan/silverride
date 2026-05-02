@@ -93,7 +93,7 @@ get_header();
         'fields' => 'title, cities (repeater: city_name, city_image, explore_link, apply_link, extra_links), other_title, other_cities'
     ]); ?>
     <?php
-    get_template_part('template-parts/sections/grid-cities', null, [
+    get_template_part('template-parts/sections/cities', null, [
         'title' => 'Featured cities',
         'cities' => [
             [

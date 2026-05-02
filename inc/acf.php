@@ -3277,8 +3277,8 @@ add_action( 'acf/include_fields', function() {
 			),
 			'layout_grid_cities' => array(
 				'key' => 'layout_grid_cities',
-				'name' => 'grid_cities',
-				'label' => 'Grid Cities',
+				'name' => 'cities',
+				'label' => 'Cities',
 				'display' => 'block',
 				'sub_fields' => array(
 					array(
@@ -3320,13 +3320,20 @@ add_action( 'acf/include_fields', function() {
 						'default_value' => 'Other cities we serve',
 					),
 					array(
-						'key' => 'field_grid_cities_other_cities',
-						'label' => 'Other Cities',
-						'name' => 'other_cities',
-						'type' => 'textarea',
-						'instructions' => 'Enter each city on a new line.',
-						'rows' => 4,
-						'new_lines' => 'br',
+						'key'          => 'field_grid_cities_other_cities',
+						'label'        => 'Other Cities',
+						'name'         => 'other_cities',
+						'type'         => 'repeater',
+						'layout'       => 'table',
+						'button_label' => 'Add City',
+						'sub_fields'   => array(
+							array(
+								'key'   => 'field_grid_cities_other_city_name',
+								'label' => 'City Name',
+								'name'  => 'city_name',
+								'type'  => 'text',
+							),
+						),
 					),
 				),
 				'min' => '',
