@@ -865,3 +865,317 @@ body .wpforms-form .wpforms-field-label {
 .footer-menu a {
     text-decoration: none;
 }
+
+/* ============================================
+   Schedule a Ride - Forminator Form Styles
+   ============================================ */
+
+/* Form base */
+.forminator-ui.forminator-custom-form {
+    --field-height: 3.25rem;
+}
+.forminator-ui.forminator-custom-form {
+    font-family: "Work Sans", sans-serif;
+    color: #1B1B1B;
+}
+
+.forminator-ui.forminator-custom-form .forminator-response-message {
+    display: none;
+}
+
+.forminator-ui.forminator-custom-form .forminator-error-message {
+    color: #DC2626;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* Labels */
+.forminator-ui.forminator-custom-form .forminator-label {
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: #1B1B1B !important;
+    margin-bottom: 0.5rem !important;
+    display: block;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Required asterisk */
+.forminator-ui.forminator-custom-form .forminator-required {
+    color: #DC2626;
+    margin-left: 0.125rem;
+}
+
+/* Remove duplicate asterisk from radio group label */
+.forminator-ui.forminator-custom-form .forminator-field-radio .forminator-label > .forminator-required {
+    display: none;
+}
+
+/* Inputs and textareas */
+.forminator-ui.forminator-custom-form input.forminator-input,
+.forminator-ui.forminator-custom-form textarea.forminator-input {
+    width: 100%;
+    background-color: #FFFFFF !important;
+    border: 1px solid #D1D5DB !important;
+    padding: 0.875rem 1rem !important;
+    font-size: 1rem !important;
+    color: #1B1B1B !important;
+    font-family: "Work Sans", sans-serif !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
+    height: var(--field-height) !important;
+    line-height: 1.5 !important;
+}
+
+.forminator-ui.forminator-custom-form input.forminator-input::placeholder,
+.forminator-ui.forminator-custom-form textarea.forminator-input::placeholder {
+    color: #9CA3AF !important;
+}
+
+.forminator-ui.forminator-custom-form input.forminator-input:focus,
+.forminator-ui.forminator-custom-form textarea.forminator-input:focus {
+    border-color: var(--theme-primary) !important;
+    outline-color: var(--theme-primary) !important;
+}
+
+/* Native select fields */
+.forminator-ui.forminator-custom-form select.forminator-select--field,
+.forminator-ui.forminator-custom-form select.forminator-select2 {
+    width: 100%;
+    background-color: #FFFFFF !important;
+    border: 1px solid #D1D5DB !important;
+    padding: 0.875rem 1rem !important;
+    padding-right: 2.5rem !important;
+    font-size: 1rem !important;
+    color: #1B1B1B !important;
+    font-family: "Work Sans", sans-serif !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23374151' d='M6 8L1 3h10z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    height: var(--field-height) !important;
+    line-height: 1.5 !important;
+}
+
+.forminator-ui.forminator-custom-form select.forminator-select--field:focus {
+    border-color: var(--theme-primary) !important;
+    outline-color: var(--theme-primary) !important;
+}
+
+/* Select2 overrides */
+.forminator-ui.forminator-custom-form .select2-container--default .select2-selection--single,
+.forminator-ui.forminator-custom-form .select2-container--default .select2-selection--multiple {
+    background-color: #FFFFFF !important;
+    border: 1px solid #D1D5DB !important;
+    border-radius: 0.25rem !important;
+    min-height: auto !important;
+    height: var(--field-height) !important;
+    padding: 0.875rem 1rem !important;
+    padding-right: 2.5rem !important;
+    font-size: 1rem !important;
+    color: #1B1B1B !important;
+    font-family: "Work Sans", sans-serif !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease !important;
+    outline: none !important;
+}
+
+.forminator-ui.forminator-custom-form .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #1B1B1B !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    line-height: 1.5 !important;
+}
+
+.forminator-ui.forminator-custom-form .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100% !important;
+    top: 0 !important;
+    right: 1rem !important;
+    width: 1rem !important;
+}
+
+.forminator-ui.forminator-custom-form .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #374151 transparent transparent transparent !important;
+    border-width: 5px 5px 0 5px !important;
+}
+
+.forminator-ui.forminator-custom-form .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #374151 transparent !important;
+    border-width: 0 5px 5px 5px !important;
+}
+
+.forminator-ui.forminator-custom-form .select2-container--default.select2-container--focus .select2-selection--single,
+.forminator-ui.forminator-custom-form .select2-container--default.select2-container--open .select2-selection--single {
+    border-color: var(--theme-primary) !important;
+    outline-color: var(--theme-primary) !important;
+}
+
+/* Date picker with icon */
+.forminator-ui.forminator-custom-form .forminator-input-with-icon {
+    position: relative;
+}
+
+.forminator-ui.forminator-custom-form .forminator-input-with-icon .forminator-icon-calendar {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6B7280;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.forminator-ui.forminator-custom-form .forminator-input-with-icon input.forminator-input {
+    padding-right: 2.5rem !important;
+}
+
+/* Time picker sub-labels and inputs */
+.forminator-ui.forminator-custom-form .forminator-timepicker .forminator-label {
+    font-size: 0.875rem !important;
+    color: #6B7280 !important;
+    margin-bottom: 0.25rem !important;
+    /* sr-only */
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-timepicker input.forminator-input {
+    padding: 0.75rem 0.5rem !important;
+    text-align: center !important;
+}
+
+/* Radio buttons as pill buttons */
+.forminator-field-radio .forminator-label {
+    display: block;
+    width: 100%;
+}
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-field {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio {
+    position: relative;
+    display: inline-flex;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio-bullet {
+    display: none !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
+    border: 1px solid #1E40AF;
+    background-color: #FFFFFF;
+    color: #1E40AF;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio input[type="radio"]:checked ~ .forminator-radio-label,
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio.forminator-radio-checked .forminator-radio-label {
+    background-color: #1E40AF;
+    color: #FFFFFF;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio input[type="radio"]:focus ~ .forminator-radio-label {
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.3);
+}
+
+/* Submit button */
+.forminator-ui.forminator-custom-form .forminator-button-submit {
+    background-color: #1E40AF !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    padding: 0.875rem 2.5rem !important;
+    border-radius: 9999px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease !important;
+    font-size: 1.125rem !important;
+    font-family: "Poppins", sans-serif !important;
+    float: right !important;
+    text-transform: none !important;
+    line-height: 1.5 !important;
+    box-shadow: none !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-button-submit:hover {
+    background-color: #1E3A8A !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-button-submit:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.3) !important;
+}
+
+/* Clear float after submit row */
+.forminator-ui.forminator-custom-form .forminator-row-last::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Spacing adjustments */
+.forminator-ui.forminator-custom-form .forminator-row {
+    margin-bottom: 2rem !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-row .forminator-row,
+.forminator-ui.forminator-custom-form .forminator-row.forminator-row-last {
+    margin-bottom: 0 !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-row .forminator-col {
+    margin-bottom: 0 !important;
+}
+
+/* Address fields full width */
+.forminator-ui.forminator-custom-form .forminator-field-address .forminator-col {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .forminator-ui.forminator-custom-form .forminator-col-6 {
+        width: 100% !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .forminator-ui.forminator-custom-form .forminator-button-submit {
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .forminator-ui.forminator-custom-form .forminator-field-radio.button-group .forminator-radio-label {
+        flex: 1;
+        text-align: center;
+    }
+}
