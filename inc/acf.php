@@ -2858,10 +2858,28 @@ add_action( 'acf/include_fields', function() {
 				'display' => 'block',
 				'sub_fields' => array(
 					array(
+						'key' => 'field_stats_type',
+						'label' => 'Type',
+						'name' => 'type',
+						'type' => 'button_group',
+						'choices' => array(
+							'default' => 'Default',
+							'alt' => 'Alt',
+						),
+						'default_value' => 'default',
+						'return_format' => 'value',
+					),
+					array(
 						'key' => 'field_stats_title',
 						'label' => 'Title',
 						'name' => 'title',
 						'type' => 'text',
+					),
+					array(
+						'key' => 'field_stats_description',
+						'label' => 'Description',
+						'name' => 'description',
+						'type' => 'wysiwyg',
 					),
 					array(
 						'key' => 'field_stats_items',

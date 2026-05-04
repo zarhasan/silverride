@@ -111,8 +111,8 @@ $sections = get_field('sections');
         ]); ?>
         <?php get_template_part('template-parts/sections/policy', null, []); ?>
 
-        <?php get_template_part('template-parts/sections/navigation-who-we-serve', null, [
-            'stats' => [
+        <?php get_template_part('template-parts/sections/stats-alt', null, [
+            'items' => [
                 ['value' => '1M+', 'label' => 'Rides Delivered Each Year'],
                 ['value' => '35+', 'label' => 'Major Metro Areas Served'],
                 ['value' => '15', 'label' => 'States And Counting'],
@@ -200,18 +200,18 @@ $sections = get_field('sections');
         ]); ?>
         
         <?php
-        get_template_part('template-parts/sections/functionalities-who-we-serve', null, [
-            'title' => 'Compliance is the floor, not the ceiling.',
-            'description' => '<p>SilverRide is the partner of choice for transit agencies that need ADA-compliant paratransit at scale. We support complementary paratransit, overflow service, premium tiers, and same-day trips through a flexible independent driver network and an accessibility-focused vehicle mix, including sedans, SUVs, and wheelchair-accessible vehicles.</p>',
-            'items' => [
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=ADA', 'alt' => 'Wheelchair accessible icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=400&q=80', 'alt' => 'Accessible transportation'], 'label' => 'ADA-compliant operations supported across markets and contract types'],
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=HIPAA', 'alt' => 'HIPAA compliant icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80', 'alt' => 'Healthcare compliance'], 'label' => 'HIPAA-compliant workflows for healthcare and PACE partners'],
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=FTA', 'alt' => 'FTA reporting icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Transit agency reporting'], 'label' => 'FTA-aligned reporting designed for transit agency oversight and compliance'],
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=INS', 'alt' => 'Insurance coverage icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Insurance coverage'], 'label' => 'Insurance coverage aligned with contract requirements'],
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=DRV', 'alt' => 'Credentialed drivers icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => 'Credentialed drivers'], 'label' => 'Credentialed drivers'],
-                ['icon' => ['url' => 'https://via.placeholder.com/48?text=AUD', 'alt' => 'Audit trails icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80', 'alt' => 'Audit trails and reporting'], 'label' => 'Trip-level audit trails, performance dashboards, and contract-specific reporting tools'],
-            ],
-        ]);
+            get_template_part('template-parts/sections/functionalities-who-we-serve', null, [
+                'title' => 'Compliance is the floor, not the ceiling.',
+                'description' => '<p>SilverRide is the partner of choice for transit agencies that need ADA-compliant paratransit at scale. We support complementary paratransit, overflow service, premium tiers, and same-day trips through a flexible independent driver network and an accessibility-focused vehicle mix, including sedans, SUVs, and wheelchair-accessible vehicles.</p>',
+                'items' => [
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=ADA', 'alt' => 'Wheelchair accessible icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=400&q=80', 'alt' => 'Accessible transportation'], 'label' => 'ADA-compliant operations supported across markets and contract types'],
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=HIPAA', 'alt' => 'HIPAA compliant icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80', 'alt' => 'Healthcare compliance'], 'label' => 'HIPAA-compliant workflows for healthcare and PACE partners'],
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=FTA', 'alt' => 'FTA reporting icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Transit agency reporting'], 'label' => 'FTA-aligned reporting designed for transit agency oversight and compliance'],
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=INS', 'alt' => 'Insurance coverage icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Insurance coverage'], 'label' => 'Insurance coverage aligned with contract requirements'],
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=DRV', 'alt' => 'Credentialed drivers icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => 'Credentialed drivers'], 'label' => 'Credentialed drivers'],
+                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=AUD', 'alt' => 'Audit trails icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80', 'alt' => 'Audit trails and reporting'], 'label' => 'Trip-level audit trails, performance dashboards, and contract-specific reporting tools'],
+                ],
+            ]);
         ?>
 
         <?php get_template_part('template-parts/sections/partnership-who-we-serve', null, []) ?>
