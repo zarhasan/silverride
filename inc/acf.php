@@ -1111,6 +1111,12 @@ add_action( 'acf/include_fields', function() {
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
+							'key' => 'field_form_title',
+							'label' => 'Title',
+							'name' => 'title',
+							'type' => 'text',
+						),
+						array(
 							'key' => 'field_form_shortcode',
 							'label' => 'Form Shortcode',
 							'name' => 'shortcode',
