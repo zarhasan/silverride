@@ -17,26 +17,34 @@ get_header(); ?>
                 <div class="container">
                     <!-- Post Header -->
                     <header class="pt-8 md:pt-12 pb-6 md:pb-8">
-                        <div class="">
-                            <!-- Social Share -->
-                            <div class="flex items-center gap-3 mb-6">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on Facebook">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                                </a>
-                                <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on X">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                                </a>
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on LinkedIn">
-                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                                </a>
-                            </div>
-
-                            <!-- Featured Image -->
-                            <?php if (has_post_thumbnail()): ?>
-                                <div class="mb-6 md:mb-8">
-                                    <?php the_post_thumbnail('large', array('class' => 'w-full max-w-md h-auto')); ?>
+                        <div>
+                            <div class="flex justify-start items-start">
+                                <!-- Social Share -->
+                                <div class="flex items-start justify-start flex-col gap-4 mb-6 w-12 -ml-10">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on Facebook">
+                                        <svg class="w-auto h-auto max-h-5 max-w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 24" fill="none">
+                                            <path d="M8.125 0C6.83207 0 5.59209 0.517206 4.67786 1.43784C3.76362 2.35847 3.25 3.60712 3.25 4.90909V8.72727H0.541667C0.398008 8.72727 0.260233 8.78474 0.158651 8.88703C0.0570684 8.98933 0 9.12806 0 9.27273V13.6364C0 13.781 0.0570684 13.9198 0.158651 14.0221C0.260233 14.1244 0.398008 14.1818 0.541667 14.1818H3.25V23.4545C3.25 23.5992 3.30707 23.7379 3.40865 23.8402C3.51023 23.9425 3.64801 24 3.79167 24H8.125C8.26866 24 8.40644 23.9425 8.50802 23.8402C8.6096 23.7379 8.66667 23.5992 8.66667 23.4545V14.1818H11.375C11.4958 14.1818 11.6132 14.1411 11.7084 14.0662C11.8036 13.9912 11.8712 13.8864 11.9004 13.7684L12.9838 9.40473C13.0037 9.32434 13.0051 9.24044 12.988 9.15939C12.9709 9.07835 12.9357 9.00229 12.8851 8.93699C12.8344 8.87169 12.7697 8.81887 12.6957 8.78253C12.6218 8.74619 12.5406 8.7273 12.4583 8.72727H8.66667V7.09091C8.66667 6.65692 8.83787 6.2407 9.14262 5.93383C9.44736 5.62695 9.86069 5.45455 10.2917 5.45455H12.4583C12.602 5.45455 12.7398 5.39708 12.8414 5.29479C12.9429 5.19249 13 5.05375 13 4.90909V0.545455C13 0.400791 12.9429 0.262052 12.8414 0.15976C12.7398 0.0574673 12.602 0 12.4583 0H8.125Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink()); ?>&text=<?php echo urlencode(get_the_title()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on X">
+                                        <svg class="w-auto h-auto max-h-5 max-w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                            <path d="M18.7599 1.36963H22.3681L14.4872 10.3749L23.7583 22.6306H16.5009L10.8126 15.1995L4.31161 22.6306H0.698256L9.126 12.9967L0.238281 1.36963H7.67964L12.816 8.16191L18.7599 1.36963ZM17.4924 20.4739H19.4907L6.59103 3.41396H4.44449L17.4924 20.4739Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on LinkedIn">
+                                        <svg class="w-auto h-auto max-h-5 max-w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 6C4.16304 6 4.79893 5.73661 5.26777 5.26777C5.73661 4.79893 6 4.16304 6 3.5C6 2.83696 5.73661 2.20107 5.26777 1.73223C4.79893 1.26339 4.16304 1 3.5 1C2.83696 1 2.20107 1.26339 1.73223 1.73223C1.26339 2.20107 1 2.83696 1 3.5C1 4.16304 1.26339 4.79893 1.73223 5.26777C2.20107 5.73661 2.83696 6 3.5 6ZM6 23V8H1V23H6ZM8 8H12.5V9.946C13.216 9.005 14.746 8 17.5 8C21.83 8 23 12.32 23 15V23H18V15C18 14 17.5 12 15.5 12C14.08 12 13.08 13.008 12.5 13.951V23H8V8Z" fill="currentColor"/>
+                                        </svg>
+                                    </a>
                                 </div>
-                            <?php endif; ?>
+
+                                <!-- Featured Image -->
+                                <?php if (has_post_thumbnail()): ?>
+                                    <div class="mb-6 md:mb-8">
+                                        <?php the_post_thumbnail('large', array('class' => 'w-full max-w-md h-auto')); ?>
+                                    </div>
+                                <?php endif; ?>
+                            </div>
 
                             <!-- Title -->
                             <h1 class="text-[2rem] sm:text-[2.5rem] lg:text-[2.875rem] font-bold mb-4 leading-[1.15] text-[#1B1B1B]">
