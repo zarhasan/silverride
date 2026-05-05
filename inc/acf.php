@@ -1529,7 +1529,7 @@ add_action( 'acf/include_fields', function() {
 								'service-cards' => 'Service Cards',
 								'clickable-cards' => 'Clickable Cards',
 								'compliance-cards' => 'Compliance Cards',
-								'information-cards' => 'Information Cards',
+								'info' => 'Information Cards',
 								'incentives' => 'Incentives',
 							),
 							'default_value' => 'basic',
