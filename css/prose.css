@@ -124,7 +124,6 @@
 .prose p {
     margin-top: 0;
     margin-bottom: 1.25rem;
-    color: #1B1B1B;
 }
 
 .prose p.lead {
@@ -1658,7 +1657,6 @@ pre::-webkit-scrollbar-thumb:hover {
 .prose p {
     margin-bottom: 1.25rem;
     line-height: 1.7;
-    color: #1B1B1B;
 }
 
 /* Tables of content */
