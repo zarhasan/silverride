@@ -4,8 +4,8 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$title = $args['title'] ?? 'Who We Are';
-$subtitle = $args['subtitle'] ?? 'More Than A Ride. A Lifeline.';
+$title = $args['title'] ?? '';
+$subtitle = $args['subtitle'] ?? '';
 $description = $args['description'] ?? '';
 $link = $args['link'] ?? [];
 $image = $args['image'] ?? [];
@@ -29,7 +29,7 @@ $image = $args['image'] ?? [];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="text-[1.25rem] text-gray-700 leading-relaxed space-y-6 mb-10">
+                    <div class="prose text-lg text-gray-700 leading-relaxed space-y-6 mb-10">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
