@@ -18,6 +18,7 @@
         initAlternateBgHover();
         initAccessibleCarousels();
         initToCHighlighter();
+        initFaqAccordions();
 
         (() => {
             const $grid = $('[data-section-id="section_title-default"][data-heading-level="h3"] + [data-section-id^="grid-"] h3');
@@ -733,19 +734,11 @@
                 }
             }
 
-            function focusCurrentSlide() {
-                const idx = embla.selectedScrollSnap();
-                if (slides[idx]) {
-                    slides[idx].focus();
-                }
-            }
-
             // Prev / Next
             if (prevBtn) {
                 prevBtn.addEventListener('click', function () {
                     embla.scrollPrev();
                     updateUI();
-                    focusCurrentSlide();
                 });
             }
 
@@ -753,7 +746,6 @@
                 nextBtn.addEventListener('click', function () {
                     embla.scrollNext();
                     updateUI();
-                    focusCurrentSlide();
                 });
             }
 
@@ -763,7 +755,6 @@
                     const index = parseInt(dot.getAttribute('data-index'), 10);
                     embla.scrollTo(index);
                     updateUI();
-                    focusCurrentSlide();
                 });
             });
 
@@ -795,12 +786,10 @@
                     e.preventDefault();
                     embla.scrollPrev();
                     updateUI();
-                    focusCurrentSlide();
                 } else if (e.key === 'ArrowRight') {
                     e.preventDefault();
                     embla.scrollNext();
                     updateUI();
-                    focusCurrentSlide();
                 }
             });
 
@@ -932,5 +921,55 @@
         window.addEventListener('resize', updateActive);
 
         updateActive();
+    }
+
+    function initFaqAccordions() {
+        const $faqItems = $('[data-faq-item]');
+        if (!$faqItems.length) return;
+
+        function closeAccordion($toggle, $content, $icon) {
+            $toggle.attr('aria-expanded', 'false');
+            $content.attr('aria-hidden', 'true');
+            $content.removeClass('max-h-96 opacity-100').addClass('max-h-0 opacity-0');
+            $icon.removeClass('rotate-180');
+        }
+
+        function openAccordion($toggle, $content, $icon) {
+            $toggle.attr('aria-expanded', 'true');
+            $content.attr('aria-hidden', 'false');
+            $content.removeClass('max-h-0 opacity-0').addClass('max-h-96 opacity-100');
+            $icon.addClass('rotate-180');
+        }
+
+        $faqItems.each(function () {
+            const $item = $(this);
+            const $toggle = $item.find('.faq-toggle');
+            const $content = $item.find('.faq-content');
+            const $icon = $item.find('.faq-icon');
+
+            if (!$toggle.length || !$content.length || !$icon.length) return;
+
+            $toggle.on('click', function () {
+                const isExpanded = $toggle.attr('aria-expanded') === 'true';
+
+                if (isExpanded) {
+                    closeAccordion($toggle, $content, $icon);
+                } else {
+                    // Close all other accordions first
+                    $faqItems.each(function () {
+                        const $otherItem = $(this);
+                        const $otherToggle = $otherItem.find('.faq-toggle');
+                        const $otherContent = $otherItem.find('.faq-content');
+                        const $otherIcon = $otherItem.find('.faq-icon');
+
+                        if ($otherToggle.length && $otherToggle.attr('aria-expanded') === 'true') {
+                            closeAccordion($otherToggle, $otherContent, $otherIcon);
+                        }
+                    });
+
+                    openAccordion($toggle, $content, $icon);
+                }
+            });
+        });
     }
 })();
