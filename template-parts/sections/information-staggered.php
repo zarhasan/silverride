@@ -4,7 +4,7 @@
  *
  */
 $title            = $args['title'] ?? '';
-$background_color = $args['background_color'] ?? '#F0F5FF';
+$background_color = $args['background_color'] ?? '';
 $subtitle         = $args['subtitle'] ?? '';
 $description      = $args['description'] ?? '';
 $items            = $args['items'] ?? [];
@@ -13,7 +13,12 @@ $image            = $args['image'] ?? [];
 $image_position   = $args['image_position'] ?? 'right';
 $is_image_left    = $image_position === 'left';
 ?>
-<section class="my-16 md:my-24" style="background-color: <?php echo esc_attr( $background_color ); ?>;">
+<section 
+	class="<?php echo !empty($background_color) ? 'py-16 md:py-24' : 'my-16 md:my-24' ?>"
+	<?php if (!empty($background_color)) : ?>
+		style="background-color: <?php echo esc_attr( $background_color ); ?>;"
+	<?php endif; ?>
+	>
 	<div class="container">
 		<article class="flex flex-col items-stretch gap-10 md:flex-row md:gap-24">
 			<div class="flex flex-1 flex-col justify-center <?php echo $is_image_left ? 'order-2' : 'order-1'; ?>">

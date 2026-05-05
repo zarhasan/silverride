@@ -132,6 +132,13 @@ add_action( 'acf/include_fields', function() {
 						'allow_in_bindings' => 0,
 						'layout' => 'horizontal',
 					),
+					array(
+						'key' => 'field_section_background_color',
+						'label' => 'Background Color',
+						'name' => 'background_color',
+						'type' => 'color_picker',
+						'instructions' => 'Set a background color for this section.',
+					),
 					),
 					'min' => '',
 					'max' => '',

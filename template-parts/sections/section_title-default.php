@@ -7,6 +7,7 @@ $title = $args['title'] ?? '';
 $subtitle = $args['subtitle'] ?? '';
 $tag = $args['tag'] ?? '';
 $description = $args['description'] ?? '';
+$background_color = $args['background_color'] ?? '';
 
 $margins = [
     'none' => 'mb-0',
@@ -39,6 +40,7 @@ $alignment_class = $alignments[$alignment] ?? $alignments['center'];
 
 <section
     class="<?php echo esc_attr($container_class . ' ' . $alignment_class); ?> mt-16 sm:mt-24 <?php echo esc_attr($margin_bottom); ?>"
+    style="<?php echo !empty($background_color) ? 'background-color: ' . esc_attr($background_color) . ';' : ''; ?>"
     data-section-id="<?php echo esc_attr($template_part_name); ?>"
     data-heading-level="<?php echo esc_attr($heading_level); ?>"
     data-alignment="<?php echo esc_attr($alignment); ?>">
