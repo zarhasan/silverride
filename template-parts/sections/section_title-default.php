@@ -16,6 +16,13 @@ $margins = [
     'small' => 'mb-4 sm:mb-6',
 ];
 
+$paddings = [
+    'none' => 'pb-0',
+    'negative' => '-pb-8 sm:-pb-12',
+    'default' => 'pb-8 sm:pb-12',
+    'small' => 'pb-4 sm:pb-6',
+];
+
 $margin_bottom = $args['margin_bottom'] ?? 'default';
 $margin_bottom = $margins[$margin_bottom] ?? $margins['default'];
 $heading_level = $args['heading_level'] ?? 'h2';
@@ -38,7 +45,8 @@ $alignment = $args['alignment'] ?? 'center';
 $alignment_class = $alignments[$alignment] ?? $alignments['center'];
 
 $has_background = !empty($background_color);
-$section_spacing = $has_background ? 'py-16 sm:py-24' : 'mt-16 sm:mt-24 ' . $margin_bottom;
+$padding_bottom = $paddings[$margin_bottom] ?? $paddings['default'];
+$section_spacing = $has_background ? 'pt-16 sm:pt-24 ' . $padding_bottom : 'mt-16 sm:mt-24 ' . $margin_bottom;
 ?>
 
 <section

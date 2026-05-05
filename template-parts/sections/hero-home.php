@@ -4,7 +4,8 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$title = $args['title'] ?? "The Nation's Leading Assisted Transportation Platform";
+$title = $args['title'] ?? "";
+$subtitle = $args['subtitle'] ?? "";
 $description = $args['description'] ?? '';
 $links = $args['links'] ?? [];
 $image = $args['image'] ?? [];
@@ -15,9 +16,17 @@ $image = $args['image'] ?? [];
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <!-- Left Content -->
             <div>
-                <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8">
-                    <?php echo wp_kses_post($title); ?>
-                </h1>
+                <?php if (!empty($subtitle)) : ?>
+                    <p class="text-[#F8F12D] text-lg !font-medium sm:text-[1.25rem] mb-4">
+                        <?php echo esc_html($subtitle); ?>
+                    </p>
+                <?php endif; ?>
+
+                <?php if (!empty($title)) : ?>
+                    <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8">
+                        <?php echo wp_kses_post($title); ?>
+                    </h1>
+                <?php endif; ?>
 
                 <?php if ($description) : ?>
                     <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">

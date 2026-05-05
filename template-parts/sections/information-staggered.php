@@ -14,7 +14,7 @@ $image_position   = $args['image_position'] ?? 'right';
 $is_image_left    = $image_position === 'left';
 ?>
 <section 
-	class="<?php echo !empty($background_color) ? 'py-16 md:py-24' : 'my-16 md:my-24' ?>"
+	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'my-16 md:my-24' ?>"
 	<?php if (!empty($background_color)) : ?>
 		style="background-color: <?php echo esc_attr( $background_color ); ?>;"
 	<?php endif; ?>
