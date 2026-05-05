@@ -36,11 +36,14 @@ $alignments = [
 ];
 $alignment = $args['alignment'] ?? 'center';
 $alignment_class = $alignments[$alignment] ?? $alignments['center'];
+
+$has_background = !empty($background_color);
+$section_spacing = $has_background ? 'py-16 sm:py-24' : 'mt-16 sm:mt-24 ' . $margin_bottom;
 ?>
 
 <section
-    class="<?php echo esc_attr($container_class . ' ' . $alignment_class); ?> mt-16 sm:mt-24 <?php echo esc_attr($margin_bottom); ?>"
-    style="<?php echo !empty($background_color) ? 'background-color: ' . esc_attr($background_color) . ';' : ''; ?>"
+    class="<?php echo esc_attr($container_class . ' ' . $alignment_class . ' ' . $section_spacing); ?>"
+    style="<?php echo $has_background ? 'background-color: ' . esc_attr($background_color) . ';' : ''; ?>"
     data-section-id="<?php echo esc_attr($template_part_name); ?>"
     data-heading-level="<?php echo esc_attr($heading_level); ?>"
     data-alignment="<?php echo esc_attr($alignment); ?>">
