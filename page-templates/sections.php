@@ -216,6 +216,13 @@ $sections = get_field('sections');
 
         <?php get_template_part('template-parts/sections/partnership-who-we-serve', null, []) ?>
 
+        <?php get_template_part('template-parts/sections/clients-who-we-serve', null, []) ?>
+
+        <?php get_template_part('template-parts/sections/driver-features', null, []) ?>
+        <?php get_template_part('template-parts/sections/driver-testimonial', null, []) ?>
+        <?php get_template_part('template-parts/sections/driver-information-multiple-ctas', null, []) ?>
+        <?php get_template_part('template-parts/sections/driver-faqs', null, []) ?>
+
     <?php endif; ?>
 </main>
 
