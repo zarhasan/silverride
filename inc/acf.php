@@ -981,6 +981,7 @@ add_action( 'acf/include_fields', function() {
 								'default' => 'Default',
 								'simple' => 'Simple',
 								'alt' => 'Alt',
+								'horizontal' => 'Horizontal',
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
@@ -1181,6 +1182,7 @@ add_action( 'acf/include_fields', function() {
 						'choices' => array(
 							'default' => 'Default',
 							'alt' => 'Alt',
+							'tint' => 'Tint',
 						),
 						'default_value' => 'default',
 					),
