@@ -200,7 +200,7 @@ $sections = get_field('sections');
         ]); ?>
         
         <?php
-            get_template_part('template-parts/sections/functionalities-who-we-serve', null, [
+            get_template_part('template-parts/sections/grid', 'incentives', [
                 'title' => 'Compliance is the floor, not the ceiling.',
                 'description' => '<p>SilverRide is the partner of choice for transit agencies that need ADA-compliant paratransit at scale. We support complementary paratransit, overflow service, premium tiers, and same-day trips through a flexible independent driver network and an accessibility-focused vehicle mix, including sedans, SUVs, and wheelchair-accessible vehicles.</p>',
                 'items' => [

@@ -9,13 +9,22 @@ $subtitle = $args['subtitle'] ?? '';
 $description = $args['description'] ?? '';
 $link = $args['link'] ?? [];
 $image = $args['image'] ?? [];
+$image_position = $args['image_position'] ?? 'left';
+$is_image_left = $image_position === 'left';
+$text_order = $is_image_left ? 'order-2' : 'order-1';
+$image_order = $is_image_left ? 'order-1' : 'order-2';
 ?>
 
 <section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <!-- Left Content -->
-            <div>
+            <?php if (!empty($image) && !empty($image['url'])) : ?>
+            <div class="flex justify-center <?php echo esc_attr($image_order); ?>">
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full max-w-md h-auto object-contain">
+            </div>
+            <?php endif; ?>
+
+            <div class="<?php echo esc_attr($text_order); ?>">
                 <?php if ($title) : ?>
                     <h2 class="text-3xl lg:text-[2.875rem] !leading-tight font-bold text-gray-900 mb-4">
                         <?php echo esc_html($title); ?>
@@ -38,13 +47,6 @@ $image = $args['image'] ?? [];
                     <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
                         <?php echo esc_html($link['title'] ?? ''); ?>
                     </a>
-                <?php endif; ?>
-            </div>
-
-            <!-- Right Illustration -->
-            <div class="flex justify-center">
-                <?php if (!empty($image) && !empty($image['url'])) : ?>
-                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full max-w-md h-auto object-contain">
                 <?php endif; ?>
             </div>
         </div>
