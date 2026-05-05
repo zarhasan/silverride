@@ -1815,6 +1815,7 @@ add_action( 'acf/include_fields', function() {
 								'default' => 'Default',
 								'alt' => 'Alt',
 								'simple' => 'Simple',
+								'staggered' => 'Staggered',
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',

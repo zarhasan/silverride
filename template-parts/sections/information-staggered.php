@@ -1,20 +1,9 @@
 <?php
 /**
- * Avenues / Who We Serve Section
+ * Information Minimal Section Template
  *
- * Expected $args:
- * - title: string
- * - background_color: string (hex color, default #F0F5FF)
- * - avenues: array of avenue arrays
- *   - overline: string
- *   - heading: string
- *   - content: string (HTML)
- *   - bullets: array of strings or array of ['bullet' => string]
- *   - cta: array (url, title, target)
- *   - image: array (url, alt)
- *   - image_position: string ('left' | 'right')
  */
-$title            = $args['title'] ?? 'Three Avenues. One Platform.';
+$title            = $args['title'] ?? '';
 $background_color = $args['background_color'] ?? '#F0F5FF';
 $avenues          = $args['avenues'] ?? [];
 
