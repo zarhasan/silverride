@@ -335,6 +335,7 @@ add_action( 'acf/include_fields', function() {
 								'home' => 'Home',
 								'page' => 'Page',
 								'image-below' => 'Image Below',
+								'title-below' => 'Title Below',
 								'centered' => 'Centered',
 								'primary-background' => 'Primary Background',
 								'overlay' => 'Overlay',
