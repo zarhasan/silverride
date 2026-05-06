@@ -19,7 +19,7 @@ $links = $args['links'] ?? [];
     <?php endif; ?>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-primary/70" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-blue-700/70" aria-hidden="true"></div>
 
     <!-- Content -->
     <div class="container relative z-10 py-20 md:py-28">
@@ -37,9 +37,9 @@ $links = $args['links'] ?? [];
             <?php endif; ?>
 
             <?php if (!empty($description)) : ?>
-                <p class="text-lg md:text-xl text-blue-100 leading-relaxed mb-10">
+                <div class="text-lg md:text-xl text-blue-100 leading-relaxed mb-10">
                     <?php echo wp_kses_post($description); ?>
-                </p>
+                </div>
             <?php endif; ?>
 
             <?php if (!empty($links)) : ?>
