@@ -337,6 +337,7 @@ add_action( 'acf/include_fields', function() {
 								'image-below' => 'Image Below',
 								'centered' => 'Centered',
 								'primary-background' => 'Primary Background',
+								'overlay' => 'Overlay',
 							),
 							'default_value' => '',
 							'return_format' => 'value',

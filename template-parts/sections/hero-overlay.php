@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 
 $template_part_name = explode('.', basename(__FILE__))[0];
 
-$label = $args['label'] ?? '';
+$subtitle = $args['subtitle'] ?? '';
 $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $image = $args['image'] ?? [];
@@ -24,9 +24,9 @@ $links = $args['links'] ?? [];
     <!-- Content -->
     <div class="container relative z-10 py-20 md:py-28">
         <div class="max-w-2xl">
-            <?php if (!empty($label)) : ?>
+            <?php if (!empty($subtitle)) : ?>
                 <span class="block text-sm font-bold text-white uppercase tracking-wide mb-4">
-                    <?php echo esc_html($label); ?>
+                    <?php echo esc_html($subtitle); ?>
                 </span>
             <?php endif; ?>
 

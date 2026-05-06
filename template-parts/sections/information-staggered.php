@@ -12,12 +12,15 @@ $link             = $args['link'] ?? [];
 $image            = $args['image'] ?? [];
 $image_position   = $args['image_position'] ?? 'right';
 $is_image_left    = $image_position === 'left';
+$template_part_name = explode('.', basename(__FILE__))[0];
+
 ?>
 <section 
 	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'my-16 md:my-24' ?>"
 	<?php if (!empty($background_color)) : ?>
 		style="background-color: <?php echo esc_attr( $background_color ); ?>;"
 	<?php endif; ?>
+	data-section-id="<?php echo esc_attr($template_part_name); ?>"
 	>
 	<div class="container">
 		<article class="flex flex-col items-stretch gap-10 md:flex-row md:gap-24">

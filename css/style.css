@@ -851,6 +851,12 @@ body .wpforms-form .wpforms-field-label {
     font-size: 1.25rem;
 }
 
+/* Sections */
+
+[data-section-id^="information-"] + [data-section-id^="information-"] {
+    padding-top: 0;
+}
+
 /* Footer Menu Styles */
 .footer-menu {
     list-style: none;
