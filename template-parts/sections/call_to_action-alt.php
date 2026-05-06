@@ -20,9 +20,9 @@ $links = $args['links'] ?? [];
             <?php echo esc_html($title); ?>
         </h2>
 
-        <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            <?php echo esc_html($description); ?>
-        </p>
+        <div class="text-lg md:text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
+            <?php echo wp_kses_post($description); ?>
+        </div>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <?php if (!empty($links)) : ?>

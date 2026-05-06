@@ -831,7 +831,7 @@ body .wpforms-form .wpforms-field-label {
 
 /* Sections */
 
-[data-section-id^="information-"] + [data-section-id^="information-"] {
+.page-who-we-serve [data-section-id^="information-"] + [data-section-id^="information-"] {
     padding-top: 0;
 }
 

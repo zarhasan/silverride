@@ -4,8 +4,8 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$label = $args['label'] ?? 'FOR DRIVERS';
-$title = $args['title'] ?? 'Transportation Your Members Can Count On.';
+$label = $args['label'] ?? '';
+$title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $items = $args['items'] ?? [];
 $image = $args['image'] ?? [];
@@ -34,13 +34,9 @@ $image = $args['image'] ?? [];
                 </h2>
 
                 <?php if ($description) : ?>
-                    <p class="text-lg text-gray-800 leading-relaxed mb-8">
+                    <div class="prose text-lg text-gray-800 leading-relaxed mb-8">
                         <?php echo wp_kses_post($description); ?>
-                    </p>
-                <?php else : ?>
-                    <p class="text-lg text-gray-800 leading-relaxed mb-8">
-                        SilverRide supports PACE programs and a growing roster of health plans and healthcare systems. We deliver door-through-door assisted transportation built for clinical complexity: escorts from the living room to the waiting room, scheduling coordinated around appointments, and the compassion your members expect from their care team. One partner for the full trip, from pickup to discharge and home again.
-                    </p>
+                    </div>
                 <?php endif; ?>
 
                 <ul class="space-y-2">
@@ -51,23 +47,6 @@ $image = $args['image'] ?? [];
                                 <span><?php echo wp_kses_post($item['item'] ?? $item); ?></span>
                             </li>
                         <?php endforeach; ?>
-                    <?php else : ?>
-                        <li class="flex items-start gap-3 text-lg text-gray-800">
-                            <span class="text-gray-900">&bull;</span>
-                            <span>Credentialed drivers experienced with medically complex riders</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-lg text-gray-800">
-                            <span class="text-gray-900">&bull;</span>
-                            <span>Integrated booking, live tracking, and compliance-ready reporting</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-lg text-gray-800">
-                            <span class="text-gray-900">&bull;</span>
-                            <span>Door-through-door service as the baseline, not an upgrade</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-lg text-gray-800">
-                            <span class="text-gray-900">&bull;</span>
-                            <span>ADA-compliant service across 35+ major metros in 15 states</span>
-                        </li>
                     <?php endif; ?>
                 </ul>
             </div>

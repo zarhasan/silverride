@@ -1704,6 +1704,13 @@ add_action( 'acf/include_fields', function() {
 									'parent_repeater' => 'field_68ce910fe30fa',
 								),
 								array(
+									'key'             => 'field_grid_item_subtitle',
+									'label'           => 'Subtitle',
+									'name'            => 'subtitle',
+									'type'            => 'text',
+									'parent_repeater' => 'field_68ce910fe30fa',
+								),
+								array(
 									'key' => 'field_68ce911ee30fc',
 									'label' => 'Title',
 									'name' => 'title',
