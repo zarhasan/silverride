@@ -1,0 +1,59 @@
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+$template_part_name = explode('.', basename(__FILE__))[0];
+
+$label = $args['label'] ?? '';
+$title = $args['title'] ?? '';
+$description = $args['description'] ?? '';
+$image = $args['image'] ?? [];
+$links = $args['links'] ?? [];
+?>
+
+<section class="relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <!-- Background Image -->
+    <?php if (!empty($image) && !empty($image['url'])) : ?>
+        <img src="<?php echo esc_url($image['url']); ?>" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
+    <?php endif; ?>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-primary/70" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="container relative z-10 py-20 md:py-28">
+        <div class="max-w-2xl">
+            <?php if (!empty($label)) : ?>
+                <span class="block text-sm font-bold text-white uppercase tracking-wide mb-4">
+                    <?php echo esc_html($label); ?>
+                </span>
+            <?php endif; ?>
+
+            <?php if (!empty($title)) : ?>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    <?php echo wp_kses_post($title); ?>
+                </h1>
+            <?php endif; ?>
+
+            <?php if (!empty($description)) : ?>
+                <p class="text-lg md:text-xl text-blue-100 leading-relaxed mb-10">
+                    <?php echo wp_kses_post($description); ?>
+                </p>
+            <?php endif; ?>
+
+            <?php if (!empty($links)) : ?>
+                <div class="flex flex-wrap gap-4">
+                    <?php foreach ($links as $link_item) :
+                        $link = $link_item['link'] ?? [];
+                        if (empty($link)) continue;
+                    ?>
+                        <a href="<?php echo esc_url($link['url'] ?? '#'); ?>" class="inline-flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-base md:text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+                            <?php echo esc_html($link['title'] ?? 'Learn More'); ?>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
