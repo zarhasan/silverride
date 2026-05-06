@@ -991,6 +991,7 @@ add_action( 'acf/include_fields', function() {
 								'simple' => 'Simple',
 								'alt' => 'Alt',
 								'horizontal' => 'Horizontal',
+								'with-image' => 'With Image',
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
