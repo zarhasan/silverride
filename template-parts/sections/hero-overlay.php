@@ -48,7 +48,7 @@ $links = $args['links'] ?? [];
                         $link = $link_item['link'] ?? [];
                         if (empty($link)) continue;
                     ?>
-                        <a href="<?php echo esc_url($link['url'] ?? '#'); ?>" class="inline-flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-base md:text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-blue-900 transition-colors duration-200">
+                        <a href="<?php echo esc_url($link['url'] ?? '#'); ?>" class="inline-flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-base md:text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
                             <?php echo esc_html($link['title'] ?? 'Learn More'); ?>
                         </a>
                     <?php endforeach; ?>

@@ -13,30 +13,30 @@ $stats = $args['stats'] ?? [];
             <?php if (!empty($stats)) : ?>
                 <?php foreach ($stats as $stat) : ?>
                     <div>
-                        <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-3">
+                        <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">
                             <?php echo esc_html($stat['number'] ?? ''); ?>
                         </div>
-                        <div class="text-base md:text-lg text-blue-900 font-medium">
+                        <div class="text-base md:text-lg text-primary font-medium">
                             <?php echo esc_html($stat['label'] ?? ''); ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>
                 <div>
-                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-3">1M+</div>
-                    <div class="text-base md:text-lg text-blue-900 font-medium">Rides Delivered Each Year</div>
+                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">1M+</div>
+                    <div class="text-base md:text-lg text-primary font-medium">Rides Delivered Each Year</div>
                 </div>
                 <div>
-                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-3">35+</div>
-                    <div class="text-base md:text-lg text-blue-900 font-medium">Major Metro Areas Served</div>
+                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">35+</div>
+                    <div class="text-base md:text-lg text-primary font-medium">Major Metro Areas Served</div>
                 </div>
                 <div>
-                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-3">15</div>
-                    <div class="text-base md:text-lg text-blue-900 font-medium">States And Counting</div>
+                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">15</div>
+                    <div class="text-base md:text-lg text-primary font-medium">States And Counting</div>
                 </div>
                 <div>
-                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-3">95%</div>
-                    <div class="text-base md:text-lg text-blue-900 font-medium">On-Time Performance</div>
+                    <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">95%</div>
+                    <div class="text-base md:text-lg text-primary font-medium">On-Time Performance</div>
                 </div>
             <?php endif; ?>
         </div>
