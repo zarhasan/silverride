@@ -6,7 +6,9 @@
 
 get_header();
 
-get_template_part('template-parts/sections/hero-home');
+get_template_part('template-parts/sections/hero-home', null, [
+    'title' => "The Nation's Leading Assisted Transportation Platform",
+]);
 get_template_part('template-parts/sections/information', null, [
     'title' => 'Who We Are',
     'subtitle' => 'More Than A Ride. A Lifeline.',

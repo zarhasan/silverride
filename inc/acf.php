@@ -1669,7 +1669,7 @@ add_action( 'acf/include_fields', function() {
 								'class' => '',
 								'id' => '',
 							),
-							'layout' => 'table',
+							'layout' => 'block',
 							'min' => 0,
 							'max' => 0,
 							'collapsed' => '',
@@ -1702,6 +1702,13 @@ add_action( 'acf/include_fields', function() {
 									'allow_in_bindings' => 0,
 									'preview_size' => 'medium',
 									'parent_repeater' => 'field_68ce910fe30fa',
+								),
+								array(
+									'label' => 'Subtitle',
+									'name' => 'subtitle',
+									'aria-label' => '',
+									'type' => 'text',
+									'instructions' => '',
 								),
 								array(
 									'key' => 'field_68ce911ee30fc',

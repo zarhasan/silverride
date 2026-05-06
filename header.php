@@ -21,17 +21,19 @@
   <header tabindex="-1" id="masthead" class="site-header w-full fixed top-0 h-20 lg:h-28 py-2 lg:py-4 z-[9999] flex justify-center items-center bg-primary">
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="flex flex-col text-white no-underline">
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo-link flex flex-col text-white no-underline" aria-label="SilverRide - There With Care">
         <img class="h-12 lg:h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="">
       </a>
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-8" aria-label="Primary navigation">
-        <?php get_template_part('template-parts/menu', null, [
+        <?php 
+          get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',
-            'menu_class' => 'flex items-center gap-8 text-white',
-            'link_class' => 'text-white text-base font-medium hover:text-blue-200 transition-colors duration-200',
-        ]); ?>
+            'menu_class' => 'primary-menu flex items-center gap-8 text-white',
+            'link_class' => 'text-white text-base font-normal hover:text-blue-200 transition-colors duration-200',
+          ]); 
+        ?>
         <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">Request Demo</a>
       </nav>
 
@@ -58,54 +60,13 @@
           </button>
         </div>
 
-        <?php get_template_part('template-parts/menu', null, [
+        <?php 
+          get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',
-            'menu_class' => 'flex flex-col gap-4 text-white',
+            'menu_class' => 'mobile-menu flex flex-col gap-4 text-white',
             'link_class' => 'text-white text-lg font-medium hover:text-blue-200 transition-colors duration-200 py-2 border-b border-white/20 block',
-        ]); ?>
-
-        <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
-          <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
-            Request Demo
-          </a>
-        </div>
-      </div>
-    </nav>
-
-      <!-- Mobile menu button -->
-      <button type="button" class="mobile-menu-toggle !lg:hidden inline-flex items-center justify-center p-2 text-white hover:text-blue-200 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span class="hamburger-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
-        </span>
-        <span class="close-icon hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-        </span>
-      </button>
-    </div>
-
-    <!-- Mobile Menu Overlay -->
-    <div class="mobile-menu-overlay fixed inset-0 bg-black/50 z-40 hidden lg:hidden" id="mobile-menu-overlay"></div>
-
-    <!-- Mobile Menu Panel -->
-    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-primary z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="mobile-menu-content p-6 flex flex-col h-full">
-        <div class="mobile-menu-header flex justify-end mb-8">
-          <button type="button" class="mobile-menu-close text-white hover:text-blue-200" aria-label="Close menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
-          </button>
-        </div>
-
-        <div class="flex flex-col gap-4">
-          <a href="/who-we-serve" class="text-lg font-medium py-2 border-b border-primary flex items-center justify-between">
-            Who We Serve
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </a>
-          <a href="/drivers" class="text-lg font-medium py-2 border-b border-primary">Drivers</a>
-          <a href="/riders" class="text-lg font-medium py-2 border-b border-primary">Riders</a>
-          <a href="/cities" class="text-lg font-medium py-2 border-b border-primary">Cities</a>
-          <a href="/company" class="text-lg font-medium py-2 border-b border-primary">Company</a>
-          <a href="/news" class="text-lg font-medium py-2 border-b border-primary">News</a>
-        </div>
+          ]); 
+        ?>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
           <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
