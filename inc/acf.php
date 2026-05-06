@@ -1704,13 +1704,6 @@ add_action( 'acf/include_fields', function() {
 									'parent_repeater' => 'field_68ce910fe30fa',
 								),
 								array(
-									'label' => 'Subtitle',
-									'name' => 'subtitle',
-									'aria-label' => '',
-									'type' => 'text',
-									'instructions' => '',
-								),
-								array(
 									'key' => 'field_68ce911ee30fc',
 									'label' => 'Title',
 									'name' => 'title',
