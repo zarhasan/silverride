@@ -9,6 +9,7 @@
 
 $item = $args['item'] ?? null;
 $depth = $args['depth'] ?? 0;
+$link_class = $args['link_class'] ?? '';
 
 if ( ! $item ) {
 	return;
@@ -44,6 +45,7 @@ $classes[] = 'menu-item-depth-' . absint( $depth );
 <li class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
     <a
         href="<?php echo esc_url( $item->url ); ?>"
+        class="<?php echo esc_attr( $link_class ); ?>"
         <?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
         <?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
     >

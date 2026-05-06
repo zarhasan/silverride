@@ -11,6 +11,7 @@
 $theme_location = $args['theme_location'] ?? 'primary';
 $menu_class     = $args['menu_class'] ?? '';
 $fallback_cb    = $args['fallback_cb'] ?? false;
+$link_class     = $args['link_class'] ?? '';
 
 $locations = get_nav_menu_locations();
 $menu_id   = $locations[ $theme_location ] ?? 0;
@@ -47,4 +48,5 @@ get_template_part( 'template-parts/menu-list', null, [
 	'items'      => $menu_tree,
 	'menu_class' => $menu_class,
 	'depth'      => 0,
+	'link_class' => $link_class,
 ] );

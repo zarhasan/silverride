@@ -11,6 +11,7 @@
 $items      = $args['items'] ?? [];
 $menu_class = $args['menu_class'] ?? '';
 $depth      = $args['depth'] ?? 0;
+$link_class = $args['link_class'] ?? '';
 
 if ( empty( $items ) ) {
 	return;
@@ -19,8 +20,9 @@ if ( empty( $items ) ) {
 <ul class="<?php echo esc_attr( $menu_class ); ?>" role="list">
 	<?php foreach ( $items as $item ) : ?>
 		<?php get_template_part( 'template-parts/menu-item', null, [
-			'item' => $item,
-			'depth' => $depth,
+			'item'       => $item,
+			'depth'      => $depth,
+			'link_class' => $link_class,
 		] ); ?>
 	<?php endforeach; ?>
 </ul>
