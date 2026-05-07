@@ -47,14 +47,14 @@ if ( empty( $testimonials ) ) {
 $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 ?>
 
-<section class="bg-sky-200 py-16 md:py-24">
+<section class="bg-[#98D1E6] py-16 md:py-24">
 	<div class="mx-auto max-w-7xl px-6">
 		<h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
 			<?php echo esc_html( $title ); ?>
 		</h2>
 
 		<?php if ( ! empty( $label ) ) : ?>
-		<p class="mx-auto mt-6 max-w-5xl text-center text-lg lg:text-[1.5rem] font-bold text-black">
+		<p class="mx-auto mt-8 max-w-5xl text-center text-lg lg:text-[1.5rem] font-bold text-black">
 			<?php echo esc_html( $label ); ?>
 		</p>
 		<?php endif; ?>

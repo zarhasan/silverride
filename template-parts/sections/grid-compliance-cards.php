@@ -1,108 +1,62 @@
 <?php
-
 if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
+    exit;
 }
 
-$template_part_name = explode('.', basename(__FILE__))[0];
-
-$query_args = [
-    'post_type'      => 'page',
-    'posts_per_page' => -1,
-    'tax_query'      => [
-        [
-            'taxonomy' => 'page-type',   // your taxonomy name
-            'field'    => 'slug',        // can also be 'term_id' or 'name'
-            'terms'    => 'compliance',     // the term you want
-        ],
-    ],
-    'orderby'        => 'menu_order',
-    'order'          => 'ASC',
-];
-
-$service_query = new WP_Query($query_args);
-$service_pages = $service_query->have_posts() ? $service_query->posts : [];
-
-$categories = [
-    [
-        'slug' => 'all',
-        'name' => 'All',
-    ],
-];
-
-$existing_slugs = array_column($categories, 'slug');
-
-foreach ($service_pages as $page) {
-    $terms = get_the_terms($page->ID, 'page-type'); // fetch taxonomy terms
-
-    if (empty($terms) || is_wp_error($terms)) {
-        continue;
-    }
-
-    foreach ($terms as $term) {
-        // skip the main "service" term
-        if ($term->slug === 'service') {
-            continue;
-        }
-
-        if (!in_array($term->slug, $existing_slugs, true)) {
-            $categories[] = [
-                'slug' => $term->slug,
-                'name' => $term->name,
-            ];
-            $existing_slugs[] = $term->slug;
-        }
-    }
-}
-
-// free query
-wp_reset_postdata();
-
+$title = $args['title'] ?? '';
+$subtitle = $args['description'] ?? '';
+$features = $args['items'] ?? [];
 ?>
 
-<section
-    id="<?php echo !empty($args['id']) ? $args['id'] : null; ?>" 
-    class="my-16 sm:my-24"
-    data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container flex justify-between items-start lg:items-center flex-col gap-4 lg:gap-0 lg:flex-row">
-        <div class="max-w-2xl">
-            <?php if(!empty($args['subtitle'])): ?>
-                <p class="text-lg uppercase text-primary font-semibold mt-4">
-                    <?php echo $args['subtitle']; ?>
-                </p>
-            <?php endif; ?>
-            
-            <?php if(!empty($args['title'])): ?>
-                <h2 class="sr-only"><?php echo wp_kses_post(strip_tags($args['title'])); ?></h2>
-                <h2 aria-hidden="true" class="text-4xl lg:text-[2.5rem] font-semibold">
-                    <?php echo $args['title']; ?>
-                </h2>
-            <?php endif; ?>
+<section class="bg-white py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6">
+        <?php if ($title) : ?>
+        <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
+            <?php echo wp_kses_post($title); ?>
+        </h2>
+        <?php endif; ?>
 
-            <?php if(!empty($args['description'])): ?>
-                <p class="mt-4">
-                    <?php echo $args['description']; ?>
-                </p>
-            <?php endif; ?>
-        </div>
-    </div>
+        <?php if (!empty($subtitle)) : ?>
+            <div class="mx-auto mt-4 max-w-5xl text-center lg:text-[1.25rem] font-normal text-black">
+                <?php echo wp_kses_post($subtitle); ?>
+            </div>
+        <?php endif; ?>
 
-    <div class="container mt-16">
-        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-8">
-            <?php foreach ($service_pages as $index => $page): ?>
-                <?php
-                    $service = [
-                        'ID' => $page->ID,
-                        'title' => get_the_title($page->ID),
-                        'description' => wp_trim_words( get_post_field('post_content', $page->ID), 20, '...' ),
-                        'image' => [
-                            'url' => get_the_post_thumbnail_url($page->ID, 'large') ? get_the_post_thumbnail_url($page->ID, 'large') : '',
-                        ],
-                        'link' => get_permalink($page->ID),
-                    ];
-                ?>
-                <?php get_template_part('template-parts/service-card', null, array('service' => $service, 'index' => $index)); ?>
+        <?php if (!empty($features)) : ?>
+        <div class="mt-16 grid gap-12 md:grid-cols-2 lg:gap-16">
+            <?php foreach ($features as $feature) :
+                $feature_icon = $feature['image'] ?? [];
+                $feature_heading = $feature['title'] ?? '';
+                $feature_description = $feature['description'] ?? '';
+            ?>
+            <div class="flex gap-6 justify-start">
+                <?php if (!empty($feature_icon)) : ?>
+                <div class="shrink-0">
+                    <img
+                        src="<?php echo esc_url($feature_icon['url']); ?>"
+                        alt="<?php echo esc_attr($feature_icon['alt'] ?? ''); ?>"
+                        class="h-20 w-20 object-contain md:h-[9.375rem] md:w-[9.375rem]"
+                        loading="lazy"
+                    >
+                </div>
+                <?php endif; ?>
+
+                <div>
+                    <?php if (!empty($feature_heading)) : ?>
+                    <h3 class="text-xl font-bold text-black md:text-[1.375rem]">
+                        <?php echo esc_html($feature_heading); ?>
+                    </h3>
+                    <?php endif; ?>
+
+                    <?php if (!empty($feature_description)) : ?>
+                    <div class="mt-4 text-[1.125rem] leading-relaxed text-gray-600">
+                        <?php echo wp_kses_post($feature_description); ?>
+                    </div>
+                    <?php endif; ?>
+                </div>
+            </div>
             <?php endforeach; ?>
         </div>
+        <?php endif; ?>
     </div>
 </section>

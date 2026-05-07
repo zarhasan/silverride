@@ -12,18 +12,18 @@ $footer_description = $args['footer_description'] ?? '';
 $cta = $args['cta'] ?? [];
 ?>
 
-<section class="bg-white py-16 md:py-24">
-    <div class="mx-auto max-w-3xl px-6">
+<section class="bg-white my-16 md:my-24">
+    <div class="mx-auto max-w-5xl px-6">
         <?php if ($title) : ?>
-        <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
-            <?php echo esc_html($title); ?>
-        </h2>
+            <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
+                <?php echo esc_html($title); ?>
+            </h2>
         <?php endif; ?>
 
         <?php if (!empty($description)) : ?>
-        <div class="mt-4 text-center text-lg text-gray-600 leading-relaxed">
-            <?php echo wp_kses_post($description); ?>
-        </div>
+            <div class="mt-4 text-center text-lg text-gray-600 leading-relaxed">
+                <?php echo wp_kses_post($description); ?>
+            </div>
         <?php endif; ?>
 
         <?php if (!empty($items)) : ?>
@@ -37,7 +37,7 @@ $cta = $args['cta'] ?? [];
                 <h3 class="text-lg font-bold text-black md:text-[1.375rem]">
                     <button
                         type="button"
-                        class="font-bold faq-toggle flex w-full items-center justify-between py-6 text-left transition-colors duration-200 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        class="font-bold faq-toggle text-base lg:text-[1.375rem] flex w-full items-center justify-between py-6 text-left transition-colors duration-200 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         aria-expanded="false"
                         aria-controls="<?php echo esc_attr($faq_id); ?>"
                     >
@@ -54,7 +54,7 @@ $cta = $args['cta'] ?? [];
                     aria-hidden="true"
                 >
                     <?php if (!empty($faq_answer)) : ?>
-                    <div class="pb-6 text-base leading-relaxed font-normal md:text-lg">
+                    <div class="prose pb-6 text-base leading-relaxed font-normal lg:text-lg">
                         <?php echo wp_kses_post($faq_answer); ?>
                     </div>
                     <?php endif; ?>

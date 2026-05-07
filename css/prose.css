@@ -364,7 +364,7 @@
 }
 
 .prose li::marker {
-    color: var(--theme-primary, #FF6A3D);
+    color: inherit;
 }
 
 .prose ul {
@@ -1650,7 +1650,7 @@ pre::-webkit-scrollbar-thumb:hover {
 }
 
 .prose ul li::marker {
-    color: var(--theme-primary);
+    color: inherit;
 }
 
 /* Paragraph spacing - exact match with design */
