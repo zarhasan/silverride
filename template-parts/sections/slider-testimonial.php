@@ -11,8 +11,8 @@
  *   - name: string
  *   - location: string
  */
-$title        = $args['title'] ?? 'In Their words.';
-$label        = $args['label'] ?? 'Vehicle Requirements';
+$title        = $args['title'] ?? '';
+$label        = $args['subtitle'] ?? '';
 $testimonials = $args['testimonials'] ?? [];
 
 if ( empty( $testimonials ) ) {

@@ -12,14 +12,14 @@ $features = $args['items'] ?? [];
     <div class="mx-auto max-w-7xl px-6">
         <?php if ($title) : ?>
         <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
-            <?php echo esc_html($title); ?>
+            <?php echo wp_kses_post($title); ?>
         </h2>
         <?php endif; ?>
 
         <?php if (!empty($subtitle)) : ?>
-        <p class="mx-auto mt-4 max-w-4xl text-center text-[1.625rem] font-bold text-black">
-            <?php echo esc_html($subtitle); ?>
-        </p>
+            <div class="mx-auto mt-4 max-w-5xl text-center lg:text-[1.25rem] font-normal text-black">
+                <?php echo wp_kses_post($subtitle); ?>
+            </div>
         <?php endif; ?>
 
         <?php if (!empty($features)) : ?>

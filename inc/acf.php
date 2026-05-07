@@ -3347,13 +3347,29 @@ add_action( 'acf/include_fields', function() {
 						'type' => 'text',
 					),
 					array(
+						'key'   => 'field_slider_subtitle',
+						'label' => 'Subtitle',
+						'name'  => 'subtitle',
+						'type'  => 'text',
+					),
+					array(
 						'key' => 'field_slider_slides',
 						'label' => 'Slides',
 						'name' => 'slides',
 						'type' => 'repeater',
 						'layout' => 'table',
 						'button_label' => 'Add Slide',
+						'conditional_logic' => 0,
 						'sub_fields' => array(
+							array(
+								'key' => 'field_slider_slide_image',
+								'label' => 'Image',
+								'name' => 'image',
+								'type' => 'image',
+								'return_format' => 'array',
+								'preview_size' => 'thumbnail',
+								'parent_repeater' => 'field_slider_slides',
+							),
 							array(
 								'key' => 'field_slider_slide_heading',
 								'label' => 'Heading',
@@ -3369,6 +3385,13 @@ add_action( 'acf/include_fields', function() {
 								'tabs' => 'all',
 								'toolbar' => 'basic',
 								'media_upload' => 0,
+								'parent_repeater' => 'field_slider_slides',
+							),
+							array(
+								'key' => 'field_slider_slide_location',
+								'label' => 'Location',
+								'name' => 'location',
+								'type' => 'text',
 								'parent_repeater' => 'field_slider_slides',
 							),
 							array(
