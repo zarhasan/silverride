@@ -13,7 +13,7 @@
  */
 $title        = $args['title'] ?? '';
 $label        = $args['subtitle'] ?? '';
-$testimonials = $args['testimonials'] ?? [];
+$testimonials = $args['slides'] ?? [];
 
 if ( empty( $testimonials ) ) {
 	$testimonials = [
@@ -54,7 +54,7 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 		</h2>
 
 		<?php if ( ! empty( $label ) ) : ?>
-		<p class="mx-auto mt-4 max-w-4xl text-center text-[1.625rem] font-bold text-black">
+		<p class="mx-auto mt-6 max-w-5xl text-center text-lg lg:text-[1.5rem] font-bold text-black">
 			<?php echo esc_html( $label ); ?>
 		</p>
 		<?php endif; ?>
@@ -84,8 +84,8 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 					<div class="flex">
 						<?php foreach ( $testimonials as $index => $testimonial ) :
 							$t_image    = $testimonial['image'] ?? [];
-							$t_quote    = $testimonial['quote'] ?? '';
-							$t_name     = $testimonial['name'] ?? '';
+							$t_quote    = $testimonial['content'] ?? '';
+							$t_name     = $testimonial['heading'] ?? '';
 							$t_location = $testimonial['location'] ?? '';
 						?>
 						<div
@@ -105,11 +105,11 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 								</div>
 								<?php endif; ?>
 
-								<div class="max-w-2xl">
+								<div>
 									<?php if ( ! empty( $t_quote ) ) : ?>
-									<blockquote class="text-lg font-normal leading-relaxed text-black md:text-xl lg:text-xl">
-										&ldquo;<?php echo esc_html( $t_quote ); ?>&rdquo;
-									</blockquote>
+										<blockquote class="text-lg font-normal leading-relaxed text-black md:text-xl lg:text-xl">
+											<?php echo wp_kses_post( $t_quote ); ?>
+										</blockquote>
 									<?php endif; ?>
 
 									<?php if ( ! empty( $t_name ) || ! empty( $t_location ) ) : ?>
