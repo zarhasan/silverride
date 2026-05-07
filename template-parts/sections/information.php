@@ -8,6 +8,7 @@ $title = $args['title'] ?? '';
 $subtitle = $args['subtitle'] ?? '';
 $description = $args['description'] ?? '';
 $link = $args['link'] ?? [];
+$secondary_link = $args['secondary_link'] ?? [];
 $image = $args['image'] ?? [];
 $image_position = $args['image_position'] ?? 'left';
 $is_image_left = $image_position === 'left';
@@ -43,11 +44,19 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
                     </div>
                 <?php endif; ?>
 
-                <?php if (!empty($link['title']) && !empty($link['url'])) : ?>
-                    <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
-                        <?php echo esc_html($link['title'] ?? ''); ?>
-                    </a>
-                <?php endif; ?>
+                <div class="flex justify-start items-center gap-4">
+                    <?php if (!empty($link['title']) && !empty($link['url'])) : ?>
+                        <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
+                            <?php echo esc_html($link['title'] ?? ''); ?>
+                        </a>
+                    <?php endif; ?>
+
+                    <?php if (!empty($secondary_link['title']) && !empty($secondary_link['url'])) : ?>
+                        <a href="<?php echo esc_url($secondary_link['url']); ?>" class="btn btn-outline">
+                            <?php echo esc_html($secondary_link['title'] ?? ''); ?>
+                        </a>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
