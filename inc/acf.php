@@ -3334,6 +3334,7 @@ add_action( 'acf/include_fields', function() {
 						'type' => 'button_group',
 						'choices' => array(
 							'basic' => 'Basic',
+							'testimonial' => 'Testimonial',
 						),
 						'default_value' => 'basic',
 						'return_format' => 'value',

@@ -12,26 +12,26 @@ $image = $args['image'] ?? [];
 $links = $args['links'] ?? [];
 ?>
 
-<section class="relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="relative flex items-center" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Background Image -->
     <?php if (!empty($image) && !empty($image['url'])) : ?>
         <img src="<?php echo esc_url($image['url']); ?>" alt="" class="absolute inset-0 w-full h-full object-cover" aria-hidden="true">
     <?php endif; ?>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-blue-700/70" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent" aria-hidden="true"></div>
 
     <!-- Content -->
     <div class="container relative z-10 py-20 md:py-28">
-        <div class="max-w-2xl">
+        <div class="max-w-2xl mt-28">
             <?php if (!empty($subtitle)) : ?>
-                <span class="block text-sm font-bold text-white uppercase tracking-wide mb-4">
+                <span class="block text-base lg:text-xl font-bold text-white uppercase tracking-wide mb-4">
                     <?php echo esc_html($subtitle); ?>
                 </span>
             <?php endif; ?>
 
             <?php if (!empty($title)) : ?>
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-6">
                     <?php echo wp_kses_post($title); ?>
                 </h1>
             <?php endif; ?>

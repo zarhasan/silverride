@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$stats = $args['stats'] ?? [];
+$stats = $args['items'] ?? [];
 ?>
 
 <section class="bg-[#98D1E6] py-16 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -14,7 +14,7 @@ $stats = $args['stats'] ?? [];
                 <?php foreach ($stats as $stat) : ?>
                     <div>
                         <div class="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-3">
-                            <?php echo esc_html($stat['number'] ?? ''); ?>
+                            <?php echo esc_html($stat['value'] ?? ''); ?>
                         </div>
                         <div class="text-base md:text-lg text-primary font-medium">
                             <?php echo esc_html($stat['label'] ?? ''); ?>

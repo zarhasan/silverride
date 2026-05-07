@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$label = $args['label'] ?? '';
+$label = $args['subtitle'] ?? '';
 $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $items = $args['items'] ?? [];
@@ -18,8 +18,6 @@ $image = $args['image'] ?? [];
             <div class="flex justify-center">
                 <?php if (!empty($image) && !empty($image['url'])) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? 'Illustration of people walking with assistance'); ?>" class="w-full max-w-md h-auto object-contain">
-                <?php else : ?>
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/media/information-2.png'); ?>" alt="Illustration of people walking with assistance" class="w-full max-w-md h-auto object-contain">
                 <?php endif; ?>
             </div>
 
