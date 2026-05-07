@@ -99,7 +99,7 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 									<img
 										src="<?php echo esc_url( $t_image['url'] ); ?>"
 										alt="<?php echo esc_attr( $t_image['alt'] ?? '' ); ?>"
-										class="h-40 w-40 rounded-full object-cover md:h-[9.375rem] md:w-[9.375rem]"
+										class="h-40 w-40 object-cover md:h-[9.375rem] md:w-[9.375rem]"
 										loading="lazy"
 									>
 								</div>
