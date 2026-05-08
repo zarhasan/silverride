@@ -111,6 +111,33 @@ $sections = get_field('sections');
         ]); ?>
         <?php get_template_part('template-parts/sections/policy', null, []); ?>
 
+        <?php get_template_part('template-parts/section-label', null, [
+            'number' => '6',
+            'section' => 'Datalist',
+            'layout' => 'datalist.php',
+            'fields' => 'title, description (wysiwyg), items (repeater: title, description wysiwyg)'
+        ]); ?>
+        <?php
+        get_template_part('template-parts/sections/datalist', null, [
+            'title' => 'Service Standards',
+            'description' => '<p>SilverRide maintains rigorous standards across all operations to ensure consistent, high-quality service delivery.</p><p>Please contact one of the providers below:</p>',
+            'items' => [
+                [
+                    'title' => 'On-Time Performance',
+                    'description' => '<p>Seattle Yellow Cab <a href="#">206-622-6500</a></p>',
+                ],
+                [
+                    'title' => 'Driver Credentialing',
+                    'description' => '<p>Every SilverRide driver completes a multi-step credentialing process before accepting trips. Requirements include background checks, driving record reviews, vehicle inspections, and completion of accessibility training modules covering wheelchair securement, service animal accommodation, and communication with riders who have cognitive or sensory disabilities.</p><p>Credentialing is maintained on an ongoing basis. Expiration dates are tracked, renewal reminders are automated, and lapses trigger temporary trip restrictions until re-credentialing is complete. Agency partners can request credentialing reports as part of regular compliance reviews.</p>',
+                ],
+                [
+                    'title' => 'Vehicle Standards',
+                    'description' => '<p>SilverRide\'s fleet includes sedans, SUVs, and wheelchair-accessible vehicles. All vehicles must pass a multi-point inspection covering mechanical safety, cleanliness, and accessibility equipment functionality before being approved for trips. Vehicle inspections are repeated on a scheduled basis, and any vehicle that fails an inspection is immediately removed from active service until issues are resolved.</p>',
+                ],
+            ],
+        ]);
+        ?>
+
         <?php get_template_part('template-parts/sections/stats-alt', null, [
             'items' => [
                 ['value' => '1M+', 'label' => 'Rides Delivered Each Year'],
