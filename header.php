@@ -65,11 +65,12 @@
             'theme_location' => 'primary',
             'menu_class' => 'mobile-menu flex flex-col gap-4 text-white',
             'link_class' => 'text-white text-lg font-medium hover:text-blue-200 transition-colors duration-200 py-2 border-b border-white/20 block',
+            'mobile' => true,
           ]); 
         ?>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
-          <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
+          <a href="/request-demo" class="btn btn-outline">
             Request Demo
           </a>
         </div>

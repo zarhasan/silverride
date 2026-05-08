@@ -10,6 +10,7 @@
 $item = $args['item'] ?? null;
 $depth = $args['depth'] ?? 0;
 $link_class = $args['link_class'] ?? '';
+$mobile = $args['mobile'] ?? false;
 
 if ( ! $item ) {
 	return;
@@ -43,20 +44,55 @@ if ( $has_children ) {
 $classes[] = 'menu-item-depth-' . absint( $depth );
 ?>
 <li class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
-    <a
-        href="<?php echo esc_url( $item->url ); ?>"
-        class="<?php echo esc_attr( $link_class ); ?>"
-        <?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
-        <?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
-    >
-        <?php echo esc_html( $item->title ); ?>
-    </a>
+	<?php if ( $mobile && $has_children ) : ?>
+		<div class="mobile-menu-item-row">
+			<a
+				href="<?php echo esc_url( $item->url ); ?>"
+				class="flex-1 py-2 text-white text-lg font-medium no-underline hover:text-blue-200 transition-colors duration-200"
+				<?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
+				<?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
+			>
+				<?php echo esc_html( $item->title ); ?>
+			</a>
+			<button
+				type="button"
+				class="menu-toggle"
+				aria-expanded="false"
+				aria-controls="submenu-<?php echo absint( $item->ID ); ?>"
+				aria-label="<?php echo esc_attr( sprintf( __( 'Toggle submenu for %s', 'silverride' ), $item->title ) ); ?>"
+			>
+				<span class="menu-toggle-icon" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+				</span>
+			</button>
+		</div>
+	<?php else : ?>
+		<a
+			href="<?php echo esc_url( $item->url ); ?>"
+			class="<?php echo esc_attr( $link_class ); ?>"
+			<?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
+			<?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
+		>
+			<?php echo esc_html( $item->title ); ?>
+		</a>
+	<?php endif; ?>
 
 	<?php if ( $has_children ) : ?>
+		<?php
+		$sub_menu_class = 'sub-menu';
+		$submenu_ul_attrs = '';
+		if ( $mobile ) {
+			$sub_menu_class .= ' hidden';
+			$submenu_ul_attrs = 'id="submenu-' . absint( $item->ID ) . '" aria-hidden="true"';
+		}
+		?>
 		<?php get_template_part( 'template-parts/menu-list', null, [
 			'items'      => $item->children,
-			'menu_class' => 'sub-menu',
+			'menu_class' => $sub_menu_class,
 			'depth'      => $depth + 1,
+			'link_class' => $link_class,
+			'mobile'     => $mobile,
+			'ul_attrs'   => $submenu_ul_attrs,
 		] ); ?>
 	<?php endif; ?>
 </li>

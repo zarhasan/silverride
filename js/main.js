@@ -548,31 +548,70 @@
             closeMenu();
         });
 
-        $('.menu-toggle').each(function () {
-            const $toggle = $(this);
-            $toggle.on('click', function (e) {
-                e.preventDefault();
-                e.stopPropagation();
+        // Submenu toggle buttons for mobile menu
+        (function () {
+            const $toggles = $('.menu-toggle');
+            if (!$toggles.length) return;
 
-                const $parentLi = $toggle.closest('li');
-                const $submenu = $parentLi.find('.sub-menu');
-                const $icon = $toggle.find('.menu-toggle-icon');
+            $toggles.each(function () {
+                const $toggle = $(this);
 
-                if (!$submenu.length) return;
+                $toggle.on('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
 
-                const isExpanded = $toggle.attr('aria-expanded') === 'true';
+                    const $parentLi = $toggle.closest('li');
+                    const $submenu = $parentLi.children('.sub-menu');
+                    const $icon = $toggle.find('.menu-toggle-icon');
 
-                if (isExpanded) {
-                    $submenu.addClass('hidden');
-                    $toggle.attr('aria-expanded', 'false');
-                    $icon.removeClass('rotate-180');
-                } else {
-                    $submenu.removeClass('hidden');
-                    $toggle.attr('aria-expanded', 'true');
-                    $icon.addClass('rotate-180');
-                }
+                    if (!$submenu.length) return;
+
+                    const isExpanded = $toggle.attr('aria-expanded') === 'true';
+
+                    if (isExpanded) {
+                        $submenu.addClass('hidden');
+                        $submenu.attr('aria-hidden', 'true');
+                        $toggle.attr('aria-expanded', 'false');
+                        if ($icon.length) $icon.removeClass('rotate-180');
+                    } else {
+                        // Close sibling submenus (accordion)
+                        const $siblings = $parentLi.siblings('li.menu-item-has-children');
+                        $siblings.each(function () {
+                            const $sibToggle = $(this).find('> .mobile-menu-item-row > .menu-toggle').add($(this).children('.menu-toggle'));
+                            if (!$sibToggle.length) return;
+                            if ($sibToggle.attr('aria-expanded') !== 'true') return;
+                            const $sibSub = $(this).children('.sub-menu');
+                            const $sibIcon = $sibToggle.find('.menu-toggle-icon');
+                            $sibSub.addClass('hidden');
+                            $sibSub.attr('aria-hidden', 'true');
+                            $sibToggle.attr('aria-expanded', 'false');
+                            if ($sibIcon.length) $sibIcon.removeClass('rotate-180');
+                        });
+
+                        $submenu.removeClass('hidden');
+                        $submenu.attr('aria-hidden', 'false');
+                        $toggle.attr('aria-expanded', 'true');
+                        if ($icon.length) $icon.addClass('rotate-180');
+                    }
+                });
+
+                $toggle.on('keydown', function (e) {
+                    if (e.key === 'Escape' && $toggle.attr('aria-expanded') === 'true') {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        $toggle.trigger('click');
+                        $toggle.focus();
+                    }
+                });
             });
-        });
+        })();
+
+        // Initialize submenu aria-hidden on mobile page load
+        (function () {
+            const $mobileSubmenus = $mobileMenu.find('.sub-menu');
+            if (!$mobileSubmenus.length) return;
+            $mobileSubmenus.attr('aria-hidden', 'true');
+        })();
     }
 
     function initHeroPageVideo() {

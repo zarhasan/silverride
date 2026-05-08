@@ -18,9 +18,9 @@ get_header(); ?>
                     <!-- Post Header -->
                     <header class="pt-8 md:pt-12 pb-6 md:pb-8">
                         <div>
-                            <div class="flex justify-start items-start">
+                            <div class="flex justify-start items-start flex-col lg:flex-row">
                                 <!-- Social Share -->
-                                <div class="flex items-start justify-start flex-col gap-4 mb-6 w-12 -ml-10">
+                                <div class="flex items-start justify-start lg:flex-col gap-4 mb-6 lg:w-12 lg:-ml-10">
                                     <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>" target="_blank" rel="noopener noreferrer" class="w-8 h-8 flex items-center justify-center text-[#1B1B1B] hover:opacity-70 transition-opacity" aria-label="Share on Facebook">
                                         <svg class="w-auto h-auto max-h-5 max-w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 24" fill="none">
                                             <path d="M8.125 0C6.83207 0 5.59209 0.517206 4.67786 1.43784C3.76362 2.35847 3.25 3.60712 3.25 4.90909V8.72727H0.541667C0.398008 8.72727 0.260233 8.78474 0.158651 8.88703C0.0570684 8.98933 0 9.12806 0 9.27273V13.6364C0 13.781 0.0570684 13.9198 0.158651 14.0221C0.260233 14.1244 0.398008 14.1818 0.541667 14.1818H3.25V23.4545C3.25 23.5992 3.30707 23.7379 3.40865 23.8402C3.51023 23.9425 3.64801 24 3.79167 24H8.125C8.26866 24 8.40644 23.9425 8.50802 23.8402C8.6096 23.7379 8.66667 23.5992 8.66667 23.4545V14.1818H11.375C11.4958 14.1818 11.6132 14.1411 11.7084 14.0662C11.8036 13.9912 11.8712 13.8864 11.9004 13.7684L12.9838 9.40473C13.0037 9.32434 13.0051 9.24044 12.988 9.15939C12.9709 9.07835 12.9357 9.00229 12.8851 8.93699C12.8344 8.87169 12.7697 8.81887 12.6957 8.78253C12.6218 8.74619 12.5406 8.7273 12.4583 8.72727H8.66667V7.09091C8.66667 6.65692 8.83787 6.2407 9.14262 5.93383C9.44736 5.62695 9.86069 5.45455 10.2917 5.45455H12.4583C12.602 5.45455 12.7398 5.39708 12.8414 5.29479C12.9429 5.19249 13 5.05375 13 4.90909V0.545455C13 0.400791 12.9429 0.262052 12.8414 0.15976C12.7398 0.0574673 12.602 0 12.4583 0H8.125Z" fill="currentColor"/>
