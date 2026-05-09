@@ -306,7 +306,7 @@ array(
     'label'        => 'Human Readable Label',
     'name'         => 'snake_case_name',
     'type'         => 'repeater',
-    'layout'       => 'table',
+    'layout'       => 'block',
     'button_label' => 'Add Row',
     'sub_fields'   => array(
         // ... sub-field arrays
@@ -314,7 +314,7 @@ array(
 ),
 ```
 
-- Always use `'layout' => 'table'`.
+- Always use `'layout' => 'block'`.
 - Customize `button_label` when appropriate (e.g., `'Add Grid Item'`, `'Add Point'`, `'Add Link'`).
 - Only add `min`, `max`, `collapsed`, `rows_per_page` when needed.
 - Sub-fields inside repeaters MUST include `'parent_repeater' => 'field_{parent_key}'` when the repeater is nested.

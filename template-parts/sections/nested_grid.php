@@ -27,9 +27,9 @@ $columns = $args['columns'] ?? [];
                     <h3 class="text-xl lg:text-[1.625rem] font-bold text-gray-900 mb-4">
                         <?php echo esc_html($col_heading); ?>
                     </h3>
-                    <p class="text-lg text-gray-700 leading-relaxed mb-8">
-                        <?php echo esc_html($col_description); ?>
-                    </p>
+                    <div class="text-lg text-gray-700 leading-relaxed mb-8">
+                        <?php echo wp_kses_post($col_description); ?>
+                    </div>
 
                     <?php if (!empty($col_items)) : ?>
                     <div class="grid grid-cols-2 gap-6">
@@ -44,7 +44,7 @@ $columns = $args['columns'] ?? [];
                             </div>
                             <?php endif; ?>
                             <?php if ($item_label) : ?>
-                            <p class="text-[1.375rem] text-gray-800 leading-snug max-w-[14rem]">
+                            <p class="text-lg lg:text-[1.375rem] text-gray-800 leading-snug">
                                 <?php echo esc_html($item_label); ?>
                             </p>
                             <?php endif; ?>
