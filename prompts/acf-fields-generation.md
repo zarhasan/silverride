@@ -866,10 +866,11 @@ These fields appear across many layouts and always belong in the Settings accord
 | `container` | Container width (full/small) | `button_group` |
 | `alignment` | Text/heading alignment (left/center/right) | `button_group` |
 | `heading_level` | HTML heading tag (h1/h2/h3) | `button_group` |
-| `margin_bottom` | Section spacing (default/small/none/negative) | `button_group` |
-| `disable_top_margin` | Remove top margin | `true_false` |
-| `disable_bottom_margin` | Remove bottom margin | `true_false` |
-| `disable_margins` | Remove both margins | `true_false` |
+| `margin` | **Standard margin control** — see Standard Margin Control below | `button_group` |
+| `margin_bottom` | Legacy — migrate to `margin` | `button_group` |
+| `disable_top_margin` | Legacy — migrate to `margin` | `true_false` |
+| `disable_bottom_margin` | Legacy — migrate to `margin` | `true_false` |
+| `disable_margins` | Legacy — migrate to `margin` | `true_false` |
 | `background_color` | Section background color | `color_picker` |
 | `media_type` | Image or video | `button_group` |
 | `grid_size` | Number of grid columns | `number` |
@@ -887,6 +888,60 @@ These fields appear across many layouts and always belong in the Settings accord
 | `narrow` | Compact mode toggle | `true_false` |
 | `hide_overline` | Hide overline text | `true_false` |
 | `open_first_item` | Auto-open first FAQ | `true_false` |
+
+### Standard Margin Control — REQUIRED
+
+Every new flexible content layout **must** include a `margin` field inside the Settings accordion. This replaces the legacy ad-hoc margin controls (`margin_bottom`, `disable_top_margin`, `disable_bottom_margin`, `disable_margins`).
+
+```php
+array(
+    'key'           => 'field_{layout_name}_margin',
+    'label'         => 'Margin',
+    'name'          => 'margin',
+    'type'          => 'button_group',
+    'choices'       => array(
+        'default' => 'Default',
+        'none'    => 'None',
+        'small'   => 'Small',
+        'medium'  => 'Medium',
+        'large'   => 'Large',
+        'custom'  => 'Custom',
+    ),
+    'default_value' => 'default',
+    'return_format' => 'value',
+    'layout'        => 'horizontal',
+),
+```
+
+**Rules:**
+1.  **Always inside the Settings accordion** — never placed before it.
+2.  **Name the key `field_{layout_name}_margin`** — e.g., `field_text_margin`, `field_grid_margin`, `field_hero_margin`.
+3.  **Name the field `margin`** (snake_case).
+4.  **Always `'default_value' => 'default'`** — the theme applies its standard spacing.
+5.  **When `custom` is selected**, add a conditional `custom_margin` text field for arbitrary CSS (e.g., `"30px 0 15px 0"`):
+6.  **Never use `margin_bottom`, `disable_top_margin`, `disable_bottom_margin`, or `disable_margins`** in new layouts — they are legacy fields to be migrated away from.
+
+```php
+array(
+    'key'               => 'field_{layout_name}_custom_margin',
+    'label'             => 'Custom Margin',
+    'name'              => 'custom_margin',
+    'type'              => 'text',
+    'instructions'      => 'Enter CSS margin value (e.g., 30px 0 15px 0).',
+    'conditional_logic' => array(
+        array(
+            array(
+                'field'    => 'field_{layout_name}_margin',
+                'operator' => '==',
+                'value'    => 'custom',
+            ),
+        ),
+    ),
+),
+```
+
+**Placement within the accordion:**
+Place `margin` as the first field inside the Settings accordion, immediately after the opening accordion entry. Place `custom_margin` directly after `margin`.
 
 ### Fields That Stay OUTSIDE the Accordion
 
