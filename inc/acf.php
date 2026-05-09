@@ -3433,7 +3433,7 @@ add_action( 'acf/include_fields', function() {
 						'label'        => 'Columns',
 						'name'         => 'columns',
 						'type'         => 'repeater',
-						'layout'       => 'table',
+						'layout'       => 'block',
 						'button_label' => 'Add Column',
 						'sub_fields'   => array(
 							array(
@@ -3458,7 +3458,7 @@ add_action( 'acf/include_fields', function() {
 								'label'           => 'Items',
 								'name'            => 'items',
 								'type'            => 'repeater',
-								'layout'          => 'table',
+								'layout'          => 'block',
 								'button_label'    => 'Add Item',
 								'parent_repeater' => 'field_nested_grid_columns',
 								'sub_fields'      => array(
