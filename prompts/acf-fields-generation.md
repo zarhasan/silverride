@@ -635,7 +635,308 @@ array(
 
 ---
 
-## 9. ACF API Reference
+## 9. Settings Accordion — Non-Content Field Grouping
+
+Every flexible content layout **must** wrap all non-content (configuration/style/behavior) fields inside an ACF Accordion labeled "Settings". This keeps the editor UI clean: content authors see content fields first, and rarely-touched configuration options are collapsed by default.
+
+### Content vs Settings — Field Classification
+
+**Content fields** come first, outside the accordion. These are the fields an editor changes when authoring a page:
+
+| Category | Field Type(s) | Examples |
+|---|---|---|
+| Text fields (plain or rich) | `text`, `textarea`, `wysiwyg` | `title`, `subtitle`, `description`, `quote`, `overline`, `tag`, `footnotes`, `footer_description`, `content`, `body` |
+| Image/media | `image`, `file`, `gallery` | `image`, `video`, `thumbnail`, `photo`, `images`, `logos` |
+| Links/CTAs | `link`, repeater of links | `link`, `links`, `cta`, `ctas` |
+| Content repeaters | `repeater` containing actual content | `items`, `features`, `plans`, `members`, `services`, `faqs`, `locations`, `stats`, `logos`, `videos` |
+| Content groups | `group` containing content | `bullet_list`, `image_group` |
+| Form/media embeds | `text`/`textarea`/`url` for shortcodes/embeds | `contact_form`, `map_embed`, `shortcode`, `map_link` |
+| Email addresses | `email` | `email` |
+| Values/labels/runtime data | `text`, `number` containing authored data | `score`, `value`, `label`, `company`, `position`, `name`, `bio`, `address`, `linkedin`, `timeline`, `industry`, `location`, `compliance` |
+| URL fields (authored) | `url` | `video_url` |
+| Taxonomy selectors | `taxonomy` | `category` (when selecting content to display) |
+| User/author selectors | `user` | `author` (when selecting displayed author) |
+
+**Settings fields** go inside the "Settings" accordion. These control how the layout renders — editors rarely change these after initial setup:
+
+| Field Type | Examples | Purpose |
+|---|---|---|
+| `button_group` | `type`, `container`, `alignment`, `margin_bottom`, `heading_level`, `media_type`, `heading_layout`, `layout`, `divider_style`, `media_position` | Layout variant, container width, alignment, spacing, heading tag, media type |
+| `color_picker` | `background_color` | Section background color |
+| `true_false` | `disable_top_margin`, `disable_bottom_margin`, `disable_margins`, `overlay`, `divider_top`, `divider_bottom`, `narrow`, `hide_overline` | Toggle behaviors |
+| `number` (config) | `grid_size`, `columns`, `post_count` | Grid column count, post limit (NOT authored numeric content like `score`) |
+| `icon_picker` | `icon` (when used for decorative UI, not content) | Decorative icon selection |
+
+### Accordion Structure
+
+```php
+// ─── Content fields first ─────────────────────────────────────────────────
+
+array(
+    'key'   => 'field_{layout_name}_title',
+    'label' => 'Title',
+    'name'  => 'title',
+    'type'  => 'text',
+),
+array(
+    'key'     => 'field_{layout_name}_description',
+    'label'   => 'Description',
+    'name'    => 'description',
+    'type'    => 'wysiwyg',
+    'tabs'    => 'all',
+    'toolbar' => 'full',
+    'media_upload' => 1,
+),
+// ... other content fields (image, link, repeaters, etc.) ...
+
+// ─── Settings accordion ───────────────────────────────────────────────────
+
+array(
+    'key'          => 'field_{layout_name}_settings',
+    'label'        => 'Settings',
+    'name'         => '',
+    'type'         => 'accordion',
+    'open'         => 0,
+    'multi_expand' => 0,
+),
+array(
+    'key'           => 'field_{layout_name}_type',
+    'label'         => 'Type',
+    'name'          => 'type',
+    'type'          => 'button_group',
+    'choices'       => array(
+        'default' => 'Default',
+        'alt'     => 'Alt',
+    ),
+    'default_value' => 'default',
+    'return_format' => 'value',
+    'layout'        => 'horizontal',
+),
+array(
+    'key'           => 'field_{layout_name}_container',
+    'label'         => 'Container',
+    'name'          => 'container',
+    'type'          => 'button_group',
+    'choices'       => array(
+        'full'  => 'Full Width',
+        'small' => 'Small',
+    ),
+    'default_value' => 'small',
+    'return_format' => 'value',
+    'layout'        => 'horizontal',
+),
+array(
+    'key'           => 'field_{layout_name}_background_color',
+    'label'         => 'Background Color',
+    'name'          => 'background_color',
+    'type'          => 'color_picker',
+),
+// ... other settings fields ...
+
+// ─── Close accordion ──────────────────────────────────────────────────────
+
+array(
+    'key'      => 'field_{layout_name}_settings_end',
+    'label'    => 'Settings',
+    'name'     => '',
+    'type'     => 'accordion',
+    'endpoint' => 1,
+),
+```
+
+### Accordion Field Rules
+
+1.  **`name` is always empty string** for both the open and close accordion fields.
+2.  **`open` is always `0`** — accordions start collapsed so content fields are immediately visible.
+3.  **`multi_expand` is always `0`** — only one accordion open at a time.
+4.  **The close accordion requires `'endpoint' => 1`** and nothing else meaningful besides `key`, `label`, `name`, and `type`.
+5.  **The accordion pair must use the same `label`** ("Settings") for both open and close.
+6.  **Key naming**: Use `field_{layout_name}_settings` for the open accordion and `field_{layout_name}_settings_end` for the close accordion.
+7.  **Settings fields go between** the open and close accordion entries in the `sub_fields` array.
+8.  **If a layout has no settings fields**, do **not** add an empty accordion. Omit the accordion entirely.
+
+### Complete Example: Layout with Settings Accordion
+
+```php
+'layout_text' => array(
+    'key'        => 'layout_text',
+    'name'       => 'text',
+    'label'      => 'Text',
+    'display'    => 'block',
+    'sub_fields' => array(
+        // Content fields
+        array(
+            'key'   => 'field_text_title',
+            'label' => 'Title',
+            'name'  => 'title',
+            'type'  => 'text',
+        ),
+        array(
+            'key'     => 'field_text_description',
+            'label'   => 'Description',
+            'name'    => 'description',
+            'type'    => 'wysiwyg',
+            'tabs'    => 'all',
+            'toolbar' => 'full',
+            'media_upload' => 1,
+        ),
+        array(
+            'key'           => 'field_text_link',
+            'label'         => 'Link',
+            'name'          => 'link',
+            'type'          => 'link',
+            'return_format' => 'array',
+        ),
+        // Settings accordion
+        array(
+            'key'          => 'field_text_settings',
+            'label'        => 'Settings',
+            'name'         => '',
+            'type'         => 'accordion',
+            'open'         => 0,
+            'multi_expand' => 0,
+        ),
+        array(
+            'key'           => 'field_text_type',
+            'label'         => 'Type',
+            'name'          => 'type',
+            'type'          => 'button_group',
+            'choices'       => array(
+                'default' => 'Default',
+                'alt'     => 'Alt',
+                'heavy'   => 'Heavy',
+            ),
+            'default_value' => 'default',
+            'return_format' => 'value',
+            'layout'        => 'horizontal',
+        ),
+        array(
+            'key'           => 'field_text_container',
+            'label'         => 'Container',
+            'name'          => 'container',
+            'type'          => 'button_group',
+            'choices'       => array(
+                'full'  => 'Full Width',
+                'small' => 'Small',
+            ),
+            'default_value' => 'small',
+            'return_format' => 'value',
+            'layout'        => 'horizontal',
+        ),
+        array(
+            'key'           => 'field_text_disable_top_margin',
+            'label'         => 'Disable Top Margin',
+            'name'          => 'disable_top_margin',
+            'type'          => 'true_false',
+            'default_value' => 0,
+        ),
+        array(
+            'key'           => 'field_text_disable_bottom_margin',
+            'label'         => 'Disable Bottom Margin',
+            'name'          => 'disable_bottom_margin',
+            'type'          => 'true_false',
+            'default_value' => 0,
+        ),
+        array(
+            'key'           => 'field_text_background_color',
+            'label'         => 'Background Color',
+            'name'          => 'background_color',
+            'type'          => 'color_picker',
+        ),
+        array(
+            'key'      => 'field_text_settings_end',
+            'label'    => 'Settings',
+            'name'     => '',
+            'type'     => 'accordion',
+            'endpoint' => 1,
+        ),
+    ),
+    'min' => '',
+    'max' => '',
+),
+```
+
+### Common Settings Fields Reference
+
+These fields appear across many layouts and always belong in the Settings accordion:
+
+| Field | Purpose | Type |
+|---|---|---|
+| `type` | Layout variant selector | `button_group` |
+| `container` | Container width (full/small) | `button_group` |
+| `alignment` | Text/heading alignment (left/center/right) | `button_group` |
+| `heading_level` | HTML heading tag (h1/h2/h3) | `button_group` |
+| `margin_bottom` | Section spacing (default/small/none/negative) | `button_group` |
+| `disable_top_margin` | Remove top margin | `true_false` |
+| `disable_bottom_margin` | Remove bottom margin | `true_false` |
+| `disable_margins` | Remove both margins | `true_false` |
+| `background_color` | Section background color | `color_picker` |
+| `media_type` | Image or video | `button_group` |
+| `grid_size` | Number of grid columns | `number` |
+| `columns` | Column count for logos/gallery | `number` |
+| `post_count` | Number of posts to display | `number` |
+| `overlay` | Enable/disable overlay | `true_false` |
+| `divider_top` | Show top divider | `true_false` |
+| `divider_bottom` | Show bottom divider | `true_false` |
+| `divider_style` | Divider visual style | `button_group` |
+| `heading_layout` | CTA heading layout variant | `button_group` |
+| `media_position` | Image left or right | `button_group` |
+| `bullets` | Checkmark vs plain bullets | `button_group` |
+| `columns_order` | Column ordering | `button_group` |
+| `list_style` | List display style | `button_group` |
+| `narrow` | Compact mode toggle | `true_false` |
+| `hide_overline` | Hide overline text | `true_false` |
+| `open_first_item` | Auto-open first FAQ | `true_false` |
+
+### Fields That Stay OUTSIDE the Accordion
+
+These are content fields and must remain before the accordion:
+
+-   `title`, `subtitle`, `overline`, `tag` — text content
+-   `description`, `content`, `body`, `footnotes`, `footer_description` — rich text content
+-   `image`, `photo`, `thumbnail`, `images`, `logos`, `video` — media assets
+-   `link`, `links`, `cta`, `ctas`, `service_links` — link objects
+-   `quote`, `company`, `position`, `author`, `name`, `bio` — authored text
+-   `challenge`, `approach_text`, `implementation` — long-form authored text
+-   `industry`, `location`, `compliance`, `timeline`, `key_result` — authored data fields
+-   `features`, `items`, `plans`, `members`, `services`, `stats`, `locations`, `faqs`, `videos`, `results_items` — content repeaters
+-   `contact_form`, `map_embed`, `map_link`, `shortcode`, `transcript` — embeds/shortcodes
+-   `email` — authored email address
+-   `score`, `value`, `label` — authored numeric/text data (not config)
+-   `category`, `author` — content selectors (taxonomy/user)
+-   `linkedin`, `address` — authored profile data
+-   `icon` (when it's a content metafield like a feature icon) — media
+-   `bullet_list`, `image_group` — content groups
+
+### Edge Cases — Judgment Calls
+
+Some fields require judgment. Use this decision framework:
+
+> **"Would this field contain different values on different pages of the same site?"**
+> -   YES → Content field (outside accordion)
+> -   NO → Settings field (inside accordion)
+
+Examples:
+
+-   `bullets` (checkmark vs plain) — chose once per site section, rarely changes → **Settings**
+-   `icon` in a repeater item — different per item, is content → **Content**
+-   `icon` as a section-level decorative choice — chosen once, rarely changes → **Settings**
+-   `score` in compliance section — different per client/page → **Content**
+-   `post_count` — site-wide display count, rarely changes → **Settings**
+-   `columns` for logo grid — display setting → **Settings**
+-   `category` for blog listing — different per page → **Content**
+
+### Layouts That Only Have Content Fields
+
+If a layout has no settings fields at all (only content), skip the accordion entirely. Example layouts that typically need no accordion:
+
+-   `space` (no fields at all)
+-   `links` (only a `links` repeater)
+-   `form` (only `shortcode` and `email`)
+
+---
+
+## 10. ACF API Reference
 
 ### Core Functions Used in This Project
 
@@ -686,7 +987,7 @@ $value = get_field( 'header_logo', 'option' );
 
 ---
 
-## 10. Complete Example: Adding a New Flexible Content Layout
+## 11. Complete Example: Adding a New Flexible Content Layout
 
 To add a new "Pricing" layout to the existing flexible content field group:
 
@@ -787,7 +1088,7 @@ To add a new "Pricing" layout to the existing flexible content field group:
 
 ---
 
-## 11. Checklist Before Adding Fields
+## 12. Checklist Before Adding Fields
 
 - [ ] Field group key starts with `group_` and uses descriptive snake_case (no hex hashes)
 - [ ] Field keys start with `field_` and follow `field_{context}_{name}` pattern (no hex hashes)
@@ -802,4 +1103,11 @@ To add a new "Pricing" layout to the existing flexible content field group:
 - [ ] No redundant default-value properties that ACF fills automatically
 - [ ] Conditional logic references sibling **keys** (not names)
 - [ ] Options page fields use proper tab grouping with `'placement' => 'left'`
+- [ ] All non-content fields are grouped inside a "Settings" accordion (collapsed by default, `'open' => 0`)
+- [ ] Content fields (title, description, image, link, repeaters) appear before the accordion
+- [ ] Settings fields (type, container, alignment, background_color, grid_size, margins) appear inside the accordion
+- [ ] Accordion uses empty `name` (`''`) and `'type' => 'accordion'`
+- [ ] Close accordion has `'endpoint' => 1` with a matching `label`
+- [ ] Accordion key naming follows `field_{layout_name}_settings` / `field_{layout_name}_settings_end`
+- [ ] If a layout has no settings fields, no empty accordion is added
 - [ ] New field keys do not collide with existing keys in the file
