@@ -50,7 +50,7 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
                 <?php endif; ?>
 
                 <?php if (!empty($features)) : ?>
-                    <ul class="space-y-6 mt-8">
+                    <ul class="space-y-6 mt-8 mb-8">
                         <?php foreach ($features as $feature) : ?>
                             <li class="flex items-start gap-3">
                                 <svg class="w-6 h-6 text-[#F8952D] flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 22 21" fill="none">
@@ -63,9 +63,9 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
                 <?php endif; ?>
 
                 <?php if (!empty($logos)) : ?>
-                    <div class="mt-auto flex justify-between flex-wrap gap-6 items-center">
+                    <div class="mt-auto grid grid-cols-2 lg:grid-cols-3 gap-16 items-center">
                         <?php foreach ($logos as $logo) : ?>
-                            <img src="<?php echo esc_url($logo['url'] ?? ''); ?>" alt="<?php echo esc_attr($logo['alt'] ?? 'Partner logo'); ?>" class="max-w-[10rem] h-auto brightness-0 invert" loading="lazy">
+                            <img src="<?php echo esc_url($logo['url'] ?? ''); ?>" alt="<?php echo esc_attr($logo['alt'] ?? 'Partner logo'); ?>" class="w-full h-auto brightness-0 invert" loading="lazy">
                         <?php endforeach; ?>
                     </div>
                 <?php endif; ?>
