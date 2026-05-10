@@ -1285,11 +1285,11 @@ body .wpforms-form .wpforms-field-label {
 
 /* Inputs */
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input,
-.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-input {
+.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea {
     width: 100%;
-    background-color: #FFFFFF !important;
-    border: 1px solid #D1D5DB !important;
-    border-radius: 0.375rem !important;
+    background-color: #F7F7F7 !important;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 0 !important;
     padding: 0.875rem 1rem !important;
     font-size: 1rem !important;
     color: #1B1B1B !important;
@@ -1301,18 +1301,18 @@ body .wpforms-form .wpforms-field-label {
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
-.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-input::placeholder {
+.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
     color: #9CA3AF !important;
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input:focus,
-.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-input:focus {
+.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea:focus {
     border-color: #1D4ED8 !important;
     box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15) !important;
 }
 
 /* Textarea height override */
-.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-input {
+.contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea {
     min-height: 7rem !important;
     resize: vertical !important;
 }
@@ -1321,9 +1321,9 @@ body .wpforms-form .wpforms-field-label {
 .contact-forminator .forminator-ui.forminator-custom-form select.forminator-select--field,
 .contact-forminator .forminator-ui.forminator-custom-form select.forminator-select2 {
     width: 100%;
-    background-color: #FFFFFF !important;
-    border: 1px solid #D1D5DB !important;
-    border-radius: 0.375rem !important;
+    background-color: #F7F7F7 !important;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: 0 !important;
     padding: 0.875rem 1rem !important;
     padding-right: 2.5rem !important;
     font-size: 1rem !important;
@@ -1348,9 +1348,9 @@ body .wpforms-form .wpforms-field-label {
 
 /* Select2 overrides */
 .contact-forminator .forminator-ui.forminator-custom-form .select2-container--default .select2-selection--single {
-    background-color: #FFFFFF !important;
-    border: 1px solid #D1D5DB !important;
-    border-radius: 0.375rem !important;
+    background-color: #F7F7F7 !important;
+    border: 1px solid #E5E5E5 !important;
+    border-radius: none !important;
     min-height: auto !important;
     height: auto !important;
     padding: 0.875rem 1rem !important;
@@ -1391,7 +1391,6 @@ body .wpforms-form .wpforms-field-label {
     border-color: #1D4ED8 !important;
     box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.15) !important;
 }
-
 /* Submit button */
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-button-submit {
     background-color: #1E3A8A !important;
