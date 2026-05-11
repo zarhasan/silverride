@@ -48,7 +48,7 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 ?>
 
 <section class="bg-[#98D1E6] py-16 md:py-24">
-	<div class="mx-auto max-w-7xl px-6">
+	<div class="mx-auto max-w-5xl px-6">
 		<h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
 			<?php echo esc_html( $title ); ?>
 		</h2>
@@ -63,7 +63,7 @@ $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 		<div
 			id="<?php echo esc_attr( $carousel_id ); ?>"
 			data-carousel
-			class="mt-5 md:mt-3"
+			class="mt-6 md:mt-12"
 		>
 			<div class="flex items-center justify-between gap-6">
 				<!-- Previous Arrow -->

@@ -8,7 +8,7 @@ $subtitle = $args['description'] ?? '';
 $features = $args['items'] ?? [];
 ?>
 
-<section class="bg-white py-16 md:py-24">
+<section class="bg-white my-16 md:my-24">
     <div class="mx-auto max-w-7xl px-6">
         <?php if ($title) : ?>
         <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">

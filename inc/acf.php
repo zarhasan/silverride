@@ -1406,6 +1406,13 @@ add_action( 'acf/include_fields', function() {
 							'instructions' => 'Leave empty to use the global URL.',
 						),
 						array(
+							'key'   => 'field_contact_social_instagram',
+							'label' => 'Instagram URL',
+							'name'  => 'social_instagram',
+							'type'  => 'url',
+							'instructions' => 'Leave empty to use the global URL.',
+						),
+						array(
 							'key'      => 'field_contact_settings_end',
 							'label'    => 'Settings',
 							'name'     => '',

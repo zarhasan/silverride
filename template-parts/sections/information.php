@@ -18,7 +18,7 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
 
 <section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-center">
             <?php if (!empty($image) && !empty($image['url'])) : ?>
             <div class="flex justify-center <?php echo esc_attr($image_order); ?>">
                 <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? ''); ?>" class="w-full max-w-md h-auto object-contain">
@@ -44,7 +44,7 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
                     </div>
                 <?php endif; ?>
 
-                <div class="flex justify-start items-center gap-4">
+                <div class="flex flex-col lg:flex-row justify-center lg:justify-start items-stretch lg:items-center gap-4">
                     <?php if (!empty($link['title']) && !empty($link['url'])) : ?>
                         <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
                             <?php echo esc_html($link['title'] ?? ''); ?>

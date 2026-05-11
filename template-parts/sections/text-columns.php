@@ -33,7 +33,7 @@ if ($disable_top_margin && $disable_bottom_margin) {
         <?php endif; ?>
 
         <?php if ($description) : ?>
-        <div class="prose prose-lg max-w-none text-[#1B1B1B] leading-relaxed columns-1 md:columns-2 gap-10 md:gap-16">
+        <div class="prose text-lg max-w-none text-[#1B1B1B] leading-relaxed columns-1 md:columns-2 gap-10 md:gap-16">
             <?php echo wp_kses_post($description); ?>
         </div>
         <?php endif; ?>

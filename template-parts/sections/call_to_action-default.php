@@ -28,7 +28,7 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
         <?php endif; ?>
 
         <?php if (!empty($link_url) && !empty($link_title)) : ?>
-            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>" class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors mt-12 duration-200">
+            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>" class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors mt-8 lg:mt-12 duration-200">
                 <?php echo esc_html($link_title); ?>
             </a>
         <?php endif; ?>

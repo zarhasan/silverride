@@ -37,7 +37,7 @@ $cta = $args['cta'] ?? [];
                 <h3 class="text-lg font-bold text-black md:text-[1.375rem]">
                     <button
                         type="button"
-                        class="font-bold faq-toggle text-base lg:text-[1.375rem] flex w-full items-center justify-between py-6 text-left transition-colors duration-200 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        class="font-bold faq-toggle text-lg lg:text-[1.375rem] flex w-full items-center justify-between py-6 text-left transition-colors duration-200 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                         aria-expanded="false"
                         aria-controls="<?php echo esc_attr($faq_id); ?>"
                     >
