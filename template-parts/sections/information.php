@@ -11,12 +11,18 @@ $link = $args['link'] ?? [];
 $secondary_link = $args['secondary_link'] ?? [];
 $image = $args['image'] ?? [];
 $image_position = $args['image_position'] ?? 'left';
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 $is_image_left = $image_position === 'left';
 $text_order = $is_image_left ? 'order-2' : 'order-1';
 $image_order = $is_image_left ? 'order-1' : 'order-2';
 ?>
 
-<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 lg:my-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-center">
             <?php if (!empty($image) && !empty($image['url'])) : ?>

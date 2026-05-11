@@ -10,7 +10,7 @@ $hide_on = $args['hide_on'] ?? [];
 
 $hide_classes = [];
 if (in_array('mobile', $hide_on)) {
-    $hide_classes[] = 'hidden sm:hidden';
+    $hide_classes[] = 'hidden !sm:block';
 }
 if (in_array('tablet', $hide_on)) {
     $hide_classes[] = 'md:hidden';

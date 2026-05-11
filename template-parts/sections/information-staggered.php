@@ -11,12 +11,18 @@ $items            = $args['items'] ?? [];
 $link             = $args['link'] ?? [];
 $image            = $args['image'] ?? [];
 $image_position   = $args['image_position'] ?? 'right';
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 $is_image_left    = $image_position === 'left';
 $template_part_name = explode('.', basename(__FILE__))[0];
 
 ?>
 <section 
-	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'my-16 md:my-24' ?>"
+	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'my-16 md:my-24'; ?> <?php echo esc_attr($hide_class); ?>"
 	<?php if (!empty($background_color)) : ?>
 		style="background-color: <?php echo esc_attr( $background_color ); ?>;"
 	<?php endif; ?>

@@ -9,9 +9,15 @@ $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $items = $args['items'] ?? [];
 $image = $args['image'] ?? [];
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 ?>
 
-<section class="bg-[#98D1E6] py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-[#98D1E6] py-16 lg:py-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <!-- Left Illustration -->
