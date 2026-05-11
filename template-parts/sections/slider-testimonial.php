@@ -14,6 +14,12 @@
 $title        = $args['title'] ?? '';
 $label        = $args['subtitle'] ?? '';
 $testimonials = $args['slides'] ?? [];
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 
 if ( empty( $testimonials ) ) {
 	$testimonials = [
@@ -47,7 +53,7 @@ if ( empty( $testimonials ) ) {
 $carousel_id = 'driver-testimonial-carousel-' . uniqid();
 ?>
 
-<section class="bg-[#98D1E6] py-16 md:py-24">
+<section class="bg-[#98D1E6] py-16 md:py-24 <?php echo esc_attr($hide_class); ?>">
 	<div class="mx-auto max-w-5xl px-6">
 		<?php if(!empty($title)): ?>
 			<h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">

@@ -7,11 +7,17 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 $title = $args['title'] ?? '';
 $subtitle = $args['subtitle'] ?? '';
 $slides = $args['slides'] ?? [];
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 
 $carousel_id = 'slider-basic-' . uniqid();
 ?>
 
-<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white py-16 lg:py-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <?php if ($title || $subtitle) : ?>
         <div class="text-center mb-12 lg:mb-16">
