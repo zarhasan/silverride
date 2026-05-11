@@ -7,6 +7,12 @@ $description = $args['description'] ?? '';
 $post_count = intval($args['post_count'] ?? 3);
 $category = $args['category'] ?? 0;
 $link = $args['link'] ?? [];
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 
 $query_args = array(
     'post_type'      => 'post',
@@ -21,7 +27,7 @@ if (!empty($category)) {
 $posts = new WP_Query($query_args);
 ?>
 
-<section class="bg-[#F6F9FF] py-16 md:py-24">
+<section class="bg-[#F6F9FF] py-16 md:py-24 <?php echo esc_attr($hide_class); ?>">
     <div class="container">
         <?php if ($title) : ?>
             <h2 class="text-center text-3xl font-bold text-black lg:text-5xl">

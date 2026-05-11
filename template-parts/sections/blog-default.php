@@ -8,6 +8,12 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 $post_count = $args['post_count'] ?? 12;
 $category = $args['category'] ?? 0;
 $custom_query = $args['query'] ?? null;
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 
 $search = $args['blog_search'] ?? '';
 $category_slug = $args['blog_category_slug'] ?? '';
@@ -44,7 +50,7 @@ $total_posts = $query->found_posts;
 $show_view_more = $total_posts > $post_count;
 ?>
 
-<section class="bg-white my-12 lg:my-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-12 lg:my-20 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             <?php if ($query->have_posts()) : ?>

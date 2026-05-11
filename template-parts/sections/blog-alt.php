@@ -9,6 +9,12 @@ $title = $args['title'] ?? 'The Latest From SilverRide';
 $post_count = $args['post_count'] ?? 3;
 $category = $args['category'] ?? 0;
 $custom_query = $args['query'] ?? null;
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
 
 if ($custom_query) {
     $query = $custom_query;
@@ -27,7 +33,7 @@ if ($custom_query) {
 }
 ?>
 
-<section class="bg-white py-16 lg:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white py-16 lg:py-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 text-center mb-12 lg:mb-16">
             <?php echo esc_html($title); ?>
