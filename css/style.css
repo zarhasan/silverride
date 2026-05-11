@@ -266,17 +266,19 @@ kbd svg.icon-tabler {
 
 /* Sub-menu styling */
 .primary-menu .sub-menu {
+    margin: 0;
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    min-width: 220px;
+    left: 50%;
+    width: 120%;
     background: #FFFFFF;
     padding: 8px 0;
     z-index: 50;
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.35);
     list-style: none;
-    margin: 0;
+    margin-left: -60%;
+    border: 1px solid #F8F4F4;
 }
 
 .primary-menu > li:hover > .sub-menu,
