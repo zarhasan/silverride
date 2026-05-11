@@ -6,9 +6,22 @@ if (!defined('ABSPATH')) {
 $template_part_name = explode('.', basename(__FILE__))[0];
 $title = $args['title'] ?? '';
 $columns = $args['columns'] ?? [];
+$hide_on = $args['hide_on'] ?? [];
+
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) {
+    $hide_classes[] = 'hidden sm:hidden';
+}
+if (in_array('tablet', $hide_on)) {
+    $hide_classes[] = 'md:hidden';
+}
+if (in_array('desktop', $hide_on)) {
+    $hide_classes[] = 'lg:hidden';
+}
+$hide_class = implode(' ', $hide_classes);
 ?>
 
-<section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 lg:my-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <?php if ($title) : ?>
         <h2 class="text-3xl lg:text-[2.875rem] font-bold text-gray-900 text-center mb-12 lg:mb-16 max-w-3xl mx-auto leading-tight">
