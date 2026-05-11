@@ -32,10 +32,6 @@ $image = $args['image'] ?? [];
                     <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
                         <?php echo wp_kses_post($description); ?>
                     </div>
-                <?php else : ?>
-                    <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
-                        SilverRide moves older adults and people with disabilities to the places that matter. Dialysis and the nail salon. The grocery store and grandchildren's birthdays. More than one million rides a year, across 35+ major metro areas in 15 states. Because independence is not a luxury. It is a right.
-                    </div>
                 <?php endif; ?>
 
                 <div class="flex flex-wrap gap-4">
@@ -45,16 +41,9 @@ $image = $args['image'] ?? [];
                             if (empty($link) || empty($link['url'])) continue;
                         ?>
                             <a href="<?php echo esc_url($link['url']); ?>" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
-                                <?php echo esc_html($link['title'] ?? 'Button'); ?>
+                                <?php echo esc_html($link['title'] ?? ''); ?>
                             </a>
                         <?php endforeach; ?>
-                    <?php else : ?>
-                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
-                            For Drivers
-                        </a>
-                        <a href="#" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
-                            For Riders
-                        </a>
                     <?php endif; ?>
                 </div>
             </div>
@@ -63,8 +52,6 @@ $image = $args['image'] ?? [];
             <div class="relative flex justify-center lg:justify-end lg:items-end">
                 <?php if (!empty($image) && !empty($image['url'])) : ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt'] ?? 'Accessible transportation illustration'); ?>" class="w-full max-w-lg lg:max-w-xl h-auto object-contain">
-                <?php else : ?>
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/media/hero-home-pattern.png'); ?>" alt="" class="w-full max-w-lg lg:max-w-xl h-auto object-contain">
                 <?php endif; ?>
             </div>
         </div>

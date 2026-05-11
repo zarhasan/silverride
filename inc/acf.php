@@ -1060,6 +1060,13 @@ add_action( 'acf/include_fields', function() {
 							'allow_in_bindings' => 0,
 						),
 						array(
+							'key' => 'field_cta_secondary_link',
+							'label' => 'Secondary Link',
+							'name' => 'secondary_link',
+							'type' => 'link',
+							'return_format' => 'array',
+						),
+						array(
 							'key' => 'field_68cfd07e62bad',
 							'label' => 'Media Type',
 							'name' => 'media_type',
