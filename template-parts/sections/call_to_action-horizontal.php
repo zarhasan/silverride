@@ -35,7 +35,7 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
 
             <!-- CTA Button -->
             <?php if (!empty($link_url)) : ?>
-                <div class="flex-shrink-0">
+                <div class="grow flex justify-start lg:justify-center items-center">
                     <a href="<?php echo esc_url($link_url); ?>" class="inline-flex items-center justify-center px-8 py-3 md:px-10 md:py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors duration-200">
                         <?php echo esc_html($link_title); ?>
                     </a>
