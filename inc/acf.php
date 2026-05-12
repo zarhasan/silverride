@@ -3420,6 +3420,21 @@ add_action( 'acf/include_fields', function() {
 				'display' => 'block',
 				'sub_fields' => array(
 					array(
+						'key'   => 'field_links_title',
+						'label' => 'Title',
+						'name'  => 'title',
+						'type'  => 'text',
+					),
+					array(
+						'key'     => 'field_links_description',
+						'label'   => 'Description',
+						'name'    => 'description',
+						'type'    => 'wysiwyg',
+						'tabs'    => 'all',
+						'toolbar' => 'full',
+						'media_upload' => 1,
+					),
+					array(
 						'key' => 'field_links_links',
 						'label' => 'Links',
 						'name' => 'links',
