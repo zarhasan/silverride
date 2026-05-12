@@ -6,47 +6,47 @@ if (!defined('ABSPATH')) {
 
 $template_part_name = explode('.', basename(__FILE__))[0];
 
-?>
+$title       = $args['title'] ?? '';
+$description = $args['description'] ?? '';
+$links       = $args['links'] ?? [];
 
-<?php 
-    $links = $args['links'] ?? [];
-    $grid_size = intval($args['grid_size'] ?? 4);
-    
-    $item_count = count($links);
-    
-    $rows = ceil($item_count / $grid_size);
-    $last_row_items = $item_count % $grid_size ?: $grid_size;
-    $has_partial_last_row = ($item_count % $grid_size !== 0);
-    
-    $total_cols = $has_partial_last_row ? ($grid_size * $last_row_items) : $grid_size;
 ?>
 
 <?php if (!empty($links)) : ?>
-    <div class="container -my-8 lg:-my-12" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-        <div class="py-6 lg:py-8 rounded-lg" style="background-color: var(--theme-primary);">
-            <div class="flex flex-col lg:grid gap-4 lg:gap-0 lg:divide-x lg:divide-white/30" style="grid-template-columns: repeat(<?php echo $total_cols; ?>, minmax(0, 1fr));">
-                <?php foreach ($links as $index => $link_item) : 
+    <section
+        id="<?php echo !empty($args['id']) ? $args['id'] : null; ?>"
+        class="relative links"
+        data-section-id="<?php echo esc_attr($template_part_name); ?>">
+        <div class="container text-[#F6F9FF] py-16 md:py-24">
+
+            <?php if (!empty($title)) : ?>
+                <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-8">
+                    <?php echo wp_kses_post($title); ?>
+                </h2>
+            <?php endif; ?>
+
+            <?php if (!empty($description)) : ?>
+                <div class="text-lg sm:text-[1.25rem] text-gray-600 mb-8">
+                    <?php echo wp_kses_post($description); ?>
+                </div>
+            <?php endif; ?>
+
+            <div class="flex flex-wrap gap-4">
+                <?php foreach ($links as $link_item) :
                     $link_data = is_array($link_item) && isset($link_item['link']) ? $link_item['link'] : $link_item;
                     $link_title = is_array($link_data) ? ($link_data['title'] ?? '') : $link_data;
-                    $link_url = is_array($link_data) ? ($link_data['url'] ?? '#') : '#';
-                    
-                    $current_row = floor($index / $grid_size) + 1;
-                    $is_last_row = ($current_row == $rows);
-                    
-                    if ($is_last_row && $has_partial_last_row) {
-                        $span = $total_cols / $last_row_items;
-                    } else {
-                        $span = $total_cols / $grid_size;
-                    }
+                    $link_url   = is_array($link_data) ? ($link_data['url'] ?? '#') : '#';
+                    $link_target = is_array($link_data) ? ($link_data['target'] ?? '') : '';
                 ?>
-                <a href="<?php echo esc_url($link_url); ?>" class="flex items-center justify-center text-white text-base lg:text-lg underline underline-offset-4 hover:no-underline transition-all duration-200 py-2 lg:py-0 px-4 text-center" style="grid-column: span <?php echo $span; ?>;">
-                    <?php echo esc_html($link_title); ?>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </a>
+                    <a
+                        href="<?php echo esc_url($link_url); ?>"
+                        <?php if (!empty($link_target)) : ?>target="<?php echo esc_attr($link_target); ?>"<?php endif; ?>
+                        class="links__pill inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200"
+                    >
+                        <?php echo esc_html($link_title); ?>
+                    </a>
                 <?php endforeach; ?>
             </div>
         </div>
-    </div>
+    </section>
 <?php endif; ?>

@@ -45,13 +45,13 @@ if ($custom_margin && $margin === 'custom') {
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
                 <div>
                     <?php if(!empty($args['title'])): ?>
-                        <h2 class="text-3xl md:text-4xl font-semibold text-center text-white">
+                        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-semibold text-center text-white">
                             <?php echo wp_kses_post($args['title']); ?>
                         </h2>
                     <?php endif; ?>
 
                     <?php if(!empty($args['description'])): ?>
-                        <div class="text-white text-lg mt-6 leading-relaxed text-center max-w-2xl mx-auto">
+                        <div class="text-white text-lg lg:text-[1.25rem] mt-6 leading-relaxed text-center max-w-2xl mx-auto">
                             <?php echo wp_kses_post($args['description']); ?>
                         </div>
                     <?php endif; ?>
@@ -71,18 +71,20 @@ if ($custom_margin && $margin === 'custom') {
                                 <div class="flex flex-col items-center text-center bg-white p-8 rounded-lg">
                                     <?php if(!empty($item['image'])): ?>
                                         <img 
-                                            class="w-20 h-auto mb-6" 
+                                            class="w-28 h-auto mb-6" 
                                             src="<?php echo esc_url($item['image']['url']); ?>" 
                                             alt="<?php echo esc_attr($item['image']['alt']); ?>" 
                                         />
                                     <?php endif; ?>
 
                                     <?php if(!empty($item['title'])): ?>
-                                        <h3 class="text-2xl font-semibold mb-3 text-primary"><?php echo esc_html($item['title']); ?></h3>
+                                        <h3 class="text-2xl font-semibold mb-3 text-primary">
+                                            <?php echo esc_html($item['title']); ?>
+                                        </h3>
                                     <?php endif; ?>
                                     
                                     <?php if(!empty($item['description'])): ?>
-                                        <div class="text-[#1B1B1B] leading-relaxed mb-6">
+                                        <div class="text-primary leading-relaxed mb-6">
                                             <?php echo wp_kses_post($item['description']); ?>
                                         </div>
                                     <?php endif; ?>
@@ -91,7 +93,7 @@ if ($custom_margin && $margin === 'custom') {
                                         <a 
                                             href="<?php echo esc_url($item['link']['url']); ?>" 
                                             target="<?php echo !empty($item['link']['target']) ? esc_attr($item['link']['target']) : '_self'; ?>"
-                                            class="btn btn--outline btn--primary mt-auto"
+                                            class="btn btn-outline mt-auto"
                                         >
                                             <?php echo esc_html($item['link']['title']); ?>
                                         </a>
