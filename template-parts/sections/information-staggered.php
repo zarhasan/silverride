@@ -9,6 +9,7 @@ $subtitle         = $args['subtitle'] ?? '';
 $description      = $args['description'] ?? '';
 $items            = $args['items'] ?? [];
 $link             = $args['link'] ?? [];
+$secondary_link   = $args['secondary_link'] ?? [];
 $image            = $args['image'] ?? [];
 $image_position   = $args['image_position'] ?? 'right';
 $hide_on = $args['hide_on'] ?? [];
@@ -60,9 +61,13 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 				<?php endif; ?>
 
 				<?php if ( ! empty( $link ) ) : ?>
-				<div class="mt-8">
+				<div class="flex justify-start items-start gap-4 mt-8">
 					<a href="<?php echo esc_url( $link['url'] ?? '#' ); ?>" class="btn btn-primary">
-						<?php echo esc_html( $link['title'] ?? 'Learn More' ); ?>
+						<?php echo esc_html( $link['title'] ?? '' ); ?>
+					</a>
+
+					<a href="<?php echo esc_url( $secondary_link['url'] ?? '#' ); ?>" class="btn btn-outline">
+						<?php echo esc_html( $secondary_link['title'] ?? '' ); ?>
 					</a>
 				</div>
 				<?php endif; ?>
