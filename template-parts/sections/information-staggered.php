@@ -60,17 +60,20 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 					</ul>
 				<?php endif; ?>
 
-				<?php if ( ! empty( $link ) ) : ?>
 				<div class="flex justify-start items-start gap-4 mt-8">
+					<?php if ( ! empty( $link ) ) : ?>
 					<a href="<?php echo esc_url( $link['url'] ?? '#' ); ?>" class="btn btn-primary">
 						<?php echo esc_html( $link['title'] ?? '' ); ?>
 					</a>
+					<?php endif; ?>
 
+					<?php if ( ! empty( $secondary_link ) ) : ?>
 					<a href="<?php echo esc_url( $secondary_link['url'] ?? '#' ); ?>" class="btn btn-outline">
 						<?php echo esc_html( $secondary_link['title'] ?? '' ); ?>
 					</a>
+					<?php endif; ?>
+
 				</div>
-				<?php endif; ?>
 			</div>
 
 			<?php if ( ! empty( $image ) ) : ?>
