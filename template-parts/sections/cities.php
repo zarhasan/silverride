@@ -41,8 +41,8 @@ $other_cities = $args['other_cities'] ?? [];
         <img src="<?php echo esc_url( $city_image['url'] ); ?>" alt="<?php echo esc_attr( $city_image['alt'] ?? $city_name ); ?>" class="mt-5 h-72 aspect-video w-full object-cover">
         <?php endif; ?>
         <div class="mt-5 flex gap-4">
-          <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>>Explore</a>
-          <a href="#" class="btn btn-primary grow w-1/2 whitespace-nowrap"<?php echo $app_target; ?>>Apply to Drive</a>
+          <a href="#" class="btn btn-outline grow w-1/2 whitespace-nowrap"<?php echo $exp_target; ?>>Apply to Drive</a>
+          <a href="#" class="btn btn-outline grow w-1/2 whitespace-nowrap"<?php echo $app_target; ?>>Apply to Drive</a>
         </div>
       </article>
       <?php endforeach; ?>

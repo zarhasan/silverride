@@ -5,13 +5,36 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
+$hide_on = $args['hide_on'] ?? [];
+$hide_classes = [];
+if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
+if (in_array('tablet', $hide_on)) $hide_classes[] = 'md:hidden';
+if (in_array('desktop', $hide_on)) $hide_classes[] = 'lg:hidden';
+$hide_class = implode(' ', $hide_classes);
+
+$margin_class = '';
+$margin = $args['margin'] ?? 'default';
+$custom_margin = $args['custom_margin'] ?? '';
+if ($custom_margin && $margin === 'custom') {
+    $margin_style = ' style="margin: ' . esc_attr($custom_margin) . ';"';
+} else {
+    $margins = [
+        'none'    => '',
+        'small'   => 'my-8 md:my-12',
+        'default' => 'my-16 md:my-24',
+        'medium'  => 'my-20 md:my-32',
+        'large'   => 'my-28 md:my-40',
+    ];
+    $margin_class = $margins[$margin] ?? $margins['default'];
+    $margin_style = '';
+}
 
 ?>
 
 <?php if(!empty($args)): ?>
     <section
         id="<?php echo !empty($args['id']) ? $args['id'] : null; ?>" 
-        class="relative grid-floating-cards"
+        class="relative grid-floating-cards <?php echo esc_attr($margin_class . ' ' . $hide_class); ?>"<?php echo $margin_style; ?>
         data-section-id="<?php echo esc_attr($template_part_name); ?>">
 
         <?php if(!empty($args['background_image'])): ?>
