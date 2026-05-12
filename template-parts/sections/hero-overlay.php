@@ -25,7 +25,7 @@ $links = $args['links'] ?? [];
     <div class="container relative z-10 py-20 md:py-28">
         <div class="max-w-2xl mt-28">
             <?php if (!empty($subtitle)) : ?>
-                <span class="block text-base lg:text-xl font-bold text-white uppercase tracking-wide mb-4">
+                <span class="block text-base lg:text-xl font-medium text-white uppercase tracking-wide mb-4">
                     <?php echo esc_html($subtitle); ?>
                 </span>
             <?php endif; ?>

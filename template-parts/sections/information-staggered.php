@@ -69,7 +69,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 			</div>
 
 			<?php if ( ! empty( $image ) ) : ?>
-				<div class="flex-1 <?php echo $is_image_left ? 'order-1' : 'order-2'; ?> min-h-[24rem] md:min-h-[50rem]">
+				<div class="flex-1 <?php echo $is_image_left ? 'order-1' : 'order-2'; ?> min-h-[24rem]">
 					<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ?? $title ); ?>" class="h-full w-full object-cover">
 				</div>
 			<?php endif; ?>

@@ -7,9 +7,10 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 $title = $args['title'] ?? 'Still have questions?';
 $description = $args['description'] ?? 'Get in touch with us';
 $link = $args['link'] ?? [];
+$secondary_link = $args['secondary_link'] ?? [];
 
-$link_url = !empty($link['url']) ? $link['url'] : '/contact-us';
-$link_title = !empty($link['title']) ? $link['title'] : 'Contact now';
+$link_url = !empty($link['url']) ? $link['url'] : '';
+$link_title = !empty($link['title']) ? $link['title'] : '';
 $link_target = !empty($link['target']) ? $link['target'] : '_self';
 ?>
 
@@ -27,10 +28,24 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
             </div>
         <?php endif; ?>
 
-        <?php if (!empty($link_url) && !empty($link_title)) : ?>
-            <a href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>" class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors mt-8 lg:mt-12 duration-200">
-                <?php echo esc_html($link_title); ?>
-            </a>
-        <?php endif; ?>
+        <div class="flex flex-col justify-stretch items-center lg:flex-row lg:justify-center mt-8 lg:mt-12 gap-4">
+            <?php if (!empty($link_url) && !empty($link_title)) : ?>
+                <a 
+                    href="<?php echo esc_url($link_url); ?>" 
+                    target="<?php echo esc_attr($link_target); ?>" 
+                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors duration-200">
+                    <?php echo esc_html($link_title); ?>
+                </a>
+            <?php endif; ?>
+
+            <?php if (!empty($secondary_link)) : ?>
+                <a 
+                    href="<?php echo esc_url($secondary_link['url']); ?>" 
+                    target="<?php echo esc_attr($secondary_link['target']); ?>" 
+                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors duration-200">
+                    <?php echo esc_html($secondary_link['title']); ?>
+                </a>
+            <?php endif; ?>
+        </div>
     </div>
 </section>
