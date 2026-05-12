@@ -1992,6 +1992,7 @@ add_action( 'acf/include_fields', function() {
 								'alt' => 'Alt',
 								'simple' => 'Simple',
 								'staggered' => 'Staggered',
+								'tint' => 'Tint' 
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
@@ -3749,7 +3750,12 @@ add_action( 'acf/include_fields', function() {
 						'label' => 'Title',
 						'name' => 'title',
 						'type' => 'text',
-						'default_value' => 'Featured cities',
+					),
+					array(
+						'key' => 'field_grid_cities_description',
+						'label' => 'Description',
+						'name' => 'description',
+						'type' => 'text',
 					),
 					array(
 						'key' => 'field_grid_cities_cities',

@@ -40,7 +40,9 @@ $links       = $args['links'] ?? [];
                     ?>
                         <a
                             href="<?php echo esc_url($link_url); ?>"
-                            <?php if (!empty($link_target)) : ?>target="<?php echo esc_attr($link_target); ?>"<?php endif; ?>
+                            <?php if (!empty($link_target)) : ?>
+                                target="<?php echo esc_attr($link_target); ?>"
+                            <?php endif; ?>
                             class="links__pill inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200"
                         >
                             <?php echo esc_html($link_title); ?>
