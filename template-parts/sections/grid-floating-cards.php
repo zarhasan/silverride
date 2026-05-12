@@ -14,26 +14,21 @@ $template_part_name = explode('.', basename(__FILE__))[0];
         class="relative grid-floating-cards"
         data-section-id="<?php echo esc_attr($template_part_name); ?>">
 
-        <img class="w-full h-full absolute left-0 right-0 top-0 bottom-0 object-cover" src="<?php echo get_template_directory_uri() . '/media/Our-Philosophy.png' ?>" alt="">
+        <?php if(!empty($args['background_image'])): ?>
+            <img class="w-full h-full absolute left-0 right-0 top-0 bottom-0 object-cover" src="<?php echo esc_url($args['background_image']['url']); ?>" alt="<?php echo esc_attr($args['background_image']['alt']); ?>">
+        <?php endif; ?>
 
         <div class="relative z-10 bg-primary py-16 md:py-24">
             <div class="container mx-auto px-4 md:px-6 lg:px-8">
                 <div>
-                    <?php if(!empty($args['subtitle'])): ?>
-                        <p class="text-lg uppercase text-white font-semibold mb-4">
-                            <?php echo esc_html($args['subtitle']); ?>
-                        </p>
-                    <?php endif; ?>
-                        
                     <?php if(!empty($args['title'])): ?>
-                        <h2 class="sr-only"><?php echo wp_kses_post(strip_tags($args['title'])); ?></h2>
-                        <h2 aria-hidden="true" class="text-3xl md:text-4xl font-semibold mt-2 text-center text-white">
+                        <h2 class="text-3xl md:text-4xl font-semibold text-center text-white">
                             <?php echo wp_kses_post($args['title']); ?>
                         </h2>
                     <?php endif; ?>
 
                     <?php if(!empty($args['description'])): ?>
-                        <div class="text-white text-lg mt-6 leading-relaxed">
+                        <div class="text-white text-lg mt-6 leading-relaxed text-center max-w-2xl mx-auto">
                             <?php echo wp_kses_post($args['description']); ?>
                         </div>
                     <?php endif; ?>
@@ -48,34 +43,39 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                     ?>
 
                     <?php if(!empty($args['items'])): ?>
-                        <ul class="flex flex-col lg:grid gap-6 mt-12 <?php echo $grid_size_classes[$args['grid_size']]; ?>">
+                        <div class="grid grid-cols-1 gap-6 mt-12 <?php echo $grid_size_classes[$args['grid_size']]; ?>">
                             <?php foreach ($args['items'] as $index => $item): ?>
-                                <li class="flex justify-start items-start flex-col bg-white p-6 rounded-lg">
+                                <div class="flex flex-col items-center text-center bg-white p-8 rounded-lg">
                                     <?php if(!empty($item['image'])): ?>
                                         <img 
-                                            class="w-12 h-auto mb-4" 
+                                            class="w-20 h-auto mb-6" 
                                             src="<?php echo esc_url($item['image']['url']); ?>" 
-                                            alt="" 
+                                            alt="<?php echo esc_attr($item['image']['alt']); ?>" 
                                         />
                                     <?php endif; ?>
 
                                     <?php if(!empty($item['title'])): ?>
-                                        <?php if(empty($item['description'])): ?>
-                                            <div class="text-xl font-semibold mb-2 text-primary"><?php echo esc_html($item['title']); ?></div>
-                                        <?php else: ?>
-                                            <h3 class="text-xl font-semibold mb-2 text-primary"><?php echo esc_html($item['title']); ?></h3>
-                                        <?php endif; ?>
+                                        <h3 class="text-2xl font-semibold mb-3 text-primary"><?php echo esc_html($item['title']); ?></h3>
                                     <?php endif; ?>
                                     
                                     <?php if(!empty($item['description'])): ?>
-                                        <div class="text-[#1B1B1B] leading-relaxed">
+                                        <div class="text-[#1B1B1B] leading-relaxed mb-6">
                                             <?php echo wp_kses_post($item['description']); ?>
                                         </div>
                                     <?php endif; ?>
 
-                                </li>
+                                    <?php if(!empty($item['link'])): ?>
+                                        <a 
+                                            href="<?php echo esc_url($item['link']['url']); ?>" 
+                                            target="<?php echo !empty($item['link']['target']) ? esc_attr($item['link']['target']) : '_self'; ?>"
+                                            class="btn btn--outline btn--primary mt-auto"
+                                        >
+                                            <?php echo esc_html($item['link']['title']); ?>
+                                        </a>
+                                    <?php endif; ?>
+                                </div>
                             <?php endforeach; ?>
-                        </ul>
+                        </div>
                     <?php endif; ?>
                 </div>
             </div>
