@@ -22,13 +22,15 @@ $sort_order = $args['blog_sort_order'] ?? 'DESC';
 if ($custom_query) {
     $query = $custom_query;
 } else {
+    $paged = max(1, get_query_var('paged'));
+
     $query_args = array(
         'post_type' => 'post',
         'posts_per_page' => $post_count,
         'post_status' => 'publish',
         'order' => $sort_order,
         'orderby' => 'date',
-        'offset' => 1,
+        'paged' => $paged,
     );
 
     if (!empty($category)) {
@@ -46,8 +48,6 @@ if ($custom_query) {
     $query = new WP_Query($query_args);
 }
 
-$total_posts = $query->found_posts;
-$show_view_more = $total_posts > $post_count;
 ?>
 
 <section class="bg-white my-12 lg:my-20 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -67,11 +67,9 @@ $show_view_more = $total_posts > $post_count;
             <?php endif; ?>
         </div>
 
-        <?php if ($show_view_more || $query->have_posts()) : ?>
-        <div class="text-center mt-12">
-            <button type="button" class="btn btn-primary">
-                Load More
-            </button>
+        <?php if ($query->max_num_pages > 1) : ?>
+        <div class="mt-12">
+            <?php get_template_part('template-parts/pagination', null, ['query' => $query]); ?>
         </div>
         <?php endif; ?>
     </div>
