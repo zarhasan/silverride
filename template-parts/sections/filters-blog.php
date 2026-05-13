@@ -41,7 +41,7 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
                     >
                     <button
                         type="submit"
-                        class="blog-search-submit"
+                        class="blog-search-submit absolute right-[6px] top-1/2 -translate-y-1/2 w-10 h-10 inline-flex items-center justify-center bg-primary text-white rounded-full border-0 cursor-pointer opacity-0 invisible transition-opacity duration-200 ease-in-out hover:bg-secondary"
                         aria-label="Submit search"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
