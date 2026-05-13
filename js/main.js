@@ -179,8 +179,7 @@
             const search = form.querySelector('input[name="query"]');
             const category = form.querySelector('select[name="category"]');
             const sort = form.querySelector('select[name="sort"]');
-
-            let debounce;
+            const searchSubmitBtn = form.querySelector('.blog-search-submit');
 
             function submitForm() {
                 const params = new URLSearchParams();
@@ -191,11 +190,18 @@
                 window.location.href = window.location.pathname + (qs ? '?' + qs : '');
             }
 
-            if (search) {
-                search.addEventListener('input', function () {
-                    clearTimeout(debounce);
-                    debounce = setTimeout(submitForm, 400);
-                });
+            function updateSearchSubmitVisibility() {
+                if (!searchSubmitBtn || !search) return;
+                if (search.value.trim().length > 0) {
+                    searchSubmitBtn.classList.add('visible');
+                } else {
+                    searchSubmitBtn.classList.remove('visible');
+                }
+            }
+
+            if (search && searchSubmitBtn) {
+                search.addEventListener('input', updateSearchSubmitVisibility);
+                updateSearchSubmitVisibility();
             }
 
             if (category) category.addEventListener('change', submitForm);

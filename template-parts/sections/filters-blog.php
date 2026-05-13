@@ -36,9 +36,16 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
                         name="query"
                         value="<?php echo esc_attr($current_search); ?>"
                         placeholder="Search Newsroom..."
-                        class="w-full pl-14 pr-6 py-4 text-lg text-gray-900 bg-white border border-gray-300 rounded-full placeholder-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200"
+                        class="w-full pl-14 pr-14 py-4 text-lg text-gray-900 bg-white border border-gray-300 rounded-full placeholder-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200"
                         aria-label="Search Newsroom"
                     >
+                    <button
+                        type="submit"
+                        class="blog-search-submit"
+                        aria-label="Submit search"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
                 </div>
 
                 <!-- Category Filter -->
