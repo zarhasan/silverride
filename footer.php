@@ -31,8 +31,11 @@
                     <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide Logo">
                 </a>
                 
-                <p class="text-lg leading-relaxed max-w-lg">
-                    SilverRide is America's leading assisted transportation platform for older adults and people with disabilities. A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
+                <p class="text-lg leading-relaxed max-w-lg text-primary">
+                    SilverRide is America's leading assisted transportation platform for older adults and people with disabilities.
+                </p>
+                <p class="text-lg leading-relaxed max-w-lg text-primary">
+                    A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
                 </p>
 
                 <div class="flex items-center gap-4">
