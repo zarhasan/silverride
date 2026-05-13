@@ -16,9 +16,9 @@
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-16 pb-12">
-        <h2 class="text-3xl lg:text-4xl font-bold text-primary text-center leading-tight">
-            Bringing joy, dignity, and community to the people<br class="hidden lg:block">
-            who need it most.
+        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight">
+            Bringing joy, dignity, and community <br class="hidden lg:block">
+            to the people who need it most.
         </h2>
     </div>
 

@@ -54,13 +54,12 @@ if ($custom_query) {
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
             <?php if ($query->have_posts()) : ?>
-                <?php 
-                $post_index = 0;
-                while ($query->have_posts()) : $query->the_post(); 
-                    $post_index++;
-                ?>
+                <?php $post_index = 0; ?>
+
+                <?php while ($query->have_posts()) : $query->the_post(); $post_index++; ?>
                     <?php get_template_part('template-parts/post-card'); ?>
                 <?php endwhile; ?>
+                
                 <?php wp_reset_postdata(); ?>
             <?php else : ?>
                 <p class="text-center col-span-full text-gray-600">No posts found.</p>
