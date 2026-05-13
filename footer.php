@@ -107,7 +107,9 @@
             </div>
 
             <div class="flex items-center gap-6">
-                <a href="/partner-login" class="inline-flex items-center justify-center px-6 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
+                <a  href="https://silverridereservation.itcurves.us/GALogin.aspx"
+                    target="_blank"
+                    class="inline-flex items-center justify-center px-6 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
                     Partner Login
                 </a>
                 
