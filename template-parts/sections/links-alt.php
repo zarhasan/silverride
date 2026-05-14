@@ -42,7 +42,6 @@ if (!empty($background_color)) {
 
 <section
     id="<?php echo !empty($args['id']) ? $args['id'] : null; ?>"
-    class="<?php echo esc_attr($section_classes); ?>"
     data-section-id="<?php echo esc_attr($template_part_name); ?>"
     <?php if ($style) : ?>style="<?php echo esc_attr($style); ?>"<?php endif; ?>>
     <div class="py-16 md:py-24">
@@ -72,7 +71,7 @@ if (!empty($background_color)) {
                             <a
                                 href="<?php echo esc_url($link_url); ?>"
                                 <?php if (!empty($link_target)) : ?>target="<?php echo esc_attr($link_target); ?>"<?php endif; ?>
-                                class="text-xl md:text-2xl font-medium text-primary no-underline hover:underline transition-all"
+                                class="text-xl md:text-2xl font-semibold text-primary no-underline hover:underline transition-all"
                             >
                                 <?php echo esc_html($link_title ?: $link_url); ?>
                             </a>
