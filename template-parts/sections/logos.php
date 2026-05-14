@@ -33,13 +33,11 @@ $logos = $args['logos'] ?? [];
             </div>
         <?php else: ?>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-            <?php foreach ($logos as $logo) :
-                $logo_image = $logo['image'] ?? [];
-            ?>
+            <?php foreach ($logos as $logo) :?>
             <div class="flex items-center justify-center">
                 <img
-                    src="<?php echo esc_url($logo_image['url']); ?>"
-                    alt="<?php echo esc_attr($logo_image['alt'] ?? 'Partner Logo'); ?>"
+                    src="<?php echo esc_url($logo['url']); ?>"
+                    alt="<?php echo esc_attr($logo['alt'] ?? ''); ?>"
                     class="max-h-12 w-auto object-contain"
                     loading="lazy"
                 >
