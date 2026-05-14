@@ -31,10 +31,10 @@ $container_classes = [
 $container_class = $container_classes[$container] ?? $container_classes['full'];
 
 $grid_size_classes = [
-    2 => 'md:grid-cols-2',
-    3 => 'md:grid-cols-3',
-    4 => 'md:grid-cols-4',
-    5 => 'md:grid-cols-5',
+    2 => 'lg:grid-cols-2',
+    3 => 'lg:grid-cols-3',
+    4 => 'lg:grid-cols-4',
+    5 => 'lg:grid-cols-5',
 ];
 $grid_class = $grid_size_classes[$grid_size] ?? $grid_size_classes[2];
 ?>
@@ -61,7 +61,7 @@ $grid_class = $grid_size_classes[$grid_size] ?? $grid_size_classes[2];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="prose text-lg text-[#1B1B1B] leading-relaxed">
+                    <div class="prose text-lg text-gray-700 leading-relaxed">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
@@ -69,7 +69,7 @@ $grid_class = $grid_size_classes[$grid_size] ?? $grid_size_classes[2];
         <?php endif; ?>
 
         <?php if (!empty($items)) : ?>
-            <div class="grid grid-cols-1 <?php echo esc_attr($grid_class); ?> gap-8 lg:gap-12">
+            <div class="grid grid-cols-1 <?php echo esc_attr($grid_class); ?> gap-12 lg:gap-16">
                 <?php foreach ($items as $item) :
                     $item_image       = $item['image'] ?? [];
                     $item_title       = $item['title'] ?? '';
@@ -77,42 +77,40 @@ $grid_class = $grid_size_classes[$grid_size] ?? $grid_size_classes[2];
                     $item_link        = $item['link'] ?? [];
                     $has_link         = !empty($item_link['url']);
                 ?>
-                    <div class="grid-service-cards__item">
-                        <div class="flex items-start gap-6 mb-4">
-                            <?php if (!empty($item_image) && !empty($item_image['url'])) : ?>
-                                <div class="shrink-0">
-                                    <img
-                                        src="<?php echo esc_url($item_image['url']); ?>"
-                                        alt="<?php echo esc_attr($item_image['alt'] ?? ''); ?>"
-                                        class="w-20 h-20 object-contain"
-                                    >
+                    <div class="grid-service-cards__item flex gap-6">
+                        <?php if (!empty($item_image) && !empty($item_image['url'])) : ?>
+                            <div class="shrink-0 w-24 h-24 md:w-40 md:h-40">
+                                <img
+                                    src="<?php echo esc_url($item_image['url']); ?>"
+                                    alt="<?php echo esc_attr($item_image['alt'] ?? ''); ?>"
+                                    class="w-full h-full object-contain"
+                                >
+                            </div>
+                        <?php endif; ?>
+
+                        <div class="flex-1 min-w-0">
+                            <?php if ($item_title) : ?>
+                                <h3 class="text-xl md:text-2xl font-bold text-[#1B1B1B] mb-3">
+                                    <?php echo esc_html($item_title); ?>
+                                </h3>
+                            <?php endif; ?>
+
+                            <?php if ($item_description) : ?>
+                                <div class="prose text-base text-gray-700 leading-relaxed mb-5">
+                                    <?php echo wp_kses_post($item_description); ?>
                                 </div>
                             <?php endif; ?>
 
-                            <div>
-                                <?php if ($item_title) : ?>
-                                    <h3 class="text-xl md:text-2xl font-bold text-[#1B1B1B] mb-2">
-                                        <?php echo esc_html($item_title); ?>
-                                    </h3>
-                                <?php endif; ?>
-                            </div>
+                            <?php if ($has_link) : ?>
+                                <a
+                                    href="<?php echo esc_url($item_link['url']); ?>"
+                                    target="<?php echo !empty($item_link['target']) ? esc_attr($item_link['target']) : '_self'; ?>"
+                                    class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary border-2 border-primary rounded-full transition-colors duration-200 hover:bg-primary hover:text-white"
+                                >
+                                    <?php echo esc_html($item_link['title'] ?? 'Learn More'); ?>
+                                </a>
+                            <?php endif; ?>
                         </div>
-
-                        <?php if ($item_description) : ?>
-                            <div class="prose text-base text-gray-700 leading-relaxed mb-6 pl-0 md:pl-26">
-                                <?php echo wp_kses_post($item_description); ?>
-                            </div>
-                        <?php endif; ?>
-
-                        <?php if ($has_link) : ?>
-                            <a
-                                href="<?php echo esc_url($item_link['url']); ?>"
-                                target="<?php echo !empty($item_link['target']) ? esc_attr($item_link['target']) : '_self'; ?>"
-                                class="btn btn--outline btn--primary inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-full transition-colors duration-200"
-                            >
-                                <?php echo esc_html($item_link['title'] ?? 'Learn More'); ?>
-                            </a>
-                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>
