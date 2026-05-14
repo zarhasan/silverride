@@ -3451,6 +3451,18 @@ add_action( 'acf/include_fields', function() {
 				'display' => 'block',
 				'sub_fields' => array(
 					array(
+						'key' => 'field_links_type',
+						'label' => 'Type',
+						'name' => 'type',
+						'type' => 'button_group',
+						'choices' => array(
+							'default' => 'Default',
+							'alt' => 'Alt',
+						),
+						'default_value' => 'default',
+						'return_format' => 'value',
+					),
+					array(
 						'key'   => 'field_links_title',
 						'label' => 'Title',
 						'name'  => 'title',
@@ -3473,6 +3485,12 @@ add_action( 'acf/include_fields', function() {
 						'layout' => 'table',
 						'button_label' => 'Add Link',
 						'sub_fields' => array(
+							array(
+								'key' => 'field_links_label',
+								'label' => 'Label',
+								'name' => 'label',
+								'type' => 'text',
+							),
 							array(
 								'key' => 'field_links_link',
 								'label' => 'Link',

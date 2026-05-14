@@ -12,7 +12,7 @@ $logos = $args['logos'] ?? [];
 ?>
 
 <section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+    <div class="container !max-w-5xl">
         <!-- Header -->
         <div class="text-center mb-12 lg:mb-16">
             <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-4">
@@ -32,7 +32,7 @@ $logos = $args['logos'] ?? [];
                 <img class="lg:max-w-5xl w-auto h-auto mx-auto" src="<?php echo get_template_directory_uri(); ?>/media/logos-2.png" alt="Partner Logo">
             </div>
         <?php else: ?>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-8 gap-y-16 items-center">
             <?php foreach ($logos as $logo) :?>
             <div class="flex items-center justify-center">
                 <img
