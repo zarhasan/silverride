@@ -2202,6 +2202,28 @@ add_action( 'acf/include_fields', function() {
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
+							'key' => 'field_68cebaeb8c518',
+							'label' => 'Type',
+							'name' => 'type',
+							'aria-label' => '',
+							'type' => 'button_group',
+							'instructions' => '',
+							'required' => 0,
+							'conditional_logic' => 0,
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+							'choices' => array(
+								'default' => 'Default',
+								'alt' => 'Alt'
+							),
+							'default_value' => 'default',
+							'return_format' => 'value',
+							'layout' => 'horizontal',
+						),
+						array(
 							'key' => 'field_68cebae78c519',
 							'label' => 'Title',
 							'name' => 'title',
@@ -2264,6 +2286,14 @@ add_action( 'acf/include_fields', function() {
 							'button_label' => 'Add Row',
 							'rows_per_page' => 20,
 							'sub_fields' => array(
+								array(
+									'key'             => 'field_faq_item_tag',
+									'label'           => 'Tag',
+									'name'            => 'tag',
+									'type'            => 'text',
+									'instructions'    => 'Used to dynamically categorize FAQs.',
+									'parent_repeater' => 'field_68cebafb8c51b',
+								),
 								array(
 									'key' => 'field_68cebb088c51c',
 									'label' => 'Question',
