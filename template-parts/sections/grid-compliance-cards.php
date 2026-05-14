@@ -6,10 +6,17 @@ if (!defined('ABSPATH')) {
 $title = $args['title'] ?? '';
 $subtitle = $args['description'] ?? '';
 $features = $args['items'] ?? [];
+$background_color = $args['background_color'] ?? '';
+$footer_description = $args['footer_description'] ?? '';
+$cta = $args['cta'] ?? [];
+$disable_margins = !empty($args['disable_margins']);
+
+$bg_style = $background_color ? 'style="background-color: ' . esc_attr($background_color) . ';"' : '';
+$section_class = $disable_margins ? '' : 'my-16 md:my-24';
 ?>
 
 <section class="bg-white my-16 md:my-24">
-    <div class="mx-auto max-w-7xl px-6">
+    <div class="container">
         <?php if ($title) : ?>
         <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
             <?php echo wp_kses_post($title); ?>
@@ -56,6 +63,14 @@ $features = $args['items'] ?? [];
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+        <?php endif; ?>
+
+        <?php if (!empty($cta) && !empty($cta['url'])) : ?>
+        <div class="mt-8 text-center">
+            <a href="<?php echo esc_url($cta['url']); ?>" class="btn btn-primary">
+                <?php echo esc_html($cta['title'] ?? ''); ?>
+            </a>
         </div>
         <?php endif; ?>
     </div>
