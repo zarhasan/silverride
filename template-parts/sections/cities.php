@@ -51,9 +51,9 @@ $other_cities = $args['other_cities'] ?? [];
           <img src="<?php echo esc_url( $city_image['url'] ); ?>" alt="<?php echo esc_attr( $city_image['alt'] ?? $city_name ); ?>" class="mt-5 h-72 aspect-video w-full object-cover">
         <?php endif; ?>
 
-        <div class="mt-5 flex gap-4">
-          <a href="#" class="btn btn-primary w-1/2 grow">Apply to Drive</a>
-          <a href="#" class="btn btn-outline w-1/2 grow">Visit City Page</a>
+        <div class="mt-5 flex flex-col lg:flex-row gap-4">
+          <a href="<?php echo esc_url($apply_link['url'] ?? '#'); ?>" class="btn btn-primary lg:w-1/2 grow"><?php echo esc_html($apply_link['title'] ?? 'Apply to Drive'); ?></a>
+          <a href="<?php echo esc_url($explore_link['url'] ?? '#'); ?>" class="btn btn-outline lg:w-1/2 grow"><?php echo esc_html($explore_link['title'] ?? 'Visit City Page'); ?></a>
         </div>
       </article>
       <?php endforeach; ?>
