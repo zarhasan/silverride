@@ -9,6 +9,8 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 $title       = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $links       = $args['links'] ?? [];
+$cta         = $args['cta'] ?? [];
+$footnote    = $args['footnote'] ?? [];
 
 ?>
 
@@ -26,7 +28,7 @@ $links       = $args['links'] ?? [];
                 <?php endif; ?>
 
                 <?php if (!empty($description)) : ?>
-                    <div class="text-lg sm:text-[1.25rem] text-gray-600 mt-4">
+                    <div class="text-lg sm:text-[1.25rem] text-gray-600 mt-6">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
@@ -49,6 +51,22 @@ $links       = $args['links'] ?? [];
                         </a>
                     <?php endforeach; ?>
                 </div>
+
+                <?php if (!empty($footnote)) : ?>
+                    <div class="w-full mt-10">
+                        <div class="prose text-xl text-[#1B1B1B] leading-relaxed">
+                            <?php echo wp_kses_post($footnote); ?>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                
+                <?php if (!empty($cta) && !empty($cta['url'])) : ?>
+                    <div class="mt-10">
+                        <a href="<?php echo esc_url($cta['url']); ?>" class="btn btn-primary">
+                            <?php echo esc_html($cta['title'] ?? ''); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>

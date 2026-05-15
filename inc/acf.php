@@ -3489,7 +3489,7 @@ add_action( 'acf/include_fields', function() {
 								'key' => 'field_links_label',
 								'label' => 'Label',
 								'name' => 'label',
-								'type' => 'text',
+								'type' => 'text'
 							),
 							array(
 								'key' => 'field_links_link',
@@ -3499,6 +3499,22 @@ add_action( 'acf/include_fields', function() {
 								'return_format' => 'array',
 							),
 						),
+					),
+					array(
+						'key'     => 'field_links_footnote',
+						'label'   => 'Footnote',
+						'name'    => 'footnote',
+						'type'    => 'wysiwyg',
+						'tabs'    => 'all',
+						'toolbar' => 'full',
+						'media_upload' => 1,
+					),
+					array(
+						'key' => 'field_links_cta',
+						'label' => 'CTA',
+						'name' => 'cta',
+						'type' => 'link',
+						'return_format' => 'array',
 					),
 				),
 				'min' => '',
