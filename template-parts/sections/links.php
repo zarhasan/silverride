@@ -33,7 +33,7 @@ $footnote    = $args['footnote'] ?? [];
                     </div>
                 <?php endif; ?>
 
-                <div class="flex flex-wrap gap-4 mt-12">
+                <div class="flex flex-wrap gap-4 mt-10">
                     <?php foreach ($links as $link_item) :
                         $link_data = is_array($link_item) && isset($link_item['link']) ? $link_item['link'] : $link_item;
                         $link_title = is_array($link_data) ? ($link_data['title'] ?? '') : $link_data;
