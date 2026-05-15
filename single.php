@@ -39,11 +39,9 @@ get_header(); ?>
                                 </div>
 
                                 <!-- Featured Image -->
-                                <?php if (has_post_thumbnail()): ?>
-                                    <div class="mb-6 md:mb-8">
-                                        <?php the_post_thumbnail('large', array('class' => 'w-full max-w-md h-auto')); ?>
-                                    </div>
-                                <?php endif; ?>
+                                <div class="mb-6 md:mb-12">
+                                    <img class="h-64 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/featured-image.png" alt="">
+                                </div>
                             </div>
 
                             <!-- Title -->
@@ -135,6 +133,17 @@ get_header(); ?>
         <?php endwhile; ?>
     </div>
 </div><!-- #primary -->
+
+<?php
+    get_template_part('template-parts/sections/call_to_action', 'default', array(
+        'title' => 'Still have questions?',
+        'description' => 'Get in touch with us.',
+        'link' => array(
+            'url' => '/request-demo/',
+            'title' => 'Contact now'
+        )
+    ));
+?>
 
 <?php
 get_footer();

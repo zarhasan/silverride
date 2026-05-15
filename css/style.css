@@ -1058,7 +1058,7 @@ body .wpforms-form .wpforms-field-label {
 
 /* Inputs and textareas */
 .forminator-ui.forminator-custom-form input.forminator-input,
-.forminator-ui.forminator-custom-form textarea.forminator-input {
+.forminator-ui.forminator-custom-form textarea.forminator-textarea {
     width: 100%;
     background-color: #FFFFFF !important;
     border: 1px solid #D1D5DB !important;
@@ -1072,13 +1072,17 @@ body .wpforms-form .wpforms-field-label {
     line-height: 1.5 !important;
 }
 
+.forminator-ui.forminator-custom-form textarea.forminator-textarea {
+    --field-height: auto !important;
+}
+
 .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
-.forminator-ui.forminator-custom-form textarea.forminator-input::placeholder {
+.forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
     color: #9CA3AF !important;
 }
 
 .forminator-ui.forminator-custom-form input.forminator-input:focus,
-.forminator-ui.forminator-custom-form textarea.forminator-input:focus {
+.forminator-ui.forminator-custom-form textarea.forminator-textarea:focus {
     border-color: var(--theme-primary) !important;
     outline-color: var(--theme-primary) !important;
 }
