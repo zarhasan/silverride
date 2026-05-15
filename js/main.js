@@ -212,6 +212,20 @@
                 submitForm();
             });
         })();
+
+        (() => {
+            const $fields = $('.forminator-timepicker .forminator-field');
+
+            $fields.each((i, field) => {
+                const $label = $(field).find('.forminator-label');
+                const $select = $(field).find('select.forminator-select2');
+
+                if ($label.length) {
+                    $label.insertAfter($select);
+                };
+            });
+
+        })();
     });
 
     function initVideoPlayback() {

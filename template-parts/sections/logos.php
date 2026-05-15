@@ -15,7 +15,7 @@ $logos = $args['logos'] ?? [];
     <div class="container !max-w-5xl">
         <!-- Header -->
         <div class="text-center mb-12 lg:mb-16">
-            <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-4">
+            <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] !leading-tight font-bold text-gray-900 mb-4">
                 <?php echo esc_html($title); ?>
             </h2>
 

@@ -19,7 +19,7 @@ $links = $args['links'] ?? [];
     <?php endif; ?>
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent" aria-hidden="true"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#25419680] to-transparent" aria-hidden="true"></div>
 
     <!-- Content -->
     <div class="container relative z-10 py-20 md:py-28">

@@ -23,7 +23,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 
 ?>
 <section 
-	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'my-16 md:my-24'; ?> <?php echo esc_attr($hide_class); ?>"
+	class="<?php echo !empty($background_color) ? 'py-8 md:py-16' : 'py-16 md:py-24'; ?> <?php echo esc_attr($hide_class); ?>"
 	<?php if (!empty($background_color)) : ?>
 		style="background-color: <?php echo esc_attr( $background_color ); ?>;"
 	<?php endif; ?>
