@@ -1024,8 +1024,24 @@ body .wpforms-form .wpforms-field-label {
     color: #1B1B1B;
 }
 
-.forminator-ui.forminator-custom-form .forminator-response-message {
-    display: none;
+.forminator-ui.forminator-custom-form .forminator-response-message.forminator-show {
+    width: 100%;
+    display: block;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid transparent;
+}
+
+.forminator-ui.forminator-custom-form .forminator-response-message.forminator-success {
+    background-color: #D1FAE5;
+    border-color: #10B981;
+    color: #065F46;
+}
+
+.forminator-ui.forminator-custom-form .forminator-response-message.forminator-error {
+    background-color: #FEE2E2;
+    border-color: #DC2626;
+    color: #991B1B;
 }
 
 .forminator-ui.forminator-custom-form .forminator-error-message {
@@ -1276,6 +1292,12 @@ body .wpforms-form .wpforms-field-label {
     box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.3) !important;
 }
 
+.forminator-ui.forminator-custom-form .forminator-button-submit[disabled] {
+    background-color: #9CA3AF !important;
+    cursor: not-allowed !important;
+    opacity: 0.6 !important;
+}
+
 /* Clear float after submit row */
 .forminator-ui.forminator-custom-form .forminator-row-last::after {
     content: "";
@@ -1505,7 +1527,7 @@ body .wpforms-form .wpforms-field-label {
 
 /* Spacing adjustments */
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-row {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 0rem !important;
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-row,
@@ -1513,8 +1535,13 @@ body .wpforms-form .wpforms-field-label {
     margin-bottom: 0 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col {
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col-has-children {
     margin-bottom: 0 !important;
+}
+
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col {
+    margin-bottom: 1.5rem !important;
 }
 
 /* Mobile responsive */

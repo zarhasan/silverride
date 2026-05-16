@@ -226,6 +226,47 @@
             });
 
         })();
+
+        (() => {
+            const $forms = $('.forminator-custom-form');
+
+            $forms.each((i, form) => {
+                const $form = $(form);
+                const $msg = $form.find('.forminator-response-message');
+                const $submit = $form.find('.forminator-button-submit');
+                const $msgClone = $msg.clone().removeClass('hidden').addClass('forminator-response-message-clone').hide();
+                const $cols = $form.find('.forminator-row > .forminator-col');
+
+                $form.on('click', function () {
+                    $submit.attr('disabled', 'disabled');
+
+                    setTimeout(function() {
+                        $submit.removeAttr('disabled');
+                    }, 3000);
+                });
+
+                $msg.observe(() => {
+                    if($msg.hasClass('forminator-show')) {
+                        $msgClone.text($msg.text()).show()
+                    } else {
+                        $msgClone.hide();
+                    }
+                }, {
+                    attributeFilter: ['class'],
+                });
+
+                $cols.each((i, col) => {
+                    const $col = $(col);
+                    const $nestedCols = $col.find('.forminator-row > .forminator-col');
+
+                    if($nestedCols.length > 0) {
+                        $col.addClass('forminator-col-has-children');
+                    }
+                });
+
+                $msgClone.insertAfter($form);
+            });
+        })();
     });
 
     function initVideoPlayback() {
@@ -597,7 +638,7 @@
                         // Close sibling submenus (accordion)
                         const $siblings = $parentLi.siblings('li.menu-item-has-children');
                         $siblings.each(function () {
-                            const $sibToggle = $(this).find('> .mobile-menu-item-row > .menu-toggle').add($(this).children('.menu-toggle'));
+                            const $sibToggle = $(this).find('.menu-toggle').first();
                             if (!$sibToggle.length) return;
                             if ($sibToggle.attr('aria-expanded') !== 'true') return;
                             const $sibSub = $(this).children('.sub-menu');
