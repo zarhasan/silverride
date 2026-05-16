@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
 
 $template_part_name = explode('.', basename(__FILE__))[0];
 $title = $args['title'] ?? 'Why SilverRide';
-$cards = $args['cards'] ?? [];
+$cards = $args['items'] ?? [];
 ?>
 
 <section class="bg-white my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -32,6 +32,33 @@ $cards = $args['cards'] ?? [];
                     <?php endif; ?>
                 </div>
                 <?php endforeach; ?>
+            <?php else : ?>
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        Built For Scale. Focused On The Individual Ride.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        SilverRide operates at a scale other assisted transportation providers cannot match, and still treats every ride like it is the only one. That is the promise riders remember, and the one agencies and health plans rely on.
+                    </p>
+                </div>
+
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        A Driver Network That Actually Cares.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        Our drivers choose this work because it matters. They are experienced professionals who bring the skills and qualifications expected in assisted transportation. They don't treat riders as fares, they treat them as family – and often build meaningful connections along the way.
+                    </p>
+                </div>
+
+                <div class="bg-[#FDCC82] rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 leading-snug mb-6">
+                        Compliance Is The Floor, Not The Ceiling.
+                    </h3>
+                    <p class="text-base text-gray-800 leading-relaxed">
+                        ADA-compliant service, vehicle and insurance standards, and agency-grade reporting are built into every contract. We exceed the requirements, document the work, and give partners the confidence to grow with us.
+                    </p>
+                </div>
             <?php endif; ?>
         </div>
     </div>

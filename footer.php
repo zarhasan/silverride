@@ -39,9 +39,9 @@
                 </p>
 
                 <div class="flex items-center gap-4">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-14 w-auto">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/american-society-on-aging.png" alt="The American Society on Aging Logo" class="h-14 w-auto">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/the-transportation-alliance.png" alt="The Transportation Alliance Logo" class="h-14 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-10 lg:h-14 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/american-society-on-aging.png" alt="The American Society on Aging Logo" class="h-10 lg:h-14 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/the-transportation-alliance.png" alt="The Transportation Alliance Logo" class="h-10 lg:h-14 w-auto">
                 </div>
             </div>
 
