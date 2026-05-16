@@ -227,27 +227,28 @@
 
         })();
 
+        // Forminator form improvements
         (() => {
             const $forms = $('.forminator-custom-form');
+            if (!$forms.length) return;
 
             $forms.each((i, form) => {
                 const $form = $(form);
                 const $msg = $form.find('.forminator-response-message');
                 const $submit = $form.find('.forminator-button-submit');
-                const $msgClone = $msg.clone().removeClass('hidden').addClass('forminator-response-message-clone').hide();
                 const $cols = $form.find('.forminator-row > .forminator-col');
 
-                $form.on('click', function () {
-                    $submit.attr('disabled', 'disabled');
+                // Clone success/error message to appear after form
+                const $msgClone = $msg.clone()
+                    .removeClass('hidden')
+                    .addClass('forminator-response-message-clone')
+                    .hide();
+                $msgClone.insertAfter($form);
 
-                    setTimeout(function() {
-                        $submit.removeAttr('disabled');
-                    }, 3000);
-                });
-
+                // Watch the original message element for class changes
                 $msg.observe(() => {
-                    if($msg.hasClass('forminator-show')) {
-                        $msgClone.text($msg.text()).show()
+                    if ($msg.hasClass('forminator-show')) {
+                        $msgClone.text($msg.text()).show();
                     } else {
                         $msgClone.hide();
                     }
@@ -255,16 +256,20 @@
                     attributeFilter: ['class'],
                 });
 
-                $cols.each((i, col) => {
-                    const $col = $(col);
-                    const $nestedCols = $col.find('.forminator-row > .forminator-col');
+                // Re-enable submit button after AJAX response
+                const reenable = function () {
+                    $submit.removeAttr('disabled');
+                };
+                form.addEventListener('forminator:form:submit:success', reenable);
+                form.addEventListener('forminator:form:submit:failed', reenable);
 
-                    if($nestedCols.length > 0) {
+                // Mark columns that contain nested columns
+                $cols.each((j, col) => {
+                    const $col = $(col);
+                    if ($col.find('.forminator-row > .forminator-col').length) {
                         $col.addClass('forminator-col-has-children');
                     }
                 });
-
-                $msgClone.insertAfter($form);
             });
         })();
     });

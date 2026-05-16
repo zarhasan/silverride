@@ -15,7 +15,7 @@
 
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 pt-16 pb-12">
+    <div class="container mb-[11.25rem] pt-[3.75rem]">
         <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight">
             Bringing joy, dignity, and community <br class="hidden lg:block">
             to the people who need it most.
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Main Footer Content -->
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 py-12 lg:py-16">
+    <div class="container pb-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             <!-- Left Column: Logo, Description, Partner Logos -->
             <div class="lg:col-span-5 space-y-8">
@@ -39,7 +39,9 @@
                 </p>
 
                 <div class="flex items-center gap-4">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/footer-logos.png" alt="" class="h-20 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-14 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/american-society-on-aging.png" alt="The American Society on Aging Logo" class="h-14 w-auto">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/the-transportation-alliance.png" alt="The Transportation Alliance Logo" class="h-14 w-auto">
                 </div>
             </div>
 
@@ -95,7 +97,7 @@
 
     <!-- Bottom Bar -->
     <div class="border-t border-gray-200 py-6">
-        <div class="container !max-w-5xl flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="container !max-w-5xl flex flex-col md:flex-row items-center justify-center gap-4">
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-base">
                 <span>&copy; 2026 SilverRide Inc.</span>
                 <div class="flex items-center gap-4">

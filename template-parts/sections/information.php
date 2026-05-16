@@ -26,7 +26,7 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-start">
             <?php if (!empty($image) && !empty($image['url'])) : ?>
-                <div class="flex-1 <?php echo $is_image_left ? 'order-1' : 'order-2'; ?> min-h-[24rem]">
+                <div class="flex-1 <?php echo $is_image_left ? 'order-1' : 'order-2'; ?> lg:min-h-[24rem]">
 					<img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ?? $title ); ?>" class="h-full w-full object-cover">
 				</div>
             <?php endif; ?>
