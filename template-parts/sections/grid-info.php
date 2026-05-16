@@ -26,7 +26,7 @@ $section_class = $disable_margins ? '' : 'my-16 md:my-24';
         <?php if ($title || $description) : ?>
 			<div class="mb-8 md:mb-12 text-left">
 				<?php if ($title) : ?>
-					<h2 class="text-3xl font-bold text-primary md:text-4xl lg:text-5xl !leading-tight">
+					<h2 class="text-3xl font-bold text-primary md:text-4xl lg:text-[2.875rem] !leading-tight">
 						<?php echo wp_kses_post($title); ?>
 					</h2>
 				<?php endif; ?>

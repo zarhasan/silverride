@@ -39,7 +39,7 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
                 <?php endif; ?>
 
                 <?php if ($subtitle) : ?>
-                    <h3 class="text-[1.625rem] md:text-2xl font-bold text-gray-900 mb-6">
+                    <h3 class="text-[1.625rem] font-bold text-gray-900 mb-6">
                         <?php echo esc_html($subtitle); ?>
                     </h3>
                 <?php endif; ?>

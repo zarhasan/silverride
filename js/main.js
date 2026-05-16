@@ -245,16 +245,37 @@
                     .hide();
                 $msgClone.insertAfter($form);
 
-                // Watch the original message element for class changes
-                $msg.observe(() => {
+                // Watch the original message for all changes, mirror to clone
+                const syncClone = function () {
+                    const orig = $msg[0];
+                    const clone = $msgClone[0];
+                    if (!orig || !clone) return;
+
+                    // Copy all classes
+                    clone.className = '';
+                    orig.classList.forEach(function (cls) {
+                        clone.classList.add(cls);
+                    });
+                    clone.classList.add('forminator-response-message-clone');
+
+                    // Copy HTML content
+                    clone.innerHTML = orig.innerHTML;
+
+                    // Show/hide
                     if ($msg.hasClass('forminator-show')) {
-                        $msgClone.text($msg.text()).show();
+                        $msgClone.show();
                     } else {
                         $msgClone.hide();
                     }
-                }, {
-                    attributeFilter: ['class'],
+                };
+
+                $msg.observe(syncClone, {
+                    attributes: true,
+                    childList: true,
+                    subtree: true,
                 });
+
+                syncClone();
 
                 // Re-enable submit button after AJAX response
                 const reenable = function () {
@@ -262,6 +283,12 @@
                 };
                 form.addEventListener('forminator:form:submit:success', reenable);
                 form.addEventListener('forminator:form:submit:failed', reenable);
+
+                form.addEventListener('forminator:form:submit:success', () => {
+                    setTimeout(() => {
+                        $msgClone.attr('tabindex', '-1').focus();
+                    }, 100);
+                });
 
                 // Mark columns that contain nested columns
                 $cols.each((j, col) => {

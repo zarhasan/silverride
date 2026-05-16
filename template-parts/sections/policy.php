@@ -72,7 +72,7 @@ if ( empty( $sections ) ) {
 
 <section class="bg-white py-12 md:py-16">
   <div class="mx-auto max-w-7xl px-6">
-    <h1 class="text-3xl font-bold text-gray-900 md:text-4xl lg:text-5xl"><?php echo esc_html( $title ); ?></h1>
+    <h1 class="text-3xl font-bold text-gray-900 md:text-4xl lg:text-[2.875rem]"><?php echo esc_html( $title ); ?></h1>
 
     <?php if ( ! empty( $image ) ) : ?>
     <div class="mt-12">

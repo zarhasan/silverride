@@ -46,14 +46,14 @@
 }
 
 .prose h1 {
-    font-size: 2.25rem;
+    font-size: 2.875rem;
     margin-top: 0;
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .prose h2 {
-    font-size: 1.875rem;
+    font-size: 2.25rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 }
@@ -1592,27 +1592,6 @@ pre::-webkit-scrollbar-thumb:hover {
 [data-color-scheme="dark"] .prose .hljs-comment,
 [data-color-scheme="dark"] .prose .hljs-quote {
     color: #6b7280;
-}
-
-/* ==========================================================================
-   Blog Post Specific Styles - SilverRide Design
-   ========================================================================== */
-
-/* Headings - black to match screenshot design */
-.prose h2 {
-    font-size: 1.625rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    color: #1B1B1B;
-}
-
-.prose h3 {
-    font-size: 1.25rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
-    font-weight: 700;
-    color: #1B1B1B;
 }
 
 /* Links - theme primary red with underline to match screenshot */

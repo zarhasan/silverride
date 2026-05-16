@@ -51,7 +51,7 @@
                 <div class="space-y-4">
                     <h3 class="text-base font-bold text-gray-900">Who We Serve</h3>
                     <ul class="space-y-3">
-                        <li><a href="/paratransit" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Paratransit</a></li>
+                        <li><a href="/agencies" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Paratransit</a></li>
                         <li><a href="/pace" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">PACE</a></li>
                         <li><a href="/riders" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Riders</a></li>
                     </ul>
@@ -61,7 +61,7 @@
                 <div class="space-y-4">
                     <h3 class="text-base font-bold text-gray-900">Drivers</h3>
                     <ul class="space-y-3">
-                        <li><a href="/join" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Join Our Platform</a></li>
+                        <li><a href="/join-us" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Join Our Platform</a></li>
                         <li><a href="/cities" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Cities</a></li>
                         <li><a href="/state-requirements" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">State Requirements</a></li>
                     </ul>
@@ -72,8 +72,8 @@
                     <h3 class="text-base font-bold text-gray-900">Company</h3>
                     <ul class="space-y-3">
                         <li><a href="/company" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">About</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Leadership</a></li>
-                        <li><a href="#" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Careers</a></li>
+                        <li><a href="/leadership" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Leadership</a></li>
+                        <li><a href="/careers" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Careers</a></li>
                         <li><a href="/contact-us" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a></li>
                         <li><a href="/newsroom" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">News</a></li>
                     </ul>

@@ -9,7 +9,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 <section class="bg-white py-12 lg:py-20" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <!-- Header -->
-        <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+        <h1 class="text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-8">
             Get Help for an incident
         </h1>
 

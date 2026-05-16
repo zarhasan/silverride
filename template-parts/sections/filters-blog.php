@@ -20,7 +20,7 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
     <div class="container">
         <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <!-- Title -->
-            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">Newsroom</h1>
+            <h1 class="text-4xl lg:text-[2.875rem] font-bold text-gray-900 leading-tight">Newsroom</h1>
 
             <!-- Filters -->
             <form id="blog-filters" class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 lg:gap-6 w-full lg:w-auto">

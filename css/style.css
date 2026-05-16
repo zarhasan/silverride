@@ -919,8 +919,13 @@ body .wpforms-form .wpforms-field-label {
 
 /* Sections */
 
-.page-who-we-serve [data-section-id^="information-"] + [data-section-id^="information-"] {
-    padding-top: 0;
+[data-section-id="information-staggered"] + [data-section-id="section_title-default"] {
+    margin-top: 2rem !important;
+}
+
+[data-section-id="information"] + [data-section-id="information"],
+[data-section-id="information-staggered"] + [data-section-id="information-staggered"] {
+    padding-top: 2rem !important;
 }
 
 /* Pagination */
@@ -1024,21 +1029,34 @@ body .wpforms-form .wpforms-field-label {
     color: #1B1B1B;
 }
 
-.forminator-ui.forminator-custom-form .forminator-response-message.forminator-show {
-    width: 100%;
-    display: block;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: 1px solid transparent;
+/* Hide original response message (clone used instead) */
+.forminator-ui.forminator-custom-form .forminator-response-message:not(.forminator-response-message-clone) {
+    display: none !important;
 }
 
-.forminator-ui.forminator-custom-form .forminator-response-message.forminator-success {
+/* Clone response message */
+.forminator-response-message-clone {
+    display: none;
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Work Sans", sans-serif;
+}
+
+.forminator-response-message-clone.forminator-show {
+    display: block;
+}
+
+.forminator-response-message-clone.forminator-success {
     background-color: #D1FAE5;
     border-color: #10B981;
     color: #065F46;
 }
 
-.forminator-ui.forminator-custom-form .forminator-response-message.forminator-error {
+.forminator-response-message-clone.forminator-error {
     background-color: #FEE2E2;
     border-color: #DC2626;
     color: #991B1B;
@@ -1535,12 +1553,11 @@ body .wpforms-form .wpforms-field-label {
     margin-bottom: 0 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col,
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col-has-children {
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col {
     margin-bottom: 0 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col {
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col:not(.forminator-col-has-children) {
     margin-bottom: 1.5rem !important;
 }
 

@@ -14,7 +14,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         <!-- Title -->
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-16 lg:mb-20">
+        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-white text-center mb-16 lg:mb-20">
             Submit a Help Ticket
         </h2>
 

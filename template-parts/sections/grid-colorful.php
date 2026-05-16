@@ -27,7 +27,7 @@ $bg_style = $section_bg ? ' style="background-color: ' . esc_attr($section_bg) .
 <section class="<?php echo esc_attr($section_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>"<?php echo $bg_style; ?>>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <?php if ($title) : ?>
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-gray-900 text-center mb-12 lg:mb-16">
             <?php echo esc_html($title); ?>
         </h2>
         <?php endif; ?>
@@ -50,7 +50,7 @@ $bg_style = $section_bg ? ' style="background-color: ' . esc_attr($section_bg) .
                     <?php endif; ?>
 
                     <?php if ($card_title) : ?>
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-6">
+                    <h3 class="text-[1.625rem] font-bold text-gray-900 leading-tight mb-6">
                         <?php echo esc_html($card_title); ?>
                     </h3>
                     <?php endif; ?>

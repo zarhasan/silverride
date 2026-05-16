@@ -21,7 +21,7 @@ if ( empty( $items ) ) {
 <section class="<?php echo $section_class; ?>"<?php echo $bg_style; ?>>
 	<div class="container">
 		<?php if ( $title ) : ?>
-            <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-5xl"><?php echo esc_html( $title ); ?></h2>
+            <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]"><?php echo esc_html( $title ); ?></h2>
 		<?php endif; ?>
 
 		<?php if ( ! empty( $description ) ) : ?>
