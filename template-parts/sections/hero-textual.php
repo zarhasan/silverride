@@ -1,17 +1,31 @@
-<div>
-    <!-- Header -->
+<?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+$title = $args['title'] ?? '';
+$subtitle = $args['subtitle'] ?? '';
+$links = $args['links'] ?? [];
+$cta = !empty($links) ? ($links[0]['link'] ?? []) : [];
+?>
+<div class="container my-12 lg:mt-20 lg:-mb-16">
+    <?php if ($title) : ?>
     <h1 class="text-4xl lg:text-[2.875rem] font-bold text-gray-900 mb-8">
-        Get Help for an incident
+        <?php echo esc_html($title); ?>
     </h1>
+    <?php endif; ?>
 
-    <a href="#" class="btn btn-primary mb-8">
-        Get Help
+    <?php if (!empty($cta) && !empty($cta['url'])) : ?>
+    <a href="<?php echo esc_url($cta['url']); ?>" class="btn btn-primary mb-8">
+        <?php echo esc_html($cta['title'] ?? ''); ?>
     </a>
+    <?php endif; ?>
 
-    <!-- File a Complaint -->
+    <?php if ($subtitle) : ?>
     <h2 class="text-[1.625rem] font-bold text-gray-900 mb-4">
-        File a Complaint with a State
+        <?php echo esc_html($subtitle); ?>
     </h2>
+    <?php endif; ?>
 
     <div class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-primary mb-12">
         <a href="#arizona" class="hover:text-primary hover:underline transition-colors">AZ</a>

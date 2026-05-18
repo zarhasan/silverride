@@ -10,7 +10,7 @@ $items = $args['items'] ?? [];
 ?>
 
 <section class="bg-white my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+    <div class="container">
         <?php if ($title) : ?>
         <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4 md:mb-6">
             <?php echo esc_html($title); ?>
