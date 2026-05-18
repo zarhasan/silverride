@@ -340,6 +340,7 @@ add_action( 'acf/include_fields', function() {
 								'centered' => 'Centered',
 								'primary-background' => 'Primary Background',
 								'overlay' => 'Overlay',
+								'textual' => 'Textual',
 							),
 							'default_value' => '',
 							'return_format' => 'value',
