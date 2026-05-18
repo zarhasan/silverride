@@ -37,7 +37,7 @@ $links = $args['links'] ?? [];
             <?php endif; ?>
 
             <?php if (!empty($description)) : ?>
-                <div class="text-lg md:text-xl text-blue-100 leading-relaxed mb-10">
+                <div class="prose text-lg md:text-xl text-blue-100 leading-relaxed mb-10">
                     <?php echo wp_kses_post($description); ?>
                 </div>
             <?php endif; ?>

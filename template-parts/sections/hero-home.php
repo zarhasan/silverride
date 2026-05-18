@@ -29,7 +29,7 @@ $image = $args['image'] ?? [];
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="text-[1.25rem] text-blue-100 leading-relaxed mb-10">
+                    <div class="prose text-[1.25rem] text-blue-100 leading-relaxed mb-10">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>

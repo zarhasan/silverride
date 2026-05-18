@@ -9,7 +9,7 @@ $description = $args['description'] ?? '';
 $items = $args['items'] ?? [];
 ?>
 
-<section class="bg-white py-16 md:py-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
         <?php if ($title) : ?>
         <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4 md:mb-6">
@@ -29,7 +29,7 @@ $items = $args['items'] ?? [];
                 $item_title = $item['title'] ?? '';
                 $item_description = $item['description'] ?? '';
             ?>
-            <div class="prose prose-lg max-w-none pb-6 text-[#1B1B1B] leading-relaxed border-b border-gray-300 last:border-0">
+            <div id="<?php echo sanitize_title($item_title); ?>" class="prose prose-lg max-w-none pb-6 text-[#1B1B1B] leading-relaxed border-b border-gray-300 last:border-0">
                 <?php if ($item_title) : ?>
                 <h3 class="text-xl !md:text-[1.625rem] font-semibold mb-3"><?php echo esc_html($item_title); ?></h3>
                 <?php endif; ?>
