@@ -10,109 +10,106 @@ if (!defined('ABSPATH')) {
 }
 
 $template_part_name = explode('.', basename(__FILE__))[0];
-$title = $args['title'] ?? 'More Accessibility Services';
-$description = $args['description'] ?? '';
-$grid_size = intval($args['grid_size'] ?? 3);
-$items = $args['items'] ?? [];
-$background_color = $args['background_color'] ?? '';
+
+$title              = $args['title']              ?? '';
+$description        = $args['description']        ?? '';
+$grid_size          = intval($args['grid_size']   ?? 3);
+$items              = $args['items']              ?? [];
+$background_color   = $args['background_color']   ?? '';
 $footer_description = $args['footer_description'] ?? '';
-$cta = $args['cta'] ?? [];
-
-$item_count = count($items);
-
-$rows = ceil($item_count / $grid_size);
-$last_row_items = $item_count % $grid_size ?: $grid_size;
-$has_partial_last_row = ($item_count % $grid_size !== 0);
-
-$total_cols = $has_partial_last_row ? ($grid_size * $last_row_items) : $grid_size;
+$cta                = $args['cta']                ?? [];
 
 $bg_style = $background_color ? 'background-color: ' . esc_attr($background_color) . ';' : '';
 $bg_class = $background_color ? 'py-8 sm:py-16' : 'bg-white';
 ?>
 
-<section class="my-16 md:my-24 <?php echo $bg_class; ?>" <?php echo $background_color ? 'style="' . $bg_style . '"' : ''; ?> data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container">
-        <?php if ($title || $description) : ?>
-        <div class="w-full text-center mb-12 md:mb-16">
-            <?php if ($title) : ?>
-                <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4"><?php echo wp_kses_post($title); ?></h2>
-            <?php endif; ?>
+<section class="my-16 md:my-24 <?php echo esc_attr($bg_class); ?>" <?php echo $background_color ? 'style="' . esc_attr($bg_style) . '"' : ''; ?> data-section-id="<?php echo esc_attr($template_part_name); ?>">
+    <div class="x-container">
 
-            <?php if ($description) : ?>
-                <div class="prose text-lg text-[#1B1B1B] mx-auto leading-relaxed mt-8">
-                    <?php echo wp_kses_post($description); ?>
-                </div>
-            <?php endif; ?>
-        </div>
+        <?php if ($title || $description) : ?>
+            <div class="text-center mb-12 md:mb-16">
+                <?php if ($title) : ?>
+                    <h2 class="text-3xl md:text-[2.875rem] font-bold text-gray-900 !leading-tight">
+                        <?php echo wp_kses_post($title); ?>
+                    </h2>
+                <?php endif; ?>
+
+                <?php if ($description) : ?>
+                    <div class="mt-4 text-lg text-gray-600 !leading-relaxed max-w-3xl mx-auto">
+                        <?php echo wp_kses_post($description); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
         <?php endif; ?>
 
         <?php if (!empty($items)) : ?>
-        <div class="flex flex-col lg:grid gap-6 md:gap-8" style="grid-template-columns: repeat(<?php echo $total_cols; ?>, minmax(0, 1fr));">
-            <?php foreach ($items as $index => $item) : 
-                $item_image = $item['image'] ?? [];
-                $item_title = $item['title'] ?? '';
-                $item_description = $item['description'] ?? [];
-                $item_link = $item['link'] ?? [];
-                $has_link = !empty($item_link) && !empty($item_link['url']);
-                
-                $current_row = floor($index / $grid_size) + 1;
-                $is_last_row = ($current_row == $rows);
-                
-                if ($is_last_row && $has_partial_last_row) {
-                    $span = $total_cols / $last_row_items;
-                } else {
-                    $span = $total_cols / $grid_size;
-                }
-            ?>
-            <div class="border-2 rounded-lg p-6 bg-white text-center" style="border-color: var(--theme-primary); grid-column: span <?php echo $span; ?>;">
-                <?php if (!empty($item_image) && !empty($item_image['url'])) : ?>
-                    <div class="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style="background-color: var(--theme-primary);">
-                        <img src="<?php echo esc_url($item_image['url']); ?>" alt="" class="w-full h-auto">
-                    </div>
-                <?php endif; ?>
-                
-                <?php if ($item_title) : ?>
-                    <?php if ($has_link) : ?>
-                        <h3 class="text-2xl font-semibold text-[#1B1B1B] mb-3">
-                            <a href="<?php echo esc_url($item_link['url']); ?>" class="hover:underline">
-                                <?php echo esc_html($item_title); ?>
+            <div class="grid grid-cols-1 md:grid-cols-<?php echo esc_attr($grid_size); ?> gap-8 md:gap-10">
+                <?php foreach ($items as $item) :
+                    $item_image       = $item['image']       ?? [];
+                    $item_title       = $item['title']       ?? '';
+                    $item_description = $item['description'] ?? '';
+                    $item_link        = $item['link']        ?? [];
+                    $has_link         = !empty($item_link) && !empty($item_link['url']);
+                ?>
+                    <div class="flex flex-col items-center text-center">
+
+                        <?php if (!empty($item_image) && !empty($item_image['url'])) : ?>
+                            <div class="w-40 h-40 rounded-full bg-yellow-100 flex items-center justify-center mb-6">
+                                <img src="<?php echo esc_url($item_image['url']); ?>"
+                                     alt="<?php echo esc_attr($item_image['alt'] ?? ''); ?>"
+                                     class="w-full h-auto object-contain"
+                                     loading="lazy">
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($item_title) : ?>
+                            <?php if ($has_link) : ?>
+                                <h3 class="text-xl md:text-[1.625rem] !leading-tight font-bold text-gray-900 mb-4">
+                                    <a href="<?php echo esc_url($item_link['url']); ?>" class="hover:underline">
+                                        <?php echo esc_html($item_title); ?>
+                                    </a>
+                                </h3>
+                            <?php else : ?>
+                                <h3 class="text-xl md:text-[1.625rem] !leading-tight font-bold text-gray-900 mb-4">
+                                    <?php echo esc_html($item_title); ?>
+                                </h3>
+                            <?php endif; ?>
+                        <?php endif; ?>
+
+                        <?php if ($item_description) : ?>
+                            <div class="prose !text-xl text-gray-600 !leading-relaxed mb-6 max-w-sm">
+                                <?php echo wp_kses_post($item_description); ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($has_link && !empty($item_link['title'])) : ?>
+                            <a href="<?php echo esc_url($item_link['url']); ?>"
+                               class="btn btn-primary mt-auto">
+                                <?php echo esc_html($item_link['title']); ?>
                             </a>
-                        </h3>
-                    <?php else : ?>
-                        <h3 class="text-2xl font-semibold text-[#1B1B1B] mb-3"><?php echo esc_html($item_title); ?></h3>
-                    <?php endif; ?>
-                <?php endif; ?>
-                
-                <?php if ($item_description) : ?>
-                    <div class="prose text-lg leading-relaxed">
-                        <?php echo wp_kses_post($item_description); ?>
+                        <?php endif; ?>
+
                     </div>
-                <?php endif; ?>
-                
-                <?php if (!empty($item_link['title'])) : ?>
-                    <a href="<?php echo esc_url($item_link['url']); ?>" class="text-lg inline-flex items-center justify-center px-6 py-2 mt-6 text-white rounded-full transition-colors duration-200 border-2 border-primary bg-primary hover:bg-transparent hover:text-primary">
-                        <?php echo esc_html($item_link['title'] ?? 'Learn More'); ?>
-                    </a>
-                <?php endif; ?>
+                <?php endforeach; ?>
             </div>
-            <?php endforeach; ?>
-        </div>
         <?php endif; ?>
 
         <?php if (!empty($footer_description)) : ?>
-        <div class="w-full text-center mx-auto mt-12">
-            <div class="prose text-lg text-[#1B1B1B] leading-relaxed">
-                <?php echo wp_kses_post($footer_description); ?>
+            <div class="text-center mt-12 md:mt-16 max-w-3xl mx-auto">
+                <div class="text-lg text-gray-600 leading-relaxed">
+                    <?php echo wp_kses_post($footer_description); ?>
+                </div>
             </div>
-        </div>
         <?php endif; ?>
-        
+
         <?php if (!empty($cta) && !empty($cta['url'])) : ?>
-        <div class="text-center mt-8">
-            <a href="<?php echo esc_url($cta['url']); ?>" class="inline-flex items-center justify-center px-8 py-3 text-lg text-white rounded-full transition-colors duration-200" style="background-color: var(--theme-primary);">
-                <?php echo esc_html($cta['title'] ?? 'Learn More'); ?>
-            </a>
-        </div>
+            <div class="text-center mt-8">
+                <a href="<?php echo esc_url($cta['url']); ?>"
+                   class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white bg-blue-800 rounded-full hover:bg-blue-900 transition-colors duration-200">
+                    <?php echo esc_html($cta['title'] ?? 'Learn More'); ?>
+                </a>
+            </div>
         <?php endif; ?>
+
     </div>
 </section>
