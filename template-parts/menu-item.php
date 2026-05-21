@@ -49,6 +49,7 @@ $classes[] = 'menu-item-depth-' . absint( $depth );
 			<a
 				href="<?php echo esc_url( $item->url ); ?>"
 				class="flex-1 py-2 text-white text-lg font-medium no-underline hover:text-blue-200 transition-colors duration-200"
+				aria-haspopup="true"
 				<?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
 				<?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
 			>
@@ -70,6 +71,7 @@ $classes[] = 'menu-item-depth-' . absint( $depth );
 		<a
 			href="<?php echo esc_url( $item->url ); ?>"
 			class="<?php echo esc_attr( $link_class ); ?>"
+			<?php echo $has_children ? ' aria-haspopup="menu"' : ''; ?>
 			<?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
 			<?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
 		>

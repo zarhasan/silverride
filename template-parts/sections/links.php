@@ -33,13 +33,14 @@ $footnote    = $args['footnote'] ?? [];
                     </div>
                 <?php endif; ?>
 
-                <div class="flex flex-wrap gap-4 mt-10">
+                <div class="flex flex-wrap gap-4 mt-10" role="list">
                     <?php foreach ($links as $link_item) :
                         $link_data = is_array($link_item) && isset($link_item['link']) ? $link_item['link'] : $link_item;
                         $link_title = is_array($link_data) ? ($link_data['title'] ?? '') : $link_data;
                         $link_url   = is_array($link_data) ? ($link_data['url'] ?? '#') : '#';
                         $link_target = is_array($link_data) ? ($link_data['target'] ?? '') : '';
                     ?>
+                    <div role="listitem">
                         <a
                             href="<?php echo esc_url($link_url); ?>"
                             <?php if (!empty($link_target)) : ?>
@@ -49,6 +50,7 @@ $footnote    = $args['footnote'] ?? [];
                         >
                             <?php echo esc_html($link_title); ?>
                         </a>
+                    </div>
                     <?php endforeach; ?>
                 </div>
 

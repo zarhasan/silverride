@@ -12,7 +12,7 @@ $items = $args['items'] ?? [];
 <section class="bg-white my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <?php if ($title) : ?>
-        <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4 md:mb-6">
+        <h2 class="text-3xl md:text-[2.5rem] font-semibold !leading-tight text-[#1B1B1B] mb-4 md:mb-6" role="heading" aria-level="1">
             <?php echo esc_html($title); ?>
         </h2>
         <?php endif; ?>
@@ -31,7 +31,7 @@ $items = $args['items'] ?? [];
             ?>
             <div id="<?php echo sanitize_title($item_title); ?>" class="prose prose-lg max-w-none pb-6 text-[#1B1B1B] leading-relaxed border-b border-gray-300 last:border-0">
                 <?php if ($item_title) : ?>
-                <h3 class="text-xl !md:text-[1.625rem] font-semibold mb-3"><?php echo esc_html($item_title); ?></h3>
+                <h3 class="text-xl !md:text-[1.625rem] font-semibold mb-3" role="heading" aria-level="2"><?php echo esc_html($item_title); ?></h3>
                 <?php endif; ?>
                 <?php if ($item_description) : ?>
                 <div class=" text-lg sm:text-[1.125rem] text-gray-700">

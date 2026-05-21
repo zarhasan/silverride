@@ -26,7 +26,7 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary navigation">
+      <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
         <?php 
           get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',

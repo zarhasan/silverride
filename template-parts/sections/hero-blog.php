@@ -47,7 +47,7 @@ $featured_query = new WP_Query($featured_args);
                         <time class="text-gray-500"><?php echo get_the_date('F j, Y'); ?></time>
                     </div>
 
-                    <h1 class="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-gray-900 leading-tight mb-6">
+                    <h1 class="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-gray-900 leading-tight mb-6" role="heading" aria-level="2">
                         <?php echo esc_html(get_the_title()); ?>
                     </h1>
 

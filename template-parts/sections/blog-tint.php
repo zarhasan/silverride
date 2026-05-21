@@ -86,6 +86,7 @@ $posts = new WP_Query($query_args);
                     <a
                         href="<?php echo esc_url(get_permalink()); ?>"
                         class="btn btn-outline self-start mt-5"
+                        aria-label="Learn more about <?php echo esc_html($post_title); ?>"
                     >
                         Learn More
                     </a>

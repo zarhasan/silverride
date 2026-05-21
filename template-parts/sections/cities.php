@@ -52,8 +52,8 @@ $other_cities = $args['other_cities'] ?? [];
         <?php endif; ?>
 
         <div class="mt-5 flex flex-col lg:flex-row gap-4">
-          <a href="<?php echo esc_url($apply_link['url'] ?? '#'); ?>" class="btn btn-primary lg:w-1/2 grow"><?php echo esc_html($apply_link['title'] ?? 'Apply to Drive'); ?></a>
-          <a href="<?php echo esc_url($explore_link['url'] ?? '#'); ?>" class="btn btn-outline lg:w-1/2 grow"><?php echo esc_html($explore_link['title'] ?? 'Visit City Page'); ?></a>
+          <a href="<?php echo esc_url($apply_link['url'] ?? '#'); ?>" class="btn btn-primary lg:w-1/2 grow" aria-label="Apply to drive in <?php echo esc_html( $city_name ); ?>"><?php echo esc_html($apply_link['title'] ?? 'Apply to Drive'); ?></a>
+          <a href="<?php echo esc_url($explore_link['url'] ?? '#'); ?>" class="btn btn-outline lg:w-1/2 grow" aria-label="Visit city page of <?php echo esc_html( $city_name ); ?>"><?php echo esc_html($explore_link['title'] ?? 'Visit City Page'); ?></a>
         </div>
       </article>
       <?php endforeach; ?>

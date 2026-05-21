@@ -2,6 +2,7 @@
 
   </div>
 
+</main>
 
 <?php
     $template_part_name = explode('.', basename(__FILE__))[0];
@@ -16,7 +17,7 @@
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
     <div class="container mb-[11.25rem] pt-[3.75rem]">
-        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight">
+        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation">
             Bringing joy, dignity, and community <br class="hidden lg:block">
             to the people who need it most.
         </h2>
@@ -28,7 +29,7 @@
             <!-- Left Column: Logo, Description, Partner Logos -->
             <div class="lg:col-span-5 space-y-8">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col no-underline">
-                    <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide Logo">
+                    <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide There with Care logo">
                 </a>
                 
                 <p class="text-lg leading-relaxed max-w-lg text-primary">
@@ -101,11 +102,20 @@
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-base">
                 <span>&copy; 2026 SilverRide Inc.</span>
                 <div class="flex items-center gap-4">
-                    <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>
-                    <span>|</span>
-                    <a href="/terms" class="hover:text-gray-900 transition-colors duration-200">Terms</a>
-                    <span>|</span>
-                    <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200">Accessibility</a>
+                    <ul class="flex">
+                        <li class="ml-5">
+                            <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>
+                            |
+                        </li>
+                        <li class="ml-5">
+                            <a href="/terms" class="hover:text-gray-900 transition-colors duration-200">Terms</a>
+                            |
+                        </li>
+                        <li class="ml-5">
+                            <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200">Accessibility</a>
+                            |
+                        </li>
+                    </ul>
                 </div>
             </div>
 

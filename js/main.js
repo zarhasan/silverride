@@ -299,6 +299,39 @@
                 });
             });
         })();
+
+        // Add aria-labels to pagination links
+        (() => {
+            const $pageNumbers = $('ul.page-numbers');
+            if (!$pageNumbers.length) return;
+
+            const $links = $pageNumbers.find('a');
+            if (!$links.length) return;
+
+            $links.each(function () {
+                const $link = $(this);
+                const text = $link.text().trim();
+
+                if (!text) return;
+
+                const lowerText = text.toLowerCase();
+                let label = '';
+
+                if (lowerText === '←' || lowerText === '«' || lowerText === 'previous' || lowerText === 'prev') {
+                    label = 'Go to previous page';
+                } else if (lowerText === '→' || lowerText === '»' || lowerText === 'next') {
+                    label = 'Go to next page';
+                } else if (/^\d+$/.test(text)) {
+                    label = 'Go to page ' + text;
+                } else if (lowerText === '...' || lowerText === '…') {
+                    label = 'More pages';
+                }
+
+                if (label) {
+                    $link.attr('aria-label', label);
+                }
+            });
+        })();
     });
 
     function initVideoPlayback() {
@@ -1062,6 +1095,7 @@
         function closeAccordion($toggle, $content, $icon) {
             $toggle.attr('aria-expanded', 'false');
             $content.attr('aria-hidden', 'true');
+            $content.css('display', 'none');
             $content.removeClass('max-h-96 opacity-100').addClass('max-h-0 opacity-0');
             $icon.removeClass('rotate-180');
         }
@@ -1069,6 +1103,7 @@
         function openAccordion($toggle, $content, $icon) {
             $toggle.attr('aria-expanded', 'true');
             $content.attr('aria-hidden', 'false');
+            $content.css('display', 'block');
             $content.removeClass('max-h-0 opacity-0').addClass('max-h-96 opacity-100');
             $icon.addClass('rotate-180');
         }
@@ -1080,6 +1115,13 @@
             const $icon = $item.find('.faq-icon');
 
             if (!$toggle.length || !$content.length || !$icon.length) return;
+
+            // Ensure initial display state matches collapsed state
+            if ($toggle.attr('aria-expanded') !== 'true') {
+                $content.css('display', 'none');
+            } else {
+                $content.css('display', 'block');
+            }
 
             $toggle.on('click', function () {
                 const isExpanded = $toggle.attr('aria-expanded') === 'true';

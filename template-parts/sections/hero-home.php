@@ -17,13 +17,13 @@ $image = $args['image'] ?? [];
             <!-- Left Content -->
             <div>
                 <?php if (!empty($subtitle)) : ?>
-                    <p class="text-[#F8F12D] text-lg !font-medium sm:text-[1.25rem] mb-4">
+                    <p class="text-[#F8F12D] text-lg !font-medium sm:text-[1.25rem] mb-4" role="heading" aria-level="1">
                         <?php echo esc_html($subtitle); ?>
                     </p>
                 <?php endif; ?>
 
                 <?php if (!empty($title)) : ?>
-                    <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8">
+                    <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8" role="heading" aria-level="2">
                         <?php echo wp_kses_post($title); ?>
                     </h1>
                 <?php endif; ?>

@@ -20,7 +20,7 @@ $link = $args['link'] ?? [];
         <?php endif; ?>
 
         <?php if (!empty($title)) : ?>
-            <h2 class="text-4xl lg:text-[2.875rem] font-bold text-white !leading-tight mb-8">
+            <h2 class="text-4xl lg:text-[2.875rem] font-bold text-white !leading-tight mb-8" role="heading" aria-level="1">
                 <?php echo wp_kses_post($title); ?>
             </h2>
         <?php endif; ?>

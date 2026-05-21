@@ -1063,7 +1063,7 @@ body .wpforms-form .wpforms-field-label {
 }
 
 .forminator-ui.forminator-custom-form .forminator-error-message {
-    color: #DC2626;
+    color: #E66363;
     font-size: 0.875rem;
     margin-top: 0.5rem;
     font-weight: 500;
@@ -1218,7 +1218,7 @@ body .wpforms-form .wpforms-field-label {
 /* Time picker sub-labels and inputs */
 .forminator-ui.forminator-custom-form .forminator-timepicker .forminator-label {
     font-size: 0.875rem !important;
-    color: #6B7280 !important;
+    /* color: #6B7280 !important; */
     margin-top: 0.25rem !important;
     margin-bottom: 0 !important;
 }
@@ -1379,7 +1379,7 @@ body .wpforms-form .wpforms-field-label {
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-error-message {
-    color: #DC2626;
+    color: #E66363;
     font-size: 0.875rem;
     margin-top: 0.5rem;
     font-weight: 500;
@@ -1573,4 +1573,33 @@ body .wpforms-form .wpforms-field-label {
         width: 100% !important;
         float: none !important;
     }
+}
+
+.a11y_irrbg{
+    text-shadow: 1px 1px 4px #000, 0px 0px 4px #000 !important;
+}
+
+form#forminator-module-466 input.forminator-input,
+form#forminator-module-466 select.forminator-select--field,
+form#forminator-module-466 textarea.forminator-textarea
+{
+    border: 2px solid #949494 !important;
+}
+
+form#forminator-module-466 input.forminator-input:focus,
+form#forminator-module-466 select.forminator-select--field:focus,
+form#forminator-module-466 textarea.forminator-textarea:focus,
+.forminator-ui.forminator-custom-form select.forminator-select2:focus
+{
+    border: 2px solid black !important;
+}
+
+textarea.forminator-textarea::placeholder{
+    color: #949494 !important;
+}
+
+button.forminator-button-submit:focus,
+.forminator-field-radio input:focus
+{
+    border: 2px solid black !important;
 }

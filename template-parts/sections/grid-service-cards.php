@@ -90,7 +90,7 @@ $grid_class = $grid_size_classes[$grid_size] ?? $grid_size_classes[2];
 
                         <div class="flex-1 min-w-0">
                             <?php if ($item_title) : ?>
-                                <h3 class="text-xl md:text-2xl font-bold text-[#1B1B1B] mb-3">
+                                <h3 class="text-xl md:text-2xl font-bold text-[#1B1B1B] mb-3" role="heading" aria-level="2">
                                     <?php echo esc_html($item_title); ?>
                                 </h3>
                             <?php endif; ?>

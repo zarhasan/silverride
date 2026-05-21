@@ -14,13 +14,14 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
         <!-- Title -->
-        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-white text-center mb-16 lg:mb-20">
+        <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] font-bold text-white text-center mb-16 lg:mb-20" role="heading" aria-level="2">
             Submit a Help Ticket
         </h2>
 
         <!-- Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" role="list">
             <!-- Riders -->
+             <div role="listitem">
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Riders">
                 <svg xmlns="http://www.w3.org/2000/svg" width="90" height="40" viewBox="0 0 90 40" fill="none">
                     <g clip-path="url(#clip0_2512_1834)">
@@ -43,8 +44,10 @@ $template_part_name = explode('.', basename(__FILE__))[0];
 
                 <span class="text-lg font-semibold text-primary mt-4">Riders</span>
             </a>
+            </div>
 
             <!-- Drivers -->
+             <div role="listitem">
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Drivers">
                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                     <g clip-path="url(#clip0_2512_1858)">
@@ -60,8 +63,10 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                 </svg>
                 <span class="text-lg font-semibold text-primary mt-4">Drivers</span>
             </a>
+            </div>
 
             <!-- Partners -->
+             <div role="listitem">
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Submit a help ticket for Partners">
                 <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
                     <g clip-path="url(#clip0_2512_1872)">
@@ -91,8 +96,10 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                 </svg>
                 <span class="text-lg font-semibold text-primary mt-4">Partners</span>
             </a>
+            </div>
 
             <!-- Report an Incident -->
+             <div role="listitem">
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Report an Incident">
                 <svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48" fill="none">
                     <g clip-path="url(#clip0_2512_1946)">
@@ -114,8 +121,10 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                 </svg>
                 <span class="text-lg font-semibold text-primary mt-4 leading-tight">Report an<br>Incident</span>
             </a>
+            </div>
 
             <!-- Schedule a Ride -->
+             <div role="listitem">
             <a href="#" class="group bg-white flex flex-col items-center justify-center py-16 px-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl" aria-label="Schedule a Ride">
                 <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none">
                     <g clip-path="url(#clip0_2512_1984)">
@@ -132,6 +141,8 @@ $template_part_name = explode('.', basename(__FILE__))[0];
                 </svg>
                 <span class="text-lg font-semibold text-primary mt-4 leading-tight">Schedule a<br>Ride</span>
             </a>
+            </div>
+
         </div>
     </div>
 </section>

@@ -27,33 +27,61 @@ $cta = !empty($links) ? ($links[0]['link'] ?? []) : [];
     </h2>
     <?php endif; ?>
 
-    <div class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-primary mb-12">
-        <a href="#arizona" class="hover:text-primary hover:underline transition-colors">AZ</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#california" class="hover:text-primary hover:underline transition-colors">CA</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#florida" class="hover:text-primary hover:underline transition-colors">FL</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#georgia" class="hover:text-primary hover:underline transition-colors">GA</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#kentucky" class="hover:text-primary hover:underline transition-colors">KY</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#massachusetts" class="hover:text-primary hover:underline transition-colors">MA</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#maryland" class="hover:text-primary hover:underline transition-colors">MD</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#nevada" class="hover:text-primary hover:underline transition-colors">NV</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#new-jersey" class="hover:text-primary hover:underline transition-colors">NJ</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#new-mexico" class="hover:text-primary hover:underline transition-colors">NM</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#pennsylvania" class="hover:text-primary hover:underline transition-colors">PA</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#texas" class="hover:text-primary hover:underline transition-colors">TX</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#virginia" class="hover:text-primary hover:underline transition-colors">VA</a>
-        <span class="text-gray-400">&middot;</span>
-        <a href="#washington" class="hover:text-primary hover:underline transition-colors">WA</a>
-    </div>
+    <div class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-primary mb-12" role="list">
+            <span role="listitem">
+                <a href="#arizona" class="hover:text-primary hover:underline transition-colors">AZ</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#california" class="hover:text-primary hover:underline transition-colors">CA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#florida" class="hover:text-primary hover:underline transition-colors">FL</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#georgia" class="hover:text-primary hover:underline transition-colors">GA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#kentucky" class="hover:text-primary hover:underline transition-colors">KY</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#massachusetts" class="hover:text-primary hover:underline transition-colors">MA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#maryland" class="hover:text-primary hover:underline transition-colors">MD</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#nevada" class="hover:text-primary hover:underline transition-colors">NV</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#new-jersey" class="hover:text-primary hover:underline transition-colors">NJ</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#new-mexico" class="hover:text-primary hover:underline transition-colors">NM</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#pennsylvania" class="hover:text-primary hover:underline transition-colors">PA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#texas" class="hover:text-primary hover:underline transition-colors">TX</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem"> 
+                <a href="#virginia" class="hover:text-primary hover:underline transition-colors">VA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#washington" class="hover:text-primary hover:underline transition-colors">WA</a>
+            </span>
+        </div>
 </div>

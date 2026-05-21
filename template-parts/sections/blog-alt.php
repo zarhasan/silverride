@@ -59,7 +59,7 @@ if ($custom_query) {
                             <?php echo esc_html(get_the_excerpt()); ?>
                         </p>
 
-                        <a href="<?php echo esc_url(get_permalink()); ?>" class="inline-flex items-center justify-center self-start px-6 py-2 text-base font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
+                        <a href="<?php echo esc_url(get_permalink()); ?>" aria-label="Read more about <?php echo esc_html(get_the_title()); ?>" class="inline-flex items-center justify-center self-start px-6 py-2 text-base font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
                             Read More
                         </a>
                     </article>

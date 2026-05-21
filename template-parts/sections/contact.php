@@ -38,7 +38,7 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
             <!-- Left: Content -->
             <div class="text-white flex flex-col self-stretch">
                 <?php if ($title) : ?>
-                    <h2 class="text-3xl md:text-4xl lg:text-[2.625rem] font-bold text-white mb-6 !leading-tight" style="font-family: 'Poppins', sans-serif !important;">
+                    <h2 class="text-3xl md:text-4xl lg:text-[2.625rem] font-bold text-white mb-6 !leading-tight" role="heading" aria-level="1" style="font-family: 'Poppins', sans-serif !important;">
                         <?php echo wp_kses_post($title); ?>
                     </h2>
                 <?php endif; ?>

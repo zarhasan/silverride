@@ -22,34 +22,62 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             File a Complaint with a State
         </h2>
 
-        <div class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-primary mb-12">
-            <a href="#arizona" class="hover:text-primary hover:underline transition-colors">AZ</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#california" class="hover:text-primary hover:underline transition-colors">CA</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#florida" class="hover:text-primary hover:underline transition-colors">FL</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#georgia" class="hover:text-primary hover:underline transition-colors">GA</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#kentucky" class="hover:text-primary hover:underline transition-colors">KY</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#massachusetts" class="hover:text-primary hover:underline transition-colors">MA</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#maryland" class="hover:text-primary hover:underline transition-colors">MD</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#nevada" class="hover:text-primary hover:underline transition-colors">NV</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#new-jersey" class="hover:text-primary hover:underline transition-colors">NJ</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#new-mexico" class="hover:text-primary hover:underline transition-colors">NM</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#pennsylvania" class="hover:text-primary hover:underline transition-colors">PA</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#texas" class="hover:text-primary hover:underline transition-colors">TX</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#virginia" class="hover:text-primary hover:underline transition-colors">VA</a>
-            <span class="text-gray-400">&middot;</span>
-            <a href="#washington" class="hover:text-primary hover:underline transition-colors">WA</a>
+        <div class="flex flex-wrap gap-x-3 gap-y-2 text-sm text-primary mb-12" role="list">
+            <span role="listitem">
+                <a href="#arizona" class="hover:text-primary hover:underline transition-colors">AZ</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#california" class="hover:text-primary hover:underline transition-colors">CA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#florida" class="hover:text-primary hover:underline transition-colors">FL</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#georgia" class="hover:text-primary hover:underline transition-colors">GA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#kentucky" class="hover:text-primary hover:underline transition-colors">KY</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#massachusetts" class="hover:text-primary hover:underline transition-colors">MA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#maryland" class="hover:text-primary hover:underline transition-colors">MD</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#nevada" class="hover:text-primary hover:underline transition-colors">NV</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#new-jersey" class="hover:text-primary hover:underline transition-colors">NJ</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#new-mexico" class="hover:text-primary hover:underline transition-colors">NM</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#pennsylvania" class="hover:text-primary hover:underline transition-colors">PA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#texas" class="hover:text-primary hover:underline transition-colors">TX</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem"> 
+                <a href="#virginia" class="hover:text-primary hover:underline transition-colors">VA</a>
+                <span class="text-gray-400">&middot;</span>
+            </span>
+            <span role="listitem">
+                <a href="#washington" class="hover:text-primary hover:underline transition-colors">WA</a>
+            </span>
         </div>
 
         <!-- Drug & Alcohol Policy -->
@@ -104,42 +132,42 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             <div id="arizona" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Arizona</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Complete the form on the Arizona Department of Transportation <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Complete the form on the Arizona Department of Transportation <a href="#" aria-label="Complete the form on the Arizona Department of Transportation" class="text-primary hover:text-primary underline transition-colors">website</a>.
                 </p>
             </div>
 
             <div id="california" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">California</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Contact the California Public Utilities Commission by calling <a href="tel:18008949444" class="text-primary hover:text-primary underline transition-colors">1-800-894-9444</a> or emailing <a href="mailto:ciu_intake@cpuc.ca.gov" class="text-primary hover:text-primary underline transition-colors">ciu_intake@cpuc.ca.gov</a>. Or, you can visit their <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a> for more information.
+                    Contact the California Public Utilities Commission by calling <a href="tel:18008949444" class="text-primary hover:text-primary underline transition-colors">1-800-894-9444</a> or emailing <a href="mailto:ciu_intake@cpuc.ca.gov" class="text-primary hover:text-primary underline transition-colors">ciu_intake@cpuc.ca.gov</a>. Or, you can visit their <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit California Public Utilities Commission">website</a> for more information.
                 </p>
             </div>
 
             <div id="florida" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Florida</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Visit the Department of Agriculture and Consumer Affairs <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Visit the Department of Agriculture and Consumer Affairs <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit the Department of Agriculture and Consumer Affairs">website</a>.
                 </p>
             </div>
 
             <div id="georgia" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Georgia</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Complete the form on the Georgia Department of Public Safety <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Complete the form on the Georgia Department of Public Safety <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Georgia Department of Public Safety">website</a>.
                 </p>
             </div>
 
             <div id="kentucky" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Kentucky</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Complete the form on the Kentucky Transportation Cabinet <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Complete the form on the Kentucky Transportation Cabinet <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Kentucky Transportation Cabinet">website</a>.
                 </p>
             </div>
 
             <div id="maryland" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Maryland</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Complete the form on the Maryland Public Service Commission <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a> or contact the Transportation Division at <a href="tel:4107678128" class="text-primary hover:text-primary underline transition-colors">410-767-8128</a>.
+                    Complete the form on the Maryland Public Service Commission <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Maryland Public Service Commission">website</a> or contact the Transportation Division at <a href="tel:4107678128" class="text-primary hover:text-primary underline transition-colors">410-767-8128</a>.
                 </p>
             </div>
 
@@ -153,14 +181,14 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             <div id="nevada" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Nevada</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Contact the Nevada Transportation Authority at <a href="tel:7024863303" class="text-primary hover:text-primary underline transition-colors">702-486-3303</a> or complete the form on their <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Contact the Nevada Transportation Authority at <a href="tel:7024863303" class="text-primary hover:text-primary underline transition-colors">702-486-3303</a> or complete the form on their <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Nevada Transportation Authority">website</a>.
                 </p>
             </div>
 
             <div id="new-jersey" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">New Jersey</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Contact the New Jersey Motor Vehicle Commission by calling <a href="tel:9735046200" class="text-primary hover:text-primary underline transition-colors">973-504-6200</a> or emailing <a href="mailto:askconsumeraffairs@dca.state.nj.us" class="text-primary hover:text-primary underline transition-colors">askconsumeraffairs@dca.state.nj.us</a>. Or, you can visit their <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a> for more information.
+                    Contact the New Jersey Motor Vehicle Commission by calling <a href="tel:9735046200" class="text-primary hover:text-primary underline transition-colors">973-504-6200</a> or emailing <a href="mailto:askconsumeraffairs@dca.state.nj.us" class="text-primary hover:text-primary underline transition-colors">askconsumeraffairs@dca.state.nj.us</a>. Or, you can visit their <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit New Jersey Motor Vehicle Commission">website</a> for more information.
                 </p>
             </div>
 
@@ -174,14 +202,14 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             <div id="pennsylvania" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Pennsylvania</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Call the PUC Consumer Complaint Line by calling <a href="tel:18006927380" class="text-primary hover:text-primary underline transition-colors">1-800-692-7380</a>. Or, you can learn more on the PUC <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Call the PUC Consumer Complaint Line by calling <a href="tel:18006927380" class="text-primary hover:text-primary underline transition-colors">1-800-692-7380</a>. Or, you can learn more on the PUC <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit PUC website">website</a>.
                 </p>
             </div>
 
             <div id="texas" class="border-b border-gray-200 pb-4">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Texas</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Complete the form on the Texas Department of Licensing and Regulation <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Complete the form on the Texas Department of Licensing and Regulation <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Texas Department of Licensing and Regulation">website</a>.
                 </p>
             </div>
 
@@ -195,7 +223,7 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             <div id="washington" class="pb-8">
                 <h3 class="text-[1.375rem] font-bold text-gray-900 mb-2">Washington</h3>
                 <p class="text-[1.125rem] text-gray-900 leading-relaxed">
-                    Seattle/King County: Call the Seattle Customer Service Bureau at <a href="tel:2066842489" class="text-primary hover:text-primary underline transition-colors">206-684-2489</a> or complete the form on their <a href="#" class="text-primary hover:text-primary underline transition-colors">website</a>.
+                    Seattle/King County: Call the Seattle Customer Service Bureau at <a href="tel:2066842489" class="text-primary hover:text-primary underline transition-colors">206-684-2489</a> or complete the form on their <a href="#" class="text-primary hover:text-primary underline transition-colors" aria-label="Visit Seattle Customer Service Bureau">website</a>.
                 </p>
             </div>
         </div>
