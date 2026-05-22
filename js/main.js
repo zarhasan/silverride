@@ -20,6 +20,13 @@
         initToCHighlighter();
         initFaqAccordions();
 
+        // Move focus to thank-you page heading for screen-reader announcement
+        (() => {
+            const $heading = $('body.page-thank-you h2.text-4xl');
+            if (!$heading.length) return;
+            $heading.attr('tabindex', '-1').focus();
+        })();
+
         (() => {
             const $grid = $('[data-section-id="section_title-default"][data-heading-level="h3"] + [data-section-id^="grid-"] h3');
             if (!$grid.length) return;
@@ -80,6 +87,49 @@
             });
         })();
 
+        // On schedule-a-ride page, treat specific h2 as h1 for accessibility
+        (() => {
+            if (!window.location.pathname.includes('schedule-a-ride/')) return;
+
+            const $headings = $('h2.capitalize.tracking-wide');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '1',
+                });
+            });
+        })();
+
+        (() => {
+            if (!window.location.pathname.includes('help/')) return;
+
+            const $headings = $('h2.font-bold.text-3xl');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '1',
+                });
+            });
+        })();
+
+        (() => {
+            if (!window.location.pathname.includes('driver-san-francisco/')) return;
+
+            const $headings = $('h2.font-semibold.text-3xl');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '1',
+                });
+            });
+        })();
+
         (() => {
             const $desktopMenuItems = $('.primary-menu li.menu-item-has-children');
             if (!$desktopMenuItems.length) return;
@@ -95,6 +145,56 @@
             const $menuHeatingItems = $('.primary-menu li.menu-item-has-children > a[href="#"]');
             if (!$menuHeatingItems.length) return;
             $menuHeatingItems.attr('role', 'heading').attr('aria-level', '2').removeAttr('href');
+        })();
+
+        // Dismiss desktop submenus with Escape key
+        (() => {
+            const $desktopItems = $('.primary-menu li.menu-item-has-children');
+            if (!$desktopItems.length) return;
+
+            $desktopItems.each((i, el) => {
+                const $item = $(el);
+                const $subMenu = $item.children('.sub-menu').first();
+                const $link = $item.children('a').first();
+                if (!$subMenu.length || !$link.length) return;
+
+                $item.on('keydown.dismissSubmenu', function (e) {
+                    if (e.key !== 'Escape') return;
+
+                    const style = window.getComputedStyle($subMenu[0]);
+                    if (style.display === 'none' || style.visibility === 'hidden') return;
+
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Force-hide the submenu (overrides CSS :hover/:focus-within)
+                    $subMenu[0].style.display = 'none';
+
+                    // Move focus to parent link if it's inside the submenu
+                    if ($subMenu[0].contains(document.activeElement)) {
+                        $link[0].focus();
+                    }
+
+                    function restoreSubmenu() {
+                        $subMenu[0].style.display = '';
+                        $item.off('focusin.dismissSubmenu', handleFocusIn);
+                        $item.off('mouseenter.dismissSubmenu', handleMouseEnter);
+                    }
+
+                    function handleFocusIn(evt) {
+                        if (evt.target === $link[0]) {
+                            restoreSubmenu();
+                        }
+                    }
+
+                    function handleMouseEnter() {
+                        restoreSubmenu();
+                    }
+
+                    $item.on('focusin.dismissSubmenu', handleFocusIn);
+                    $item.on('mouseenter.dismissSubmenu', handleMouseEnter);
+                });
+            });
         })();
 
         (() => {
@@ -225,6 +325,28 @@
                 };
             });
 
+        })();
+
+        // Add role="group" and aria-label to Forminator timepickers
+        (() => {
+            const $timeFields = $('.forminator-field-time');
+            if (!$timeFields.length) return;
+
+            $timeFields.each((i, el) => {
+                const $field = $(el);
+                const $timepicker = $field.find('.forminator-timepicker').first();
+                if (!$timepicker.length) return;
+
+                const $mainLabel = $field.find('.forminator-label').first();
+                const labelText = $mainLabel.length ? $mainLabel.text().trim() : '';
+
+                if (labelText) {
+                    $timepicker.attr({
+                        'role': 'group',
+                        'aria-label': labelText,
+                    });
+                }
+            });
         })();
 
         // Forminator form improvements
@@ -732,6 +854,36 @@
             });
         })();
 
+        // Dismiss mobile submenus with Escape key when focus is inside
+        (function () {
+            $mobileMenu.on('keydown.dismissMobileSubmenu', function (e) {
+                if (e.key !== 'Escape') return;
+
+                const activeEl = document.activeElement;
+                if (!activeEl) return;
+
+                const $activeSubMenu = $(activeEl).closest('.sub-menu');
+                if (!$activeSubMenu.length) return;
+                if ($activeSubMenu.hasClass('hidden')) return;
+
+                e.preventDefault();
+                e.stopPropagation();
+
+                const $parentLi = $activeSubMenu.closest('li.menu-item-has-children');
+                if (!$parentLi.length) return;
+
+                const $toggle = $parentLi.find('.menu-toggle').first();
+                if (!$toggle.length) return;
+
+                $activeSubMenu.addClass('hidden');
+                $activeSubMenu.attr('aria-hidden', 'true');
+                $toggle.attr('aria-expanded', 'false');
+                const $icon = $toggle.find('.menu-toggle-icon');
+                if ($icon.length) $icon.removeClass('rotate-180');
+                $toggle.focus();
+            });
+        })();
+
         // Initialize submenu aria-hidden on mobile page load
         (function () {
             const $mobileSubmenus = $mobileMenu.find('.sub-menu');
@@ -1068,17 +1220,24 @@
             }
         }
 
-        // Smooth scroll on TOC click
+        // Smooth scroll on TOC click and move focus to heading
         links.forEach(function (link) {
             link.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = link.getAttribute('href').substring(1);
                 const target = document.getElementById(targetId);
-                if (target) {
-                    const offset = getScrollOffset();
-                    const top = target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - offset;
-                    window.scrollTo({ top: top, behavior: 'smooth' });
+                if (!target) return;
+
+                const offset = getScrollOffset();
+                const top = target.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - offset;
+                window.scrollTo({ top: top, behavior: 'smooth' });
+
+                // Move focus to the heading (set tabindex temporarily if absent)
+                const originalTabIndex = target.getAttribute('tabindex');
+                if (originalTabIndex === null) {
+                    target.setAttribute('tabindex', '-1');
                 }
+                target.focus({ preventScroll: true });
             });
         });
 
