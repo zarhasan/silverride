@@ -42,6 +42,7 @@ const EXCLUDED_DIRS = new Set([
   ".hg",
   ".github",
   "vendor",
+  "dist",
 ]);
 
 // Walk up the directory tree looking for a build.json file
