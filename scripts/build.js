@@ -345,6 +345,7 @@ async function createThemeZip(themeDir, outputDir, versionType, generatePot, bui
   });
 
   const outputPath = join(outputDir, zipFileName);
+  await Deno.mkdir(outputDir, { recursive: true });
   await Deno.writeFile(outputPath, zipContent);
   console.log(
     `${versionType} version created: ${zipContent.length} bytes -> ${outputPath}`
