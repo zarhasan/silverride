@@ -20,11 +20,18 @@
         initToCHighlighter();
         initFaqAccordions();
 
-        // Move focus to thank-you page heading for screen-reader announcement
+        // Add screen-reader-only h1 on thank-you page and hide visual h2 from AT
         (() => {
-            const $heading = $('body.page-thank-you h2.text-4xl');
+            if (!window.location.pathname.includes('thank-you/')) return;
+
+            const $heading = $('h2.text-4xl');
             if (!$heading.length) return;
-            $heading.attr('tabindex', '-1').focus();
+
+            $heading.attr('aria-hidden', 'true');
+
+            const $srHeading = $('<h1 class="sr-only" tabindex="-1">Thank you for scheduling your ride</h1>');
+            $heading.after($srHeading);
+            $srHeading.focus();
         })();
 
         (() => {
@@ -140,6 +147,21 @@
                 $(el).attr({
                     'role': 'heading',
                     'aria-level': '1',
+                });
+            });
+        })();
+
+        // On contact-us page, promote .prose h4 to aria-level="2" heading
+        (() => {
+            if (!window.location.pathname.includes('contact-us/')) return;
+
+            const $headings = $('.prose h4');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '2',
                 });
             });
         })();

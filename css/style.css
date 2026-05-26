@@ -1063,7 +1063,7 @@ body .wpforms-form .wpforms-field-label {
 }
 
 .forminator-ui.forminator-custom-form .forminator-error-message {
-    color: #E66363;
+    color: #D72828 !important;
     font-size: 0.875rem;
     margin-top: 0.5rem;
     font-weight: 500;
@@ -1379,7 +1379,7 @@ body .wpforms-form .wpforms-field-label {
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-error-message {
-    color: #E66363;
+    color: #D72828 !important;
     font-size: 0.875rem;
     margin-top: 0.5rem;
     font-weight: 500;
@@ -1581,9 +1581,15 @@ body .wpforms-form .wpforms-field-label {
 
 form#forminator-module-466 input.forminator-input,
 form#forminator-module-466 select.forminator-select--field,
-form#forminator-module-466 textarea.forminator-textarea
+form#forminator-module-466 textarea.forminator-textarea,
+form#forminator-module-127 input.forminator-input,
+form#forminator-module-127 select.forminator-select--field,
+form#forminator-module-127 textarea.forminator-textarea,
+form#forminator-module-1047 input.forminator-input,
+form#forminator-module-1047 select.forminator-select--field,
+form#forminator-module-1047 input.forminator-input
 {
-    border: 2px solid #949494 !important;
+    border: 2px solid #878787 !important;
 }
 
 form#forminator-module-466 input.forminator-input:focus,
@@ -1594,12 +1600,19 @@ form#forminator-module-466 textarea.forminator-textarea:focus,
     border: 2px solid black !important;
 }
 
-textarea.forminator-textarea::placeholder{
+/* textarea.forminator-textarea::placeholder{
     color: #949494 !important;
-}
+} */
 
 button.forminator-button-submit:focus,
 .forminator-field-radio input:focus
 {
     border: 2px solid black !important;
+}
+
+section[data-section-id="hero-overlay"] .prose a{
+    color: white !important;
+}
+section[data-section-id="hero-overlay"] .prose a:hover{
+    color: #E66079 !important;
 }
