@@ -108,6 +108,28 @@ $carousel_id = 'slider-basic-' . uniqid();
                 </button>
             </div>
 
+            <div class="flex items-center justify-center mt-8">
+                <button
+                    type="button"
+                    data-carousel-play-pause
+                    aria-controls="<?php echo esc_attr($carousel_id); ?>"
+                    aria-label="Pause carousel"
+                    class="flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors duration-200"
+                >
+                    <span class="embla__play-icon hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </span>
+                    <span class="embla__pause-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
             <div
                 data-carousel-live-region
                 aria-live="polite"

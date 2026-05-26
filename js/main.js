@@ -105,7 +105,7 @@
         (() => {
             if (!window.location.pathname.includes('help/')) return;
 
-            const $headings = $('h2.font-bold.text-3xl');
+            const $headings = $('.max-w-4xl.text-center h2.font-bold.text-3xl');
             if (!$headings.length) return;
 
             $headings.each((i, el) => {
@@ -120,6 +120,20 @@
             if (!window.location.pathname.includes('driver-san-francisco/')) return;
 
             const $headings = $('h2.font-semibold.text-3xl');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '1',
+                });
+            });
+        })();
+
+        (() => {
+            if (!window.location.pathname.includes('support/')) return;
+
+            const $headings = $('h2.font-bold.text-3xl');
             if (!$headings.length) return;
 
             $headings.each((i, el) => {
@@ -147,52 +161,56 @@
             $menuHeatingItems.attr('role', 'heading').attr('aria-level', '2').removeAttr('href');
         })();
 
-        // Dismiss desktop submenus with Escape key
+        // Dismiss desktop submenus with Escape key and restore on refocus/hover
         (() => {
-            const $desktopItems = $('.primary-menu li.menu-item-has-children');
-            if (!$desktopItems.length) return;
+            const $primaryMenu = $('.primary-menu');
+            if (!$primaryMenu.length) return;
 
-            $desktopItems.each((i, el) => {
-                const $item = $(el);
-                const $subMenu = $item.children('.sub-menu').first();
-                const $link = $item.children('a').first();
-                if (!$subMenu.length || !$link.length) return;
+            $primaryMenu.on('keydown.dismissSubmenu', function (e) {
+                if (e.key !== 'Escape') return;
 
-                $item.on('keydown.dismissSubmenu', function (e) {
-                    if (e.key !== 'Escape') return;
+                const $visibleSubMenus = $primaryMenu.find('li.menu-item-has-children > .sub-menu').filter(function () {
+                    const style = window.getComputedStyle(this);
+                    return style.display !== 'none' && style.visibility !== 'hidden';
+                });
 
-                    const style = window.getComputedStyle($subMenu[0]);
-                    if (style.display === 'none' || style.visibility === 'hidden') return;
+                if (!$visibleSubMenus.length) return;
 
-                    e.preventDefault();
-                    e.stopPropagation();
+                e.preventDefault();
+                e.stopPropagation();
+
+                $visibleSubMenus.each(function () {
+                    const subMenu = this;
+                    const $parentLi = $(subMenu).closest('li.menu-item-has-children');
+                    const $link = $parentLi.children('a').first();
+
+                    // Clean up any previous restoration listeners for this item
+                    $parentLi.off('focusin.dismissRestore');
+                    $parentLi.off('mouseenter.dismissRestore');
 
                     // Force-hide the submenu (overrides CSS :hover/:focus-within)
-                    $subMenu[0].style.display = 'none';
+                    subMenu.style.display = 'none';
 
-                    // Move focus to parent link if it's inside the submenu
-                    if ($subMenu[0].contains(document.activeElement)) {
+                    // Move focus to parent link if it was inside the submenu
+                    if (subMenu.contains(document.activeElement) && $link.length) {
                         $link[0].focus();
                     }
 
                     function restoreSubmenu() {
-                        $subMenu[0].style.display = '';
-                        $item.off('focusin.dismissSubmenu', handleFocusIn);
-                        $item.off('mouseenter.dismissSubmenu', handleMouseEnter);
+                        subMenu.style.display = '';
+                        $parentLi.off('focusin.dismissRestore');
+                        $parentLi.off('mouseenter.dismissRestore');
                     }
 
-                    function handleFocusIn(evt) {
-                        if (evt.target === $link[0]) {
+                    // Delay binding so the synchronous focusin from .focus() is not caught
+                    setTimeout(function () {
+                        $parentLi.on('focusin.dismissRestore', function () {
                             restoreSubmenu();
-                        }
-                    }
-
-                    function handleMouseEnter() {
-                        restoreSubmenu();
-                    }
-
-                    $item.on('focusin.dismissSubmenu', handleFocusIn);
-                    $item.on('mouseenter.dismissSubmenu', handleMouseEnter);
+                        });
+                        $parentLi.on('mouseenter.dismissRestore', function () {
+                            restoreSubmenu();
+                        });
+                    }, 0);
                 });
             });
         })();
