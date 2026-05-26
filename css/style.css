@@ -1116,7 +1116,7 @@ body .wpforms-form .wpforms-field-label {
 
 .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
 .forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
-    color: #949494 !important;
+    color: #717171 !important;
 }
 
 .forminator-ui.forminator-custom-form input.forminator-input:focus,
@@ -1424,7 +1424,7 @@ body .wpforms-form .wpforms-field-label {
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
 .contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
-    color: #949494 !important;
+    color: #717171 !important;
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input:focus,
