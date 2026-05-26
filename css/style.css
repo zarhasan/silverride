@@ -10,6 +10,10 @@ html {
     html {
         font-size: 14.4px;
     }
+
+    article div.flex.items-start a.flex svg path{
+        fill: white !important;
+    }
 }
 
 body {
@@ -1112,7 +1116,7 @@ body .wpforms-form .wpforms-field-label {
 
 .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
 .forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
-    color: #9CA3AF !important;
+    color: #949494 !important;
 }
 
 .forminator-ui.forminator-custom-form input.forminator-input:focus,
@@ -1420,7 +1424,7 @@ body .wpforms-form .wpforms-field-label {
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input::placeholder,
 .contact-forminator .forminator-ui.forminator-custom-form textarea.forminator-textarea::placeholder {
-    color: #9CA3AF !important;
+    color: #949494 !important;
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form input.forminator-input:focus,
@@ -1598,10 +1602,6 @@ form#forminator-module-466 textarea.forminator-textarea:focus,
 .forminator-ui.forminator-custom-form select.forminator-select2:focus
 {
     border: 2px solid black !important;
-}
-
-form textarea.forminator-textarea::placeholder{
-    color: #949494 !important;
 }
 
 button.forminator-button-submit:focus,

@@ -1081,12 +1081,14 @@
             const plugins = [];
             let autoplayPlugin = null;
 
+            const isTestimonialCarousel = carouselEl.classList.contains('mt-6') && carouselEl.classList.contains('md:mt-12');
+
             if (!prefersReducedMotion && typeof window.EmblaCarouselAutoplay !== 'undefined') {
                 autoplayPlugin = window.EmblaCarouselAutoplay({
                     delay: 5000,
                     stopOnInteraction: true,
                     stopOnMouseEnter: false,
-                    stopOnFocusIn: true,
+                    stopOnFocusIn: !isTestimonialCarousel,
                     playOnInit: true,
                 });
                 plugins.push(autoplayPlugin);
@@ -1196,45 +1198,47 @@
                 }
             });
 
-            // Pause on hover
-            let wasPlayingOnHover = false;
-            let focusInside = false;
+            // Pause on hover / focus (skipped for testimonial carousels)
+            if (!isTestimonialCarousel) {
+                let wasPlayingOnHover = false;
+                let focusInside = false;
 
-            carouselEl.addEventListener('mouseenter', function () {
-                if (autoplayPlugin && autoplayPlugin.isPlaying()) {
-                    wasPlayingOnHover = true;
-                    autoplayPlugin.stop();
-                    updateUI();
-                }
-            });
+                carouselEl.addEventListener('mouseenter', function () {
+                    if (autoplayPlugin && autoplayPlugin.isPlaying()) {
+                        wasPlayingOnHover = true;
+                        autoplayPlugin.stop();
+                        updateUI();
+                    }
+                });
 
-            carouselEl.addEventListener('mouseleave', function () {
-                if (autoplayPlugin && wasPlayingOnHover && !focusInside) {
-                    autoplayPlugin.play();
-                    wasPlayingOnHover = false;
-                    updateUI();
-                }
-            });
-
-            carouselEl.addEventListener('focusin', function () {
-                focusInside = true;
-                if (autoplayPlugin && autoplayPlugin.isPlaying()) {
-                    wasPlayingOnHover = true;
-                    autoplayPlugin.stop();
-                    updateUI();
-                }
-            });
-
-            carouselEl.addEventListener('focusout', function (e) {
-                if (!carouselEl.contains(e.relatedTarget)) {
-                    focusInside = false;
-                    if (autoplayPlugin && wasPlayingOnHover) {
+                carouselEl.addEventListener('mouseleave', function () {
+                    if (autoplayPlugin && wasPlayingOnHover && !focusInside) {
                         autoplayPlugin.play();
                         wasPlayingOnHover = false;
                         updateUI();
                     }
-                }
-            });
+                });
+
+                carouselEl.addEventListener('focusin', function () {
+                    focusInside = true;
+                    if (autoplayPlugin && autoplayPlugin.isPlaying()) {
+                        wasPlayingOnHover = true;
+                        autoplayPlugin.stop();
+                        updateUI();
+                    }
+                });
+
+                carouselEl.addEventListener('focusout', function (e) {
+                    if (!carouselEl.contains(e.relatedTarget)) {
+                        focusInside = false;
+                        if (autoplayPlugin && wasPlayingOnHover) {
+                            autoplayPlugin.play();
+                            wasPlayingOnHover = false;
+                            updateUI();
+                        }
+                    }
+                });
+            }
 
             // On slide change (including auto)
             embla.on('select', updateUI);
