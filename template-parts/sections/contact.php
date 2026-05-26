@@ -74,7 +74,7 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
             <!-- Right: Form Card -->
             <div class="bg-white rounded-lg shadow-xl p-8 lg:p-10">
                 <?php if ($form_heading) : ?>
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2" style="font-family: 'Poppins', sans-serif !important;">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2" style="font-family: 'Poppins', sans-serif !important;" role="heading" aria-level="2">
                         <?php echo esc_html($form_heading); ?>
                     </h3>
                 <?php endif; ?>

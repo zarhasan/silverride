@@ -16,6 +16,38 @@
         initHeroPageVideo();
         addProseToElementor();
         initAlternateBgHover();
+
+        // Inject play/pause button into carousels with mt-6 md:mt-12 class
+        (() => {
+            const $carousel = $('[data-carousel].mt-6.md\\:mt-12');
+            if (!$carousel.length) return;
+            if ($carousel.find('[data-carousel-play-pause]').length) return;
+
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.setAttribute('data-carousel-play-pause', '');
+            btn.setAttribute('aria-label', 'Pause carousel');
+            btn.className = 'flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-full border border-gray-300 hover:border-gray-400 transition-colors duration-200';
+
+            const playSpan = document.createElement('span');
+            playSpan.className = 'embla__play-icon hidden';
+            playSpan.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>';
+
+            const pauseSpan = document.createElement('span');
+            pauseSpan.className = 'embla__pause-icon';
+            pauseSpan.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>';
+
+            btn.appendChild(playSpan);
+            btn.appendChild(pauseSpan);
+
+            const $liveRegion = $carousel.find('[data-carousel-live-region]');
+            if ($liveRegion.length) {
+                $(btn).insertBefore($liveRegion);
+            } else {
+                $carousel.append(btn);
+            }
+        })();
+
         initAccessibleCarousels();
         initToCHighlighter();
         initFaqAccordions();
@@ -162,6 +194,20 @@
                 $(el).attr({
                     'role': 'heading',
                     'aria-level': '2',
+                });
+            });
+        })();
+
+        (() => {
+            if (!window.location.pathname.includes('agencies/')) return;
+
+            const $headings = $('article .prose p strong');
+            if (!$headings.length) return;
+
+            $headings.each((i, el) => {
+                $(el).attr({
+                    'role': 'heading',
+                    'aria-level': '4',
                 });
             });
         })();

@@ -1600,9 +1600,9 @@ form#forminator-module-466 textarea.forminator-textarea:focus,
     border: 2px solid black !important;
 }
 
-/* textarea.forminator-textarea::placeholder{
+form textarea.forminator-textarea::placeholder{
     color: #949494 !important;
-} */
+}
 
 button.forminator-button-submit:focus,
 .forminator-field-radio input:focus
@@ -1615,4 +1615,8 @@ section[data-section-id="hero-overlay"] .prose a{
 }
 section[data-section-id="hero-overlay"] .prose a:hover{
     color: #E66079 !important;
+}
+
+.forminator-field-time > span.forminator-error-message{
+    display: none !important;
 }
