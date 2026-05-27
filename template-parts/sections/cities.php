@@ -37,16 +37,17 @@ $other_cities = $args['other_cities'] ?? [];
           <?php if ( ! empty( $extra_links ) ) : ?>
           <div class="flex gap-4 text-sm">
             <?php foreach ( $extra_links as $link ) :
-              $link_url    = $link['url'] ?? '';
-              $link_title  = $link['title'] ?? '';
-              $link_target = ! empty( $link['target'] ) ? ' target="' . esc_attr( $link['target'] ) . '"' : '';
+              $link_data   = $link['link'] ?? [];
+              $link_url    = $link_data['url'] ?? '';
+              $link_title  = $link_data['title'] ?? '';
+              $link_target = ! empty( $link_data['target'] ) ? ' target="' . esc_attr( $link_data['target'] ) . '"' : '';
             ?>
             <?php 
               if ( empty( $link_url ) || empty( $link_title ) ) {
                 continue; // Skip if URL or title is missing
               } 
             ?>
-            <a href="<?php echo esc_url( $link_url ); ?>" class="text-primary text-lg font-bold"<?php echo $link_target; ?>>
+            <a href="<?php echo esc_url( $link_url ); ?>" class="text-primary text-lg underline font-bold"<?php echo $link_target; ?>>
               <?php echo esc_html( $link_title ); ?>
             </a>
             <?php endforeach; ?>
