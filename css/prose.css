@@ -753,7 +753,7 @@
 }
 
 .hljs:focus {
-    outline: 2px solid #F26522;
+    outline: 2px solid #b16211;
     outline-offset: 2px;
 }
 
@@ -776,7 +776,7 @@
 .hljs-built_in,
 .hljs-name,
 .hljs-tag {
-    color: #F26522;
+    color: #b16211;
     font-weight: 600;
 }
 
@@ -864,14 +864,14 @@
 }
 
 .hljs-link:hover {
-    color: #F26522;
+    color: #b16211;
 }
 
 /* Code inline */
 :not(.hljs) > code,
 .hljs:not(pre) {
     background: rgba(242, 101, 34, 0.15);
-    color: #F26522;
+    color: #b16211;
     padding: 0.2em 0.4em;
     border-radius: 4px;
     font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;
@@ -932,7 +932,7 @@
 /* Highlighted lines */
 .hljs-highlight {
     background-color: rgba(242, 101, 34, 0.1);
-    border-left: 3px solid #F26522;
+    border-left: 3px solid #b16211;
     margin-left: -1.25rem;
     margin-right: -1.25rem;
     padding-left: 1.25rem;
@@ -972,7 +972,7 @@
 }
 
 .hljs-selector-tag {
-    color: #F26522;
+    color: #b16211;
 }
 
 .hljs-property {
@@ -1020,7 +1020,7 @@
 
 .prose :not(pre) > code {
     background: rgba(242, 101, 34, 0.15);
-    color: #F26522;
+    color: #b16211;
     padding: 0.2em 0.4em;
     border-radius: 4px;
     font-family: 'Fira Code', 'JetBrains Mono', 'Consolas', monospace;

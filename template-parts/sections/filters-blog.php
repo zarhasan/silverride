@@ -49,8 +49,10 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
                 </div>
 
                 <!-- Category Filter -->
-                <div class="relative sm:w-48 lg:w-56">
+                <div class="relative sm:w-48 lg:w-56 blog-filter-field">
+                    <label for="blog-filter-category" class="blog-filter-label">All News</label>
                     <select
+                        id="blog-filter-category"
                         name="category"
                         class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Filter by category"
@@ -68,8 +70,10 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
                 </div>
 
                 <!-- Sort -->
-                <div class="relative sm:w-48 lg:w-56">
+                <div class="relative sm:w-48 lg:w-56 blog-filter-field">
+                    <label for="blog-filter-sort" class="blog-filter-label">Newest First</label>
                     <select
+                        id="blog-filter-sort"
                         name="sort"
                         class="w-full appearance-none pl-6 pr-12 py-4 text-lg font-medium text-gray-900 bg-white border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-shadow duration-200 cursor-pointer"
                         aria-label="Sort posts"

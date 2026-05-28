@@ -4282,7 +4282,7 @@ add_action( 'acf/include_fields', function() {
 			'label' => 'Secondary Color',
 			'name' => 'secondary_color',
 			'type' => 'color_picker',
-			'default_value' => '#F26522',
+			'default_value' => '#b16211',
 		),
 		array(
 			'key' => 'field_alternate_bg_color',

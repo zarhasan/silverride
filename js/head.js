@@ -1,6 +1,6 @@
 (function() {
     var primaryColor = 'var(--theme-primary, #C41E3A)';
-    var secondaryColor = 'var(--theme-secondary, #F26522)';
+    var secondaryColor = 'var(--theme-secondary, #b16211)';
     var primaryRgb = 'var(--theme-primary-rgb, 196, 30, 58)';
     var altBg = 'var(--theme-alternate-bg, #f8f9fa)';
     

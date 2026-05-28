@@ -39,7 +39,7 @@ function silverride_primary_color($echo = false) {
 }
 
 function silverride_secondary_color($echo = false) {
-    $color = silverride_get_theme_color('secondary_color', '#F26522');
+    $color = silverride_get_theme_color('secondary_color', '#b16211');
     if ($echo) {
         echo $color;
     }
@@ -56,7 +56,7 @@ function silverride_alternate_bg_color($echo = false) {
 
 function silverride_output_custom_colors() {
     $primary_color = silverride_get_theme_color('primary_color', '#C41E3A');
-    $secondary_color = silverride_get_theme_color('secondary_color', '#F26522');
+    $secondary_color = silverride_get_theme_color('secondary_color', '#b16211');
     $alternate_bg_color = silverride_get_theme_color('alternate_bg_color', '#FCF3F5');
 
     $primary_rgb = sscanf($primary_color, '#%02x%02x%02x');
