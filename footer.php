@@ -32,13 +32,15 @@
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col no-underline">
                     <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide There with Care logo">
                 </a>
-                
-                <p class="text-lg leading-relaxed max-w-lg text-primary">
-                    SilverRide is America's leading assisted transportation platform for older adults and people with disabilities.
-                </p>
-                <p class="text-lg leading-relaxed max-w-lg text-primary">
-                    A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
-                </p>
+
+                <div class="text-lg leading-relaxed max-w-lg text-primary space-y-6">
+                    <p>
+                        SilverRide is America's leading assisted transportation platform for older adults and people with disabilities.
+                    </p>
+                    <p>
+                        A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
+                    </p>
+                </div>
 
                 <div class="flex-col items-center gap-4 md:flex md:flex-row">
                     <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-10 lg:h-14 w-auto">
