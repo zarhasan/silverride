@@ -16,7 +16,7 @@ $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'Blog Po
 
     <div class="flex flex-col flex-grow">
         <div class="flex items-center gap-3 mb-3">
-            <span class="text-primary font-medium capitalize tracking-wide"><?php echo $category_name; ?></span>
+            <span class="text-primary font-medium tracking-wide"><?php echo $category_name; ?></span>
             <span class="text-gray-400">&middot;</span>
             <time class="text-gray-500"><?php echo get_the_date('M j, Y'); ?></time>
         </div>

@@ -50,7 +50,7 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
 
                 <!-- Category Filter -->
                 <div class="relative sm:w-48 lg:w-56 blog-filter-field">
-                    <label for="blog-filter-category" class="blog-filter-label">All News</label>
+                    <label for="blog-filter-category" class="blog-filter-label">Category</label>
                     <select
                         id="blog-filter-category"
                         name="category"
@@ -71,7 +71,7 @@ $current_sort = isset($_GET['sort']) ? sanitize_text_field(wp_unslash($_GET['sor
 
                 <!-- Sort -->
                 <div class="relative sm:w-48 lg:w-56 blog-filter-field">
-                    <label for="blog-filter-sort" class="blog-filter-label">Newest First</label>
+                    <label for="blog-filter-sort" class="blog-filter-label">Sort</label>
                     <select
                         id="blog-filter-sort"
                         name="sort"

@@ -130,7 +130,7 @@
         (() => {
             if (!window.location.pathname.includes('schedule-a-ride/')) return;
 
-            const $headings = $('h2.capitalize.tracking-wide');
+            const $headings = $('h2.tracking-wide');
             if (!$headings.length) return;
 
             $headings.each((i, el) => {

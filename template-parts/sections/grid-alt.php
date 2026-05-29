@@ -35,7 +35,7 @@ $bg_class = $background_color ? 'py-8 sm:py-16' : 'bg-white';
     <div class="container">
         <div class="text-center mx-auto mb-12">
             <?php if ($title) : ?>
-            <h2 class="text-3xl md:text-[2.5rem] font-semibold capitalize tracking-wide !leading-tight mb-6">
+            <h2 class="text-3xl md:text-[2.5rem] font-semibold tracking-wide !leading-tight mb-6">
                 <?php echo wp_kses_post($title); ?>
             </h2>
             <?php endif; ?>

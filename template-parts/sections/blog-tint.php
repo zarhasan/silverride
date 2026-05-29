@@ -65,7 +65,7 @@ $posts = new WP_Query($query_args);
 
                     <div class="mt-5 flex items-center gap-2 text-sm text-gray-500">
                         <?php if (!empty($post_cat_name)) : ?>
-                        <span class="capitalize text-primary"><?php echo esc_html($post_cat_name); ?></span>
+                        <span class="text-primary"><?php echo esc_html($post_cat_name); ?></span>
                         <span class="text-gray-400">·</span>
                         <?php endif; ?>
                         <span><?php echo esc_html($post_date); ?></span>

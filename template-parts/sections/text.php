@@ -30,7 +30,7 @@ $container_class = $container[$args['container'] ?? 'small'] ?? $container['smal
 
 <div class="<?php echo esc_attr($container_class); ?> text-center <?php echo esc_attr($margin_top); ?> <?php echo esc_attr($margin_bottom); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <?php if(!empty($title)) : ?>
-        <h2 class="text-3xl md:text-[2.5rem] font-semibold capitalize tracking-wide !leading-snug mb-6">
+        <h2 class="text-3xl md:text-[2.5rem] font-semibold tracking-wide !leading-snug mb-6">
             <?php echo wp_kses_post($title); ?>
         </h2>
     <?php endif; ?>

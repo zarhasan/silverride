@@ -14,7 +14,7 @@ $image = $args['image'] ?? [];
 
 <section class="bg-[#F9F9F9] py-8 sm:py-16 my-16 lg:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container mx-auto">
-        <h2 class="text-3xl md:text-[2.5rem] font-semibold text-center capitalize tracking-wide mb-12">
+        <h2 class="text-3xl md:text-[2.5rem] font-semibold text-center tracking-wide mb-12">
             <?php echo $title; ?>
         </h2>
         

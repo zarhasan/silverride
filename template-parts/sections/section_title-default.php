@@ -65,15 +65,15 @@ $section_spacing = $has_background ? 'pt-16 sm:pt-24 ' . $padding_bottom : 'mt-1
 
         <?php if(!empty($title)) : ?>
             <?php if ($heading_level === 'h1') : ?>
-                <h1 class="text-4xl md:text-6xl font-semibold capitalize tracking-wide !leading-snug">
+                <h1 class="text-4xl md:text-6xl font-semibold tracking-wide !leading-snug">
                     <?php echo wp_kses_post($title); ?>
                 </h1>
             <?php elseif ($heading_level === 'h2') : ?>
-                <h2 class="text-3xl md:text-[2.875rem] font-semibold capitalize tracking-wide !leading-snug">
+                <h2 class="text-3xl md:text-[2.875rem] font-semibold tracking-wide !leading-snug">
                     <?php echo wp_kses_post($title); ?>
                 </h2>
             <?php elseif ($heading_level === 'h3') : ?>
-                <h3 class="text-2xl md:text-[2.25rem] font-semibold capitalize tracking-wide !leading-snug">
+                <h3 class="text-2xl md:text-[2.25rem] font-semibold tracking-wide !leading-snug">
                     <?php echo wp_kses_post($title); ?>
                 </h3>
             <?php endif; ?>

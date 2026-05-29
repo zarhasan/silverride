@@ -19,7 +19,7 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
 
 <!-- CTA Banner -->
 <div class="container text-center my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <h2 class="text-3xl md:text-[2.5rem] font-semibold capitalize tracking-wide !leading-snug mb-6">
+    <h2 class="text-3xl md:text-[2.5rem] font-semibold tracking-wide !leading-snug mb-6">
         <?php echo esc_html($title); ?>
     </h2>
 
