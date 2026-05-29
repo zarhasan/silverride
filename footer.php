@@ -40,7 +40,7 @@
                     A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
                 </p>
 
-                <div class="flex-col items-center gap-4 md:flex">
+                <div class="flex-col items-center gap-4 md:flex md:flex-row">
                     <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-10 lg:h-14 w-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/media/american-society-on-aging.png" alt="The American Society on Aging Logo" class="h-10 lg:h-14 w-auto">
                     <img src="<?php echo get_template_directory_uri(); ?>/media/the-transportation-alliance.png" alt="The Transportation Alliance Logo" class="h-10 lg:h-14 w-auto">
