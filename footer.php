@@ -6,7 +6,16 @@
 
 <?php
     $template_part_name = explode('.', basename(__FILE__))[0];
-    
+
+    $footer_tagline = get_field('footer_tagline', 'option') ?: 'Bringing joy, dignity, and community to the people who need it most.';
+    $footer_description_1 = get_field('footer_description_1', 'option') ?: 'SilverRide is America\'s leading assisted transportation platform for older adults and people with disabilities.';
+    $footer_description_2 = get_field('footer_description_2', 'option') ?: 'A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.';
+    $footer_logos = get_field('footer_logos', 'option') ?: [];
+    $footer_copyright = get_field('footer_copyright', 'option') ?: '© ' . date('Y') . ' SilverRide Inc.';
+    $footer_bottom_links = get_field('footer_bottom_links', 'option') ?: [];
+    $footer_partner_login_url = get_field('footer_partner_login_url', 'option') ?: 'https://silverridereservation.itcurves.us/GALogin.aspx';
+    $footer_partner_login_text = get_field('footer_partner_login_text', 'option') ?: 'Partner Login';
+
     $social_facebook = !empty($args['social_facebook']) ? $args['social_facebook'] : (get_field('social_facebook', 'option') ?: '');
     $social_twitter = !empty($args['social_twitter']) ? $args['social_twitter'] : (get_field('social_twitter', 'option') ?: '');
     $social_linkedin = !empty($args['social_linkedin']) ? $args['social_linkedin'] : (get_field('social_linkedin', 'option') ?: '');
@@ -17,11 +26,10 @@
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
     <div class="container mb-[11.25rem] pt-[3.75rem]">
-        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation"  aria-hidden="true">
-            Bringing joy, dignity, and community <br class="hidden lg:block">
-            to the people who need it most.
+        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
+            <?php echo wp_kses_post( $footer_tagline ); ?>
         </h2>
-        <h2 class="sr-only">Bringing joy, dignity, and community to the people who need it most.</h2>
+        <h2 class="sr-only"><?php echo esc_html( $footer_tagline ); ?></h2>
     </div>
 
     <!-- Main Footer Content -->
@@ -34,19 +42,25 @@
                 </a>
 
                 <div class="text-lg leading-relaxed max-w-lg text-primary space-y-6">
-                    <p>
-                        SilverRide is America's leading assisted transportation platform for older adults and people with disabilities.
-                    </p>
-                    <p>
-                        A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.
-                    </p>
+                    <?php if ( ! empty( $footer_description_1 ) ) : ?>
+                    <p><?php echo esc_html( $footer_description_1 ); ?></p>
+                    <?php endif; ?>
+                    <?php if ( ! empty( $footer_description_2 ) ) : ?>
+                    <p><?php echo esc_html( $footer_description_2 ); ?></p>
+                    <?php endif; ?>
                 </div>
 
+                <?php if ( ! empty( $footer_logos ) ) : ?>
                 <div class="flex-col items-center gap-4 md:flex md:flex-row">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/yelp-logo.png" alt="Yelp Logo" class="h-10 lg:h-14 w-auto">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/american-society-on-aging.png" alt="The American Society on Aging Logo" class="h-10 lg:h-14 w-auto">
-                    <img src="<?php echo get_template_directory_uri(); ?>/media/the-transportation-alliance.png" alt="The Transportation Alliance Logo" class="h-10 lg:h-14 w-auto">
+                    <?php foreach ( $footer_logos as $logo ) :
+                        $logo_image = $logo['footer_logo_image'] ?? [];
+                        $logo_alt   = ! empty( $logo['footer_logo_alt'] ) ? $logo['footer_logo_alt'] : ( $logo_image['alt'] ?? '' );
+                        if ( empty( $logo_image['url'] ) ) continue;
+                    ?>
+                    <img src="<?php echo esc_url( $logo_image['url'] ); ?>" alt="<?php echo esc_attr( $logo_alt ); ?>" class="h-10 lg:h-14 w-auto">
+                    <?php endforeach; ?>
                 </div>
+                <?php endif; ?>
             </div>
 
             <!-- Right Columns: Dynamic Footer Menu -->
@@ -67,34 +81,34 @@
     <div class="border-t border-gray-200 py-6">
         <div class="container !max-w-5xl flex flex-col md:flex-row items-center justify-center gap-4">
             <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-base">
-                <span>&copy; 2026 SilverRide Inc.</span>
+                <span><?php echo esc_html( $footer_copyright ); ?></span>
                 <div class="flex items-center gap-4">
                     <ul class="flex">
-                        <li class="ml-5">
-                            <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200 mr-5">Privacy</a>
-                            |
-                        </li>
-                        <li class="ml-5">
-                            <a href="/terms" class="hover:text-gray-900 transition-colors duration-200 mr-5">Terms</a>
-                            |
-                        </li>
-                        <li class="ml-5">
-                            <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200 mr-5">Accessibility</a>
-                            |
-                        </li>
-                        <li class="ml-5">
-                            <a href="/sitemap" class="hover:text-gray-900 transition-colors duration-200">Sitemap</a>
-                        </li>
+                        <?php if ( ! empty( $footer_bottom_links ) ) : ?>
+                            <?php foreach ( $footer_bottom_links as $index => $blink ) :
+                                $blink_data = $blink['footer_bottom_link'] ?? [];
+                                $blink_url  = $blink_data['url'] ?? '';
+                                $blink_title = $blink_data['title'] ?? '';
+                                if ( empty( $blink_url ) || empty( $blink_title ) ) continue;
+                            ?>
+                            <li class="ml-5">
+                                <a href="<?php echo esc_url( $blink_url ); ?>" class="hover:text-gray-900 transition-colors duration-200 mr-5"><?php echo esc_html( $blink_title ); ?></a>
+                                <?php if ( $index < count( $footer_bottom_links ) - 1 ) : ?>|<?php endif; ?>
+                            </li>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
 
             <div class="flex items-center gap-6">
-                <a  href="https://silverridereservation.itcurves.us/GALogin.aspx"
+                <?php if ( ! empty( $footer_partner_login_url ) && ! empty( $footer_partner_login_text ) ) : ?>
+                <a  href="<?php echo esc_url( $footer_partner_login_url ); ?>"
                     target="_blank"
                     class="inline-flex items-center justify-center px-6 py-2 text-sm font-semibold text-white bg-primary rounded-full hover:bg-primary transition-colors duration-200">
-                    Partner Login
+                    <?php echo esc_html( $footer_partner_login_text ); ?>
                 </a>
+                <?php endif; ?>
                 
                 <div class="flex items-center gap-4" role="list">
                     <div role="listitem">
