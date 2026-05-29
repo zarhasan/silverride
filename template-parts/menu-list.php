@@ -13,12 +13,26 @@ $menu_class = $args['menu_class'] ?? '';
 $depth      = $args['depth'] ?? 0;
 $link_class = $args['link_class'] ?? '';
 $mobile     = $args['mobile'] ?? false;
+$footer     = $args['footer'] ?? false;
 $ul_attrs   = $args['ul_attrs'] ?? '';
 
 if ( empty( $items ) ) {
 	return;
 }
-?>
+
+// Footer mode at top level uses grid div instead of ul
+if ( $footer && $depth === 0 ) : ?>
+<div class="<?php echo esc_attr( $menu_class ); ?>">
+	<?php foreach ( $items as $item ) : ?>
+		<?php get_template_part( 'template-parts/menu-item', null, [
+			'item'       => $item,
+			'depth'      => $depth,
+			'link_class' => $link_class,
+			'footer'     => true,
+		] ); ?>
+	<?php endforeach; ?>
+</div>
+<?php else : ?>
 <ul class="<?php echo esc_attr( $menu_class ); ?>" role="list" <?php echo $ul_attrs; ?>>
 	<?php foreach ( $items as $item ) : ?>
 		<?php get_template_part( 'template-parts/menu-item', null, [
@@ -26,6 +40,8 @@ if ( empty( $items ) ) {
 			'depth'      => $depth,
 			'link_class' => $link_class,
 			'mobile'     => $mobile,
+			'footer'     => $footer,
 		] ); ?>
 	<?php endforeach; ?>
 </ul>
+<?php endif; ?>

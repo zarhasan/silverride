@@ -49,52 +49,16 @@
                 </div>
             </div>
 
-            <!-- Right Columns: Link Columns -->
-            <div class="lg:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-8">
-                <!-- Who We Serve -->
-                <div class="space-y-4">
-                    <h3 class="text-base font-bold text-gray-900">Who We Serve</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/agencies" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Paratransit</a></li>
-                        <li><a href="/pace" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">PACE</a></li>
-                        <li><a href="/riders" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Riders</a></li>
-                    </ul>
-                </div>
-
-                <!-- Drivers -->
-                <div class="space-y-4">
-                    <h3 class="text-base font-bold text-gray-900">Drivers</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/join-us" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Join Our Platform</a></li>
-                        <li><a href="/cities" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Cities</a></li>
-                        <li><a href="/state-requirements" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">State Requirements</a></li>
-                    </ul>
-                </div>
-
-                <!-- Company -->
-                <div class="space-y-4">
-                    <h3 class="text-base font-bold text-gray-900">Company</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/company" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">About</a></li>
-                        <li><a href="/leadership" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Leadership</a></li>
-                        <li><a href="/careers" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Careers</a></li>
-                        <li><a href="/contact-us" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a></li>
-                        <li><a href="/newsroom" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">News</a></li>
-                    </ul>
-                </div>
-
-                <!-- Help and Compliance -->
-                <div class="space-y-4">
-                    <h3 class="text-base font-bold text-gray-900">Help and Compliance</h3>
-                    <ul class="space-y-3">
-                        <li><a href="/help" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Help</a></li>
-                        <li><a href="/safety" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Safety</a></li>
-                        <li><a href="/report-an-incident" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Report an Incident</a></li>
-                        <li><a href="/accessibility" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Accessibility</a></li>
-                        <li><a href="/privacy" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Privacy</a></li>
-                        <li><a href="/terms" class="text-base text-gray-600 hover:text-gray-900 transition-colors duration-200">Terms</a></li>
-                    </ul>
-                </div>
+            <!-- Right Columns: Dynamic Footer Menu -->
+            <div class="lg:col-span-7">
+                <?php 
+                  get_template_part('template-parts/menu', null, [
+                    'theme_location' => 'footer',
+                    'menu_class' => 'grid grid-cols-2 md:grid-cols-4 gap-8',
+                    'link_class' => 'text-base text-gray-600 hover:text-gray-900 transition-colors duration-200',
+                    'footer' => true,
+                  ]); 
+                ?>
             </div>
         </div>
     </div>
@@ -107,15 +71,15 @@
                 <div class="flex items-center gap-4">
                     <ul class="flex">
                         <li class="ml-5">
-                            <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200">Privacy</a>
+                            <a href="/privacy" class="hover:text-gray-900 transition-colors duration-200 mr-5">Privacy</a>
                             |
                         </li>
                         <li class="ml-5">
-                            <a href="/terms" class="hover:text-gray-900 transition-colors duration-200">Terms</a>
+                            <a href="/terms" class="hover:text-gray-900 transition-colors duration-200 mr-5">Terms</a>
                             |
                         </li>
                         <li class="ml-5">
-                            <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200">Accessibility</a>
+                            <a href="/accessibility" class="hover:text-gray-900 transition-colors duration-200 mr-5">Accessibility</a>
                             |
                         </li>
                         <li class="ml-5">
