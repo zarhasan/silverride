@@ -2,13 +2,14 @@
 
 if ( function_exists( 'acf_add_options_page' ) ) {
 	acf_add_options_page( array(
-		'page_title'  => 'Global Settings',
-		'menu_title'  => 'Global Settings',
+		'page_title'  => 'Theme Settings',
+		'menu_title'  => 'Theme Settings',
 		'menu_slug'   => 'global-settings',
 		'capability'  => 'edit_theme_options',
 		'redirect'    => false,
 		'position'    => 60,
 		'icon_url'    => 'dashicons-admin-settings',
+		'parent_slug' => 'themes.php',
 	) );
 }
 
@@ -4306,13 +4307,6 @@ add_action( 'acf/include_fields', function() {
 			'type' => 'image',
 			'return_format' => 'array',
 			'preview_size' => 'medium',
-		),
-		array(
-			'key' => 'field_header_cta_text',
-			'label' => 'CTA Button Text',
-			'name' => 'header_cta_text',
-			'type' => 'text',
-			'placeholder' => 'Contact Us',
 		),
 		array(
 			'key' => 'field_header_cta_link',

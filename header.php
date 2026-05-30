@@ -20,9 +20,9 @@
 
   <?php
     $header_logo = get_field('header_logo', 'option') ?: [];
-    $header_cta_text = get_field('header_cta_text', 'option') ?: '';
     $header_cta_link = get_field('header_cta_link', 'option');
     $header_cta_url = ( is_array( $header_cta_link ) && ! empty( $header_cta_link['url'] ) ) ? $header_cta_link['url'] : '';
+    $header_cta_text = ( is_array( $header_cta_link ) && ! empty( $header_cta_link['title'] ) ) ? $header_cta_link['title'] : '';
     $header_cta_target = ( is_array( $header_cta_link ) && ! empty( $header_cta_link['target'] ) ) ? ' target="' . esc_attr( $header_cta_link['target'] ) . '"' : '';
   ?>
 
