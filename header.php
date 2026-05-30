@@ -18,11 +18,21 @@
 
   <a class="skip-to-main-content" href="#page"><?php esc_html_e('Skip to main content', 'silverride'); ?></a>
 
+  <?php
+    $header_logo = get_field('header_logo', 'option') ?: [];
+    $header_cta_text = get_field('header_cta_text', 'option') ?: '';
+    $header_cta_link = get_field('header_cta_link', 'option');
+    $header_cta_url = ( is_array( $header_cta_link ) && ! empty( $header_cta_link['url'] ) ) ? $header_cta_link['url'] : '';
+    $header_cta_target = ( is_array( $header_cta_link ) && ! empty( $header_cta_link['target'] ) ) ? ' target="' . esc_attr( $header_cta_link['target'] ) . '"' : '';
+  ?>
+
   <header tabindex="-1" id="masthead" class="site-header w-full fixed top-0 h-20 lg:h-28 py-2 lg:py-4 z-[9999] flex justify-center items-center bg-primary">
     <div class="container mx-auto flex items-center justify-between relative z-10 px-4 lg:px-8">
       <!-- Logo -->
       <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo-link flex flex-col text-white no-underline" aria-label="SilverRide - There With Care">
-        <img class="h-12 lg:h-20 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/silverride-logo.png" alt="">
+        <?php if ( ! empty( $header_logo['url'] ) ) : ?>
+          <img class="h-12 lg:h-20 w-auto" src="<?php echo esc_url( $header_logo['url'] ); ?>" alt="<?php echo esc_attr( $header_logo['alt'] ?? '' ); ?>">
+        <?php endif; ?>
       </a>
 
       <!-- Desktop Navigation -->
@@ -34,7 +44,10 @@
             'link_class' => 'text-white text-base font-normal hover:text-blue-200 transition-colors duration-200',
           ]); 
         ?>
-        <a href="/request-demo" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">Request Demo</a>
+
+        <?php if ( ! empty( $header_cta_text ) && ! empty( $header_cta_url ) ) : ?>
+          <a href="<?php echo esc_url( $header_cta_url ); ?>" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200"<?php echo $header_cta_target; ?>><?php echo esc_html( $header_cta_text ); ?></a>
+        <?php endif; ?>
       </nav>
 
       <!-- Mobile menu button -->
@@ -70,9 +83,9 @@
         ?>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">
-          <a href="/request-demo" class="btn btn-outline">
-            Request Demo
-          </a>
+          <?php if ( ! empty( $header_cta_text ) && ! empty( $header_cta_url ) ) : ?>
+            <a href="<?php echo esc_url( $header_cta_url ); ?>" class="btn btn-outline"<?php echo $header_cta_target; ?>><?php echo esc_html( $header_cta_text ); ?></a>
+          <?php endif; ?>
         </div>
       </div>
     </nav>

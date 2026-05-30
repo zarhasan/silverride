@@ -20,11 +20,6 @@
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
     <div class="container mb-[11.25rem] pt-[3.75rem]">
-        <?php if ( ! empty( $footer_logo['url'] ) ) : ?>
-        <div class="flex justify-center mb-8">
-            <img src="<?php echo esc_url( $footer_logo['url'] ); ?>" alt="<?php echo esc_attr( $footer_logo['alt'] ?? get_bloginfo('name') ); ?>" class="h-16 lg:h-28 w-auto">
-        </div>
-        <?php endif; ?>
         <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
             Bringing joy, dignity, and community <br class="hidden lg:block">
             to the people who need it most.
