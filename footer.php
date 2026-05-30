@@ -7,9 +7,8 @@
 <?php
     $template_part_name = explode('.', basename(__FILE__))[0];
 
-    $footer_tagline = get_field('footer_tagline', 'option') ?: 'Bringing joy, dignity, and community to the people who need it most.';
-    $footer_description_1 = get_field('footer_description_1', 'option') ?: 'SilverRide is America\'s leading assisted transportation platform for older adults and people with disabilities.';
-    $footer_description_2 = get_field('footer_description_2', 'option') ?: 'A licensed TNC operating in more than 35 major metro areas across 15 states, we deliver ADA-compliant assisted transportation through paratransit partnerships, PACE and healthcare contracts, and direct-to-consumer service. Over one million rides a year. 95% on-time. Always with care.';
+    $footer_logo = get_field('footer_logo', 'option') ?: [];
+    $footer_description = get_field('footer_description', 'option');
     $footer_logos = get_field('footer_logos', 'option') ?: [];
     $footer_copyright = get_field('footer_copyright', 'option') ?: '© ' . date('Y') . ' SilverRide Inc.';
     $footer_bottom_links = get_field('footer_bottom_links', 'option') ?: [];
@@ -26,10 +25,16 @@
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
     <div class="container mb-[11.25rem] pt-[3.75rem]">
+        <?php if ( ! empty( $footer_logo['url'] ) ) : ?>
+        <div class="flex justify-center mb-8">
+            <img src="<?php echo esc_url( $footer_logo['url'] ); ?>" alt="<?php echo esc_attr( $footer_logo['alt'] ?? get_bloginfo('name') ); ?>" class="h-16 lg:h-28 w-auto">
+        </div>
+        <?php endif; ?>
         <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
-            <?php echo wp_kses_post( $footer_tagline ); ?>
+            Bringing joy, dignity, and community <br class="hidden lg:block">
+            to the people who need it most.
         </h2>
-        <h2 class="sr-only"><?php echo esc_html( $footer_tagline ); ?></h2>
+        <h2 class="sr-only">Bringing joy, dignity, and community to the people who need it most.</h2>
     </div>
 
     <!-- Main Footer Content -->
@@ -38,17 +43,16 @@
             <!-- Left Column: Logo, Description, Partner Logos -->
             <div class="lg:col-span-5 space-y-8">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="inline-flex flex-col no-underline">
-                    <img class="h-16 lg:h-28 w-auto" src="<?php echo get_template_directory_uri(); ?>/media/logo-blue.png" alt="SilverRide There with Care logo">
+                    <?php if ( ! empty( $footer_logo['url'] ) ) : ?>
+                        <img class="h-16 lg:h-28 w-auto" src="<?php echo esc_url( $footer_logo['url'] ); ?>" alt="<?php echo esc_attr( $footer_logo['alt'] ?? 'SilverRide There with Care logo' ); ?>">
+                    <?php endif; ?>
                 </a>
 
-                <div class="text-lg leading-relaxed max-w-lg text-primary space-y-6">
-                    <?php if ( ! empty( $footer_description_1 ) ) : ?>
-                    <p><?php echo esc_html( $footer_description_1 ); ?></p>
-                    <?php endif; ?>
-                    <?php if ( ! empty( $footer_description_2 ) ) : ?>
-                    <p><?php echo esc_html( $footer_description_2 ); ?></p>
-                    <?php endif; ?>
+                <?php if ( ! empty( $footer_description ) ) : ?>
+                <div class="text-lg prose leading-relaxed max-w-lg text-primary prose-footer">
+                    <?php echo wp_kses_post( $footer_description ); ?>
                 </div>
+                <?php endif; ?>
 
                 <?php if ( ! empty( $footer_logos ) ) : ?>
                 <div class="flex-col items-center gap-4 md:flex md:flex-row">
