@@ -4415,6 +4415,35 @@ add_action( 'acf/include_fields', function() {
 			'default_value' => 'Partner Login',
 		),
 		array(
+			'key' => 'field_footer_social_links',
+			'label' => 'Social Links',
+			'name' => 'footer_social_links',
+			'type' => 'repeater',
+			'layout' => 'table',
+			'button_label' => 'Add Social Link',
+			'sub_fields' => array(
+				array(
+					'key' => 'field_footer_social_platform',
+					'label' => 'Platform',
+					'name' => 'platform',
+					'type' => 'select',
+					'choices' => array(
+						'linkedin' => 'LinkedIn',
+						'facebook' => 'Facebook',
+						'instagram' => 'Instagram',
+						'twitter' => 'Twitter',
+						'youtube' => 'YouTube',
+					),
+				),
+				array(
+					'key' => 'field_footer_social_url',
+					'label' => 'URL',
+					'name' => 'url',
+					'type' => 'url',
+				),
+			),
+		),
+		array(
 			'key' => 'field_contact_settings_tab',
 			'label' => 'Contact',
 			'name' => '',
