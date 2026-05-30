@@ -8,6 +8,7 @@
     $template_part_name = explode('.', basename(__FILE__))[0];
 
     $footer_logo = get_field('footer_logo', 'option') ?: [];
+    $footer_tagline = get_field('footer_tagline', 'option') ?: '';
     $footer_description = get_field('footer_description', 'option');
     $footer_logos = get_field('footer_logos', 'option') ?: [];
     $footer_copyright = get_field('footer_copyright', 'option') ?: '© ' . date('Y') . ' SilverRide Inc.';
@@ -19,13 +20,14 @@
 
 <footer class="bg-white" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <!-- Tagline -->
-    <div class="container mb-[11.25rem] pt-[3.75rem]">
-        <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
-            Bringing joy, dignity, and community <br class="hidden lg:block">
-            to the people who need it most.
-        </h2>
-        <h2 class="sr-only">Bringing joy, dignity, and community to the people who need it most.</h2>
-    </div>
+    <?php if ( ! empty( $footer_tagline ) ) : ?>
+        <div class="container mb-[11.25rem] pt-[3.75rem]">
+            <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
+                <?php echo wp_kses_post( $footer_tagline ); ?>
+            </h2>
+            <h2 class="sr-only"><?php echo esc_html( $footer_tagline ); ?></h2>
+        </div>
+    <?php endif; ?>
 
     <!-- Main Footer Content -->
     <div class="container pb-20">

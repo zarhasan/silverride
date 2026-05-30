@@ -4338,6 +4338,13 @@ add_action( 'acf/include_fields', function() {
 			'preview_size' => 'medium',
 		),
 		array(
+			'key' => 'field_footer_tagline',
+			'label' => 'Tagline',
+			'name' => 'footer_tagline',
+			'type' => 'text',
+			'default_value' => 'Bringing joy, dignity, and community to the people who need it most.',
+		),
+		array(
 			'key' => 'field_footer_description',
 			'label' => 'Description',
 			'name' => 'footer_description',
