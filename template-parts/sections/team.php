@@ -59,8 +59,15 @@ if (empty($display_members)) {
             <?php endif; ?>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-            <?php foreach ($display_members as $member) : 
+        <?php
+        $total_members = count( $display_members );
+        $first_four   = array_slice( $display_members, 0, 4 );
+        $rest         = array_slice( $display_members, 4 );
+        ?>
+
+        <?php if ( ! empty( $first_four ) ) : ?>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 !mb-12 !md:mb-16 !w-full !max-w-6xl">
+            <?php foreach ( $first_four as $member ) :
                 $photo = $member['photo'] ?? [];
                 $name = $member['name'] ?? '';
                 $member_title = $member['title'] ?? '';
@@ -87,5 +94,37 @@ if (empty($display_members)) {
             </div>
             <?php endforeach; ?>
         </div>
+        <?php endif; ?>
+
+        <?php if ( ! empty( $rest ) ) : ?>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 !w-full !max-w-none">
+            <?php foreach ( $rest as $member ) :
+                $photo = $member['photo'] ?? [];
+                $name = $member['name'] ?? '';
+                $member_title = $member['title'] ?? '';
+            ?>
+
+            <div class="text-center">
+                <div class="mb-4">
+                    <?php if (!empty($photo['url'])) : ?>
+                        <img src="<?php echo esc_url($photo['url']); ?>" alt="<?php echo esc_attr($name); ?>" class="w-96 h-auto mx-auto rounded-lg object-cover">
+                    <?php endif; ?>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-[#1B1B1B] mb-2"><?php echo esc_html($name); ?></h3>
+                <p class="font-semibold text-lg mb-6" style="color: var(--theme-primary);"><?php echo esc_html($member_title); ?></p>
+
+                <?php if(!empty($name) && !empty($member['profile_url'])) : ?>
+                    <a href="<?php echo esc_url($member['profile_url']); ?>" class="inline-block text-white px-6 py-2 rounded-full font-normal transition-colors text-lg" style="background-color: var(--theme-primary);">
+                        <?php
+                            $first_name = explode(' ', $name)[0];
+                            echo sprintf(__('Explore %s\'s Profile', 'text-domain'), esc_html($first_name));
+                        ?>
+                    </a>
+                <?php endif; ?>
+            </div>
+            <?php endforeach; ?>
+        </div>
+        <?php endif; ?>
     </div>
 </section>
