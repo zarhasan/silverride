@@ -14,16 +14,16 @@ $link_title = !empty($link['title']) ? $link['title'] : '';
 $link_target = !empty($link['target']) ? $link['target'] : '_self';
 ?>
 
-<section class="bg-secondary py-20 lg:py-28" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-[#FFF1A5] py-20 lg:py-28" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
         <?php if (!empty($title)) : ?>
-            <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] !leading-tight font-bold text-white">
+            <h2 class="text-3xl md:text-4xl lg:text-[2.875rem] !leading-tight font-bold text-black">
                 <?php echo esc_html($title); ?>
             </h2>
         <?php endif; ?>
 
         <?php if (!empty($description)) : ?>
-            <div class="text-lg md:text-xl text-white/90 mt-6">
+            <div class="text-lg md:text-xl text-black mt-6">
                 <?php echo wp_kses_post($description); ?>
             </div>
         <?php endif; ?>
@@ -33,7 +33,7 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
                 <a 
                     href="<?php echo esc_url($link_url); ?>" 
                     target="<?php echo esc_attr($link_target); ?>" 
-                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors duration-200">
+                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-black border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200">
                     <?php echo esc_html($link_title); ?>
                 </a>
             <?php endif; ?>
@@ -42,7 +42,7 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
                 <a 
                     href="<?php echo esc_url($secondary_link['url']); ?>" 
                     target="<?php echo esc_attr($secondary_link['target']); ?>" 
-                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-secondary transition-colors duration-200">
+                    class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-black border-2 border-black rounded-full hover:bg-black hover:text-white transition-colors duration-200">
                     <?php echo esc_html($secondary_link['title']); ?>
                 </a>
             <?php endif; ?>
