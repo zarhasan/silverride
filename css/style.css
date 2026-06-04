@@ -932,6 +932,11 @@ body .wpforms-form .wpforms-field-label {
     padding-top: 2rem !important;
 }
 
+[data-section-id="information"] + [data-section-id^="grid-"],
+[data-section-id="information-staggered"] + [data-section-id^="grid-"] {
+    margin-top: 2rem !important;
+}
+
 /* Pagination */
 .amwordpress_pagination {
     display: flex;

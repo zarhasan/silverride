@@ -3,6 +3,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+$template_part_name = explode('.', basename(__FILE__))[0];
 $title = $args['title'] ?? '';
 $subtitle = $args['description'] ?? '';
 $features = $args['items'] ?? [];
@@ -15,7 +16,7 @@ $bg_style = $background_color ? 'style="background-color: ' . esc_attr($backgrou
 $section_class = $disable_margins ? '' : 'my-16 md:my-24';
 ?>
 
-<section class="bg-white my-16 md:my-24">
+<section class="bg-white my-16 md:my-24" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <?php if ($title) : ?>
         <h2 class="text-center text-3xl font-bold text-black md:text-4xl lg:text-[2.875rem]">
