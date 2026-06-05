@@ -32,6 +32,15 @@ h6 {
     color: #1B1B1B;
 }
 
+.text-primary h1,
+.text-primary h2,
+.text-primary h3,
+.text-primary h4,
+.text-primary h5,
+.text-primary h6 {
+    color: var(--theme-primary);
+}
+
 body[class] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
