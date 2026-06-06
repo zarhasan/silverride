@@ -10,7 +10,7 @@ $category_name = !empty($categories) ? esc_html($categories[0]->name) : 'Blog Po
 <article class="bg-white overflow-hidden flex flex-col">
     <?php if (has_post_thumbnail()) : ?>
     <div class="aspect-[4/3] overflow-hidden mb-4">
-        <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>" alt="<?php echo esc_attr(get_the_title()); ?>" class="w-full h-full object-cover">
+        <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>" alt="" class="w-full h-full object-cover">
     </div>
     <?php endif; ?>
 

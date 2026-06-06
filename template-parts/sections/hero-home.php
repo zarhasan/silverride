@@ -23,7 +23,7 @@ $image = $args['image'] ?? [];
                 <?php endif; ?>
 
                 <?php if (!empty($title)) : ?>
-                    <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8" role="heading" aria-level="2">
+                    <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-8">
                         <?php echo wp_kses_post($title); ?>
                     </h1>
                 <?php endif; ?>

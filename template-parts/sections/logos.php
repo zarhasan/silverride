@@ -32,9 +32,9 @@ $logos = $args['logos'] ?? [];
                 <img class="lg:max-w-5xl w-auto h-auto mx-auto" src="<?php echo get_template_directory_uri(); ?>/media/logos-2.png" alt="Partner Logo">
             </div>
         <?php else: ?>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-8 gap-y-16 items-center">
+        <div role="list" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-8 gap-y-16 items-center">
             <?php foreach ($logos as $logo) :?>
-            <div class="flex items-center justify-center">
+            <div role="listitem" class="flex items-center justify-center">
                 <img
                     src="<?php echo esc_url($logo['url']); ?>"
                     alt="<?php echo esc_attr($logo['alt'] ?? ''); ?>"

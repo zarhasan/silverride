@@ -56,7 +56,7 @@ $posts = new WP_Query($query_args);
                     <div class="overflow-hidden rounded-lg">
                         <img
                             src="<?php echo esc_url($post_image['url']); ?>"
-                            alt="<?php echo esc_attr($post_image['alt'] ?? $post_title); ?>"
+                            alt="<?php echo esc_attr($post_image['alt'] ?? ""); ?>"
                             class="aspect-square w-full object-cover transition-transform duration-300 hover:scale-105 h-96"
                             loading="lazy"
                         >

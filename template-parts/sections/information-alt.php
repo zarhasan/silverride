@@ -43,16 +43,17 @@ $hide_class = implode(' ', $hide_classes);
                     </div>
                 <?php endif; ?>
 
-                <ul class="space-y-2">
-                    <?php if (!empty($items)) : ?>
+                
+                <?php if (!empty($items)) : ?>
+                    <ul class="space-y-2">
                         <?php foreach ($items as $item) : ?>
                             <li class="flex items-start gap-3 text-lg text-gray-800">
                                 <span class="text-gray-900">&bull;</span>
                                 <span><?php echo wp_kses_post($item['item'] ?? $item); ?></span>
                             </li>
                         <?php endforeach; ?>
-                    <?php endif; ?>
-                </ul>
+                    </ul>
+                <?php endif; ?>
             </div>
         </div>
     </div>

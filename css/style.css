@@ -32,6 +32,10 @@ h6 {
     color: #1B1B1B;
 }
 
+.font-primary {
+    font-family: "Poppins", sans-serif !important;
+}
+
 .text-primary h1,
 .text-primary h2,
 .text-primary h3,
@@ -63,6 +67,7 @@ iframe:not([tabindex="-1"]):focus,
 .forminator-consent:focus-within .forminator-checkbox-box {
     outline: auto 2px Highlight !important;
     outline: auto 5px -webkit-focus-ring-color !important;
+    outline-offset: 4px !important;
 }
 
 .icon-tabler {

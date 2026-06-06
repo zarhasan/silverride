@@ -25,13 +25,13 @@ $links = $args['links'] ?? [];
     <div class="container relative z-10 py-20 md:py-28">
         <div class="max-w-2xl mt-28">
             <?php if (!empty($subtitle)) : ?>
-                <span class="block text-base lg:text-xl font-medium text-white uppercase tracking-wide mb-4 a11y_irrbg" role="heading" aria-level="1">
+                <span class="block text-base lg:text-xl font-medium text-white uppercase tracking-wide mb-4 a11y_irrbg">
                     <?php echo esc_html($subtitle); ?>
                 </span>
             <?php endif; ?>
 
             <?php if (!empty($title)) : ?>
-                <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-6 a11y_irrbg" role="heading" aria-level="2">
+                <h1 class="text-4xl lg:text-[2.875rem] font-bold text-white leading-tight mb-6 a11y_irrbg">
                     <?php echo wp_kses_post($title); ?>
                 </h1>
             <?php endif; ?>

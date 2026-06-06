@@ -22,10 +22,9 @@
     <!-- Tagline -->
     <?php if ( ! empty( $footer_tagline ) ) : ?>
         <div class="container mb-[11.25rem] pt-[3.75rem]">
-            <h2 class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center !leading-tight" role="presentation" aria-hidden="true">
+            <p class="text-3xl lg:text-[2.875rem] font-bold text-primary text-center font-primary !leading-tight">
                 <?php echo wp_kses_post( $footer_tagline ); ?>
-            </h2>
-            <h2 class="sr-only"><?php echo esc_html( $footer_tagline ); ?></h2>
+            </p>
         </div>
     <?php endif; ?>
 

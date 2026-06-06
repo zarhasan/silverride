@@ -22,7 +22,7 @@ if ( empty( $items ) ) {
 
 // Footer mode at top level uses grid div instead of ul
 if ( $footer && $depth === 0 ) : ?>
-<div class="<?php echo esc_attr( $menu_class ); ?>">
+<nav class="<?php echo esc_attr( $menu_class ); ?>">
 	<?php foreach ( $items as $item ) : ?>
 		<?php get_template_part( 'template-parts/menu-item', null, [
 			'item'       => $item,
@@ -31,7 +31,7 @@ if ( $footer && $depth === 0 ) : ?>
 			'footer'     => true,
 		] ); ?>
 	<?php endforeach; ?>
-</div>
+</nav>
 <?php else : ?>
 <ul class="<?php echo esc_attr( $menu_class ); ?>" role="list" <?php echo $ul_attrs; ?>>
 	<?php foreach ( $items as $item ) : ?>

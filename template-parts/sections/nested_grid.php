@@ -37,12 +37,17 @@ $hide_class = implode(' ', $hide_classes);
                 $col_items = $column['items'] ?? [];
             ?>
                 <div>
-                    <h3 class="text-xl lg:text-[1.625rem] font-bold text-gray-900 mb-4">
-                        <?php echo esc_html($col_heading); ?>
-                    </h3>
-                    <div class="text-lg text-gray-700 leading-relaxed mb-8">
-                        <?php echo wp_kses_post($col_description); ?>
-                    </div>
+                    <?php if ($col_heading) : ?>
+                        <h3 class="text-xl lg:text-[1.625rem] font-bold text-gray-900 mb-4">
+                            <?php echo esc_html($col_heading); ?>
+                        </h3>
+                    <?php endif; ?>
+
+                    <?php if ($col_description) : ?>
+                        <div class="text-lg text-gray-700 leading-relaxed mb-8">
+                            <?php echo wp_kses_post($col_description); ?>
+                        </div>
+                    <?php endif; ?>
 
                     <?php if (!empty($col_items)) : ?>
                     <div class="grid grid-cols-2 gap-6">
