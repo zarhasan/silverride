@@ -445,6 +445,7 @@
                 const $msg = $form.find('.forminator-response-message');
                 const $submit = $form.find('.forminator-button-submit');
                 const $cols = $form.find('.forminator-row > .forminator-col');
+                const stars = $form.find('.forminator-required');
 
                 // Clone success/error message to appear after form
                 const $msgClone = $msg.clone()
@@ -505,6 +506,8 @@
                         $col.addClass('forminator-col-has-children');
                     }
                 });
+
+                stars.attr('aria-hidden', 'true');
             });
         })();
 
@@ -836,6 +839,7 @@
             previousActiveElement = document.activeElement;
             $menuToggle.attr('aria-expanded', 'true');
             $mobileMenu.attr('aria-hidden', 'false');
+            $mobileMenu.removeAttr('inert');
             $overlay.addClass('active');
             $('body').addClass('menu-open');
 
@@ -845,6 +849,7 @@
         function closeMenu() {
             $menuToggle.attr('aria-expanded', 'false');
             $mobileMenu.attr('aria-hidden', 'true');
+            $mobileMenu.attr('inert', '');
             $overlay.removeClass('active');
             $('body').removeClass('menu-open');
 

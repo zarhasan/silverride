@@ -65,7 +65,7 @@
     <div class="mobile-menu-overlay fixed inset-0 bg-black/50 z-40 hidden lg:hidden" id="mobile-menu-overlay"></div>
 
     <!-- Mobile Menu Panel -->
-    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-primary z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
+    <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-primary z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true" inert>
       <div class="mobile-menu-content p-6 flex flex-col h-full">
         <div class="mobile-menu-header flex justify-end mb-8">
           <button type="button" class="mobile-menu-close text-white" aria-label="Close menu">
