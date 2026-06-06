@@ -68,7 +68,7 @@
     <nav id="mobile-menu" class="mobile-menu-panel fixed top-0 right-0 h-full w-80 bg-primary z-50 transform translate-x-full transition-transform duration-300 lg:hidden" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="mobile-menu-content p-6 flex flex-col h-full">
         <div class="mobile-menu-header flex justify-end mb-8">
-          <button type="button" class="mobile-menu-close text-white hover:text-blue-200" aria-label="Close menu">
+          <button type="button" class="mobile-menu-close text-white" aria-label="Close menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
           </button>
         </div>
@@ -77,7 +77,7 @@
           get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',
             'menu_class' => 'mobile-menu flex flex-col gap-4 text-white',
-            'link_class' => 'text-white text-lg font-medium hover:text-blue-200 transition-colors duration-200 py-2 border-b border-white/20 block',
+            'link_class' => 'text-white text-lg font-medium transition-colors duration-200 py-2 border-b border-white/20 block',
             'mobile' => true,
           ]); 
         ?>

@@ -366,10 +366,6 @@ kbd svg.icon-tabler {
     text-decoration: none;
 }
 
-.mobile-menu a:hover {
-    color: #BEE3F8;
-}
-
 /* Mobile submenu toggle row */
 .mobile-menu-item-row {
     display: flex;
@@ -439,11 +435,6 @@ kbd svg.icon-tabler {
     font-weight: 400;
     text-decoration: none;
     transition: color 200ms ease-in-out, background-color 200ms ease-in-out;
-}
-
-.mobile-menu .sub-menu a:hover,
-.mobile-menu .sub-menu a:focus {
-    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .mobile-menu .sub-menu .current-menu-item > a {

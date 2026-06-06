@@ -48,7 +48,7 @@ $classes[] = 'menu-item-depth-' . absint( $depth );
 		<div class="mobile-menu-item-row">
 			<a
 				href="<?php echo esc_url( $item->url ); ?>"
-				class="flex-1 py-2 text-white text-lg font-medium no-underline hover:text-blue-200 transition-colors duration-200"
+				class="flex-1 py-2 text-white text-lg font-medium no-underline"
 				aria-haspopup="true"
 				<?php echo ! empty( $item->target ) ? ' target="' . esc_attr( $item->target ) . '"' : ''; ?>
 				<?php echo ! empty( $item->xfn ) ? ' rel="' . esc_attr( $item->xfn ) . '"' : ''; ?>
