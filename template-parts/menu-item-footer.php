@@ -18,8 +18,8 @@ if ( ! $item ) {
 $has_children = ! empty( $item->children );
 
 if ( $has_children && $depth === 0 ) : ?>
-    <div class="space-y-4">
-        <h3 class="text-base font-bold text-gray-900"><?php echo esc_html( $item->title ); ?></h3>
+    <nav aria-label="<?php echo esc_attr( $item->title ); ?>" class="space-y-4">
+        <h2 class="text-base font-bold text-gray-900"><?php echo esc_html( $item->title ); ?></h2>
         <?php get_template_part( 'template-parts/menu-list', null, [
             'items'      => $item->children,
             'menu_class' => 'space-y-3',
@@ -27,7 +27,7 @@ if ( $has_children && $depth === 0 ) : ?>
             'link_class' => $link_class,
             'footer'     => true,
         ] ); ?>
-    </div>
+    </nav>
 
 <?php else : ?>
     <li>
