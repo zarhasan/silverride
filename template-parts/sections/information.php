@@ -45,24 +45,26 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="prose text-lg text-gray-700 leading-relaxed space-y-6 mb-10">
+                    <div class="prose text-lg text-gray-700 leading-relaxed space-y-6">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
 
-                <div class="flex flex-col lg:flex-row justify-center lg:justify-start items-stretch lg:items-center gap-4">
-                    <?php if (!empty($link['title']) && !empty($link['url'])) : ?>
-                        <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
-                            <?php echo esc_html($link['title'] ?? ''); ?>
-                        </a>
-                    <?php endif; ?>
+                <?php if((!empty($link['title']) && !empty($link['url'])) || (!empty($secondary_link['title']) && !empty($secondary_link['url']))) : ?>
+                    <div class="flex flex-col lg:flex-row justify-center lg:justify-start items-stretch lg:items-center gap-4 mt-8">
+                        <?php if (!empty($link['title']) && !empty($link['url'])) : ?>
+                            <a href="<?php echo esc_url($link['url']); ?>" class="btn btn-primary">
+                                <?php echo esc_html($link['title'] ?? ''); ?>
+                            </a>
+                        <?php endif; ?>
 
-                    <?php if (!empty($secondary_link['title']) && !empty($secondary_link['url'])) : ?>
-                        <a href="<?php echo esc_url($secondary_link['url']); ?>" class="btn btn-outline">
-                            <?php echo esc_html($secondary_link['title'] ?? ''); ?>
-                        </a>
-                    <?php endif; ?>
-                </div>
+                        <?php if (!empty($secondary_link['title']) && !empty($secondary_link['url'])) : ?>
+                            <a href="<?php echo esc_url($secondary_link['url']); ?>" class="btn btn-outline">
+                                <?php echo esc_html($secondary_link['title'] ?? ''); ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </div>
