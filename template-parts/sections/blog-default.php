@@ -18,6 +18,7 @@ $hide_class = implode(' ', $hide_classes);
 $search = $args['blog_search'] ?? '';
 $category_slug = $args['blog_category_slug'] ?? '';
 $sort_order = $args['blog_sort_order'] ?? 'DESC';
+$exclude_post_id = $args['exclude_post_id'] ?? 0;
 
 if ($custom_query) {
     $query = $custom_query;
@@ -43,6 +44,10 @@ if ($custom_query) {
 
     if (!empty($category_slug)) {
         $query_args['category_name'] = $category_slug;
+    }
+
+    if (!empty($exclude_post_id)) {
+        $query_args['post__not_in'] = array( (int) $exclude_post_id );
     }
 
     $query = new WP_Query($query_args);
