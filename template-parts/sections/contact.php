@@ -80,9 +80,9 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
                 <?php endif; ?>
 
                 <?php if ($form_subheading) : ?>
-                    <p class="text-base text-gray-600 mb-8">
-                        <?php echo esc_html($form_subheading); ?>
-                    </p>
+                    <div class="prose text-base text-gray-600 mb-8">
+                        <?php echo wp_kses_post($form_subheading); ?>
+                    </div>
                 <?php endif; ?>
 
                 <p class="text-sm text-gray-500 mb-6">

@@ -1358,8 +1358,11 @@ add_action( 'acf/include_fields', function() {
 							'key'   => 'field_contact_form_subheading',
 							'label' => 'Form Subheading',
 							'name'  => 'form_subheading',
-							'type'  => 'text',
+							'type'  => 'wysiwyg',
 							'instructions' => 'Leave empty to use the global default.',
+							'tabs'    => 'all',
+							'toolbar' => 'full',
+							'media_upload' => 1,
 						),
 						array(
 							'key'   => 'field_contact_form',

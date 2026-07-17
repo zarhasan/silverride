@@ -3,12 +3,15 @@
     "NAME": "SilverRide",
     "SLUG": "silverride",
     "PREFIX": "silverride",
-    "VERSION": "2.4.2"
+    "VERSION": "2.4.8",
+    "EXCLUDED_DIRS": [
+      "screenshots"
+    ]
   },
   "pro": {
     "NAME": "SilverRide Stage",
     "SLUG": "silverride-stage",
     "PREFIX": "silverride_stage",
-    "VERSION": "2.4.2"
+    "VERSION": "2.4.8"
   }
 }
