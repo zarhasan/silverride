@@ -15,6 +15,12 @@ $template_part_name = explode('.', basename(__FILE__))[0];
             <h2 class="text-2xl sm:text-[1.625rem] font-bold text-zinc-800 mb-8 text-center"><?php echo esc_html($args['title'] ?? ''); ?></h2>
         <?php endif; ?>
 
+        <?php if (!empty($args['description'])) : ?>
+            <div class="prose text-center text-zinc-700 mb-8">
+                <?php echo wp_kses_post($args['description']); ?>
+            </div>
+        <?php endif; ?>
+
         
         <?php if (!empty($shortcode)) : ?>
             <div>Fields marked with * are required.</div>

@@ -3,7 +3,7 @@
     "NAME": "SilverRide",
     "SLUG": "silverride",
     "PREFIX": "silverride",
-    "VERSION": "2.4.8",
+    "VERSION": "2.4.9",
     "EXCLUDED_DIRS": [
       "screenshots"
     ]
@@ -12,6 +12,6 @@
     "NAME": "SilverRide Stage",
     "SLUG": "silverride-stage",
     "PREFIX": "silverride_stage",
-    "VERSION": "2.4.8"
+    "VERSION": "2.4.9"
   }
 }

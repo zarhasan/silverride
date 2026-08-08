@@ -1282,10 +1282,34 @@ add_action( 'acf/include_fields', function() {
 					'display' => 'block',
 					'sub_fields' => array(
 						array(
+							'key' => 'field_form_type',
+							'label' => 'Type',
+							'name' => 'type',
+							'type' => 'button_group',
+							'choices' => array(
+								'default' => 'Default',
+								'alt' => 'Alt',
+							),
+							'default_value' => 'default',
+							'return_format' => 'value',
+							'allow_null' => 0,
+							'allow_in_bindings' => 0,
+							'layout' => 'horizontal',
+						),
+						array(
 							'key' => 'field_form_title',
 							'label' => 'Title',
 							'name' => 'title',
 							'type' => 'text',
+						),
+						array(
+							'key' => 'field_form_description',
+							'label' => 'Description',
+							'name' => 'description',
+							'type' => 'wysiwyg',
+							'tabs' => 'all',
+							'toolbar' => 'full',
+							'media_upload' => 1,
 						),
 						array(
 							'key' => 'field_form_shortcode',
