@@ -1026,27 +1026,23 @@
 
         $toggle.on('click', function (e) {
             e.preventDefault();
+            // Close mobile menu if it's open (mutual exclusion)
+            const $menuToggle = $('.mobile-menu-toggle');
+            if ($menuToggle.length && $menuToggle.attr('aria-expanded') === 'true') {
+                $menuToggle.trigger('click');
+            }
             if (isOpen()) {
                 closeSearch();
             } else {
                 openSearch();
             }
         });
-
         $close.on('click', function (e) {
             e.preventDefault();
             closeSearch();
         });
-
-        // Dismiss on Escape
-        $form.on('keydown', function (e) {
-            if (e.key === 'Escape' && isOpen()) {
-                e.preventDefault();
-                e.stopPropagation();
-                closeSearch();
-            }
-        });
     }
+
 
     function initHeroPageVideo() {
         const section = document.querySelector('.hero-page-video-wrapper');
