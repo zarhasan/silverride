@@ -102,9 +102,9 @@ get_header(); ?>
                                         </a>
                                     </h2>
 
-                                    <p class="text-base leading-relaxed text-gray-700">
-                                        <?php echo esc_html($post_excerpt); ?>
-                                    </p>
+                                    <div class="text-base leading-relaxed text-gray-700">
+                                        <?php echo wp_kses_post($post_excerpt); ?>
+                                    </div>
 
                                     <a href="<?php echo esc_url(get_permalink()); ?>" class="inline-flex items-center mt-4 text-base font-semibold text-primary hover:underline transition-colors duration-200" aria-label="<?php echo esc_attr(sprintf(__('Read more about %s', 'silverride'), $post_title)); ?>">
                                         <?php esc_html_e('Read more', 'silverride'); ?>

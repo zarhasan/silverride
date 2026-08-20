@@ -74,19 +74,19 @@
     </div>
 
     <!-- Search Bar -->
-    <div id="header-search-form" class="site-search fixed inset-x-0 top-20 lg:top-28 z-[9998] px-3 lg:px-8 hidden" aria-hidden="true" inert>
-      <div class="container mx-auto">
-        <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-search-form flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-2 bg-primary border-2 border-white/40 rounded-2xl sm:rounded-full pl-4 sm:pl-6 pr-3 sm:pr-2 py-3 sm:py-2 shadow-lg">
+    <div id="header-search-form" class="site-search fixed inset-x-0 top-20 lg:top-28 z-[9998] px-0 lg:px-8 hidden" aria-hidden="true" inert>
+      <div class="container mx-auto p-4 lg:px-0">
+        <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-search-form flex sm:items-center gap-2 sm:gap-2 bg-primary border-2 border-white/40 rounded-2xl sm:rounded-full pl-4 sm:pl-6 pr-3 sm:pr-2 py-3 sm:py-2 shadow-lg">
           <div class="relative flex-1 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 mr-2 flex-shrink-0" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7"/><path d="m21 21-4.3-4.3"/></svg>
             <label for="site-search-input" class="sr-only"><?php esc_html_e('Search', 'silverride'); ?></label>
-            <input id="site-search-input" type="search" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php esc_attr_e('Type your search here...', 'silverride'); ?>" class="flex-1 min-w-0 bg-transparent border-0 text-white placeholder-white/80 text-base sm:text-lg focus:outline-none focus:ring-0 px-1 py-2" />
+            <input id="site-search-input" type="search" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php esc_attr_e('Type your search here...', 'silverride'); ?>" class="flex-1 min-w-0 bg-transparent border-0 text-white placeholder-white/80 text-base sm:text-lg focus:outline-none focus:ring-0 px-1 py-2" style="outline: none !important; box-shadow: none !important;" />
           </div>
           <div class="flex items-center justify-end gap-2 sm:flex-shrink-0">
             <button type="submit" class="inline-flex items-center justify-center px-5 py-2 text-sm sm:text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
               <?php esc_html_e('Search', 'silverride'); ?>
             </button>
-            <button type="button" class="site-search-close inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 text-white hover:text-blue-200 transition-colors duration-200 focus:outline-none flex-shrink-0" aria-label="<?php esc_attr_e('Close search', 'silverride'); ?>">
+            <button type="button" class="site-search-close hidden lg:inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 text-white hover:text-blue-200 transition-colors duration-200 focus:outline-none flex-shrink-0" aria-label="<?php esc_attr_e('Close search', 'silverride'); ?>">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg>
             </button>
           </div>
