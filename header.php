@@ -37,17 +37,22 @@
 
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-8" aria-label="Primary">
-        <?php 
+        <?php
           get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',
             'menu_class' => 'primary-menu flex items-center gap-8 text-white',
             'link_class' => 'text-white text-base font-normal hover:text-blue-200 transition-colors duration-200',
-          ]); 
+          ]);
         ?>
 
         <?php if ( ! empty( $header_cta_text ) && ! empty( $header_cta_url ) ) : ?>
           <a href="<?php echo esc_url( $header_cta_url ); ?>" class="inline-flex items-center justify-center px-6 py-2 text-base font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200"<?php echo $header_cta_target; ?>><?php echo esc_html( $header_cta_text ); ?></a>
         <?php endif; ?>
+
+        <!-- Search Toggle -->
+        <button type="button" class="search-toggle inline-flex items-center justify-center text-white hover:text-blue-200 transition-colors duration-200 focus:outline-none" aria-controls="header-search-form" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle search', 'silverride'); ?>">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
       </nav>
 
       <!-- Mobile menu button -->
@@ -59,6 +64,23 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
         </span>
       </button>
+    </div>
+
+    <!-- Search Bar -->
+    <div id="header-search-form" class="site-search fixed right-0 top-20 lg:top-28 z-[9998] px-4 lg:px-8 hidden" aria-hidden="true" inert>
+      <div class="container mx-auto">
+
+        <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-search-form lg:min-w-[900px] max-w-4xl flex items-center gap-2 bg-primary border-2 border-white/40 rounded-full pl-6 pr-2 py-2 shadow-lg">
+          <label for="site-search-input" class="sr-only"><?php esc_html_e('Search', 'silverride'); ?></label>
+          <input id="site-search-input" type="search" name="s" value="<?php echo esc_attr( get_search_query() ); ?>" placeholder="<?php esc_attr_e('Type your search here...', 'silverride'); ?>" class="flex-1 bg-transparent border-0 text-white placeholder-white/80 text-lg focus:!outline-none focus:!ring-0 px-2 py-2" style="outline: none !important; ring: none !important;" />
+          <button type="submit" class="inline-flex items-center justify-center px-6 py-2 text-base font-medium text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
+            <?php esc_html_e('Search', 'silverride'); ?>
+          </button>
+          <button type="button" class="site-search-close inline-flex items-center justify-center w-10 h-10 text-white hover:text-blue-200 transition-colors duration-200 focus:outline-none" aria-label="<?php esc_attr_e('Close search', 'silverride'); ?>">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12"/><path d="M6 6l12 12"/></svg>
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- Mobile Menu Overlay -->
@@ -73,13 +95,13 @@
           </button>
         </div>
 
-        <?php 
+        <?php
           get_template_part('template-parts/menu', null, [
             'theme_location' => 'primary',
             'menu_class' => 'mobile-menu flex flex-col gap-4 text-white',
             'link_class' => 'text-white text-lg font-medium transition-colors duration-200 py-2 border-b border-white/20 block',
             'mobile' => true,
-          ]); 
+          ]);
         ?>
 
         <div class="mobile-menu-footer mt-auto pt-6 flex flex-col gap-4">

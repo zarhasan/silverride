@@ -13,6 +13,7 @@
         initTranscriptToggles();
         initToCToggle();
         initMobileMenu();
+        initHeaderSearch();
         initHeroPageVideo();
         addProseToElementor();
         initAlternateBgHover();
@@ -981,6 +982,70 @@
             if (!$mobileSubmenus.length) return;
             $mobileSubmenus.attr('aria-hidden', 'true');
         })();
+    }
+
+    function initHeaderSearch() {
+        const $toggle = $('.search-toggle');
+        const $form = $('#header-search-form');
+        const $close = $('.site-search-close');
+        const $input = $('#site-search-input');
+
+        if (!$toggle.length || !$form.length) return;
+
+        let previousActiveElement = null;
+
+        function openSearch() {
+            previousActiveElement = document.activeElement;
+            $toggle.attr('aria-expanded', 'true');
+            $form.removeClass('hidden');
+            $form.attr('aria-hidden', 'false');
+            $form.removeAttr('inert');
+            $('body').addClass('search-open');
+
+            // Focus the input after the form becomes visible
+            setTimeout(function () {
+                if ($input.length) $input.trigger('focus');
+            }, 0);
+        }
+
+        function closeSearch() {
+            $toggle.attr('aria-expanded', 'false');
+            $form.addClass('hidden');
+            $form.attr('aria-hidden', 'true');
+            $form.attr('inert', '');
+            $('body').removeClass('search-open');
+
+            if (previousActiveElement) {
+                previousActiveElement.focus();
+            }
+        }
+
+        function isOpen() {
+            return $toggle.attr('aria-expanded') === 'true';
+        }
+
+        $toggle.on('click', function (e) {
+            e.preventDefault();
+            if (isOpen()) {
+                closeSearch();
+            } else {
+                openSearch();
+            }
+        });
+
+        $close.on('click', function (e) {
+            e.preventDefault();
+            closeSearch();
+        });
+
+        // Dismiss on Escape
+        $form.on('keydown', function (e) {
+            if (e.key === 'Escape' && isOpen()) {
+                e.preventDefault();
+                e.stopPropagation();
+                closeSearch();
+            }
+        });
     }
 
     function initHeroPageVideo() {
