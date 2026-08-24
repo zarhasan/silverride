@@ -1669,6 +1669,8 @@ add_action( 'acf/include_fields', function() {
 								'compliance-cards' => 'Compliance Cards',
 								'info' => 'Information Cards',
 								'incentives' => 'Incentives',
+								'simple' => 'Simple',
+								'cardless' => 'Cardless',
 							),
 							'default_value' => 'basic',
 							'return_format' => 'value',
