@@ -106,7 +106,7 @@ if ( empty( $items ) ) {
 					</h2>
 				<?php endif; ?>
 				<?php if ( $description ) : ?>
-					<div class="mt-3 text-[15px] md:text-base leading-relaxed text-[#616161] max-w-3xl mx-auto prose prose-p:my-0 [&_p]:my-0 text-center">
+					<div class="mt-3 text-xl md:text-xl leading-relaxed text-[#616161] max-w-3xl mx-auto prose prose-p:my-0 [&_p]:my-0 text-center">
 						<?php echo wp_kses_post( $description ); ?>
 					</div>
 				<?php endif; ?>

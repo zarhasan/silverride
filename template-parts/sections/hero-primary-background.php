@@ -26,7 +26,7 @@ $links = $args['links'] ?? [];
         <?php endif; ?>
 
         <?php if (!empty($description)) : ?>
-            <div class="mt-8 md:mt-10 text-base font-normal leading-relaxed text-blue-100 md:text-lg">
+            <div class="mt-8 md:mt-10 text-xl font-normal leading-relaxed text-blue-100 md:text-xl">
                 <?php echo wp_kses_post($description); ?>
             </div>
         <?php endif; ?>
