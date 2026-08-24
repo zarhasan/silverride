@@ -75,8 +75,8 @@
 
     <!-- Search Bar -->
     <div id="header-search-form" class="site-search fixed inset-x-0 top-20 lg:top-28 z-[9998] px-0 lg:px-8 hidden" aria-hidden="true" inert>
-      <div class="max-w-4xl ml-auto p-4 lg:px-0">
-        <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-search-form flex sm:items-center gap-2 sm:gap-2 bg-primary border-2 border-white rounded-full pl-4 sm:pl-6 pr-3 sm:pr-2 py-3 sm:py-2 shadow-lg">
+      <div class="container ml-auto p-4 lg:px-0">
+        <form role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-search-form ml-auto max-w-4xl flex sm:items-center gap-2 sm:gap-2 bg-primary border-2 border-white rounded-full pl-4 sm:pl-6 pr-3 sm:pr-2 py-3 sm:py-2 shadow-lg">
           <div class="relative flex-1 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 mr-2 flex-shrink-0" aria-hidden="true"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="10" cy="10" r="7"/><path d="m21 21-4.3-4.3"/></svg>
             <label for="site-search-input" class="sr-only"><?php esc_html_e('Search', 'silverride'); ?></label>
