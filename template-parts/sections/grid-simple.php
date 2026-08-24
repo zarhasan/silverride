@@ -6,7 +6,7 @@
  * Light section background, centered title + optional subtitle, 2-5 column grid.
  * Each item: white logo/media box on top, bold title, muted description, pill "Read More".
  *
- * ACF fields: title, description, grid_size, items[], background_color, footer_description, cta, hide_on, margin
+ * ACF fields: title, description, grid_size, items[], background_color, footer_description, cta, hide_on, margin, container
  *
  * Items repeater: image, subtitle, title, description, link
  */
@@ -28,6 +28,13 @@ $hide_on            = $args['hide_on'] ?? [];
 $margin             = $args['margin'] ?? 'default';
 $custom_margin      = $args['custom_margin'] ?? '';
 $disable_margins    = ! empty( $args['disable_margins'] );
+$container          = $args['container'] ?? 'full';
+
+$container_classes = [
+	'full'  => 'container mx-auto px-4 md:px-6 lg:px-8',
+	'small' => 'max-w-5xl mx-auto px-4 md:px-6 lg:px-8',
+];
+$container_class = $container_classes[ $container ] ?? $container_classes['full'];
 
 // Hide on handling.
 $hide_classes = [];
@@ -89,7 +96,7 @@ if ( empty( $items ) ) {
 	<?php echo $bg_style . $margin_style; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 	data-section-id="<?php echo esc_attr( $template_part_name ); ?>"
 >
-	<div class="container mx-auto px-4 md:px-6 lg:px-8">
+	<div class="<?php echo esc_attr( $container_class ); ?>">
 		<?php if ( $title || $description ) : ?>
 			<div class="text-center max-w-4xl mx-auto mb-10 md:mb-14">
 				<?php if ( $title ) : ?>
