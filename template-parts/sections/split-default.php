@@ -131,7 +131,7 @@ $image_alt = $image['alt'] ?? '';
 
 			<!-- Right column: form card -->
 			<div class="lg:col-span-6 xl:col-span-6">
-				<div class="bg-[#ECEEF0] p-6 md:p-7 lg:p-8">
+				<div class="bg-[#4255631A] p-6 md:p-7 lg:p-8">
 					<?php if ( $form_title ) : ?>
 						<h3 class="text-[26px] font-bold text-[#1B1B1B] leading-snug mb-6">
 							<?php echo esc_html( $form_title ); ?>
