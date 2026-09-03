@@ -1436,7 +1436,10 @@ body .wpforms-form .wpforms-field-label {
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .forminator-ui.forminator-custom-form .forminator-col-6 {
+    .forminator-ui.forminator-custom-form .forminator-row > .forminator-col.forminator-col-6,
+    .forminator-ui.forminator-custom-form .forminator-row > .forminator-col.forminator-col-md-6,
+    .forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col.forminator-col-6,
+    .forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col.forminator-col-md-6 {
         width: 100% !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
@@ -1654,10 +1657,12 @@ body .wpforms-form .wpforms-field-label {
     flex-wrap: nowrap !important;
     gap: 0.75rem !important;
 }
-
 /* Mobile responsive */
 @media (max-width: 768px) {
-    .contact-forminator .forminator-ui.forminator-custom-form .forminator-col-6 {
+    .contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col.forminator-col-6,
+    .contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col.forminator-col-md-6,
+    .contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col.forminator-col-6,
+    .contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col.forminator-col-md-6 {
         width: 100% !important;
         flex: 0 0 100% !important;
         max-width: 100% !important;
