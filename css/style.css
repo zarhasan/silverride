@@ -1083,6 +1083,16 @@ body .wpforms-form .wpforms-field-label {
     font-weight: 500;
 }
 
+/* Error border for invalid fields (visible in form-issue-1 for First Name) */
+.forminator-ui.forminator-custom-form .forminator-has_error input.forminator-input,
+.forminator-ui.forminator-custom-form .forminator-has_error textarea.forminator-textarea,
+.forminator-ui.forminator-custom-form .forminator-has_error select.forminator-select--field,
+.forminator-ui.forminator-custom-form .forminator-has_error select.forminator-select2,
+.forminator-ui.forminator-custom-form .forminator-has_error .select2-container--default .select2-selection--single {
+    border-color: #DC2626 !important;
+    box-shadow: 0 0 0 1px #DC2626 !important;
+}
+
 /* Labels */
 .forminator-ui.forminator-custom-form .forminator-label {
     font-size: 1rem !important;
@@ -1233,17 +1243,57 @@ body .wpforms-form .wpforms-field-label {
 
 /* Time picker sub-labels and inputs */
 .forminator-ui.forminator-custom-form .forminator-timepicker .forminator-label {
-    font-size: 0.875rem !important;
-    /* color: #6B7280 !important; */
+    font-size: 0.75rem !important;
+    color: #6B7280 !important;
+    font-weight: 400 !important;
     margin-top: 0.25rem !important;
     margin-bottom: 0 !important;
+    text-align: left !important;
 }
 
-.forminator-ui.forminator-custom-form .forminator-timepicker input.forminator-input {
+.forminator-ui.forminator-custom-form .forminator-timepicker input.forminator-input,
+.forminator-ui.forminator-custom-form .forminator-timepicker select.forminator-select--field,
+.forminator-ui.forminator-custom-form .forminator-timepicker select.forminator-select2 {
     padding: 0.75rem 0.5rem !important;
     text-align: center !important;
+    text-align-last: center !important;
 }
 
+/* Timepicker inline layout fix — Hours / Minutes / AM/PM side by side (issue in form-issue-1) */
+.forminator-ui.forminator-custom-form .forminator-field-time .forminator-row,
+.forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 0.75rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-time .forminator-col,
+.forminator-ui.forminator-custom-form .forminator-timepicker .forminator-col {
+    flex: 1 1 0 !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-field-time select.forminator-select--field,
+.forminator-ui.forminator-custom-form .forminator-field-time select.forminator-select2,
+.forminator-ui.forminator-custom-form .forminator-timepicker select.forminator-select--field,
+.forminator-ui.forminator-custom-form .forminator-timepicker select.forminator-select2 {
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+@media (max-width: 480px) {
+    .forminator-ui.forminator-custom-form .forminator-field-time .forminator-row,
+    .forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
+        gap: 0.5rem !important;
+    }
+}
 /* Radio buttons as pill buttons */
 .forminator-field-radio .forminator-label {
     display: block;
@@ -1339,18 +1389,35 @@ body .wpforms-form .wpforms-field-label {
     clear: both;
 }
 
-/* Spacing adjustments */
+/* Spacing adjustments — unified 1.25rem vertical rhythm (matches split placeholder space-y-5; fixes 2rem vs 1.5rem inconsistency) */
 .forminator-ui.forminator-custom-form .forminator-row {
-    margin-bottom: 2rem !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 1.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    gap: 1rem !important;
 }
 
 .forminator-ui.forminator-custom-form .forminator-row .forminator-row,
-.forminator-ui.forminator-custom-form .forminator-row.forminator-row-last {
+.forminator-ui.forminator-custom-form .forminator-row.forminator-row-last,
+.forminator-ui.forminator-custom-form .forminator-row.forminator-no-margin,
+.forminator-ui.forminator-custom-form .forminator-col .forminator-row,
+.forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
     margin-bottom: 0 !important;
 }
 
-.forminator-ui.forminator-custom-form .forminator-row .forminator-col {
+.forminator-ui.forminator-custom-form .forminator-row .forminator-col,
+.forminator-ui.forminator-custom-form .forminator-col {
     margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    min-width: 0 !important;
+}
+
+.forminator-ui.forminator-custom-form .forminator-row > .forminator-col,
+.forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col {
+    flex: 1 1 0 !important;
 }
 
 /* Address fields full width */
@@ -1358,6 +1425,13 @@ body .wpforms-form .wpforms-field-label {
     width: 100%;
     flex: 0 0 100%;
     max-width: 100%;
+}
+
+/* Timepicker override: keep Hours/Minutes/AMPM inline (fixes vertical stack in form-issue-1, overrides global 1rem/wrap) */
+.forminator-ui.forminator-custom-form .forminator-field-time .forminator-row,
+.forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
+    flex-wrap: nowrap !important;
+    gap: 0.75rem !important;
 }
 
 /* Mobile responsive */
@@ -1543,34 +1617,42 @@ body .wpforms-form .wpforms-field-label {
     background-color: #172554 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-button-submit:focus {
-    outline: none !important;
-    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.3) !important;
-}
-
-/* Clear float after submit row */
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row-last::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Spacing adjustments */
+/* Spacing adjustments — unified with global 1.25rem (was 0 + 1.5rem leaf col) */
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-row {
-    margin-bottom: 0rem !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 1.25rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    gap: 1rem !important;
 }
 
 .contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-row,
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row.forminator-row-last {
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row.forminator-row-last,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row.forminator-no-margin,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-col .forminator-row,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
     margin-bottom: 0 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col {
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-col,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-col {
     margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    min-width: 0 !important;
 }
 
-.contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col:not(.forminator-col-has-children) {
-    margin-bottom: 1.5rem !important;
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row > .forminator-col,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-row .forminator-row > .forminator-col {
+    flex: 1 1 0 !important;
+}
+
+/* Contact timepicker override: keep Hours/Minutes/AMPM inline */
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-field-time .forminator-row,
+.contact-forminator .forminator-ui.forminator-custom-form .forminator-timepicker .forminator-row {
+    flex-wrap: nowrap !important;
+    gap: 0.75rem !important;
 }
 
 /* Mobile responsive */
