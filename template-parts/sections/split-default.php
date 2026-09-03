@@ -123,7 +123,7 @@ $image_alt = $image['alt'] ?? '';
 							$logo_alt = $logo['alt'] ?? 'Logo';
 							if ( empty( $logo_url ) ) continue;
 						?>
-							<img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php echo esc_attr( $logo_alt ); ?>" class="h-[100px] w-auto object-contain" loading="lazy">
+							<img src="<?php echo esc_url( $logo_url ); ?>" alt="<?php echo esc_attr( $logo_alt ); ?>" class="h-[150px] w-auto object-contain" loading="lazy">
 						<?php endforeach; ?>
 					</div>
 				<?php endif; ?>
