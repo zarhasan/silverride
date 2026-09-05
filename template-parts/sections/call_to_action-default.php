@@ -23,25 +23,25 @@ $link_target = !empty($link['target']) ? $link['target'] : '_self';
         <?php endif; ?>
 
         <?php if (!empty($description)) : ?>
-            <div class="text-lg md:text-xl text-primary mt-6">
+            <div class="prose !text-lg md:!text-xl text-primary mt-6">
                 <?php echo wp_kses_post($description); ?>
             </div>
         <?php endif; ?>
 
         <div class="flex flex-col justify-stretch items-center lg:flex-row lg:justify-center mt-8 lg:mt-12 gap-4">
             <?php if (!empty($link_url) && !empty($link_title)) : ?>
-                <a 
-                    href="<?php echo esc_url($link_url); ?>" 
-                    target="<?php echo esc_attr($link_target); ?>" 
+                <a
+                    href="<?php echo esc_url($link_url); ?>"
+                    target="<?php echo esc_attr($link_target); ?>"
                     class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200">
                     <?php echo esc_html($link_title); ?>
                 </a>
             <?php endif; ?>
 
             <?php if (!empty($secondary_link)) : ?>
-                <a 
-                    href="<?php echo esc_url($secondary_link['url']); ?>" 
-                    target="<?php echo esc_attr($secondary_link['target']); ?>" 
+                <a
+                    href="<?php echo esc_url($secondary_link['url']); ?>"
+                    target="<?php echo esc_attr($secondary_link['target']); ?>"
                     class="inline-flex items-center justify-center px-10 py-3 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-colors duration-200">
                     <?php echo esc_html($secondary_link['title']); ?>
                 </a>
