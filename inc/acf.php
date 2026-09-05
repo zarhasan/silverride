@@ -1900,6 +1900,32 @@ add_action( 'acf/include_fields', function() {
 									'allow_in_bindings' => 0,
 									'parent_repeater' => 'field_68ce910fe30fa',
 								),
+								array(
+									'key' => 'field_grid_item_secondary_link',
+									'label' => 'Secondary Link',
+									'name' => 'secondary_link',
+									'aria-label' => '',
+									'type' => 'link',
+									'instructions' => '',
+									'required' => 0,
+									'conditional_logic' => array(
+										array(
+											array(
+												'field' => 'field_68ce913ce30ff',
+												'operator' => '==',
+												'value' => 'floating-cards',
+											),
+										),
+									),
+									'wrapper' => array(
+										'width' => '',
+										'class' => '',
+										'id' => '',
+									),
+									'return_format' => 'array',
+									'allow_in_bindings' => 0,
+									'parent_repeater' => 'field_68ce910fe30fa',
+								),
 							),
 						),
 						array(

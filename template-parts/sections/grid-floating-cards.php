@@ -89,14 +89,33 @@ if ($custom_margin && $margin === 'custom') {
                                         </div>
                                     <?php endif; ?>
 
-                                    <?php if(!empty($item['link'])): ?>
-                                        <a 
-                                            href="<?php echo esc_url($item['link']['url']); ?>" 
-                                            target="<?php echo !empty($item['link']['target']) ? esc_attr($item['link']['target']) : '_self'; ?>"
-                                            class="btn btn-outline mt-auto"
-                                        >
-                                            <?php echo esc_html($item['link']['title']); ?>
-                                        </a>
+                                    <?php
+                                        $floating_link = $item['link'] ?? [];
+                                        $floating_secondary = $item['secondary_link'] ?? [];
+                                        $has_floating_link = !empty($floating_link['url']);
+                                        $has_floating_secondary = !empty($floating_secondary['url']);
+                                    ?>
+                                    <?php if($has_floating_link || $has_floating_secondary): ?>
+                                        <div class="flex flex-wrap items-center justify-center gap-3 mt-auto">
+                                            <?php if($has_floating_link): ?>
+                                                <a
+                                                    href="<?php echo esc_url($floating_link['url']); ?>"
+                                                    target="<?php echo !empty($floating_link['target']) ? esc_attr($floating_link['target']) : '_self'; ?>"
+                                                    class="btn btn-outline"
+                                                >
+                                                    <?php echo esc_html($floating_link['title'] ?: 'Learn More'); ?>
+                                                </a>
+                                            <?php endif; ?>
+                                            <?php if($has_floating_secondary): ?>
+                                                <a
+                                                    href="<?php echo esc_url($floating_secondary['url']); ?>"
+                                                    target="<?php echo !empty($floating_secondary['target']) ? esc_attr($floating_secondary['target']) : '_self'; ?>"
+                                                    class="btn btn-outline"
+                                                >
+                                                    <?php echo esc_html($floating_secondary['title'] ?: 'Learn More'); ?>
+                                                </a>
+                                            <?php endif; ?>
+                                        </div>
                                     <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>
