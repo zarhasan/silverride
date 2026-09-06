@@ -303,7 +303,7 @@ $sections = get_field('sections');
 <div class="demo-frame relative border border-gray-200 rounded-xl overflow-hidden my-10 shadow-sm">
   <div class="absolute top-0 left-0 z-10 bg-gray-900 text-white text-[11px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-br-lg leading-none">call_to_action - alt</div>
   <div class="pt-8">
-        <?php get_template_part('template-parts/sections/call_to_action', 'alt', ['title' => 'Still Have Questions?', 'description' => '<p>We are here to help.</p>', 'link' => ['url' => '#', 'title' => 'Contact Us']]); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'alt', ['eyebrow' => 'FOR DRIVERS', 'title' => 'We Are Already Where You Are Going.', 'description' => '<p>35+ metro areas. 15 states. Growing every day. If SilverRide isn\'t in your market, we are likely on the way.</p>', 'link' => ['url' => '#', 'title' => 'View Service Area Map'], 'secondary_link' => ['url' => '#', 'title' => 'Request Service In My City'], 'alt_image' => ['url' => 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1600&q=80', 'alt' => 'Fleet line illustration']]); ?>
   </div>
 </div>
 <div class="demo-frame relative border border-gray-200 rounded-xl overflow-hidden my-10 shadow-sm">

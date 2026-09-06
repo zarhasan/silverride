@@ -8,10 +8,20 @@ $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $link = $args['link'] ?? [];
 $secondary_link = $args['secondary_link'] ?? [];
+$eyebrow = $args['eyebrow'] ?? '';
+$alt_image = $args['alt_image'] ?? [];
+$fallback_image = $args['image'] ?? [];
+$bottom_image = !empty($alt_image['url']) ? $alt_image : $fallback_image;
 ?>
 
 <section class="bg-primary py-20 lg:py-28" data-section-id="<?php echo esc_attr($template_part_name); ?>">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 text-center">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 lg:text-center">
+        <?php if ($eyebrow) : ?>
+            <p class="text-base font-semibold uppercase text-white mb-4">
+                <?php echo esc_html($eyebrow); ?>
+            </p>
+        <?php endif; ?>
+
         <?php if ($title) : ?>
         <h2 class="text-3xl lg:text-[2.875rem] font-bold text-white leading-tight mb-6">
             <?php echo esc_html($title); ?>
@@ -24,7 +34,7 @@ $secondary_link = $args['secondary_link'] ?? [];
         </div>
         <?php endif; ?>
 
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <div class="flex flex-col items-start sm:flex-row lg:items-center justify-center gap-4 sm:gap-6">
             <?php if (!empty($link) && !empty($link['url'])) : ?>
                 <a href="<?php echo esc_url($link['url']); ?>" class="inline-flex items-center justify-center px-8 py-3 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-primary transition-colors duration-200">
                     <?php echo esc_html($link['title'] ?? ''); ?>
@@ -37,4 +47,10 @@ $secondary_link = $args['secondary_link'] ?? [];
             <?php endif; ?>
         </div>
     </div>
+
+    <?php if (!empty($bottom_image) && !empty($bottom_image['url'])) : ?>
+        <div class="mt-12 lg:mt-16 overflow-hidden">
+            <img src="<?php echo esc_url($bottom_image['url']); ?>" alt="<?php echo esc_attr($bottom_image['alt'] ?? ''); ?>" class="w-full h-auto object-contain" loading="lazy" />
+        </div>
+    <?php endif; ?>
 </section>

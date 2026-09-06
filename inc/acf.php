@@ -1003,6 +1003,27 @@ add_action( 'acf/include_fields', function() {
 							'layout' => 'horizontal',
 						),
 						array(
+							'key' => 'field_cta_alt_eyebrow',
+							'label' => 'Eyebrow',
+							'name' => 'eyebrow',
+							'type' => 'text',
+							'instructions' => 'Small uppercase text above title (e.g., FOR DRIVERS). Only for Alt variant.',
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_68ce8f6113088',
+										'operator' => '==',
+										'value' => 'alt',
+									),
+								),
+							),
+							'wrapper' => array(
+								'width' => '',
+								'class' => '',
+								'id' => '',
+							),
+						),
+						array(
 							'key' => 'field_68ce8d1bb2dc5',
 							'label' => 'Title',
 							'name' => 'title',
@@ -1067,6 +1088,26 @@ add_action( 'acf/include_fields', function() {
 							'name' => 'secondary_link',
 							'type' => 'link',
 							'return_format' => 'array',
+						),
+
+						array(
+							'key' => 'field_cta_alt_image',
+							'label' => 'Alt Image',
+							'name' => 'alt_image',
+							'type' => 'image',
+							'instructions' => 'Full-width illustration shown below buttons for Alt variant.',
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_68ce8f6113088',
+										'operator' => '==',
+										'value' => 'alt',
+									),
+								),
+							),
+							'return_format' => 'array',
+							'library' => 'all',
+							'preview_size' => 'medium',
 						),
 						array(
 							'key' => 'field_68cfd07e62bad',
@@ -2049,7 +2090,7 @@ add_action( 'acf/include_fields', function() {
 								'alt' => 'Alt',
 								'simple' => 'Simple',
 								'staggered' => 'Staggered',
-								'tint' => 'Tint' 
+								'tint' => 'Tint'
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
