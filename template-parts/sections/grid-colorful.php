@@ -39,10 +39,14 @@ $bg_style = $section_bg ? ' style="background-color: ' . esc_attr($section_bg) .
                     $card_title = $item['title'] ?? '';
                     $card_description = $item['description'] ?? '';
                     $card_items = $item['items'] ?? [];
+                    $card_link = $item['link'] ?? [];
+                    $card_secondary_link = $item['secondary_link'] ?? [];
+                    $has_card_link = !empty($card_link['url']);
+                    $has_card_secondary = !empty($card_secondary_link['url']);
                     $color_index = $index % count($colors);
                     $card_bg = $colors[$color_index];
                 ?>
-                <div class="rounded-2xl p-8 lg:p-12" style="background-color: <?php echo esc_attr($card_bg); ?>;">
+                <div class="rounded-2xl p-8 lg:p-12 flex flex-col" style="background-color: <?php echo esc_attr($card_bg); ?>;">
                     <?php if ($card_subtitle) : ?>
                     <span class="text-sm font-bold text-gray-900 uppercase tracking-wide mb-4 block">
                         <?php echo esc_html($card_subtitle); ?>
@@ -58,6 +62,20 @@ $bg_style = $section_bg ? ' style="background-color: ' . esc_attr($section_bg) .
                     <?php if ($card_description) : ?>
                         <div class="prose text-lg text-gray-800 leading-relaxed mb-8">
                             <?php echo wp_kses_post($card_description); ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if ($has_card_link || $has_card_secondary) : ?>
+                        <div class="flex flex-wrap gap-3 mt-auto pt-2">
+                            <?php if ($has_card_link) : ?>
+                                <a href="<?php echo esc_url($card_link['url']); ?>" target="<?php echo !empty($card_link['target']) ? esc_attr($card_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                                    <?php echo esc_html($card_link['title'] ?: 'Learn More'); ?>
+                                </a>
+                            <?php endif; ?>
+                            <?php if ($has_card_secondary) : ?>
+                                <a href="<?php echo esc_url($card_secondary_link['url']); ?>" target="<?php echo !empty($card_secondary_link['target']) ? esc_attr($card_secondary_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                                    <?php echo esc_html($card_secondary_link['title'] ?: 'Learn More'); ?>
+                                </a>
+                            <?php endif; ?>
                         </div>
                     <?php endif; ?>
                 </div>
