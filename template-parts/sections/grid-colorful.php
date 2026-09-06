@@ -67,12 +67,12 @@ $bg_style = $section_bg ? ' style="background-color: ' . esc_attr($section_bg) .
                     <?php if ($has_card_link || $has_card_secondary) : ?>
                         <div class="flex flex-wrap gap-3 mt-auto pt-2">
                             <?php if ($has_card_link) : ?>
-                                <a href="<?php echo esc_url($card_link['url']); ?>" target="<?php echo !empty($card_link['target']) ? esc_attr($card_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                                <a href="<?php echo esc_url($card_link['url']); ?>" target="<?php echo !empty($card_link['target']) ? esc_attr($card_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-lg font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
                                     <?php echo esc_html($card_link['title'] ?: 'Learn More'); ?>
                                 </a>
                             <?php endif; ?>
                             <?php if ($has_card_secondary) : ?>
-                                <a href="<?php echo esc_url($card_secondary_link['url']); ?>" target="<?php echo !empty($card_secondary_link['target']) ? esc_attr($card_secondary_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
+                                <a href="<?php echo esc_url($card_secondary_link['url']); ?>" target="<?php echo !empty($card_secondary_link['target']) ? esc_attr($card_secondary_link['target']) : '_self'; ?>" class="inline-flex items-center justify-center px-5 py-2 text-lg font-semibold text-gray-900 border-2 border-gray-900 rounded-full bg-transparent hover:bg-gray-900 hover:text-white transition-colors duration-200">
                                     <?php echo esc_html($card_secondary_link['title'] ?: 'Learn More'); ?>
                                 </a>
                             <?php endif; ?>
