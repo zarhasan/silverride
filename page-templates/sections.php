@@ -1,7 +1,8 @@
 <?php
 /**
  * Template Name: Demo Sections
- * Description: Showcase of all section types with demo content
+ * Description: Showcase of all section types with demo content — ordered by importance
+ * Images: Unsplash (https://images.unsplash.com) | Icons: svgapi.com via Iconify Heroicons/Lucide (https://svgapi.com/documentation)
  */
 
 if (!defined('ABSPATH')) {
@@ -29,370 +30,255 @@ $sections = get_field('sections');
             <?php get_template_part('template-parts/sections/' . $layout, $type, array_merge($section, ['id' => $id])); ?>
         <?php endforeach; ?>
     <?php else : ?>
-        <?php get_template_part('template-parts/section-label', null, [
-            'number' => '1',
-            'section' => 'Hero',
-            'layout' => 'hero-home.php',
-            'type' => 'Home',
-            'fields' => 'type (Home | Page), subtitle, title, description (wysiwyg), links (repeater), image, service_links (repeater), media_type, video, transcript'
-        ]); ?>
-        <?php
-        get_template_part('template-parts/sections/hero-home', null, [
+        <?php // ========================================================
+            // TIER 1 — HERO (first impression, highest importance)
+            // ======================================================== ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '1', 'section' => 'Hero Home', 'layout' => 'hero-home.php', 'fields' => 'type, subtitle, title, description, links, image, service_links']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'home', [
             'type' => 'home',
             'subtitle' => 'SilverRide Canada',
             'title' => 'Your Center of Excellence for Accessibility Compliance',
-            'description' => '<p>We help organizations achieve and maintain compliance with accessibility standards including AODA, ADA, and WCAG. Our expert team provides comprehensive assessments, implementations, and ongoing support to ensure your digital and physical spaces are accessible to everyone.</p>',
-            'links' => [
-                ['link' => ['url' => '#', 'title' => 'Get Started']],
-                ['link' => ['url' => '#services', 'title' => 'Our Services']]
+            'description' => '<p>We help organizations achieve and maintain compliance with AODA, ADA, and WCAG. Comprehensive assessments, implementations, and ongoing support for inclusive digital and physical spaces.</p>',
+            'links' => [['link' => ['url' => '#', 'title' => 'Get Started']], ['link' => ['url' => '#services', 'title' => 'Our Services']]],
+            'image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1200&q=80', 'alt' => 'Professional accessibility consultation'],
+            'service_links' => [['title' => 'Web Accessibility', 'link' => ['url' => '#', 'title' => 'Web']], ['title' => 'Document Remediation', 'link' => ['url' => '#', 'title' => 'Docs']], ['title' => 'Training Programs', 'link' => ['url' => '#', 'title' => 'Training']], ['title' => 'Compliance Audits', 'link' => ['url' => '#', 'title' => 'Audits']]]
+        ]); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '2', 'section' => 'Hero Page', 'layout' => 'hero-page.php', 'fields' => 'type, subtitle, title, description, links, image']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'page', [
+            'type' => 'page',
+            'subtitle' => 'Trusted by Transit Agencies',
+            'title' => 'Paratransit That Performs',
+            'description' => '<p>35+ major metros, 95% OTP, flexible driver network for complementary, overflow and premium tiers.</p>',
+            'links' => [['link' => ['url' => '#', 'title' => 'Partner With Us']]],
+            'image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80', 'alt' => 'Wheelchair accessible vehicle'],
+        ]); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '3', 'section' => 'Hero Overlay', 'layout' => 'hero-overlay.php', 'fields' => 'type, title, description, image']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'overlay', ['type' => 'overlay', 'title' => 'There With Care', 'description' => '<p>Bringing joy, dignity and community to the people who need it most.</p>', 'image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&q=80', 'alt' => 'Driver assisting rider']]); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '4', 'section' => 'Hero Centered / Textual / Primary Background', 'layout' => 'hero-centered.php + hero-textual.php + hero-primary-background.php', 'fields' => 'title, subtitle, description']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'centered', ['type' => 'centered', 'title' => 'Accessibility Is Our Mission', 'subtitle' => 'Since 2018', 'description' => '<p>Centered storytelling for impact pages.</p>']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'textual', ['type' => 'textual', 'title' => 'Our Method', 'description' => '<p>Textual hero for long-form narrative with no media.</p>']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'primary-background', ['type' => 'primary-background', 'title' => 'Primary Background Hero', 'description' => '<p>Deep navy hero for high-contrast announcements.</p>']); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '5', 'section' => 'Hero Variants', 'layout' => 'hero-image-below.php / hero-title-below.php / hero-blog.php', 'fields' => 'title, image']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'image-below', ['type' => 'image-below', 'title' => 'Hero Image Below', 'image' => ['url' => 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=1200&q=80', 'alt' => 'Healthcare team']]); ?>
+        <?php get_template_part('template-parts/sections/hero', 'title-below', ['type' => 'title-below', 'title' => 'Hero Title Below']); ?>
+        <?php get_template_part('template-parts/sections/hero', 'blog', ['type' => 'blog', 'title' => 'Newsroom', 'description' => '<p>Latest insights on accessibility and transportation.</p>']); ?>
+
+        <?php // TIER 2 — SECTION TITLE & TEXT (narrative foundation) ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '6', 'section' => 'Section Title', 'layout' => 'section_title-default.php', 'fields' => 'subtitle, title, tag, description, alignment, container']); ?>
+        <?php get_template_part('template-parts/sections/section_title', 'default', ['title' => 'Why Choose SilverRide', 'subtitle' => 'A Center of Excellence', 'tag' => 'Trusted Nationwide', 'description' => '<p>Leading the industry in accessibility compliance solutions</p>', 'alignment' => 'center', 'container' => 'full']); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '7', 'section' => 'Text Variants', 'layout' => 'text.php / text-alt.php / text-heavy.php / text-columns.php / text-with_toc.php', 'fields' => 'title, description']); ?>
+        <?php get_template_part('template-parts/sections/text', null, ['title' => 'Our Commitment to Accessibility', 'description' => '<p>An accessible website expands your market to the 15% of the global population living with disabilities. Our certified experts have helped hundreds of organizations achieve compliance.</p>']); ?>
+        <?php get_template_part('template-parts/sections/text', 'alt', ['title' => 'Alt Text', 'description' => '<p>Alternate styling for emphasis blocks with tighter measure.</p>']); ?>
+        <?php get_template_part('template-parts/sections/text', 'heavy', ['title' => 'Heavy Text', 'description' => '<p>Bolder typographic weight for mission statements.</p>']); ?>
+        <?php get_template_part('template-parts/sections/text', 'columns', ['title' => 'Columns Text', 'description' => '<p>Two-column narrative for comparison or parallel storytelling. Left column introduces challenge, right column presents solution and outcomes.</p>']); ?>
+        <?php get_template_part('template-parts/sections/text', 'with_toc', ['title' => 'With Table of Contents', 'description' => '<h2 id="overview">Overview</h2><p>Long-form content with anchor navigation.</p><h2 id="approach">Approach</h2><p>Structured methodology.</p>']); ?>
+        <?php get_template_part('template-parts/sections/callout', null, ['content' => '<p><strong>Callout:</strong> Accessibility is not a feature — it is a core brand value.</p>']); ?>
+
+        <?php // TIER 3 — INFORMATION / SERVICES / MISSION (core value props) ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '8', 'section' => 'Information', 'layout' => 'information.php + variants', 'fields' => 'title, subtitle, description, items, link, secondary_link, image, image_position']); ?>
+        <?php get_template_part('template-parts/sections/information', null, [
+            'title' => 'Transportation Your Members Can Count On',
+            'subtitle' => 'For PACE and Healthcare',
+            'description' => '<p>Door-through-door assisted transportation built for complex rider needs, with HIPAA-aware operations and credentialed drivers.</p>',
+            'items' => [['item' => 'Credentialed drivers'], ['item' => 'Door-through-door as standard'], ['item' => 'Integrated booking and live tracking']],
+            'link' => ['url' => '#', 'title' => 'Partner With Our PACE Team'],
+            'secondary_link' => ['url' => '#', 'title' => 'Learn More'],
+            'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80', 'alt' => 'Care team'],
+            'image_position' => 'right'
+        ]); ?>
+        <?php get_template_part('template-parts/sections/information', 'alt', ['title' => 'Information Alt', 'description' => '<p>Alternate card styling.</p>', 'image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80', 'alt' => 'Alt'], 'image_position' => 'left']); ?>
+        <?php get_template_part('template-parts/sections/information', 'simple', ['title' => 'Information Simple', 'description' => '<p>Minimal treatment for dense copy.</p>']); ?>
+        <?php get_template_part('template-parts/sections/information', 'staggered', ['title' => 'Staggered Information', 'description' => '<p>Staggered imagery for visual rhythm.</p>', 'image' => ['url' => 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80', 'alt' => 'Staggered']]); ?>
+        <?php get_template_part('template-parts/sections/information', 'tint', ['title' => 'Information Tint', 'description' => '<p>Tinted background for separation.</p>', 'image' => ['url' => 'https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?w=600&q=80', 'alt' => 'Tint']]); ?>
+        <?php get_template_part('template-parts/sections/our_mission', null, [
+            'title' => 'OUR MISSION',
+            'quote' => 'Bringing joy, dignity and community',
+            'description' => 'To the people who need it most — with reliable, compassionate transportation.',
+            'services' => [
+                ['icon' => ['url' => 'https://api.iconify.design/mdi:shield-check.svg?color=%232A4187'], 'title' => 'Compliance', 'description' => 'FTA and ADA aligned', 'link' => ['url' => '#', 'title' => 'Learn More']],
+                ['icon' => ['url' => 'https://api.iconify.design/lucide:heart-handshake.svg?color=%232A4187'], 'title' => 'Care', 'description' => 'Door-through-door assistance', 'link' => ['url' => '#', 'title' => 'Learn More']],
+                ['icon' => ['url' => 'https://api.iconify.design/heroicons:academic-cap.svg?color=%232A4187'], 'title' => 'Training', 'description' => 'Credentialed drivers', 'link' => ['url' => '#', 'title' => 'Learn More']],
             ],
-            'image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80', 'alt' => 'Professional accessibility consultation'],
-            'service_links' => [
-                ['title' => 'Web Accessibility', 'link' => ['url' => '#', 'title' => 'Web Accessibility']],
-                ['title' => 'Document Remediation', 'link' => ['url' => '#', 'title' => 'Document Remediation']],
-                ['title' => 'Training Programs', 'link' => ['url' => '#', 'title' => 'Training Programs']],
-                ['title' => 'Compliance Audits', 'link' => ['url' => '#', 'title' => 'Compliance Audits']]
-            ]
-        ]);
-        ?>
-
-        <?php
-        get_template_part('template-parts/sections/hero-page', null, [
-            'type' => 'home',
-            'subtitle' => 'SilverRide Canada',
-            'title' => 'Your Center of Excellence for Accessibility Compliance',
-            'description' => '<p>We help organizations achieve and maintain compliance with accessibility standards including AODA, ADA, and WCAG. Our expert team provides comprehensive assessments, implementations, and ongoing support to ensure your digital and physical spaces are accessible to everyone.</p>',
-            'links' => [
-                ['link' => ['url' => '#', 'title' => 'Get Started']],
-                ['link' => ['url' => '#services', 'title' => 'Our Services']]
-            ],
-            'image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80', 'alt' => 'Professional accessibility consultation'],
-            'service_links' => [
-                ['title' => 'Web Accessibility', 'link' => ['url' => '#', 'title' => 'Web Accessibility']],
-                ['title' => 'Document Remediation', 'link' => ['url' => '#', 'title' => 'Document Remediation']],
-                ['title' => 'Training Programs', 'link' => ['url' => '#', 'title' => 'Training Programs']],
-                ['title' => 'Compliance Audits', 'link' => ['url' => '#', 'title' => 'Compliance Audits']]
-            ]
-        ]);
-        ?>
-        <?php get_template_part('template-parts/section-label', null, [
-            'number' => '2',
-            'section' => 'Section Title',
-            'layout' => 'section_title-default.php',
-            'fields' => 'title, description (textarea)'
+            'link' => ['url' => '#', 'title' => 'Our Story']
         ]); ?>
-        <?php
-        get_template_part('template-parts/sections/section_title-default', null, [
-            'title' => 'Why Choose SilverRide',
-            'description' => '<p>Leading the industry in accessibility compliance solutions</p>',
-        ]);
+        <?php get_template_part('template-parts/sections/services', null, ['title' => 'Comprehensive Accessibility', 'description' => '<p>From audits to remediation and training.</p>', 'features' => [['feature' => 'WCAG 2.2 AA Audits'], ['feature' => 'Document Remediation'], ['feature' => 'Training'], ['feature' => 'Ongoing Monitoring']], 'link' => ['url' => '#', 'title' => 'Explore Services'], 'image' => ['url' => 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80', 'alt' => 'Services']]); ?>
+        <?php get_template_part('template-parts/sections/cities', null, ['title' => 'Where We Serve', 'description' => '<p>35+ major metros and growing.</p>', 'cities' => [['name' => 'Seattle'], ['name' => 'Portland'], ['name' => 'Vancouver']], 'other_title' => 'More Cities', 'other_cities' => [['name' => 'Toronto']]]); ?>
+        <?php get_template_part('template-parts/sections/locations', null, ['title' => 'Locations', 'description' => '<p>Find your market.</p>']); ?>
+        <?php get_template_part('template-parts/sections/locations_alt', null, ['title' => 'Locations Alt']); ?>
 
-        ?>
-        <?php get_template_part('template-parts/section-label', null, [
-            'number' => '3',
-            'section' => 'Text',
-            'layout' => 'text.php',
-            'fields' => 'title, description (wysiwyg)'
-        ]); ?>
-        <?php
-        get_template_part('template-parts/sections/text', null, [
-            'title' => 'Our Commitment to Accessibility',
-            'description' => '<p>At SilverRide, we believe that accessibility is not just a legal requirement—it\'s a moral imperative and good business practice. An accessible website expands your market reach to include the 15% of the global population living with disabilities.</p><p>Our team of certified accessibility experts has helped hundreds of organizations across North America achieve compliance and create truly inclusive digital experiences.</p>'
-        ]);
-        ?>
-
-        <?php get_template_part('template-parts/sections/hero-cities', null, []) ?>
-        
-        <?php get_template_part('template-parts/section-label', null, [
-            'number' => '5',
-            'section' => 'Policy',
-            'layout' => 'policy.php',
-            'fields' => 'title, image, effective_date, toc_title, sections (repeater: heading, id, content), other_title, other_cities'
-        ]); ?>
-        <?php get_template_part('template-parts/sections/policy', null, []); ?>
-
-        <?php get_template_part('template-parts/section-label', null, [
-            'number' => '6',
-            'section' => 'Datalist',
-            'layout' => 'datalist.php',
-            'fields' => 'title, description (wysiwyg), items (repeater: title, description wysiwyg)'
-        ]); ?>
-        <?php
-        get_template_part('template-parts/sections/datalist', null, [
-            'title' => 'Service Standards',
-            'description' => '<p>SilverRide maintains rigorous standards across all operations to ensure consistent, high-quality service delivery.</p><p>Please contact one of the providers below:</p>',
-            'items' => [
-                [
-                    'title' => 'On-Time Performance',
-                    'description' => '<p>Seattle Yellow Cab <a href="#">206-622-6500</a></p>',
-                ],
-                [
-                    'title' => 'Driver Credentialing',
-                    'description' => '<p>Every SilverRide driver completes a multi-step credentialing process before accepting trips. Requirements include background checks, driving record reviews, vehicle inspections, and completion of accessibility training modules covering wheelchair securement, service animal accommodation, and communication with riders who have cognitive or sensory disabilities.</p><p>Credentialing is maintained on an ongoing basis. Expiration dates are tracked, renewal reminders are automated, and lapses trigger temporary trip restrictions until re-credentialing is complete. Agency partners can request credentialing reports as part of regular compliance reviews.</p>',
-                ],
-                [
-                    'title' => 'Vehicle Standards',
-                    'description' => '<p>SilverRide\'s fleet includes sedans, SUVs, and wheelchair-accessible vehicles. All vehicles must pass a multi-point inspection covering mechanical safety, cleanliness, and accessibility equipment functionality before being approved for trips. Vehicle inspections are repeated on a scheduled basis, and any vehicle that fails an inspection is immediately removed from active service until issues are resolved.</p>',
-                ],
-            ],
-        ]);
-        ?>
-
-        <?php get_template_part('template-parts/sections/stats-alt', null, [
-            'items' => [
-                ['value' => '1M+', 'label' => 'Rides Delivered Each Year'],
-                ['value' => '35+', 'label' => 'Major Metro Areas Served'],
-                ['value' => '15', 'label' => 'States And Counting'],
-                ['value' => '95%', 'label' => 'On-Time Performance'],
-            ],
-            'description' => '<p>Scale matters, but only because of what it enables: reliable transportation. For partners, that means stronger service outcomes, greater rider satisfaction, and transportation programs people can depend on.</p>',
-        ]); ?>
-
+        <?php // TIER 4 — PROCESS / POINTS (how it works) ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '9', 'section' => 'Process', 'layout' => 'process.php + avenues + points', 'fields' => 'title, steps, points']); ?>
+        <?php get_template_part('template-parts/sections/process', null, ['title' => 'Our Process', 'subtitle' => 'From discovery to ongoing performance']); ?>
         <?php get_template_part('template-parts/sections/avenues-who-we-serve', null, [
-            'title'            => 'Three Avenues. One Platform.',
-            'background_color' => '#F0F5FF',
-            'avenues'          => [
-                [
-                    'overline'       => 'FOR TRANSIT AGENCIES',
-                    'heading'        => 'Paratransit That Performs.',
-                    'content'        => '<p>SilverRide is the partner of choice for transit agencies that need ADA-compliant paratransit at scale. We support complementary paratransit, overflow service, premium tiers, and same-day trips through a flexible independent driver network and an accessibility-focused vehicle mix, including sedans, SUVs, and wheelchair-accessible vehicles.</p><p class="mt-4">Our model offers operational flexibility that many traditional providers struggle to match: scalable capacity for peak demand, premium service without dedicated fleet costs, and agency-grade reporting built for performance oversight and FTA readiness. When service standards matter, SilverRide helps agencies meet them with greater flexibility and cost control.</p>',
-                    'bullets'        => [
-                        'ADA-compliant service across 35+ major metros in 15 states',
-                        '95% on-time performance with agency-grade reporting',
-                        'Sedan, SUV, and wheelchair-accessible vehicles on demand',
-                        'Door-to-door, door-through-door, and hand-to-hand service',
-                        'Insurance levels matched to your contract requirements (typically $1M+, up to $5M+)',
-                    ],
-                    'cta'            => ['url' => '#', 'title' => 'Partner With Our Agency Team'],
-                    'image'          => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80', 'alt' => 'Wheelchair accessible vehicle with ramp'],
-                    'image_position' => 'right',
-                ],
-                [
-                    'overline'       => 'FOR PACE AND HEALTHCARE',
-                    'heading'        => 'Transportation your members can count on.',
-                    'content'        => '<p>SilverRide supports PACE programs, health plans, and healthcare systems with door-through-door assisted transportation built for more complex rider needs. Designed for participants who may need additional support before, during, or after a ride, SilverRide helps create a more reliable and connected transportation experience from pickup through arrival and return home.</p><p class="mt-4">With operational coordination, SilverRide helps organizations improve rider access, support compliance needs, and deliver a transportation experience aligned with the level of care their members expect.</p>',
-                    'bullets'        => [
-                        'Credentialed drivers experienced with medically complex riders',
-                        'Door-through-door service as the baseline, not an upgrade',
-                        'Integrated booking, live tracking, and compliance-ready reporting',
-                        'HIPAA-aware operations and credentialing',
-                        'ADA-compliant service across 35+ major metros in 15 states',
-                    ],
-                    'cta'            => ['url' => '#', 'title' => 'Partner With Our PACE Team'],
-                    'image'          => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80', 'alt' => 'Smiling driver assisting passenger into vehicle'],
-                    'image_position' => 'left',
-                ],
-                [
-                    'overline'       => 'FOR RIDERS',
-                    'heading'        => 'Direct booking for the people who need it most.',
-                    'content'        => '<p>SilverRide is direct-bookable in most of our service areas. Schedule online, by phone, or through your local transit agency or PACE care team. Door-to-door or door-through-door assistance, an experienced and credentialed driver, and the patience that cannot be rushed.</p>',
-                    'bullets'        => [],
-                    'cta'            => ['url' => '#', 'title' => 'Book a Ride'],
-                    'image'          => ['url' => 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80', 'alt' => 'Hand holding smartphone with ride booking app'],
-                    'image_position' => 'right',
-                ],
-            ],
+            'title' => 'Three Avenues. One Platform.', 'background_color' => '#F0F5FF',
+            'avenues' => [
+                ['overline' => 'FOR TRANSIT', 'heading' => 'Paratransit That Performs', 'content' => '<p>Scalable capacity for peak demand.</p>', 'bullets' => ['ADA-compliant'], 'cta' => ['url' => '#', 'title' => 'Partner'], 'image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80', 'alt' => 'Transit'], 'image_position' => 'right'],
+                ['overline' => 'FOR PACE', 'heading' => 'Transportation You Can Count On', 'content' => '<p>Door-through-door for complex needs.</p>', 'bullets' => ['Door-through-door'], 'cta' => ['url' => '#', 'title' => 'Partner'], 'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80', 'alt' => 'Healthcare'], 'image_position' => 'left'],
+            ]
         ]); ?>
+        <?php get_template_part('template-parts/sections/process-who-we-serve', null, ['title_line_1' => 'Built around your service standards.', 'title_line_2' => 'Live where your riders are.', 'steps' => [['number' => '01.', 'heading' => 'Discovery', 'content' => 'Understand your service area and gaps.'], ['number' => '02.', 'heading' => 'Contract Design', 'content' => 'Tailored to service standards.'], ['number' => '03.', 'heading' => 'Activation', 'content' => 'Credentialed driver network ready.']]]); ?>
+        <?php get_template_part('template-parts/sections/points', null, ['title' => 'Why SilverRide', 'points' => [['title' => 'Scale'], ['title' => 'Care']]]); ?>
+        <?php get_template_part('template-parts/sections/points', 'grid', ['title' => 'Points Grid', 'points' => [['title' => '95% OTP']]]); ?>
+        <?php get_template_part('template-parts/sections/nested_grid', null, []); ?>
+        <?php get_template_part('template-parts/sections/help-grid', null, []); ?>
 
-        <?php get_template_part('template-parts/sections/process-who-we-serve', null, [
-            'title_line_1' => 'Built around your service standards.',
-            'title_line_2' => 'Live where your riders are.',
-            'steps'        => [
-                [
-                    'number'  => '01.',
-                    'heading' => 'Discovery',
-                    'content' => 'We start by understanding your service area, your rider population, your existing operations, and the gaps you need filled. Same-day capacity. Premium tiers. Door-through-door for clinical trips. Overflow for peak demand. The conversation is specific and the proposals are tailored.',
-                ],
-                [
-                    'number'  => '02.',
-                    'heading' => 'Contract Design',
-                    'content' => 'We design partnership terms around your service standards, compliance requirements, and reporting needs. Vehicle mix, insurance levels, credentialing requirements, and reporting cadence are all customized. Where regulations or rider needs require something specific, we build to it.',
-                ],
-                [
-                    'number'  => '03.',
-                    'heading' => 'Driver Network Activation',
-                    'content' => 'Drivers in your market who meet the contract\'s credentialing and compliance requirements are made available for your trips. Where additional credentialing is required, SilverRide assists drivers in meeting those requirements so the network is ready when you are.',
-                ],
-                [
-                    'number'  => '04.',
-                    'heading' => 'Operational Launch',
-                    'content' => 'After launch, trip requests can begin moving through the SilverRide platform. SilverRide supports dispatch workflows, care coordination needs, and rider-facing scheduling experiences through centralized tools designed for operational visibility. Live tracking, compliance reporting, and operational dashboards are available as part of implementation.',
-                ],
-                [
-                    'number'  => '05.',
-                    'heading' => 'Ongoing Performance',
-                    'content' => 'On-time performance, ride volume, rider satisfaction, and compliance reporting are continuously monitored. When service standards require attention, we act early to maintain performance. When there are opportunities to improve or scale service, we surface those insights as well.',
-                ],
-            ],
-        ]); ?>
-        
-        <?php
-            get_template_part('template-parts/sections/grid', 'incentives', [
-                'title' => 'Compliance is the floor, not the ceiling.',
-                'description' => '<p>SilverRide is the partner of choice for transit agencies that need ADA-compliant paratransit at scale. We support complementary paratransit, overflow service, premium tiers, and same-day trips through a flexible independent driver network and an accessibility-focused vehicle mix, including sedans, SUVs, and wheelchair-accessible vehicles.</p>',
-                'items' => [
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=ADA', 'alt' => 'Wheelchair accessible icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=400&q=80', 'alt' => 'Accessible transportation'], 'label' => 'ADA-compliant operations supported across markets and contract types'],
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=HIPAA', 'alt' => 'HIPAA compliant icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80', 'alt' => 'Healthcare compliance'], 'label' => 'HIPAA-compliant workflows for healthcare and PACE partners'],
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=FTA', 'alt' => 'FTA reporting icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Transit agency reporting'], 'label' => 'FTA-aligned reporting designed for transit agency oversight and compliance'],
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=INS', 'alt' => 'Insurance coverage icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => 'Insurance coverage'], 'label' => 'Insurance coverage aligned with contract requirements'],
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=DRV', 'alt' => 'Credentialed drivers icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => 'Credentialed drivers'], 'label' => 'Credentialed drivers'],
-                    ['icon' => ['url' => 'https://via.placeholder.com/48?text=AUD', 'alt' => 'Audit trails icon'], 'image' => ['url' => 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&q=80', 'alt' => 'Audit trails and reporting'], 'label' => 'Trip-level audit trails, performance dashboards, and contract-specific reporting tools'],
-                ],
-            ]);
-        ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '7', 'section' => 'Grid Alt', 'layout' => 'grid-alt.php', 'fields' => 'title, description, items (image, title, description, link), grid_size, background_color, footer_description, cta']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'alt', [
-            'title' => 'Flexible Support for Every Service Model',
-            'description' => '<p>From complementary paratransit to overflow and premium tiers, we adapt to your operational requirements.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80', 'alt' => 'Alt item'], 'title' => 'Complementary Paratransit', 'description' => '<p>ADA-compliant origin-to-destination service with agency-grade reporting.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80', 'alt' => 'Alt item 2'], 'title' => 'Overflow Capacity', 'description' => '<p>Scalable driver network for peak demand and same-day trips.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => 'Alt item 3'], 'title' => 'Premium Tiers', 'description' => '<p>Elevated rider experience without dedicated fleet costs.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '8', 'section' => 'Grid Basic', 'layout' => 'grid-basic.php', 'fields' => 'title, description, grid_size, items (image, title, description, link), background_color']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'basic', [
-            'title' => 'Why Agencies Choose SilverRide',
-            'description' => '<p>Proven performance across 35+ major metros with 95% on-time service.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80', 'alt' => 'Basic'], 'title' => 'Nationwide Scale', 'description' => '<p>35+ major metros in 15 states with door-through-door expertise.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80', 'alt' => 'Basic 2'], 'title' => 'Credentialed Network', 'description' => '<p>Background-checked drivers with FTA drug and alcohol compliance.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => 'Basic 3'], 'title' => 'Reliable Operations', 'description' => '<p>95% on-time performance with live tracking and dashboards.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '9', 'section' => 'Grid Cardless', 'layout' => 'grid-cardless.php', 'fields' => 'title, description, grid_size, items (image, subtitle, title, description, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'cardless', [
-            'title' => 'Whitepapers',
-            'description' => '<p>Insights on aging in place, ADA at 35 years, and the future of paratransit.</p>',
-            'grid_size' => 2,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80', 'alt' => 'Whitepaper'], 'subtitle' => 'October 2025 | By Jeff Maltz, CEO & Founder', 'title' => 'ADA@35: We Reached A Milestone — Now Let\'s Finish What We Started', 'description' => '<p>Reflections on 35 years of accessibility progress and what remains.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80', 'alt' => 'Whitepaper 2'], 'subtitle' => 'September 2025 | By SilverRide Team', 'title' => 'The Crucial Link Of Aging In Place', 'description' => '<p>Transportation as the linchpin for independent living.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '10', 'section' => 'Grid Cards', 'layout' => 'grid-cards.php', 'fields' => 'title, description, grid_size, items (image, title, description)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'cards', [
-            'title' => 'Our Commitment to Service',
-            'description' => '<p>Built for the most demanding paratransit requirements.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=ADA', 'alt' => 'ADA'], 'title' => 'ADA Compliant', 'description' => '<p>Origin-to-destination service across all markets.</p>'],
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=FTA', 'alt' => 'FTA'], 'title' => 'FTA Aligned', 'description' => '<p>Reporting and compliance built for agency oversight.</p>'],
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=DRV', 'alt' => 'Drivers'], 'title' => 'Credentialed Drivers', 'description' => '<p>Experienced, compassionate professionals.</p>'],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '11', 'section' => 'Grid Clickable Cards', 'layout' => 'grid-clickable-cards.php', 'fields' => 'title, description, grid_size, items (image, title, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'clickable-cards', [
-            'title' => 'Solutions by Need',
-            'description' => '<p>Click an option to explore our service models.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=1', 'alt' => ''], 'title' => 'Complementary Paratransit', 'link' => ['url' => '#', 'title' => 'Explore']],
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=2', 'alt' => ''], 'title' => 'Overflow & Peak', 'link' => ['url' => '#', 'title' => 'Explore']],
-                ['image' => ['url' => 'https://via.placeholder.com/80?text=3', 'alt' => ''], 'title' => 'Premium & Same-Day', 'link' => ['url' => '#', 'title' => 'Explore']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '12', 'section' => 'Grid Colorful', 'layout' => 'grid-colorful.php', 'fields' => 'title, items (subtitle, title, description, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'colorful', [
-            'title' => 'Three Avenues. One Platform.',
-            'items' => [
-                ['subtitle' => 'FOR TRANSIT', 'title' => 'Paratransit That Performs', 'description' => '<p>Every paratransit trip is more than transportation. Flexible, technology-enabled network for ADA paratransit.</p><ul><li>ADA-compliant origin-to-destination service</li><li>95% on-time performance</li><li>Sedan, SUV, wheelchair-accessible options</li></ul>', 'link' => ['url' => '#', 'title' => 'Partner With Our Agency Team']],
-                ['subtitle' => 'FOR HEALTHCARE', 'title' => 'PACE and Healthcare', 'description' => '<p>Door-through-door as the standard level of service with integrated booking and tracking.</p><ul><li>Door-through-door assistance</li><li>Hand-to-hand available</li><li>HIPAA-aware operations</li></ul>', 'link' => ['url' => '#', 'title' => 'Partner With Our PACE Team']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '13', 'section' => 'Grid Compliance Cards', 'layout' => 'grid-compliance-cards.php', 'fields' => 'title, description, items (image, title, description)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'compliance-cards', [
-            'title' => 'Compliance Management',
-            'description' => '<p>Agency-grade reporting across 18 states and 35+ metros.</p>',
-            'items' => [
-                ['image' => ['url' => 'https://via.placeholder.com/150?text=ADA', 'alt' => 'ADA'], 'title' => 'ADA Compliance', 'description' => '<p>Origin-to-destination and premium tier support.</p>'],
-                ['image' => ['url' => 'https://via.placeholder.com/150?text=HIPAA', 'alt' => 'HIPAA'], 'title' => 'HIPAA Workflows', 'description' => '<p>Privacy-conscious handling for healthcare partners.</p>'],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '14', 'section' => 'Grid Floating Cards', 'layout' => 'grid-floating-cards.php', 'fields' => 'title, description, grid_size, items (image, title, description, link, secondary_link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'floating-cards', [
-            'title' => 'Built for Scale. Focused on the Individual Ride.',
-            'description' => '<p>Scale that never loses sight of the rider experience.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => ''], 'title' => 'Driver Network That Cares', 'description' => '<p>Professionals who treat riders like family.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => ''], 'title' => 'Compliance First', 'description' => '<p>FTA reporting and credentialing built in.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&q=80', 'alt' => ''], 'title' => 'Reliable Operations', 'description' => '<p>95% on-time performance at scale.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '15', 'section' => 'Grid Highlight', 'layout' => 'grid-highlight.php', 'fields' => 'title, items (title, description)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'highlight', [
-            'title' => 'Why SilverRide',
-            'items' => [
-                ['title' => 'Built For Scale', 'description' => '<p>Operates at a scale others cannot match, still treats every ride like the only one.</p>'],
-                ['title' => 'Driver Network That Cares', 'description' => '<p>Experienced professionals who bring the skills expected in assisted transportation.</p>'],
-                ['title' => 'Compliance Is The Floor', 'description' => '<p>ADA, insurance, reporting — exceed, document, and grow with confidence.</p>'],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '16', 'section' => 'Grid Info', 'layout' => 'grid-info.php', 'fields' => 'title, description, items (title, description)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'info', [
-            'title' => 'Program Information',
-            'description' => '<p>Key details for transit and healthcare partners.</p>',
-            'items' => [
-                ['title' => '95% On-Time', 'description' => '<p>Industry-leading reliability with live tracking and dashboards.</p>'],
-                ['title' => 'Door-Through-Door', 'description' => '<p>Beyond curb-to-curb, with hand-to-hand when required.</p>'],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '17', 'section' => 'Grid Service Cards', 'layout' => 'grid-service-cards.php', 'fields' => 'title, description, grid_size, items (image, title, description, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'service-cards', [
-            'title' => 'Service Models',
-            'description' => '<p>Flexible configurations for transit agencies and PACE.</p>',
-            'grid_size' => 2,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => ''], 'title' => 'Complementary Paratransit', 'description' => '<p>ADA origin-to-destination with premium-tier support.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => ''], 'title' => 'Overflow & Same-Day', 'description' => '<p>Peak demand and same-day capacity via flexible network.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '18', 'section' => 'Grid Simple', 'layout' => 'grid-simple.php', 'fields' => 'title, description, grid_size, items (image, title, description, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'simple', [
-            'title' => 'Case Studies',
-            'description' => '<p>(Optional Subtitle)</p>',
-            'grid_size' => 4,
-            'items' => [
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => 'Case 1'], 'title' => 'RideCo', 'description' => '<p>How SilverRide and RideCo partnered to improve microtransit in Milpitas, California.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => 'Case 2'], 'title' => 'IndyGo', 'description' => '<p>Scaled Indianapolis paratransit more than threefold to 95% OTP.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-                ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&q=80', 'alt' => 'Case 3'], 'title' => 'GoDurham Access', 'description' => '<p>Unified operations and consistent standards delivered more capacity.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-                ['image' => ['url' => 'https://via.placeholder.com/300x150?text=Transdev', 'alt' => 'Case 4'], 'title' => 'Transdev & OCTA', 'description' => '<p>Expanded peak-hour capacity for Orange County Access.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '19', 'section' => 'Grid Textual', 'layout' => 'grid-textual.php', 'fields' => 'title, subtitle, description, grid_size, items (title, description, link)']); ?>
-        <?php get_template_part('template-parts/sections/grid', 'textual', [
-            'title' => 'Service Standards',
-            'subtitle' => 'Built around your compliance needs',
-            'description' => '<p>Flexible, auditable, and rider-centric.</p>',
-            'grid_size' => 3,
-            'items' => [
-                ['title' => 'ADA Paratransit', 'description' => '<p>Compliant origin-to-destination service</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-                ['title' => 'FTA Reporting', 'description' => '<p>Agency-grade reporting and dashboards</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-                ['title' => 'Door-Through-Door', 'description' => '<p>Beyond curb-to-curb assistance</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '20', 'section' => 'Grid Videos', 'layout' => 'grid_videos.php', 'fields' => 'title, description, videos (embed_url, title, thumbnail), columns']); ?>
-        <?php get_template_part('template-parts/sections/grid_videos', null, [
-            'title' => 'Hear From Our Partners',
-            'description' => 'Real stories from riders, drivers, and agency partners.',
-            'columns' => 3,
-            'videos' => [
-                ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'SilverRide Overview'],
-                ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'Rider Story'],
-                ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'Agency Testimonial'],
-            ],
-        ]); ?>
-        <?php get_template_part('template-parts/sections/partnership-who-we-serve', null, []) ?>
+        <?php // TIER 5 — CALL TO ACTION ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '10', 'section' => 'Call To Action', 'layout' => 'call_to_action-*.php', 'fields' => 'title, description, link, media_type, image']); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'default', ['title' => 'Ready to Get Started?', 'description' => '<p>Let us streamline your transportation logistics.</p>', 'link' => ['url' => '#', 'title' => 'Request a Demo']]); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'alt', ['title' => 'Still Have Questions?', 'description' => '<p>We are here to help.</p>', 'link' => ['url' => '#', 'title' => 'Contact Us']]); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'horizontal', ['title' => 'Get In Touch', 'description' => '<p>Horizontal variant for narrow bands.</p>', 'link' => ['url' => '#', 'title' => 'Contact']]); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'simple', ['title' => 'Simple CTA', 'link' => ['url' => '#', 'title' => 'Learn More']]); ?>
+        <?php get_template_part('template-parts/sections/call_to_action', 'with-image', ['title' => 'CTA With Image', 'description' => '<p>Visual emphasis.</p>', 'link' => ['url' => '#', 'title' => 'Explore'], 'image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80', 'alt' => 'CTA'], 'media_type' => 'image']); ?>
 
-        <?php get_template_part('template-parts/sections/clients-who-we-serve', null, []) ?>
+        <?php // TIER 6 — GRIDS (core content blocks) - ordered: service-focused first ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '11', 'section' => 'Grids', 'layout' => 'grid-*.php', 'fields' => 'Grid family']); ?>
+        <?php get_template_part('template-parts/sections/grid', 'service-cards', ['title' => 'Service Models', 'description' => '<p>Flexible configurations.</p>', 'grid_size' => 2, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => ''], 'title' => 'Complementary Paratransit', 'description' => '<p>ADA origin-to-destination.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => ''], 'title' => 'Overflow', 'description' => '<p>Peak demand capacity.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'alt', ['title' => 'Flexible Support', 'description' => '<p>Adapts to operational requirements.</p>', 'grid_size' => 3, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80', 'alt' => ''], 'title' => 'Complementary', 'description' => '<p>ADA-compliant with reporting.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80', 'alt' => ''], 'title' => 'Overflow', 'description' => '<p>Scalable network.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => ''], 'title' => 'Premium', 'description' => '<p>Elevated experience.</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'basic', ['title' => 'Why Agencies Choose Us', 'description' => '<p>Proven across 35+ metros.</p>', 'grid_size' => 3, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80', 'alt' => ''], 'title' => 'Scale', 'description' => '<p>35+ metros, 15 states.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=80', 'alt' => ''], 'title' => 'Network', 'description' => '<p>Credentialed drivers.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=80', 'alt' => ''], 'title' => 'Reliability', 'description' => '<p>95% OTP tracking.</p>', 'link' => ['url' => '#', 'title' => 'Explore']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'colorful', ['title' => 'Three Avenues. One Platform.', 'items' => [
+            ['subtitle' => 'FOR TRANSIT', 'title' => 'Paratransit That Performs', 'description' => '<p>Flexible, technology-enabled network.</p><ul><li>ADA service</li><li>95% OTP</li></ul>', 'link' => ['url' => '#', 'title' => 'Partner With Our Agency Team']],
+            ['subtitle' => 'FOR HEALTHCARE', 'title' => 'PACE and Healthcare', 'description' => '<p>Door-through-door with tracking.</p><ul><li>Door-through-door</li><li>HIPAA-aware</li></ul>', 'link' => ['url' => '#', 'title' => 'Partner With Our PACE Team']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'floating-cards', ['title' => 'Built for Scale', 'description' => '<p>Scale that never loses sight of rider.</p>', 'grid_size' => 3, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => ''], 'title' => 'Driver Network That Cares', 'description' => '<p>Professionals who treat riders like family.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => ''], 'title' => 'Compliance First', 'description' => '<p>FTA reporting built in.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&q=80', 'alt' => ''], 'title' => 'Reliable Operations', 'description' => '<p>95% OTP at scale.</p>', 'link' => ['url' => '#', 'title' => 'Learn More'], 'secondary_link' => ['url' => '#', 'title' => 'Contact']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'simple', ['title' => 'Case Studies', 'description' => '<p>(Optional Subtitle)</p>', 'grid_size' => 4, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&q=80', 'alt' => ''], 'title' => 'RideCo', 'description' => '<p>Microtransit in Milpitas.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=300&q=80', 'alt' => ''], 'title' => 'IndyGo', 'description' => '<p>Scaled 3x to 95% OTP.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&q=80', 'alt' => ''], 'title' => 'GoDurham', 'description' => '<p>Unified operations.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+            ['image' => ['url' => 'https://via.placeholder.com/300x150?text=Transdev', 'alt' => ''], 'title' => 'Transdev', 'description' => '<p>Peak-hour capacity.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'cardless', ['title' => 'Whitepapers', 'description' => '<p>Insights on aging and ADA.</p>', 'grid_size' => 2, 'items' => [
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80', 'alt' => ''], 'subtitle' => 'October 2025 | By Jeff Maltz', 'title' => 'ADA@35: Now Let\'s Finish What We Started', 'description' => '<p>35 years reflection.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+            ['image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=80', 'alt' => ''], 'subtitle' => 'September 2025', 'title' => 'The Crucial Link Of Aging In Place', 'description' => '<p>Transportation linchpin.</p>', 'link' => ['url' => '#', 'title' => 'Read More']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'cards', ['title' => 'Commitment', 'description' => '<p>Built for demanding requirements.</p>', 'grid_size' => 3, 'items' => [
+            ['image' => ['url' => 'https://api.iconify.design/mdi:shield-check.svg?color=%232A4187', 'alt' => ''], 'title' => 'ADA', 'description' => '<p>Origin-to-destination.</p>'],
+            ['image' => ['url' => 'https://api.iconify.design/mdi:file-document-check.svg?color=%232A4187', 'alt' => ''], 'title' => 'FTA', 'description' => '<p>Reporting built in.</p>'],
+            ['image' => ['url' => 'https://api.iconify.design/mdi:account-heart.svg?color=%232A4187', 'alt' => ''], 'title' => 'Drivers', 'description' => '<p>Compassionate professionals.</p>'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'clickable-cards', ['title' => 'Solutions by Need', 'description' => '<p>Click an option.</p>', 'grid_size' => 3, 'items' => [
+            ['image' => ['url' => 'https://api.iconify.design/lucide:bus.svg?color=%232A4187', 'alt' => ''], 'title' => 'Complementary', 'link' => ['url' => '#', 'title' => 'Explore']],
+            ['image' => ['url' => 'https://api.iconify.design/lucide:users.svg?color=%232A4187', 'alt' => ''], 'title' => 'Overflow', 'link' => ['url' => '#', 'title' => 'Explore']],
+            ['image' => ['url' => 'https://api.iconify.design/lucide:crown.svg?color=%232A4187', 'alt' => ''], 'title' => 'Premium', 'link' => ['url' => '#', 'title' => 'Explore']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'compliance-cards', ['title' => 'Compliance', 'items' => [
+            ['image' => ['url' => 'https://api.iconify.design/mdi:shield-check.svg?color=%232A4187', 'alt' => ''], 'title' => 'ADA', 'description' => '<p>Origin-to-destination support.</p>'],
+            ['image' => ['url' => 'https://api.iconify.design/mdi:lock-check.svg?color=%232A4187', 'alt' => ''], 'title' => 'HIPAA', 'description' => '<p>Privacy-conscious handling.</p>'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'highlight', ['title' => 'Why SilverRide', 'items' => [
+            ['title' => 'Built For Scale', 'description' => '<p>Scale others cannot match.</p>'],
+            ['title' => 'Driver Network That Cares', 'description' => '<p>Skills expected in assisted transport.</p>'],
+            ['title' => 'Compliance Is The Floor', 'description' => '<p>Exceed, document, grow.</p>'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'info', ['title' => 'Program Information', 'description' => '<p>Key details.</p>', 'items' => [
+            ['title' => '95% On-Time', 'description' => '<p>Live tracking.</p>'],
+            ['title' => 'Door-Through-Door', 'description' => '<p>Beyond curb-to-curb.</p>'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'textual', ['title' => 'Service Standards', 'subtitle' => 'Built around compliance', 'description' => '<p>Flexible and auditable.</p>', 'grid_size' => 3, 'items' => [
+            ['title' => 'ADA Paratransit', 'description' => '<p>Compliant service</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+            ['title' => 'FTA Reporting', 'description' => '<p>Grade reporting</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+            ['title' => 'Door-Through-Door', 'description' => '<p>Curb assistance</p>', 'link' => ['url' => '#', 'title' => 'Learn More']],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid', 'incentives', ['title' => 'Compliance is the floor.', 'description' => '<p>Flexible network for ADA paratransit.</p>', 'items' => [
+            ['icon' => ['url' => 'https://api.iconify.design/mdi:wheelchair-accessibility.svg?color=%232A4187'], 'image' => ['url' => 'https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=400&q=80', 'alt' => ''], 'label' => 'ADA-compliant operations'],
+            ['icon' => ['url' => 'https://api.iconify.design/mdi:shield-lock.svg?color=%232A4187'], 'image' => ['url' => 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&q=80', 'alt' => ''], 'label' => 'HIPAA workflows'],
+            ['icon' => ['url' => 'https://api.iconify.design/mdi:file-chart.svg?color=%232A4187'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => ''], 'label' => 'FTA reporting'],
+            ['icon' => ['url' => 'https://api.iconify.design/mdi:shield-car.svg?color=%232A4187'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=80', 'alt' => ''], 'label' => 'Insurance coverage'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/grid_videos', null, ['title' => 'Hear From Our Partners', 'description' => 'Real stories.', 'columns' => 3, 'videos' => [
+            ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'Overview'],
+            ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'Rider Story'],
+            ['video_type' => 'embed', 'embed_url' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', 'title' => 'Agency Testimonial'],
+        ]]); ?>
 
-        <?php get_template_part('template-parts/sections/driver-features', null, []) ?>
-        <?php get_template_part('template-parts/sections/driver-testimonial', null, []) ?>
-        <?php get_template_part('template-parts/sections/driver-information-multiple-ctas', null, []) ?>
-        <?php get_template_part('template-parts/sections/driver-faqs', null, []) ?>
+        <?php // TIER 7 — SOCIAL PROOF / STATS / LOGOS ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '21', 'section' => 'Stats', 'layout' => 'stats.php / stats-alt.php']); ?>
+        <?php get_template_part('template-parts/sections/stats', null, ['items' => [['value' => '1M+', 'label' => 'Rides/Year'], ['value' => '35+', 'label' => 'Metros'], ['value' => '15', 'label' => 'States'], ['value' => '95%', 'label' => 'OTP']]]); ?>
+        <?php get_template_part('template-parts/sections/stats', 'alt', ['items' => [['value' => '1M+', 'label' => 'Rides'], ['value' => '95%', 'label' => 'On-Time']], 'description' => '<p>Scale enabling reliability.</p>']); ?>
+        <?php get_template_part('template-parts/sections/logos', null, ['title' => 'Trusted By', 'logos' => [['url' => 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&q=80', 'alt' => 'Logo 1'], ['url' => 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=200&q=80', 'alt' => 'Logo 2']]]); ?>
+        <?php get_template_part('template-parts/sections/testimonials', null, ['title' => 'What Partners Say', 'testimonials' => [['quote' => 'SilverRide transformed our overflow capacity.', 'author' => 'Transit Director, IndyGo'], ['quote' => 'Door-through-door standard is game-changing.', 'author' => 'PACE Director']]]); ?>
+        <?php get_template_part('template-parts/sections/slider', 'testimonial', ['title' => 'Rider Stories', 'items' => [['quote' => 'They treat me like family.', 'author' => 'Martha, 78'], ['quote' => 'On time every time.', 'author' => 'James, Rider']]]); ?>
+        <?php get_template_part('template-parts/sections/slider', 'basic', ['title' => 'Featured Stories', 'slides' => [['image' => ['url' => 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80', 'alt' => 'Slide'], 'title' => 'Slide 1', 'description' => '<p>Caption</p>', 'link' => ['url' => '#', 'title' => 'Explore']]]]); ?>
+        <?php get_template_part('template-parts/sections/team', null, ['title' => 'Leadership', 'members' => [['name' => 'Jeff Maltz', 'role' => 'CEO', 'image' => ['url' => 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80', 'alt' => 'Jeff'], 'bio' => 'Founder'], ['name' => 'Tanya Castle', 'role' => 'VP Growth', 'image' => ['url' => 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80', 'alt' => 'Tanya'], 'bio' => 'Growth']]]); ?>
+        <?php get_template_part('template-parts/sections/certificates', 'default', ['title' => 'Government Accessibility Services', 'description' => '<p>Certified at the highest levels.</p>', 'stats' => [['label' => 'WCAG', 'value' => 'AA'], ['label' => 'AODA', 'value' => 'Compliant']], 'link' => ['url' => '#', 'title' => 'View Certificates'], 'image' => ['url' => 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?w=600&q=80', 'alt' => 'Certificate']]); ?>
+        <?php get_template_part('template-parts/sections/compliance', null, ['title' => 'Compliance Management', 'description' => '<p>100/100 score.</p>', 'items' => ['WCAG 2.2', 'ADA', 'AODA'], 'score' => 100, 'link' => ['url' => '#', 'title' => 'Details'], 'image' => ['url' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80', 'alt' => 'Compliance'], 'transcript' => '<p>Transcript</p>']); ?>
+
+        <?php // TIER 8 — CONTACT / FORMS / SPLIT (conversion) ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '22', 'section' => 'Contact & Forms', 'layout' => 'contact.php / form.php / split-default.php']); ?>
+        <?php get_template_part('template-parts/sections/contact', null, [
+            'title' => 'Empower Your Organization',
+            'description' => '<p>Discover how SilverRide streamlines logistics.</p>',
+            'features' => [['feature' => '95% on-time performance'], ['feature' => 'Door-through-door service'], ['feature' => 'HIPAA-aware']],
+            'logos' => [['url' => 'https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=100&q=80', 'alt' => 'Logo']],
+            'form_heading' => 'Request a Demo', 'form_subheading' => 'Learn what we can do', 'contact_form' => '[contact-form-7 id="123" title="Contact form 1"]'
+        ]); ?>
+        <?php get_template_part('template-parts/sections/form', null, ['title' => 'Get In Touch', 'description' => '<p>We respond within one business day.</p>', 'shortcode' => '[contact-form-7 id="123" title="Contact form 1"]']); ?>
+        <?php get_template_part('template-parts/sections/form', 'alt', ['title' => 'Alt Form', 'description' => '<p>Alternate styling.</p>', 'shortcode' => '[contact-form-7 id="123" title="Alt"]']); ?>
+        <?php get_template_part('template-parts/sections/split', 'default', [
+            'image' => ['url' => 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80', 'alt' => 'Man with guide dog'],
+            'content' => '<h3><strong>The Challenge</strong></h3><p>Milpitas SMART had everything going for it: best-in-class technology and strong ridership. Inconsistent operator performance undermined experience.</p><h3><strong>The Result</strong></h3><p>After assuming operations in September 2024, SilverRide delivered measurable improvements: higher ridership, greater efficiency.</p>',
+            'logos' => [['url' => 'https://via.placeholder.com/120x40?text=RIDECO', 'alt' => 'RideCo'], ['url' => 'https://via.placeholder.com/120x40?text=Milpitas', 'alt' => 'Milpitas']],
+            'form_title' => 'Fill out this form to download case study', 'form_shortcode' => '[contact-form-7 id="123" title="Case study"]'
+        ]); ?>
+        <?php get_template_part('template-parts/sections/leanpress_forms', null, []); ?>
+
+        <?php // TIER 9 — CONTENT LISTS / FAQs / DATALIST / TABLE ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '23', 'section' => 'Content Lists', 'layout' => 'faqs.php / datalist.php / points.php / table.php']); ?>
+        <?php get_template_part('template-parts/sections/faqs', 'default', ['title' => 'Frequently Asked Questions', 'description' => '<p>Common questions about paratransit partnerships.</p>', 'items' => [
+            ['question' => 'What markets do you serve?', 'answer' => '<p>35+ major metros in 15 states.</p>'],
+            ['question' => 'Do you provide wheelchair-accessible vehicles?', 'answer' => '<p>Yes, sedan, SUV and WAV options.</p>'],
+        ], 'cta' => ['url' => '#', 'title' => 'Contact Support']]); ?>
+        <?php get_template_part('template-parts/sections/faqs', 'alt', ['title' => 'Alt FAQs', 'items' => [['question' => 'How does dispatch work?', 'answer' => '<p>Centralized platform with live tracking.</p>']]]); ?>
+        <?php get_template_part('template-parts/sections/datalist', null, ['title' => 'Service Standards', 'description' => '<p>Rigorous standards across operations.</p>', 'items' => [
+            ['title' => 'On-Time Performance', 'description' => '<p>95% average with agency reporting.</p>'],
+            ['title' => 'Driver Credentialing', 'description' => '<p>Background checks and accessibility training.</p>'],
+        ]]); ?>
+        <?php get_template_part('template-parts/sections/points', null, ['title' => 'Key Points', 'points' => [['title' => '95% OTP'], ['title' => 'Door-through-door']]]); ?>
+        <?php get_template_part('template-parts/sections/points', 'grid', ['title' => 'Points Grid', 'points' => [['title' => 'Scale'], ['title' => 'Care']]]); ?>
+        <?php get_template_part('template-parts/sections/table', null, ['title' => 'Service Comparison', 'description' => 'SilverRide vs traditional providers', 'table' => ['header' => [['c' => 'Feature'], ['c' => 'SilverRide'], ['c' => 'Traditional']], 'body' => [[['c' => 'On-time'], ['c' => '95%'], ['c' => '85%']], [['c' => 'Coverage'], ['c' => '35+ metros'], ['c' => 'Limited']]]], 'footnote' => '<p>* Data as of 2024</p>']); ?>
+        <?php get_template_part('template-parts/sections/links', null, ['title' => 'Quick Links', 'links' => [['title' => 'Schedule a Ride', 'url' => '#'], ['title' => 'Partner Portal', 'url' => '#']]]); ?>
+        <?php get_template_part('template-parts/sections/links', 'alt', ['title' => 'Resources', 'links' => [['title' => 'Accessibility Guide', 'url' => '#']]]); ?>
+        <?php get_template_part('template-parts/sections/nested_grid', null, []); ?>
+        <?php get_template_part('template-parts/sections/help-grid', null, []); ?>
+        <?php get_template_part('template-parts/sections/services', null, ['title' => 'Our Services', 'description' => '<p>Comprehensive solutions.</p>', 'features' => [['feature' => 'Assessments']], 'image' => ['url' => 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80', 'alt' => 'Services']]); ?>
+
+        <?php // TIER 10 — BLOG / FILTERS / POLICY / MISC ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '24', 'section' => 'Blog', 'layout' => 'blog-*.php']); ?>
+        <?php get_template_part('template-parts/sections/blog', 'default', ['title' => 'OUR LATEST NEWS & BLOGS', 'post_count' => 3, 'link' => ['url' => '#', 'title' => 'View All']]); ?>
+        <?php get_template_part('template-parts/sections/blog', 'alt', ['title' => 'Innovations in Accessibility', 'post_count' => 3]); ?>
+        <?php get_template_part('template-parts/sections/blog', 'tint', ['title' => 'Insights', 'description' => '<p>Latest from SilverRide.</p>', 'post_count' => 3]); ?>
+        <?php get_template_part('template-parts/sections/filters-blog', null, []); ?>
+        <?php get_template_part('template-parts/sections/policy', null, []); ?>
+        <?php get_template_part('template-parts/sections/report-an-incident', null, []); ?>
+        <?php get_template_part('template-parts/sections/cities', null, []); ?>
+        <?php get_template_part('template-parts/sections/locations', null, []); ?>
+        <?php get_template_part('template-parts/sections/locations_alt', null, []); ?>
+        <?php get_template_part('template-parts/sections/case_study', null, [
+            'overline' => 'CASE STUDY', 'title' => 'Milpitas SMART: Platform Quality Meets Service Quality', 'tag' => 'Microtransit', 'challenge' => '<p>Inconsistent operator performance undermining excellent technology and ridership.</p>', 'approach_text' => '<p>SilverRide assumed operations of seven-vehicle fleet in September 2024.</p>', 'implementation' => '<p>Seven vehicles, expanded capacity, improved reliability.</p>', 'industry' => 'Microtransit', 'location' => 'Milpitas, CA', 'compliance' => 'ADA', 'timeline' => 'Sept 2024 — Present', 'key_result' => 'Higher ridership + efficiency', 'results_items' => [['item' => '95% OTP'], ['item' => 'Capacity +40%']]
+        ]); ?>
+        <?php get_template_part('template-parts/sections/driver-faqs', null, []); ?>
+        <?php get_template_part('template-parts/sections/driver-features', null, []); ?>
+        <?php get_template_part('template-parts/sections/driver-information-multiple-ctas', null, []); ?>
+        <?php get_template_part('template-parts/sections/logos', null, []); ?>
+        <?php get_template_part('template-parts/sections/space', null, ['size' => 'medium', 'space_type' => 'invisible']); ?>
+        <?php get_template_part('template-parts/sections/callout', null, ['content' => '<p><strong>Callout:</strong> Transportation that works — for riders, agencies, and PACE.</p>']); ?>
+        <?php get_template_part('template-parts/sections/testimonials', null, []); ?>
+
+        <?php get_template_part('template-parts/sections/footer', null, []); ?>
 
     <?php endif; ?>
 </main>
