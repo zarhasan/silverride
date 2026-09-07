@@ -23,6 +23,7 @@ $title = !empty($args['title']) ? $args['title'] : (get_field('contact_title', '
 $description = !empty($args['description']) ? $args['description'] : (get_field('contact_description', 'option') ?: 'Discover how SilverRide can streamline your transportation logistics, reduce costs, and provide safe, reliable mobility solutions for the people you serve.');
 
 $features = !empty($args['features']) ? $args['features'] : (get_field('contact_features', 'option') ?: []);
+$description_after_features = !empty($args['description_after_features']) ? $args['description_after_features'] : (get_field('contact_description_after_features', 'option') ?: '');
 
 $logos = !empty($args['logos']) ? $args['logos'] : (get_field('contact_logos', 'option') ?: []);
 
@@ -44,7 +45,7 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="prose text-xl leading-relaxed">
+                    <div class="prose text-lg lg:text-xl leading-relaxed">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
@@ -60,6 +61,12 @@ $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] 
                             </li>
                         <?php endforeach; ?>
                     </ul>
+                <?php endif; ?>
+
+                <?php if ($description_after_features) : ?>
+                    <div class="prose text-lg lg:text-xl leading-relaxed mb-8">
+                        <?php echo wp_kses_post($description_after_features); ?>
+                    </div>
                 <?php endif; ?>
 
                 <?php if (!empty($logos)) : ?>

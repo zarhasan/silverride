@@ -1404,6 +1404,16 @@ add_action( 'acf/include_fields', function() {
 							),
 						),
 						array(
+							'key'     => 'field_contact_description_after_features',
+							'label'   => 'Description After Features',
+							'name'    => 'description_after_features',
+							'type'    => 'wysiwyg',
+							'instructions' => 'Optional content rendered below the features list.',
+							'tabs'    => 'all',
+							'toolbar' => 'full',
+							'media_upload' => 1,
+						),
+						array(
 							'key'           => 'field_contact_logos',
 							'label'         => 'Logos',
 							'name'          => 'logos',
