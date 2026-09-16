@@ -11,6 +11,7 @@ $description = $args['description'] ?? '';
 $image = $args['image'] ?? [];
 $links = $args['links'] ?? [];
 $padding = $args['padding'] ?? 'default';
+$margin = $args['margin'] ?? 'default';
 
 $paddings = [
     'none' => 'py-0',
@@ -20,6 +21,15 @@ $paddings = [
     'large' => 'py-32 md:py-48',
 ];
 $padding_class = $paddings[$padding] ?? $paddings['default'];
+
+$margins = [
+    'none' => 'mt-0',
+    'small' => 'mt-14',
+    'default' => 'mt-28',
+    'medium' => 'mt-36',
+    'large' => 'mt-48',
+];
+$margin_class = $margins[$margin] ?? $margins['default'];
 ?>
 
 <section class="relative flex items-center" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -33,7 +43,7 @@ $padding_class = $paddings[$padding] ?? $paddings['default'];
 
     <!-- Content -->
     <div class="container relative z-10 <?php echo esc_attr($padding_class); ?>">
-        <div class="max-w-2xl mt-28">
+        <div class="max-w-2xl <?php echo esc_attr($margin_class); ?>">
             <?php if (!empty($subtitle)) : ?>
                 <span class="block text-base lg:text-xl font-medium text-white uppercase tracking-wide mb-4 a11y_irrbg">
                     <?php echo esc_html($subtitle); ?>
