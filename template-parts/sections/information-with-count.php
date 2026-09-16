@@ -9,6 +9,7 @@ $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $image = $args['image'] ?? [];
 $image_position = $args['image_position'] ?? 'right';
+$background_color = $args['background_color'] ?? '';
 $hide_on = $args['hide_on'] ?? [];
 $hide_classes = [];
 if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
@@ -18,9 +19,14 @@ $hide_class = implode(' ', $hide_classes);
 $is_image_left = $image_position === 'left';
 $text_order = $is_image_left ? 'order-2' : 'order-1';
 $image_order = $is_image_left ? 'order-1' : 'order-2';
+$bg_style = '';
+if (!empty($background_color)) {
+    $bg_style = 'background-color: ' . esc_attr($background_color) . ';';
+}
+$bg_class = !empty($background_color) ? 'py-16 lg:py-24 my-16 md:my-24' : 'bg-white my-16 md:my-24';
 ?>
 
-<section class="bg-white py-16 md:py-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="<?php echo esc_attr($bg_class); ?> <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>" style="<?php echo $bg_style; ?>">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="<?php echo esc_attr($text_order); ?>">
@@ -37,7 +43,7 @@ $image_order = $is_image_left ? 'order-1' : 'order-2';
                 <?php endif; ?>
 
                 <?php if ($description) : ?>
-                    <div class="text-lg text-[#404040] leading-relaxed space-y-4">
+                    <div class="prose text-lg text-[#404040] leading-relaxed space-y-4">
                         <?php echo wp_kses_post($description); ?>
                     </div>
                 <?php endif; ?>
