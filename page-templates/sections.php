@@ -160,7 +160,7 @@ $sections = get_field('sections');
 </div>
 
         <?php // TIER 3 - INFORMATION / SERVICES / MISSION (core value props) ?>
-        <?php get_template_part('template-parts/section-label', null, ['number' => '8', 'section' => 'Information', 'layout' => 'information.php + variants', 'fields' => 'title, subtitle, description, items, link, secondary_link, image, image_position']); ?>
+        <?php get_template_part('template-parts/section-label', null, ['number' => '8', 'section' => 'Information', 'layout' => 'information.php + variants', 'fields' => 'title, subtitle, description, items, link, secondary_link, image, image_position, count']); ?>
 <div class="demo-frame relative border border-gray-200 rounded-xl overflow-hidden my-10 shadow-sm">
   <div class="absolute top-0 left-0 z-10 bg-gray-900 text-white text-[11px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-br-lg leading-none">information</div>
   <div class="pt-8">
@@ -198,6 +198,18 @@ $sections = get_field('sections');
   <div class="absolute top-0 left-0 z-10 bg-gray-900 text-white text-[11px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-br-lg leading-none">information - tint</div>
   <div class="pt-8">
         <?php get_template_part('template-parts/sections/information', 'tint', ['title' => 'Information Tint', 'description' => '<p>Tinted background for separation.</p>', 'image' => ['url' => 'https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?w=600&q=80', 'alt' => 'Tint']]); ?>
+  </div>
+</div>
+<div class="demo-frame relative border border-gray-200 rounded-xl overflow-hidden my-10 shadow-sm">
+  <div class="absolute top-0 left-0 z-10 bg-gray-900 text-white text-[11px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-br-lg leading-none">information - with-count</div>
+  <div class="pt-8">
+        <?php get_template_part('template-parts/sections/information', 'with-count', [
+            'count' => '01',
+            'title' => 'Built For The Pressures Transit Agencies Face',
+            'description' => '<p>Every transit agency providing ADA paratransit faces the same challenge: demand changes daily, budgets are tight, service standards never change; and riders expect dependable transportation every time they book a trip. Expanding capacity with a traditional dedicated fleet can be expensive, time-consuming, and difficult to scale — especially for overflow demand, premium service tiers, or same-day trips.</p><p>SilverRide is built for that reality. Our flexible transportation network helps agencies expand capacity when and where it is needed while maintaining ADA compliance, meeting contractual performance standards, and delivering the reporting agencies depend on. The result is a transportation partner that helps your team stay focused on serving riders, not managing capacity constraints.</p>',
+            'image' => ['url' => 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800&q=80', 'alt' => 'Transit bus'],
+            'image_position' => 'right'
+        ]); ?>
   </div>
 </div>
 <div class="demo-frame relative border border-gray-200 rounded-xl overflow-hidden my-10 shadow-sm">

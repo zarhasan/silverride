@@ -2100,7 +2100,8 @@ add_action( 'acf/include_fields', function() {
 								'alt' => 'Alt',
 								'simple' => 'Simple',
 								'staggered' => 'Staggered',
-								'tint' => 'Tint'
+								'tint' => 'Tint',
+								'with-count' => 'With Count'
 							),
 							'default_value' => 'default',
 							'return_format' => 'value',
@@ -2124,6 +2125,22 @@ add_action( 'acf/include_fields', function() {
 							'label' => 'Subtitle',
 							'name' => 'subtitle',
 							'type' => 'text',
+						),
+						array(
+							'key' => 'field_information_count',
+							'label' => 'Count',
+							'name' => 'count',
+							'type' => 'text',
+							'instructions' => 'Ordinal shown above the title, e.g. 01. Only for With Count variant.',
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_information_type',
+										'operator' => '==',
+										'value' => 'with-count',
+									),
+								),
+							),
 						),
 						array(
 							'key' => 'field_information_description',
