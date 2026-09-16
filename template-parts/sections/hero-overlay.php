@@ -10,6 +10,16 @@ $title = $args['title'] ?? '';
 $description = $args['description'] ?? '';
 $image = $args['image'] ?? [];
 $links = $args['links'] ?? [];
+$padding = $args['padding'] ?? 'default';
+
+$paddings = [
+    'none' => 'py-0',
+    'small' => 'py-10 md:py-14',
+    'default' => 'py-20 md:py-28',
+    'medium' => 'py-24 md:py-36',
+    'large' => 'py-32 md:py-48',
+];
+$padding_class = $paddings[$padding] ?? $paddings['default'];
 ?>
 
 <section class="relative flex items-center" data-section-id="<?php echo esc_attr($template_part_name); ?>">
@@ -22,7 +32,7 @@ $links = $args['links'] ?? [];
     <div class="absolute inset-0 bg-gradient-to-t from-[#25419680] to-transparent" aria-hidden="true"></div>
 
     <!-- Content -->
-    <div class="container relative z-10 py-20 md:py-28">
+    <div class="container relative z-10 <?php echo esc_attr($padding_class); ?>">
         <div class="max-w-2xl mt-28">
             <?php if (!empty($subtitle)) : ?>
                 <span class="block text-base lg:text-xl font-medium text-white uppercase tracking-wide mb-4 a11y_irrbg">

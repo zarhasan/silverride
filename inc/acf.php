@@ -545,6 +545,31 @@ add_action( 'acf/include_fields', function() {
 								),
 							),
 						),
+						array(
+							'key' => 'field_hero_padding',
+							'label' => 'Padding',
+							'name' => 'padding',
+							'type' => 'button_group',
+							'choices' => array(
+								'default' => 'Default',
+								'none' => 'None',
+								'small' => 'Small',
+								'medium' => 'Medium',
+								'large' => 'Large',
+							),
+							'default_value' => 'default',
+							'return_format' => 'value',
+							'layout' => 'horizontal',
+							'conditional_logic' => array(
+								array(
+									array(
+										'field' => 'field_69c11402d445f',
+										'operator' => '==',
+										'value' => 'overlay',
+									),
+								),
+							),
+						),
 
 					),
 					'min' => '',
