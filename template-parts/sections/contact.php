@@ -19,8 +19,8 @@ if ($context === 'footer') {
 $template_part_name = explode('.', basename(__FILE__))[0];
 
 /* Left side content */
-$title = !empty($args['title']) ? $args['title'] : (get_field('contact_title', 'option') ?: 'Empower Your Organization with the Nation\'s Leading Assisted Transportation Platform');
-$description = !empty($args['description']) ? $args['description'] : (get_field('contact_description', 'option') ?: 'Discover how SilverRide can streamline your transportation logistics, reduce costs, and provide safe, reliable mobility solutions for the people you serve.');
+$title = !empty($args['title']) ? $args['title'] : (get_field('contact_title', 'option') ?: '');
+$description = !empty($args['description']) ? $args['description'] : (get_field('contact_description', 'option') ?: '');
 
 $features = !empty($args['features']) ? $args['features'] : (get_field('contact_features', 'option') ?: []);
 $description_after_features = !empty($args['description_after_features']) ? $args['description_after_features'] : (get_field('contact_description_after_features', 'option') ?: '');
@@ -28,8 +28,8 @@ $description_after_features = !empty($args['description_after_features']) ? $arg
 $logos = !empty($args['logos']) ? $args['logos'] : (get_field('contact_logos', 'option') ?: []);
 
 /* Right side form */
-$form_heading = !empty($args['form_heading']) ? $args['form_heading'] : (get_field('contact_form_heading', 'option') ?: 'Request a Demo');
-$form_subheading = !empty($args['form_subheading']) ? $args['form_subheading'] : (get_field('contact_form_subheading', 'option') ?: 'Learn what SilverRide can do for your organization');
+$form_heading = !empty($args['form_heading']) ? $args['form_heading'] : (get_field('contact_form_heading', 'option') ?: '');
+$form_subheading = !empty($args['form_subheading']) ? $args['form_subheading'] : (get_field('contact_form_subheading', 'option') ?: '');
 $contact_form_shortcode = !empty($args['contact_form']) ? $args['contact_form'] : (get_field('contact_form', 'option') ?: '');
 ?>
 
