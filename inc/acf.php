@@ -5031,4 +5031,39 @@ acf_add_local_field_group( array(
 	'description' => '',
 	'show_in_rest' => 1,
 ) );
+
+acf_add_local_field_group( array(
+	'key' => 'group_case_study_pdf',
+	'title' => 'Case Study PDF',
+	'fields' => array(
+		array(
+			'key' => 'field_case_study_pdf',
+			'label' => 'Case Study PDF',
+			'name' => 'pdf_file',
+			'type' => 'file',
+			'instructions' => 'PDF available for download at /download-case-study?id={page-id}.',
+			'return_format' => 'array',
+			'library' => 'all',
+			'mime_types' => 'pdf',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_taxonomy',
+				'operator' => '==',
+				'value' => 'page-type:case-study',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+) );
 } );

@@ -216,6 +216,7 @@ function silverride_script_loader_tag($tag, $handle, $src)
 add_filter('script_loader_tag', 'silverride_script_loader_tag', 10, 3);
 
 
+
 /**
  * Load theme textdomain for translations.
  */
