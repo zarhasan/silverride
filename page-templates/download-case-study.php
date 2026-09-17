@@ -2,12 +2,35 @@
 /**
  * Template Name: Download Case Study
  *
- * Serves a page's case study PDF as a download: /download-case-study?id={page-id}
- * Reads the pdf_file field from the page given by ?id=.
+ * Serves a page's case study PDF as a download: /download-case-study?id={page-id}&submission_id={forminator-entry-id}
+ * Reads the pdf_file field from the page given by ?id= after verifying the Forminator submission.
  */
 
+function silverride_case_study_404() {
+    global $wp_query;
+    $wp_query->set_404();
+    status_header(404);
+    get_template_part('404');
+    exit;
+}
+
 $page_id = isset($_GET['id']) ? absint($_GET['id']) : 0;
-$file = $page_id && function_exists('get_field') ? get_field('pdf_file', $page_id) : false;
+$submission_id = isset($_GET['submission_id']) ? absint($_GET['submission_id']) : 0;
+
+if (!$page_id || !$submission_id) {
+    silverride_case_study_404();
+}
+
+if (!class_exists('Forminator_Form_Entry_Model')) {
+    silverride_case_study_404();
+}
+
+$entry = new Forminator_Form_Entry_Model($submission_id);
+if (empty($entry->entry_id) || !empty($entry->is_spam)) {
+    silverride_case_study_404();
+}
+
+$file = function_exists('get_field') ? get_field('pdf_file', $page_id) : false;
 
 $file_id = 0;
 $file_url = '';
@@ -20,11 +43,7 @@ if (is_array($file)) {
 }
 
 if (!$file_id || !$file_url || get_post_mime_type($file_id) !== 'application/pdf') {
-    global $wp_query;
-    $wp_query->set_404();
-    status_header(404);
-    get_template_part('404');
-    exit;
+    silverride_case_study_404();
 }
 
 $path = get_attached_file($file_id);
