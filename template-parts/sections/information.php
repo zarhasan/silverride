@@ -11,6 +11,8 @@ $link = $args['link'] ?? [];
 $secondary_link = $args['secondary_link'] ?? [];
 $image = $args['image'] ?? [];
 $image_position = $args['image_position'] ?? 'left';
+$margin = $args['margin'] ?? 'default';
+$padding = $args['padding'] ?? 'default';
 $hide_on = $args['hide_on'] ?? [];
 $hide_classes = [];
 if (in_array('mobile', $hide_on)) $hide_classes[] = 'hidden !sm:block';
@@ -20,9 +22,27 @@ $hide_class = implode(' ', $hide_classes);
 $is_image_left = $image_position === 'left';
 $text_order = $is_image_left ? 'order-2' : 'order-1';
 $image_order = $is_image_left ? 'order-1' : 'order-2';
+
+$margins = [
+    'none' => '',
+    'small' => 'my-8 md:my-12',
+    'default' => 'my-16 md:my-24',
+    'medium' => 'my-20 md:my-32',
+    'large' => 'my-28 md:my-40',
+];
+$margin_class = $margins[$margin] ?? $margins['default'];
+
+$paddings = [
+    'none' => 'py-0',
+    'small' => 'py-10 md:py-14',
+    'default' => 'py-16 md:py-24',
+    'medium' => 'py-24 md:py-36',
+    'large' => 'py-32 md:py-48',
+];
+$padding_class = $paddings[$padding] ?? $paddings['default'];
 ?>
 
-<section class="bg-white py-16 md:py-24 <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
+<section class="bg-white <?php echo esc_attr($margin_class); ?> <?php echo esc_attr($padding_class); ?> <?php echo esc_attr($hide_class); ?>" data-section-id="<?php echo esc_attr($template_part_name); ?>">
     <div class="container">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-20 items-start">
             <?php if (!empty($image) && !empty($image['url'])) : ?>
