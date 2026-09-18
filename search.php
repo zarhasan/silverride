@@ -83,7 +83,7 @@ get_header(); ?>
                             <article class="flex flex-col md:flex-row md:items-start gap-6">
                                 <?php if (has_post_thumbnail()) : ?>
                                     <a href="<?php echo esc_url(get_permalink()); ?>" class="block md:w-56 lg:w-64 flex-shrink-0" tabindex="-1" aria-hidden="true">
-                                        <div class="aspect-[4/3] overflow-hidden">
+                                        <div class="aspect-[16/9] overflow-hidden">
                                             <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>" alt="" class="w-full h-full object-cover">
                                         </div>
                                     </a>

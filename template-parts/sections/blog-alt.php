@@ -44,7 +44,7 @@ if ($custom_query) {
                 <?php while ($query->have_posts()) : $query->the_post(); ?>
                     <article class="flex flex-col">
                         <?php if (has_post_thumbnail()) : ?>
-                        <div class="aspect-[4/3] overflow-hidden mb-6">
+                        <div class="aspect-[16/9] overflow-hidden mb-6">
                             <img src="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(), 'medium_large')); ?>" alt="" class="w-full h-full object-cover">
                         </div>
                         <?php endif; ?>
